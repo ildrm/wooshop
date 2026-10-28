@@ -1,0 +1,9 @@
+id,statement,classification,owner,requirement,related_decision,validation_trigger
+ASM-01,Independent installations;shared release packages;no shared customers/carts/stock,planning assumption,Solution/Software Architect,FR-G002,ADR-14,Revisit only with explicit multistore requirement
+ASM-02,Entity/jurisdictions/currencies/providers unchosen,unresolved business/legal decision,Product Owner,FR-G010,DEC-01;DEC-02;DEC-03;DEC-04,Activation remains gated
+ASM-03,Capacity scenarios are synthetic planning envelopes,planning assumption,Performance Engineer,FR-G013,DEC-06,Replace with discovery volumes before procurement
+ASM-04,English docs;LTR and RTL storefront;Persian examples do not locate business,user requirement,Localization/RTL Specialist,FR-G004,ADR-15,Validate with language specialists
+ASM-05,Native block theme and modular monolith are reversible starting designs,proposed design decision,Solution/Software Architect,FR-G007,ADR-01;ADR-02,Review against capability failures
+ASM-06,No cross-currency settlements in initial enabled mode,planning assumption,Finance/Tax Specialist,FR-G010,DEC-03,Add FX contracts only after approved business need
+ASM-07,New advanced modules default disabled until readiness gate,proposed design decision,Release/Maintenance Owner,FR-G005,DEC-09,Documented behavior remains complete
+ASM-08,No real human approvals or runtime measurements in assignment,user requirement,Technical Product Writer,FR-G001,DEC-11,Future implementation evidence required

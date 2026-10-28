@@ -1,0 +1,42 @@
+# Data dictionary
+
+Document ID: DOC-D-DICTIONARY | Title: Data dictionary | Revision: 1.0 | Date: 2026-10-28
+Status: drafted; pending human approval and future verification
+Owner: Database/Data Architect | Reviewers: Marketplace Solution Architect; WooCommerce Extension Developer; QA/Test Engineer
+Scope: logical data and future implementation contracts | Requirements: FR-D019; FR-D021; FR-D025; FR-D028; FR-D032; FR-D043 | ADRs: ADR-05; ADR-07; ADR-08; ADR-09; ADR-10
+Dependencies: [requirements](../02-requirements/requirements.csv); [architecture](../03-architecture/architecture-overview.md)
+Assumptions: ASM-01; ASM-02; ASM-03 | Sources: USER-BRIEF sections 7–8; [source register](../00-governance/sources.csv)
+
+## Shared field types and constraints
+
+This dictionary is authoritative for proposed domain fields. OpenAPI uses the same meanings. `UUID` is an opaque site-local identifier; authorization is still mandatory. `NativeID` is a positive integer exposed as a decimal string in custom APIs to avoid JavaScript precision loss. `Instant` is RFC3339 UTC. `Version` is a monotonically increasing positive integer. Strings are UTF-8 normalized for comparison while original display text is retained. Unknown, not applicable and zero have separate meanings; null is accepted only where named below.
+
+`Money` contains `amount_minor` (signed decimal integer string, maximum absolute 9,000,000,000,000,000), `currency` (three-letter configured code) and `exponent` (integer 0–4 allowed by the configured currency registry). Arithmetic uses exact integer/rational intermediates, never binary floats. Negative amounts are permitted only for adjustments/refunds/ledger projections, not advertised prices. Quantities are positive integers 1–10,000 in baseline APIs; measured-weight quantities require a separately versioned adapter. Money never converts between currencies implicitly.
+
+All plugin records carry site_id, created_at, schema_version and provenance; mutable records add updated_at and version. Public fields are minimized projections, not unrestricted serialization of storage. Financial records add correlation_id, operation_key and actor/service identity. Every foreign key is checked within the same site.
+
+## Entity fields
+
+| Entity | Fields, types and required constraints | Classification, lifecycle and storage owner |
+|---|---|---|
+| Seller | id UUID; display_name 1–120 chars; kind first_party/third_party; state application/review/approved/suspended/terminated; legal_profile_ref opaque nullable until review; public_slug unique 1–80; payout_account_ref nullable until provider approval; policy_version positive | Public display vs restricted legal/finance separated; plugin seller aggregate; archive instead of delete while obligations exist |
+| Membership | seller_id UUID; user_id NativeID; capabilities finite allowlist; state invited/active/revoked; invited_by NativeID; expires_at nullable; accepted_at nullable before acceptance | Restricted; plugin membership aggregate; unique seller/user; revocation immediately invalidates cached authority |
+| Offer | id UUID; seller_id; product_id; variation_id nullable only non-variable; seller_sku 1–64 unique per seller; condition enum new/used/refurbished; price Money nullable only draft/non-purchasable; state draft/review/active/paused/retired; inventory_pool_id; origin_id; warranty_terms_ref; terms_version; version | Public purchase projection; plugin offer aggregate; provenance actor + evidence; retirement retains purchased references |
+| Inventory pool | id UUID; seller_id; owner native_wc/marketplace_plugin; provider_verified is reserved for a future explicitly delegated adapter gate; authority_epoch positive; wc_stock_owner_id nullable outside native mode; on_hand nonnegative integer; reserved nonnegative; backorder_limit integer fixed0 in baseline; version | Restricted operational; atomic plugin inventory aggregate for marketplace mode; native balances read via WC adapter |
+| Reservation | id UUID; pool_id; operation_key; line_key; quantity; state held/committed/released/expired; expires_at; committed_order_id nullable until commit; authority_epoch | Restricted; unique operation/line; terminal records retained for deduplication; no user-editable expiry |
+| Quote | id UUID; session_hash opaque; lines with offer/version/configuration_digest; destination_digest; totals Money; currency; tax_policy_ref; shipping_rate_refs; expires_at; accepted_at nullable | Session-restricted short-lived record; server generated; no raw full address in ordinary diagnostics |
+| Snapshot | order_id NativeID; order_item_id NativeID; product_id/variation_id; offer_id; seller_id and display/legal disclosure snapshot; seller_sku; quantity; unit/list/net/discount/tax/shipping/fee Money; commission_policy_version; terms_version; configuration graph; authority_epoch | Restricted immutable WC item extension via CRUD + plugin reference; no revision-in-place after purchase |
+| Allocation | id UUID; order_id; seller_id; item_refs and quantities; fulfillment_origin; payment_state; fulfillment_state; return_state; settlement_state; customer_contact_projection_ref; version | Seller-scoped operational; plugin aggregate; quantities never exceed unallocated purchased quantity |
+| Shipment | id UUID; allocation_id; item_quantities; carrier_code; tracking_ref nullable until dispatched; dispatch_at/delivery_at nullable; status; evidence_ref | Seller/customer scoped; plugin or one verified carrier adapter; contact PII removed after retention deadline |
+| Commission policy | id UUID; version; rate_basis_points 0–10,000; fixed_minor >=0 with configured currency and exponent; fixed fee applies only to same-currency orders; basis enum discounted_goods_net; payer/funder; tax_treatment_ref; effective_from/to nullable; approval_ref | Restricted finance config; immutable effective versions; illustration default is not business policy |
+| Journal transaction | id UUID; operation_key unique; currency/exponent; external_event_ref nullable for manual approved adjustments; type sale/refund/transfer/chargeback/fee/adjustment; reversal_of nullable; occurred_at; recorded_at | Restricted finance; append-only; requires balanced entries, distinct preparer/approver for manual money actions |
+| Ledger entry | journal_id; line_no integer unique per journal; account_code allowlist; debit_minor/credit_minor nonnegative strings exactly one positive; seller_id nullable for platform/control; allocation_id nullable for provider fees; source_snapshot_ref | Restricted finance; no updates/deletes; correction through reversal and replacement |
+| Return/dispute | id UUID; customer/order/allocation references; item_quantity; reason code; evidence_refs; state; deadline_at; policy_version; resolution; refund_operation_ref nullable | Sensitive support; restricted attachment visibility; separate financial result; legal hold can suspend erasure |
+| Compatibility claim | id UUID; source_product/version; target_protocol/ecosystem/model; region; firmware_min/max nullable with explicit unknown; evidence_url/document_hash; asserted_at; reviewed_at; review_due_at; confidence verified/conditional/unverified; status active/revoked | Public claim summary; restricted reviewer trail; plugin specifications; invalidated evidence removes positive recommendation |
+| Provider mapping | provider namespace; external kind/id; canonical kind/id; mapping version; verified_at; reviewer; confidence; source digest | Restricted integration; compound uniqueness; mappings tombstoned on exit, never silently reassigned |
+
+## Nullability and field-specific validation
+
+A price of zero is free, never “ask for price.” Missing price is null and blocks direct purchase. A missing variation on a variable product is invalid, not “any variation.” No tracking ID means not supplied, not delivered. An unknown firmware ceiling is explicitly unknown, not unlimited support. A seller with no approved payout reference can fulfill paid orders under the approved model but cannot receive new payout instructions. Currency exponent is frozen in each snapshot; a changed configured display currency does not rewrite history.
+
+All public text uses length limits and contextual escaping. Seller HTML is a restricted content allowlist; fields cannot carry executable templates. Import and API mass assignment accept only enumerated writable fields. FR-D043 verification covers null/zero distinctions, overflows, unknown fields, stale versions and cross-site references.

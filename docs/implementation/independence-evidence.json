@@ -1,0 +1,750 @@
+{
+  "schema_version": 1,
+  "result": "PASS",
+  "human_approval": "NOT_PROVIDED",
+  "target": "http://localhost:18882",
+  "commands": [
+    {
+      "action": "probe:inspect",
+      "argv": [
+        "rtk",
+        "proxy",
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "tools/dev.py",
+        "wp",
+        "package-check",
+        "eval-file",
+        "/workspace/tests/core/independence.php",
+        "inspect"
+      ],
+      "exit_code": 0
+    },
+    {
+      "action": "probe:setup",
+      "argv": [
+        "rtk",
+        "proxy",
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "tools/dev.py",
+        "wp",
+        "package-check",
+        "eval-file",
+        "/workspace/tests/core/independence.php",
+        "setup",
+        "independence-2cbc1fb2-db71-4b49-847b-b13352f7201b"
+      ],
+      "exit_code": 0
+    },
+    {
+      "action": "normal unrelated theme activation",
+      "argv": [
+        "rtk",
+        "proxy",
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "tools/dev.py",
+        "wp",
+        "package-check",
+        "theme",
+        "activate",
+        "twentytwentyfour"
+      ],
+      "exit_code": 0
+    },
+    {
+      "action": "probe:plugin",
+      "argv": [
+        "rtk",
+        "proxy",
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "tools/dev.py",
+        "wp",
+        "package-check",
+        "eval-file",
+        "/workspace/tests/core/independence.php",
+        "plugin",
+        "independence-2cbc1fb2-db71-4b49-847b-b13352f7201b"
+      ],
+      "exit_code": 0
+    },
+    {
+      "action": "browser:plugin",
+      "argv": [
+        "rtk",
+        "proxy",
+        "node",
+        "-e",
+        "<BROWSER constant in tools/independence.py>",
+        "<public synthetic fixture JSON>",
+        "plugin"
+      ],
+      "exit_code": 0
+    },
+    {
+      "action": "normal custom theme activation",
+      "argv": [
+        "rtk",
+        "proxy",
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "tools/dev.py",
+        "wp",
+        "package-check",
+        "theme",
+        "activate",
+        "wooshop"
+      ],
+      "exit_code": 0
+    },
+    {
+      "action": "normal companion deactivation",
+      "argv": [
+        "rtk",
+        "proxy",
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "tools/dev.py",
+        "wp",
+        "package-check",
+        "plugin",
+        "deactivate",
+        "wooshop-commerce"
+      ],
+      "exit_code": 0
+    },
+    {
+      "action": "probe:theme",
+      "argv": [
+        "rtk",
+        "proxy",
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "tools/dev.py",
+        "wp",
+        "package-check",
+        "eval-file",
+        "/workspace/tests/core/independence.php",
+        "theme",
+        "independence-2cbc1fb2-db71-4b49-847b-b13352f7201b"
+      ],
+      "exit_code": 0
+    },
+    {
+      "action": "browser:theme",
+      "argv": [
+        "rtk",
+        "proxy",
+        "node",
+        "-e",
+        "<BROWSER constant in tools/independence.py>",
+        "<public synthetic fixture JSON>",
+        "theme"
+      ],
+      "exit_code": 0
+    },
+    {
+      "action": "normal WooCommerce deactivation after dependent companion",
+      "argv": [
+        "rtk",
+        "proxy",
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "tools/dev.py",
+        "wp",
+        "package-check",
+        "plugin",
+        "deactivate",
+        "woocommerce"
+      ],
+      "exit_code": 0
+    },
+    {
+      "action": "probe:wordpress",
+      "argv": [
+        "rtk",
+        "proxy",
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "tools/dev.py",
+        "wp",
+        "package-check",
+        "eval-file",
+        "/workspace/tests/core/independence.php",
+        "wordpress",
+        "independence-2cbc1fb2-db71-4b49-847b-b13352f7201b"
+      ],
+      "exit_code": 0
+    },
+    {
+      "action": "browser:wordpress",
+      "argv": [
+        "rtk",
+        "proxy",
+        "node",
+        "-e",
+        "<BROWSER constant in tools/independence.py>",
+        "<public synthetic fixture JSON>",
+        "wordpress"
+      ],
+      "exit_code": 0
+    },
+    {
+      "action": "restore WooCommerce first",
+      "argv": [
+        "rtk",
+        "proxy",
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "tools/dev.py",
+        "wp",
+        "package-check",
+        "plugin",
+        "activate",
+        "woocommerce"
+      ],
+      "exit_code": 0
+    },
+    {
+      "action": "restore companion second",
+      "argv": [
+        "rtk",
+        "proxy",
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "tools/dev.py",
+        "wp",
+        "package-check",
+        "plugin",
+        "activate",
+        "wooshop-commerce"
+      ],
+      "exit_code": 0
+    },
+    {
+      "action": "restore original theme",
+      "argv": [
+        "rtk",
+        "proxy",
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "tools/dev.py",
+        "wp",
+        "package-check",
+        "theme",
+        "activate",
+        "wooshop"
+      ],
+      "exit_code": 0
+    },
+    {
+      "action": "probe:restore-options",
+      "argv": [
+        "rtk",
+        "proxy",
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "tools/dev.py",
+        "wp",
+        "package-check",
+        "eval-file",
+        "/workspace/tests/core/independence.php",
+        "restore-options",
+        "independence-2cbc1fb2-db71-4b49-847b-b13352f7201b"
+      ],
+      "exit_code": 0
+    },
+    {
+      "action": "probe:restored",
+      "argv": [
+        "rtk",
+        "proxy",
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "tools/dev.py",
+        "wp",
+        "package-check",
+        "eval-file",
+        "/workspace/tests/core/independence.php",
+        "restored",
+        "independence-2cbc1fb2-db71-4b49-847b-b13352f7201b"
+      ],
+      "exit_code": 0
+    },
+    {
+      "action": "probe:cleanup",
+      "argv": [
+        "rtk",
+        "proxy",
+        "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+        "tools/dev.py",
+        "wp",
+        "package-check",
+        "eval-file",
+        "/workspace/tests/core/independence.php",
+        "cleanup",
+        "independence-2cbc1fb2-db71-4b49-847b-b13352f7201b"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "matrix": [
+    {
+      "phase": "companion under unrelated native theme",
+      "server": {
+        "operation": "plugin",
+        "assertions": 10,
+        "result": "PASS",
+        "run": "independence-2cbc1fb2-db71-4b49-847b-b13352f7201b",
+        "state": {
+          "theme": "twentytwentyfour",
+          "template": "twentytwentyfour",
+          "active_plugins": [
+            "woocommerce/woocommerce.php",
+            "wooshop-commerce/wooshop-commerce.php"
+          ],
+          "woocommerce": true,
+          "companion": true
+        },
+        "domain_id": "d510a00c-c7ab-4970-8743-f0362a2a627e",
+        "wishlist_id": "32f0867b-1d39-5e34-ae1d-9d114895106a",
+        "probe_product_id": 76,
+        "probe_page_id": 77,
+        "cleanup": null
+      },
+      "browser": {
+        "result": "PASS",
+        "phase": "plugin",
+        "checks": 7,
+        "privacy": "No screenshots, trace, credentials, cookies or order keys exported."
+      }
+    },
+    {
+      "phase": "custom theme plus WooCommerce, companion inactive",
+      "server": {
+        "operation": "theme",
+        "assertions": 6,
+        "result": "PASS",
+        "run": "independence-2cbc1fb2-db71-4b49-847b-b13352f7201b",
+        "state": {
+          "theme": "wooshop",
+          "template": "wooshop",
+          "active_plugins": [
+            "woocommerce/woocommerce.php"
+          ],
+          "woocommerce": true,
+          "companion": false
+        },
+        "domain_id": "d510a00c-c7ab-4970-8743-f0362a2a627e",
+        "wishlist_id": "32f0867b-1d39-5e34-ae1d-9d114895106a",
+        "probe_product_id": 76,
+        "probe_page_id": 77,
+        "cleanup": null
+      },
+      "browser": {
+        "result": "PASS",
+        "phase": "theme",
+        "checks": 14,
+        "privacy": "No screenshots, trace, credentials, cookies or order keys exported."
+      }
+    },
+    {
+      "phase": "custom theme plus native WordPress, both plugins inactive",
+      "server": {
+        "operation": "wordpress",
+        "assertions": 6,
+        "result": "PASS",
+        "run": "independence-2cbc1fb2-db71-4b49-847b-b13352f7201b",
+        "state": {
+          "theme": "wooshop",
+          "template": "wooshop",
+          "active_plugins": [],
+          "woocommerce": false,
+          "companion": false
+        },
+        "domain_id": "d510a00c-c7ab-4970-8743-f0362a2a627e",
+        "wishlist_id": "32f0867b-1d39-5e34-ae1d-9d114895106a",
+        "probe_product_id": 76,
+        "probe_page_id": 77,
+        "cleanup": null
+      },
+      "browser": {
+        "result": "PASS",
+        "phase": "wordpress",
+        "checks": 8,
+        "privacy": "No screenshots, trace, credentials, cookies or order keys exported."
+      }
+    }
+  ],
+  "restoration": [
+    {
+      "action": "restore WooCommerce first",
+      "result": "PASS"
+    },
+    {
+      "action": "restore companion second",
+      "result": "PASS"
+    },
+    {
+      "action": "restore original theme",
+      "result": "PASS"
+    },
+    {
+      "operation": "restore-options",
+      "assertions": 18,
+      "result": "PASS",
+      "run": "independence-2cbc1fb2-db71-4b49-847b-b13352f7201b",
+      "state": {
+        "theme": "wooshop",
+        "template": "wooshop",
+        "active_plugins": [
+          "woocommerce/woocommerce.php",
+          "wooshop-commerce/wooshop-commerce.php"
+        ],
+        "woocommerce": true,
+        "companion": true
+      },
+      "domain_id": "d510a00c-c7ab-4970-8743-f0362a2a627e",
+      "wishlist_id": "32f0867b-1d39-5e34-ae1d-9d114895106a",
+      "probe_product_id": 76,
+      "probe_page_id": 77,
+      "cleanup": null
+    },
+    {
+      "operation": "restored",
+      "assertions": 10,
+      "result": "PASS",
+      "run": "independence-2cbc1fb2-db71-4b49-847b-b13352f7201b",
+      "state": {
+        "theme": "wooshop",
+        "template": "wooshop",
+        "active_plugins": [
+          "woocommerce/woocommerce.php",
+          "wooshop-commerce/wooshop-commerce.php"
+        ],
+        "woocommerce": true,
+        "companion": true
+      },
+      "domain_id": "d510a00c-c7ab-4970-8743-f0362a2a627e",
+      "wishlist_id": "32f0867b-1d39-5e34-ae1d-9d114895106a",
+      "probe_product_id": 76,
+      "probe_page_id": 77,
+      "cleanup": null
+    },
+    {
+      "operation": "cleanup",
+      "assertions": 19,
+      "result": "PASS",
+      "run": "independence-2cbc1fb2-db71-4b49-847b-b13352f7201b",
+      "state": {
+        "theme": "wooshop",
+        "template": "wooshop",
+        "active_plugins": [
+          "woocommerce/woocommerce.php",
+          "wooshop-commerce/wooshop-commerce.php"
+        ],
+        "woocommerce": true,
+        "companion": true
+      },
+      "domain_id": "d510a00c-c7ab-4970-8743-f0362a2a627e",
+      "wishlist_id": "32f0867b-1d39-5e34-ae1d-9d114895106a",
+      "probe_product_id": 76,
+      "probe_page_id": 77,
+      "cleanup": "Dedicated native probes drafted; customer/domain/history retained; no deletion"
+    }
+  ],
+  "limits": [
+    "Bounded normal supported activation matrix, not forced dependency loss or critical obligation handoff proof.",
+    "No order/payment/provider/messaging/fulfillment work; browser guest cart and wishlist probes only.",
+    "Accessible native controls/landmarks tested; not a complete WCAG or assistive-technology audit.",
+    "Tagged customer/domain records and draft/hidden native probes are retained; no destructive cleanup.",
+    "Watched existing page/style content, native assignments/profile/currency, 13 commerce-option digests and typed settings revision are compared; native caches/cron timestamps are not frozen."
+  ],
+  "private_guest_data_scope": "Dedicated WP-CLI guest wishlist/customer-command and a separate real-browser guest wishlist remain private server records under native plugin expiry. Browser context closes without exporting cookies; cleanup removes the run option recovery cookie. No user accounts, passwords or order data are created by this matrix.",
+  "package_manifest_sha256": "3c54568ab5b98b240e03d5f32ad3a2962f0f26d6797c0dda4f9691b8caa78a67",
+  "installed_packages": {
+    "theme": {
+      "file_count": 54,
+      "archive_sha256": "ccc093affc09a3bf132be1672dd6f66e459e087761d18c5546ce881cc5735520",
+      "installed_files_equal_manifest": true
+    },
+    "plugin": {
+      "file_count": 72,
+      "archive_sha256": "78ff95e02bd64d21989309c8b61c80d00d961c68149fb8e2a9b1c70ba914fc67",
+      "installed_files_equal_manifest": true
+    }
+  },
+  "inspection": {
+    "operation": "inspect",
+    "assertions": 129,
+    "result": "INSPECTED",
+    "state": {
+      "theme": "wooshop",
+      "template": "wooshop",
+      "active_plugins": [
+        "woocommerce/woocommerce.php",
+        "wooshop-commerce/wooshop-commerce.php"
+      ],
+      "woocommerce": true,
+      "companion": true
+    },
+    "profile": "neutral",
+    "unrelated_theme": {
+      "slug": "twentytwentyfour",
+      "version": "1.6",
+      "requires_wp": "6.4",
+      "requires_php": "7.0",
+      "functions_sha256": "6cec0f112f34ff3a043fe1e16c2d235ce905a735d46039a50879e8fd469f2bce"
+    },
+    "versions": {
+      "wp": "7.1.3",
+      "wc": "11.2.1",
+      "php": "8.4.27"
+    }
+  },
+  "updated_at": "2026-10-28T10:58:59.757278+00:00",
+  "read_paths": [
+    {
+      "path": "tools/seed.php",
+      "sha256": "9f0bb4756297df28c008268dabdecf4bec0791f62eb11b00fec21b39f2cd8f53",
+      "scope": "lines1-55 plus prior theme task implementation familiarity; actual neutral allowlist"
+    },
+    {
+      "path": "profiles/neutral.json",
+      "sha256": "5e8f853c52f5b671e681accedb331b3536816dce5571f004f0ca5063713af6d6",
+      "scope": "full file"
+    },
+    {
+      "path": "tools/dev.py",
+      "sha256": "ce8e9aab5749d7461bd0ec6fafa9cdf4431dadd1bcce8fc2ba530112b7fd96cf",
+      "scope": "lines1-170; scoped local CLI and package site"
+    },
+    {
+      "path": "tools/dev-guard.php",
+      "sha256": "1e9ee4cfd114389b4df3f3b895da34abb322676885d496fd76d99ea90d4426c4",
+      "scope": "full file"
+    },
+    {
+      "path": "tests/core/package-smoke.php",
+      "sha256": "1c188910191a4232cbaae2443a6d42ec1836c04272c21914a9eb3a6c55863c77",
+      "scope": "full file"
+    },
+    {
+      "path": "packages/plugin/wooshop-commerce/src/Customer/CustomerService.php",
+      "sha256": "17fbfdbb075b7e95e3ab47c59a0817a69d32e2bd2ce6d683d75f28c99a1b0658",
+      "scope": "lines1-92 only; wishlist methods"
+    },
+    {
+      "path": "packages/plugin/wooshop-commerce/src/Customer/Session.php",
+      "sha256": "42860d0647c23b08845a9d34b654538eeb805cd32f84675d697df489955ec301",
+      "scope": "full file"
+    },
+    {
+      "path": "packages/plugin/wooshop-commerce/src/Customer/Records.php",
+      "sha256": "e909b3076ec2aec359a95ccb55ff31032e65c144a043231b520b53718ef87096",
+      "scope": "full file"
+    },
+    {
+      "path": "packages/plugin/wooshop-commerce/src/Catalog/CatalogModule.php",
+      "sha256": "b7025431cf5cabe26e8939b1c420e10987ce008e9e3a973ae8fffd43381d845b",
+      "scope": "full file"
+    },
+    {
+      "path": "packages/plugin/wooshop-commerce/src/Catalog/Products.php",
+      "sha256": "ca473d0e4a3278b96112e644826622adba1ad56d0a1136c382deb6332f2cec65",
+      "scope": "full file"
+    },
+    {
+      "path": "packages/plugin/wooshop-commerce/src/Catalog/Views.php",
+      "sha256": "3c8f390afa8ff67dd86064f97204d832b97ec3341ba139b94c27a8f022248571",
+      "scope": "lines1-150 only; native shortcode/forms"
+    },
+    {
+      "path": "packages/plugin/wooshop-commerce/src/Infrastructure/EntityStore.php",
+      "sha256": "e895e8456999ad49c4d9850fb6101c42d4bde922ef0de2a4d5f3a01107b9fbb5",
+      "scope": "full file"
+    },
+    {
+      "path": "packages/plugin/wooshop-commerce/wooshop-commerce.php",
+      "sha256": "eecb2b4a055f06ec98abf1ee3f67ec7255831d6f1974e3cb51d783c91ea6a711",
+      "scope": "full file"
+    },
+    {
+      "path": "packages/theme/wooshop/inc/presentation.php",
+      "sha256": "baaf0349c4268e37725a604052363f5a99ddc52758012a5f24579c4c2dfa93c9",
+      "scope": "lines1-140 plus prior theme implementation familiarity"
+    },
+    {
+      "path": ".local/sites/package-check/wp-content/themes/twentytwentyfour/functions.php",
+      "sha256": "6cec0f112f34ff3a043fe1e16c2d235ce905a735d46039a50879e8fd469f2bce",
+      "scope": "complete195lines inspected in bounded reads"
+    },
+    {
+      "path": ".local/sites/package-check/wp-content/themes/twentytwentyfour/style.css",
+      "sha256": "fd3c8a4e86382cbd69046dd4670112c7b17817bdff3671bf29d3e49a874c1fe2",
+      "scope": "header lines1-38"
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/includes/class-wc-payment-gateways.php",
+      "sha256": "5cafb8ae2ee340945438b9d27bebd6a635a87163efec3f08ff5164eaea4eea21",
+      "scope": "lines83-180; actual native gateway initialization and option handling"
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/includes/class-wc-install.php",
+      "sha256": "3b836e730053210371fa66621d002a6d4263aa3f574a22eb412c7e23c67c5a46",
+      "scope": "targeted literal search at line1319: add_option woocommerce_store_pages_only yes"
+    }
+  ],
+  "changed_files": [
+    {
+      "path": "tests/core/independence.php",
+      "sha256": "35a9a3a858c9be550dd6063ef75d3928e70cff00f4d05b0904dee0246ce73e0e",
+      "bytes": 16398
+    },
+    {
+      "path": "tools/independence.py",
+      "sha256": "31fe07b6d681990a36850b53731ff9561383fe149252359886dc880ef444bbfb",
+      "bytes": 15020
+    }
+  ],
+  "graph_verification": {
+    "project": "Users-shahinilderemi-Documents-tmp-iranbroker-wp",
+    "generation": "2026-10-28T10:32:29Z",
+    "tier": "Verify",
+    "findings": "CustomerService,Session,CatalogModule,EntityStore positively found by name; bounded first15/25mixed results only, no completeness claim.",
+    "coverage": "Exact service paths no recorded issues; installed default themes/vendor/runtime .local excluded and read directly. New assurance files authored/read directly."
+  },
+  "delivery_status": "BOUNDED_ASSURANCE_PASS; IMPLEMENTATION_INCOMPLETE; NO_HUMAN_APPROVAL",
+  "actual_invocation": [
+    "rtk",
+    "proxy",
+    "python3",
+    "tools/independence.py",
+    "--run",
+    "--package-manifest-sha256",
+    "3c54568ab5b98b240e03d5f32ad3a2962f0f26d6797c0dda4f9691b8caa78a67"
+  ],
+  "preparation_checks": [
+    {
+      "command": "rtk proxy php -l tests/core/independence.php",
+      "result": "PASS"
+    },
+    {
+      "command": "Python ast.parse plus rtk proxy node --check - over actual embedded BROWSER constant",
+      "result": "PASS"
+    },
+    {
+      "command": "Standalone rtk proxy php tests/core/independence.php captured by Python",
+      "result": "EXPECTED_REFUSAL",
+      "observed": "Guarded loopback WordPress context missing; nonzero exit, no DB/config work."
+    },
+    {
+      "command": "rtk proxy python3 tools/independence.py (default read-only mode before root release)",
+      "result": "READ_ONLY_INSPECTION_PASS",
+      "observed": "No activation/seed/probe changes; old manifest inspection only."
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp package-check eval-file /workspace/tests/theme/wordpress.php",
+      "result": "PASS",
+      "assertions": 247,
+      "versions": {
+        "wp": "7.1.3",
+        "wc": "11.2.1",
+        "php": "8.4.27"
+      },
+      "native_hook_version": false
+    }
+  ],
+  "neutral_profile": "Already initialized by parent before this matrix; verified neutral profile/options, no seeding or rewrite changes performed by independence runner.",
+  "encountered_failures": [
+    {
+      "attempt_run": "independence-87650593-9144-4278-803c-3c1c8588f7a3",
+      "result": "FAIL_THEN_RECOVERED",
+      "passed_before_failure": "Unrelated-theme customer/domain persistence + native wishlist form/reload; companion-off native server checks.",
+      "failure": "browser:theme failed; arbitrary subprocess output/private state omitted.",
+      "original_report_safe_summary": {
+        "matrix_phases_completed": 1,
+        "restoration_checks": [
+          {
+            "action": "restore WooCommerce first",
+            "result": "PASS"
+          },
+          {
+            "action": "restore companion second",
+            "result": "PASS"
+          },
+          {
+            "action": "restore original theme",
+            "result": "PASS"
+          },
+          {
+            "operation": "restored",
+            "assertions": 10,
+            "result": "PASS",
+            "run": "independence-87650593-9144-4278-803c-3c1c8588f7a3",
+            "state": {
+              "theme": "wooshop",
+              "template": "wooshop",
+              "active_plugins": [
+                "woocommerce/woocommerce.php",
+                "wooshop-commerce/wooshop-commerce.php"
+              ],
+              "woocommerce": true,
+              "companion": true
+            },
+            "domain_id": "1c40fc8c-c761-4e19-8614-08ce86aed657",
+            "wishlist_id": "bbf4eef2-5858-5296-a549-d2cfd00c92e1",
+            "probe_product_id": 73,
+            "probe_page_id": 74,
+            "cleanup": null
+          },
+          {
+            "operation": "cleanup",
+            "result": "FAIL",
+            "error": "probe:cleanup failed; arbitrary subprocess output/private state omitted."
+          }
+        ]
+      },
+      "findings": [
+        "Third site permalink_structure is empty; actual native Store API cart URL is http://localhost:18882/index.php?rest_route=/wc/store/v1/cart. Test had assumed rewritten /wp-json path.",
+        "Watched original woocommerce_store_pages_only was absent; native initialization recreated yes. No merchant setting change was approved or retained."
+      ],
+      "resolution": "Use actual native rest_url() in browser. Privately snapshot native option values/existence, restore in finally, compare original digests. For first digest-only run restore only proven original absence; never infer/overwrite an unknown prior value.",
+      "recovery_commands": [
+        {
+          "command": "rtk proxy python3 tools/dev.py wp package-check eval-file /workspace/tests/core/independence.php restore-options independence-87650593-9144-4278-803c-3c1c8588f7a3",
+          "result": "PASS",
+          "assertions": 4
+        },
+        {
+          "command": "rtk proxy python3 tools/dev.py wp package-check eval-file /workspace/tests/core/independence.php cleanup independence-87650593-9144-4278-803c-3c1c8588f7a3",
+          "result": "PASS",
+          "assertions": 19
+        }
+      ],
+      "retained_probe_product_id": 73,
+      "retained_probe_page_id": 74,
+      "final_probe_status": "draft; product catalog visibility hidden from creation; no deletion",
+      "private_cookie_recovery_material_removed": true,
+      "application_defect_or_code_fork": "None proven or changed"
+    }
+  ],
+  "retained_probes": [
+    {
+      "run": "independence-87650593-9144-4278-803c-3c1c8588f7a3",
+      "native_product_id": 73,
+      "native_page_id": 74,
+      "domain_id": "1c40fc8c-c761-4e19-8614-08ce86aed657",
+      "wishlist_id": "bbf4eef2-5858-5296-a549-d2cfd00c92e1",
+      "status": "native probes drafted; private guest wishlist/customer-command and domain retained; recoverable cookie removed"
+    },
+    {
+      "run": "independence-2cbc1fb2-db71-4b49-847b-b13352f7201b",
+      "native_product_id": 76,
+      "native_page_id": 77,
+      "domain_id": "d510a00c-c7ab-4970-8743-f0362a2a627e",
+      "wishlist_id": "32f0867b-1d39-5e34-ae1d-9d114895106a",
+      "status": "native probes drafted; private guest wishlist/customer-command and domain retained; recoverable cookie and option snapshot removed"
+    }
+  ],
+  "final_assertion_summary": {
+    "matrix_server_assertions": 22,
+    "browser_checks": 29,
+    "restoration_server_assertions": 47,
+    "normal_activation_restoration_commands": 3,
+    "original_ordered_active_plugins_and_theme_restored": true,
+    "native_option_value_existence_watch": 13,
+    "operational_mode_restored": true,
+    "existing_profile_page_style_content_and_typed_settings_revision_preserved": true,
+    "private_recovery_cookie_and_option_snapshot_removed": true
+  },
+  "source_package_changes": "None during independence work. Separate prior bounded theme header fix was already frozen, rebuilt, installed and parity-verified by parent before release of this test window."
+}

@@ -1,0 +1,276 @@
+# Persian translations authored for this implementation; fluent human review pending.
+msgid ""
+msgstr "Project-Id-Version: Wooshop 0.1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nLanguage: fa_IR\nPlural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "A closer look. A better choice."
+msgstr "نگاه دقیق‌تر، انتخاب بهتر"
+
+msgid "All categories"
+msgstr "همه دسته‌بندی‌ها"
+
+msgid "Allow announcement dismissal"
+msgstr "امکان بستن اطلاعیه"
+
+msgid "Announcement text (empty hides the notice)"
+msgstr ""
+
+msgid "Bestselling"
+msgstr "پرفروش"
+
+msgid "Bestselling products"
+msgstr "محصولات پرفروش"
+
+msgid "Browse all"
+msgstr "مشاهده همه"
+
+msgid "Browse products"
+msgstr "مشاهده محصولات"
+
+msgid "Card spacing"
+msgstr "فاصله کارت‌ها"
+
+msgid "Cart"
+msgstr "سبد خرید"
+
+msgid "Category media"
+msgstr "تصویر دسته‌بندی"
+
+msgid "Category shortcuts"
+msgstr "میانبرهای دسته‌بندی"
+
+msgid "Choose header logo"
+msgstr "انتخاب نشان سربرگ"
+
+msgid "Circle"
+msgstr "دایره"
+
+msgid "Close categories"
+msgstr "بستن دسته‌بندی‌ها"
+
+msgid "Comfortable"
+msgstr "باز"
+
+msgid "Commerce module surface"
+msgstr ""
+
+msgid "Compact commerce header"
+msgstr "سربرگ فشرده فروشگاه"
+
+msgid "Comparison"
+msgstr ""
+
+msgid "Consider every connection"
+msgstr "هر اتصال را بررسی کنید"
+
+msgid "Current offers"
+msgstr "پیشنهادهای فعلی"
+
+msgid "Dense"
+msgstr "فشرده"
+
+msgid "Discover the devices"
+msgstr "مشاهده دستگاه‌ها"
+
+msgid "Dismiss announcement"
+msgstr "بستن اطلاعیه"
+
+msgid "Explore devices and check their exact model, region and compatibility details before choosing."
+msgstr "دستگاه‌ها را ببینید و پیش از انتخاب، مدل دقیق، منطقه و جزئیات سازگاری را بررسی کنید."
+
+msgid "Explore the catalog"
+msgstr "مشاهده محصولات"
+
+msgid "Explore the catalog, compare the details and choose at your own pace."
+msgstr "محصولات و جزئیات را بررسی کنید و با آرامش انتخاب کنید."
+
+msgid "Explore the categories"
+msgstr "دسته‌بندی‌ها را ببینید"
+
+msgid "Explore the equipment"
+msgstr "مشاهده تجهیزات"
+
+msgid "External supplier"
+msgstr "فروشنده بیرونی"
+
+msgid "Featured"
+msgstr "منتخب"
+
+msgid "Featured products"
+msgstr "محصولات منتخب"
+
+msgid "Find what fits your everyday."
+msgstr "انتخابی مناسب برای هر روز."
+
+msgid "Footer navigation"
+msgstr "پیمایش پایین صفحه"
+
+msgid "Grid"
+msgstr "شبکه"
+
+msgid "Heading"
+msgstr "عنوان"
+
+msgid "Heading (empty uses the collection label)"
+msgstr ""
+
+msgid "Ideas and guides"
+msgstr "ایده‌ها و راهنماها"
+
+msgid "Keep header visible on tall screens"
+msgstr "نمایش ثابت سربرگ در صفحه‌های بلند"
+
+msgid "Layout"
+msgstr "چیدمان"
+
+msgid "Look closer at fit, weight and the details that matter to your trip."
+msgstr "اندازه، وزن و جزئیات مهم برای سفرتان را دقیق‌تر بررسی کنید."
+
+msgid "Make room for a smarter everyday."
+msgstr "جایی برای زندگی هوشمندتر باز کنید."
+
+msgid "Manual scrolling rail"
+msgstr "ردیف با پیمایش دستی"
+
+msgid "Maximum categories"
+msgstr "حداکثر دسته‌بندی‌ها"
+
+msgid "Maximum logo width"
+msgstr "حداکثر عرض نشان"
+
+msgid "Maximum products"
+msgstr "حداکثر محصولات"
+
+msgid "Minimal commerce footer"
+msgstr "پایین صفحه فشرده فروشگاه"
+
+msgid "My account"
+msgstr "حساب کاربری من"
+
+msgid "Native product collection"
+msgstr "مجموعه محصولات ووکامرس"
+
+msgid "New arrivals"
+msgstr "تازه‌ها"
+
+msgid "No results to show"
+msgstr "نتیجه‌ای یافت نشد"
+
+msgid "Notification unsubscribe"
+msgstr "لغو دریافت اعلان‌ها"
+
+msgid "On sale"
+msgstr "دارای تخفیف"
+
+msgid "Plugin-owned surface"
+msgstr ""
+
+msgid "Presentation"
+msgstr "ظاهر"
+
+msgid "Price unavailable"
+msgstr "قیمت در دسترس نیست"
+
+msgid "Primary navigation"
+msgstr "پیمایش اصلی"
+
+msgid "Privacy policy"
+msgstr "سیاست حریم خصوصی"
+
+msgid "Product categories"
+msgstr "دسته‌بندی محصولات"
+
+msgid "Product, category or model"
+msgstr "محصول، دسته‌بندی یا مدل"
+
+msgid "Purchase takes place on the external supplier website."
+msgstr "خرید در وب‌سایت فروشنده بیرونی انجام می‌شود."
+
+msgid "Scroll to explore. Every product also has a full details page."
+msgstr "برای مشاهده بیشتر پیمایش کنید. هر محصول صفحه جزئیات کامل نیز دارد."
+
+msgid "Search"
+msgstr "جستجو"
+
+msgid "Search the catalog"
+msgstr "جستجو در محصولات"
+
+msgid "Search the site"
+msgstr "جستجو در سایت"
+
+msgid "Seller dashboard"
+msgstr ""
+
+msgid "Shop by category"
+msgstr "خرید بر اساس دسته‌بندی"
+
+msgid "Sign in"
+msgstr "ورود"
+
+msgid "Square"
+msgstr "مربع"
+
+msgid "Store footer"
+msgstr "پایین صفحه فروشگاه"
+
+msgid "Store header"
+msgstr "سربرگ فروشگاه"
+
+msgid "Store panel"
+msgstr "پنل فروشگاه"
+
+msgid "Subcategories of"
+msgstr "زیرمجموعه‌های"
+
+msgid "Subcategories of %s"
+msgstr "زیرمجموعه‌های %s"
+
+msgid "Take the next trail"
+msgstr "مسیر بعدی را انتخاب کنید"
+
+msgid "Text only"
+msgstr "فقط متن"
+
+msgid "The address may have changed. Search the site or explore the catalog."
+msgstr "ممکن است نشانی تغییر کرده باشد. در سایت جستجو کنید یا محصولات را ببینید."
+
+msgid "The plugin renders this surface for the authorized visitor. No private records are previewed here."
+msgstr ""
+
+msgid "This feature is unavailable"
+msgstr "این قابلیت در دسترس نیست"
+
+msgid "This page could not be found"
+msgstr "این صفحه پیدا نشد"
+
+msgid "Try another search or return to the catalog to explore the categories."
+msgstr "عبارت دیگری را جستجو کنید یا برای دیدن دسته‌بندی‌ها به محصولات بازگردید."
+
+msgid "Use site identity logo"
+msgstr "استفاده از نشان هویت سایت"
+
+msgid "Values use native saved block attributes. Responsive layout follows theme rules. Business settings belong to the commerce plugin."
+msgstr ""
+
+msgid "View all products"
+msgstr "مشاهده همه محصولات"
+
+msgid "Wishlist"
+msgstr ""
+
+msgid "WooCommerce collection"
+msgstr ""
+
+msgid "Wooshop storefront"
+msgstr "ویترین ووشاپ"
+
+msgid "You appear to be offline. Reconnect and check the cart or order status before retrying."
+msgstr "به نظر می‌رسد به اینترنت متصل نیستید. دوباره متصل شوید و پیش از تلاش مجدد، وضعیت سبد خرید یا سفارش را بررسی کنید."
+
+msgid "You can continue browsing the catalog or sign in to your account."
+msgstr "می‌توانید محصولات را ببینید یا وارد حساب کاربری خود شوید."
+
+msgid "Your next route starts here."
+msgstr "مسیر بعدی شما از اینجا آغاز می‌شود."
+
+msgid "© %1$s %2$s"
+msgstr "© %1$s %2$s"

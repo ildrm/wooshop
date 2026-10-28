@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "profile_key": "smart-home",
+  "classification": "SYNTHETIC LOCAL FIXTURE ONLY",
+  "theme": "wooshop",
+  "plugin": "wooshop-commerce",
+  "fixture_currency": "USD",
+  "fixture_country": "US:CA",
+  "legal_approval": false,
+  "product_claim_review": "NOT SUPPLIED; no real certification or compatibility claims",
+  "image": "assets/smart-home.png",
+  "image_alt": "Original abstract illustration for a synthetic local product; not a photograph",
+  "title": "Wooshop Smart Home · synthetic local store",
+  "preset": "smart-home",
+  "pattern": "wooshop/smart-home",
+  "categories": [
+    "Lighting",
+    "Sensors",
+    "Controllers",
+    "Plugs and power",
+    "Switches",
+    "Accessories"
+  ],
+  "primary_product": "Synthetic SH-220-A sensor · حسگر آزمایشی درب",
+  "variable_product": "Synthetic controller SH-M2 · کنترلر آزمایشی با انتخاب اندازه",
+  "attributes": {
+    "Exact model": "SH-220-A / hardware 2 — fictional",
+    "Test region": "R1 — fictional test context",
+    "Protocols": "Unknown — no interoperability claim",
+    "Hub requirement": "Unknown — no compatibility evidence",
+    "Electrical rating": "Not supplied",
+    "Firmware": "3.2 — synthetic identifier, no support claim"
+  },
+  "schema_fields": [
+    {
+      "key": "smart.model",
+      "type": "string",
+      "max_length": 120
+    },
+    {
+      "key": "smart.protocols",
+      "type": "list",
+      "required": false
+    },
+    {
+      "key": "smart.region",
+      "type": "enum",
+      "required": false
+    },
+    {
+      "key": "smart.electrical",
+      "type": "object",
+      "required": false
+    },
+    {
+      "key": "smart.hub",
+      "type": "boolean-or-unknown",
+      "required": false
+    },
+    {
+      "key": "smart.compatibility",
+      "type": "evidence-rule",
+      "required": false
+    }
+  ],
+  "guide_title": "Synthetic guide: check device evidence",
+  "guide_copy": "Local training content only. Protocol, ecosystem, model, region and firmware are separate facts. These fictional records have no reviewed evidence and must not be presented as verified compatibility or electrical guidance."
+}

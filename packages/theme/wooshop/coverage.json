@@ -1,0 +1,1932 @@
+{
+  "schema_version": 1,
+  "status": "IMPLEMENTATION_INCOMPLETE",
+  "release": "0.1.0",
+  "native_baseline_observed": {
+    "wordpress": "7.1.3",
+    "woocommerce": "11.2.1",
+    "php": "8.4.27"
+  },
+  "human_visual_approval": "NOT_PROVIDED",
+  "manual_screen_reader_verification": "NOT_RUN",
+  "requirements": {
+    "FR-U001": {
+      "implementation": "IN_PROGRESS",
+      "verification": "PARTIAL"
+    },
+    "FR-U002": {
+      "implementation": "IN_PROGRESS",
+      "verification": "PARTIAL"
+    },
+    "FR-U003": {
+      "implementation": "IN_PROGRESS",
+      "verification": "PARTIAL"
+    },
+    "FR-U004": {
+      "implementation": "IN_PROGRESS",
+      "verification": "PARTIAL"
+    },
+    "FR-U005": {
+      "implementation": "IN_PROGRESS",
+      "verification": "PARTIAL"
+    },
+    "FR-U006": {
+      "implementation": "IN_PROGRESS",
+      "verification": "PARTIAL"
+    },
+    "FR-U007": {
+      "implementation": "IN_PROGRESS",
+      "verification": "PARTIAL"
+    },
+    "FR-U008": {
+      "implementation": "IN_PROGRESS",
+      "verification": "PARTIAL"
+    },
+    "FR-U009": {
+      "implementation": "IN_PROGRESS",
+      "verification": "PARTIAL"
+    },
+    "FR-U010": {
+      "implementation": "IN_PROGRESS",
+      "verification": "PARTIAL"
+    },
+    "FR-U011": {
+      "implementation": "IN_PROGRESS",
+      "verification": "PARTIAL"
+    },
+    "FR-U012": {
+      "implementation": "IN_PROGRESS",
+      "verification": "PARTIAL"
+    },
+    "FR-U013": {
+      "implementation": "IN_PROGRESS",
+      "verification": "PARTIAL"
+    },
+    "FR-U014": {
+      "implementation": "IN_PROGRESS",
+      "verification": "PARTIAL"
+    },
+    "FR-U015": {
+      "implementation": "IN_PROGRESS",
+      "verification": "PARTIAL"
+    },
+    "FR-U016": {
+      "implementation": "NOT_STARTED",
+      "verification": "NOT_RUN"
+    },
+    "FR-U017": {
+      "implementation": "NOT_STARTED",
+      "verification": "NOT_RUN"
+    },
+    "FR-U018": {
+      "implementation": "NOT_STARTED",
+      "verification": "NOT_RUN"
+    },
+    "FR-U019": {
+      "implementation": "IN_PROGRESS",
+      "verification": "PARTIAL"
+    },
+    "FR-U020": {
+      "implementation": "IN_PROGRESS",
+      "verification": "PARTIAL"
+    },
+    "FR-U021": {
+      "implementation": "IN_PROGRESS",
+      "verification": "PARTIAL"
+    },
+    "FR-U022": {
+      "implementation": "IN_PROGRESS",
+      "verification": "PARTIAL"
+    },
+    "FR-U023": {
+      "implementation": "IN_PROGRESS",
+      "verification": "PARTIAL"
+    },
+    "FR-U024": {
+      "implementation": "IN_PROGRESS",
+      "verification": "PARTIAL"
+    },
+    "FR-U025": {
+      "implementation": "NOT_STARTED",
+      "verification": "NOT_RUN"
+    }
+  },
+  "components": {
+    "CMP-U001": {
+      "implementation": "PARTIAL",
+      "coverage": "Static published announcement, dismissal by content digest/session; scheduling and expiry missing",
+      "all_five_states_verified": false
+    },
+    "CMP-U002": {
+      "implementation": "PARTIAL",
+      "coverage": "WP identity/media, bounded logo, native cart/account/search and tall-screen sticky header; full state verification incomplete",
+      "all_five_states_verified": false
+    },
+    "CMP-U003": {
+      "implementation": "PARTIAL",
+      "coverage": "Native Navigation blocks + bounded taxonomy details hierarchy; mobile inert/focus behavior implemented, drill-down back UI missing",
+      "all_five_states_verified": false
+    },
+    "CMP-U004": {
+      "implementation": "PARTIAL",
+      "coverage": "Server product search form, no live combobox/suggestions",
+      "all_five_states_verified": false
+    },
+    "CMP-U005": {
+      "implementation": "PARTIAL",
+      "coverage": "Native WC mini-cart and permanent full-cart fallback; seller grouping depends on plugin",
+      "all_five_states_verified": false
+    },
+    "CMP-U006": {
+      "implementation": "PARTIAL",
+      "coverage": "Original static editorial hero patterns; real campaign scheduler/countdown absent",
+      "all_five_states_verified": false
+    },
+    "CMP-U007": {
+      "implementation": "PARTIAL",
+      "coverage": "Actual native product category links/images with bounded query; editable media shape/count, fixed responsive columns",
+      "all_five_states_verified": false
+    },
+    "CMP-U008": {
+      "implementation": "PARTIAL",
+      "coverage": "Live native WC new/featured/bestselling/sale collections, grid/manual rail; curated/recent/recommended missing",
+      "all_five_states_verified": false
+    },
+    "CMP-U009": {
+      "implementation": "PARTIAL",
+      "coverage": "Native WC cards and type actions; explicit external disclosure and unknown price; quick view/swatches/theme wishlist controls missing",
+      "all_five_states_verified": false
+    },
+    "CMP-U010": {
+      "implementation": "PARTIAL",
+      "coverage": "Native price/range/zero and availability; unknown label added; offer authority stays plugin",
+      "all_five_states_verified": false
+    },
+    "CMP-U011": {
+      "implementation": "PARTIAL",
+      "coverage": "Native WC variation selects, no custom radio/swatch component",
+      "all_five_states_verified": false
+    },
+    "CMP-U012": {
+      "implementation": "PARTIAL",
+      "coverage": "Native WC gallery/zoom support and attachments; video/360/provider presentation missing",
+      "all_five_states_verified": false
+    },
+    "CMP-U013": {
+      "implementation": "PARTIAL",
+      "coverage": "Native WC purchase form; no sticky purchase; adapter-dependent quote UI remains plugin-owned",
+      "all_five_states_verified": false
+    },
+    "CMP-U014": {
+      "implementation": "PARTIAL",
+      "coverage": "Registered plugin commerce_offers only; currently blocked marketplace view, no eligible-offer selector implemented by theme",
+      "all_five_states_verified": false
+    },
+    "CMP-U015": {
+      "implementation": "PARTIAL",
+      "coverage": "Native WC attributes and plugin-owned specification tab; no theme schema or provenance writer",
+      "all_five_states_verified": false
+    },
+    "CMP-U016": {
+      "implementation": "NOT_IMPLEMENTED",
+      "coverage": "Plugin-owned compatibility, no theme module component implemented",
+      "all_five_states_verified": false
+    },
+    "CMP-U017": {
+      "implementation": "NOT_IMPLEMENTED",
+      "coverage": "Named bundle/service adapters unavailable; no theme configurator",
+      "all_five_states_verified": false
+    },
+    "CMP-U018": {
+      "implementation": "PARTIAL",
+      "coverage": "Native WC reviews; no fabricated ratings; enhanced review presentation incomplete",
+      "all_five_states_verified": false
+    },
+    "CMP-U019": {
+      "implementation": "PARTIAL",
+      "coverage": "Plugin-owned native WC Q&A tab; no duplicate theme render",
+      "all_five_states_verified": false
+    },
+    "CMP-U020": {
+      "implementation": "PARTIAL",
+      "coverage": "Native archive controls only; custom facet drawer/chips missing",
+      "all_five_states_verified": false
+    },
+    "CMP-U021": {
+      "implementation": "PARTIAL",
+      "coverage": "Native WC sort/result-count/pagination; custom list mode/enhanced loading missing",
+      "all_five_states_verified": false
+    },
+    "CMP-U022": {
+      "implementation": "PARTIAL",
+      "coverage": "Plugin-owned wishlist/compare page surfaces; card-level actions remain plugin-owned/incomplete",
+      "all_five_states_verified": false
+    },
+    "CMP-U023": {
+      "implementation": "PARTIAL",
+      "coverage": "Native WC account navigation and authorized lists styled",
+      "all_five_states_verified": false
+    },
+    "CMP-U024": {
+      "implementation": "PARTIAL",
+      "coverage": "Native WC Cart/Checkout form/error/state ownership retained; seller allocation integration incomplete",
+      "all_five_states_verified": false
+    },
+    "CMP-U025": {
+      "implementation": "PARTIAL",
+      "coverage": "Native WC order presentation; custom shipment/return timeline incomplete",
+      "all_five_states_verified": false
+    },
+    "CMP-U026": {
+      "implementation": "NOT_IMPLEMENTED",
+      "coverage": "Seller public profile/reputation component not implemented in theme",
+      "all_five_states_verified": false
+    },
+    "CMP-U027": {
+      "implementation": "PARTIAL",
+      "coverage": "Allowlisted plugin seller-dashboard surface and shared table/form styling; full role-specific UI incomplete",
+      "all_five_states_verified": false
+    },
+    "CMP-U028": {
+      "implementation": "NOT_IMPLEMENTED",
+      "coverage": "Preference form remains plugin-owned; theme component missing",
+      "all_five_states_verified": false
+    },
+    "CMP-U029": {
+      "implementation": "PARTIAL",
+      "coverage": "Plugin comparison semantic surface styled; theme narrow criterion control missing",
+      "all_five_states_verified": false
+    },
+    "CMP-U030": {
+      "implementation": "PARTIAL",
+      "coverage": "Native WordPress published guides/query/byline/media; no fabricated author credentials",
+      "all_five_states_verified": false
+    },
+    "CMP-U031": {
+      "implementation": "PARTIAL",
+      "coverage": "Actual404/search recovery and inline offline notice; other system statuses owned by request/operations; no fake200/paid state",
+      "all_five_states_verified": false
+    },
+    "CMP-U032": {
+      "implementation": "NOT_IMPLEMENTED",
+      "coverage": "Price-history/loyalty component missing; business state plugin-owned",
+      "all_five_states_verified": false
+    },
+    "CMP-U033": {
+      "implementation": "PARTIAL",
+      "coverage": "Native editable footer navigation/identity with minimal variation; four-column/trust configuration incomplete",
+      "all_five_states_verified": false
+    },
+    "CMP-U034": {
+      "implementation": "NOT_IMPLEMENTED",
+      "coverage": "Quick view not implemented; default absent",
+      "all_five_states_verified": false
+    },
+    "CMP-U035": {
+      "implementation": "NOT_IMPLEMENTED",
+      "coverage": "Newsletter panel not implemented; no implicit subscription or fake submit",
+      "all_five_states_verified": false
+    },
+    "CMP-U036": {
+      "implementation": "NOT_IMPLEMENTED",
+      "coverage": "Native attributes/manual content only; dedicated fit/warranty disclosure component missing",
+      "all_five_states_verified": false
+    }
+  },
+  "screens": {
+    "SCR-U001": {
+      "implementation": "PARTIAL",
+      "coverage": "Original patterns + actual WC collections",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U002": {
+      "implementation": "PARTIAL",
+      "coverage": "Campaign page template/static content; eligibility scheduler missing",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U003": {
+      "implementation": "PARTIAL",
+      "coverage": "Native WC category archive",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U004": {
+      "implementation": "PARTIAL",
+      "coverage": "Native WC product_brand archive when registered",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U005": {
+      "implementation": "PARTIAL",
+      "coverage": "Native product-search-results archive + WordPress general search fallback",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U006": {
+      "implementation": "PARTIAL",
+      "coverage": "Native WC legacy-template simple PDP",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U007": {
+      "implementation": "PARTIAL",
+      "coverage": "Native WC variable PDP/forms",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U008": {
+      "implementation": "PARTIAL",
+      "coverage": "Native WC grouped PDP/child actions",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U009": {
+      "implementation": "PARTIAL",
+      "coverage": "Native WC external PDP with supplier disclosure",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U010": {
+      "implementation": "PARTIAL",
+      "coverage": "Native WC virtual/downloadable PDP and account authorization",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U011": {
+      "implementation": "NOT_IMPLEMENTED_OR_PROVIDER_GATED",
+      "coverage": "Complex bundle adapter unavailable; no theme configurator",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U012": {
+      "implementation": "NOT_IMPLEMENTED_OR_PROVIDER_GATED",
+      "coverage": "Subscription adapter unavailable",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U013": {
+      "implementation": "NOT_IMPLEMENTED_OR_PROVIDER_GATED",
+      "coverage": "Booking adapter unavailable; native unscheduled virtual fixture only",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U014": {
+      "implementation": "PARTIAL",
+      "coverage": "Native full Cart block tree, reduced header",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U015": {
+      "implementation": "PARTIAL",
+      "coverage": "Native full Checkout block tree, reduced header",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U016": {
+      "implementation": "PARTIAL",
+      "coverage": "Native WC order confirmation/recovery; no theme payment assertion",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U017": {
+      "implementation": "PARTIAL",
+      "coverage": "Native WC account dashboard",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U018": {
+      "implementation": "PARTIAL",
+      "coverage": "Native WC login/recovery",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U019": {
+      "implementation": "PARTIAL",
+      "coverage": "Native WC account addresses",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U020": {
+      "implementation": "PARTIAL",
+      "coverage": "Native WC protected account downloads",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U021": {
+      "implementation": "PARTIAL",
+      "coverage": "Native WC authorized orders; allocation timeline missing",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U022": {
+      "implementation": "NOT_IMPLEMENTED_OR_PROVIDER_GATED",
+      "coverage": "Custom returns workflow presentation incomplete",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U023": {
+      "implementation": "NOT_IMPLEMENTED_OR_PROVIDER_GATED",
+      "coverage": "Support case adapter/form not implemented",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U024": {
+      "implementation": "PARTIAL",
+      "coverage": "Allowlisted plugin wishlist surface",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U025": {
+      "implementation": "PARTIAL",
+      "coverage": "Allowlisted plugin comparison surface",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U026": {
+      "implementation": "NOT_IMPLEMENTED_OR_PROVIDER_GATED",
+      "coverage": "Subscription/booking account adapter unavailable",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U027": {
+      "implementation": "NOT_IMPLEMENTED_OR_PROVIDER_GATED",
+      "coverage": "Plugin notification preference form not implemented in theme",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U028": {
+      "implementation": "NOT_IMPLEMENTED_OR_PROVIDER_GATED",
+      "coverage": "Seller directory presentation not implemented",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U029": {
+      "implementation": "NOT_IMPLEMENTED_OR_PROVIDER_GATED",
+      "coverage": "Seller storefront presentation not implemented",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U030": {
+      "implementation": "NOT_IMPLEMENTED_OR_PROVIDER_GATED",
+      "coverage": "Seller onboarding presentation remains plugin-dependent/incomplete",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U031": {
+      "implementation": "PARTIAL",
+      "coverage": "Plugin seller-dashboard surface with shared styling",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U032": {
+      "implementation": "NOT_IMPLEMENTED_OR_PROVIDER_GATED",
+      "coverage": "Seller catalog/offer editor incomplete",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U033": {
+      "implementation": "NOT_IMPLEMENTED_OR_PROVIDER_GATED",
+      "coverage": "Seller allocation/returns editor incomplete",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U034": {
+      "implementation": "NOT_IMPLEMENTED_OR_PROVIDER_GATED",
+      "coverage": "Seller finance presentation incomplete",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U035": {
+      "implementation": "PARTIAL",
+      "coverage": "Native WordPress home/archive query with pagination",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U036": {
+      "implementation": "PARTIAL",
+      "coverage": "Native single editorial template/byline/content/media",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U037": {
+      "implementation": "PARTIAL",
+      "coverage": "Native readable/wide/page content templates; reviewed legal/contact-form content not supplied",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U038": {
+      "implementation": "PARTIAL",
+      "coverage": "True native404 template with search/catalog recovery",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U039": {
+      "implementation": "NOT_IMPLEMENTED_OR_PROVIDER_GATED",
+      "coverage": "Operations maintenance503 routing/presentation not implemented in theme",
+      "all_state_fixtures_verified": false
+    },
+    "SCR-U040": {
+      "implementation": "PARTIAL",
+      "coverage": "Inline offline notice plus unavailable-module recovery;403/timeout routing remains system-owned",
+      "all_state_fixtures_verified": false
+    }
+  },
+  "settings": [
+    {
+      "key": "color.canvas",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "color.surface",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "color.text",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "color.secondary",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "color.action",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "color.success",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "color.warning",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "color.danger",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "color.info",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "color.border",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "color.focus",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL",
+      "note": "Palette includes token, but protected CSS focus uses fixed#005FCC; no control may remove focus"
+    },
+    {
+      "key": "type.font_family",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "type.size_scale",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "type.weights",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "type.line_height",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "space.scale",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "layout.content_width",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "layout.wide_width",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "layout.text_width",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL",
+      "note": "720px readable template CSS; no standalone editor control"
+    },
+    {
+      "key": "layout.gutter",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "component.padding",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "component.margin",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "component.gap",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "component.border",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "component.radius",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "component.shadow",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "component.background",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "component.gradient",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "component.alignment",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "forms.radius",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "button.style",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "button.padding",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL_NATIVE",
+      "path": "theme.json",
+      "note": "Native semantic presets/global styles or applicable block supports. Exact inventory range validation, per-control UI and inheritance acceptance are not fully verified; no independent breakpoint/state control is claimed."
+    },
+    {
+      "key": "page.layout",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL",
+      "note": "Native standard/wide/readable/campaign/workspace templates; commerce page templates preserve content; per-screen lock policy incomplete"
+    },
+    {
+      "key": "footer.composition",
+      "specification_support_class": "native",
+      "owner": "theme",
+      "implementation": "PARTIAL",
+      "note": "Native navigation inner blocks plus default two-column/minimal presentation; explicit four-column composition missing"
+    },
+    {
+      "key": "component.visibility",
+      "specification_support_class": "constrained",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "component.density",
+      "specification_support_class": "constrained",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "component.min_height",
+      "specification_support_class": "constrained",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "motion.duration",
+      "specification_support_class": "constrained",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "motion.easing",
+      "specification_support_class": "constrained",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "icon.family",
+      "specification_support_class": "constrained",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "logo.variant",
+      "specification_support_class": "constrained",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "logo.fallback",
+      "specification_support_class": "constrained",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "state.focus_style",
+      "specification_support_class": "constrained",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "header.footer_composition_permission",
+      "specification_support_class": "constrained",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "announcement.enabled",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "PARTIAL",
+      "note": "Empty announcement hides it; separate enabled field and start/end scheduling absent"
+    },
+    {
+      "key": "announcement.dismissible",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "IMPLEMENTED_PRESENTATION_ATTRIBUTE",
+      "path": "assets/editor.js + inc/presentation.php",
+      "mapping": "store-header.dismissible",
+      "note": "Boolean; native saved attribute; versioned session dismissal; schedule/notice revisions beyond text digest missing"
+    },
+    {
+      "key": "header.variant",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "IMPLEMENTED_PRESENTATION_ATTRIBUTE",
+      "path": "assets/editor.js + inc/presentation.php",
+      "mapping": "store-header.compact",
+      "note": "Boolean compact/two-row presentation; native saved attribute"
+    },
+    {
+      "key": "header.sticky",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "IMPLEMENTED_PRESENTATION_ATTRIBUTE",
+      "path": "assets/editor.js + inc/presentation.php",
+      "mapping": "store-header.sticky",
+      "note": "Boolean off/compact; constrained to wide tall viewport"
+    },
+    {
+      "key": "logo.asset",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "IMPLEMENTED_PRESENTATION_ATTRIBUTE",
+      "path": "assets/editor.js + inc/presentation.php",
+      "mapping": "store-header.logoId",
+      "note": "Native media attachment selector; validated image; site identity fallback; human license review pending"
+    },
+    {
+      "key": "logo.width",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "IMPLEMENTED_PRESENTATION_ATTRIBUTE",
+      "path": "assets/editor.js + inc/presentation.php",
+      "mapping": "store-header.logoWidth",
+      "note": "Integer80..200px clamped server-side"
+    },
+    {
+      "key": "navigation.columns",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "navigation.promoted_limit",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "search.suggestions_limit",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "search.debounce_ms",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "cart.drawer",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "cart.group_sellers",
+      "specification_support_class": "constrained",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "hero.ratio",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "hero.overlay",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "hero.autoplay",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "category.media_shape",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "IMPLEMENTED_PRESENTATION_ATTRIBUTE",
+      "path": "assets/editor.js + inc/presentation.php",
+      "mapping": "category-shortcuts.shape",
+      "note": "Square/circle/none validated allowlist"
+    },
+    {
+      "key": "category.columns",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "collection.source",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "PARTIAL",
+      "note": "Native new/featured/bestselling/sale supported; curated/recent/recommended sources absent"
+    },
+    {
+      "key": "collection.count",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "IMPLEMENTED_PRESENTATION_ATTRIBUTE",
+      "path": "assets/editor.js + inc/presentation.php",
+      "mapping": "product-collection.count",
+      "note": "Integer1..20 clamped server-side"
+    },
+    {
+      "key": "collection.layout",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "IMPLEMENTED_PRESENTATION_ATTRIBUTE",
+      "path": "assets/editor.js + inc/presentation.php",
+      "mapping": "product-collection.layout",
+      "note": "Grid or manual rail; no autoplay"
+    },
+    {
+      "key": "card.density",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "IMPLEMENTED_PRESENTATION_ATTRIBUTE",
+      "path": "assets/editor.js + inc/presentation.php",
+      "mapping": "product-collection.density",
+      "note": "Comfortable/dense padding; WC controls retain minimum targets"
+    },
+    {
+      "key": "card.image_ratio",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "card.show_rating",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "card.quick_add",
+      "specification_support_class": "constrained",
+      "owner": "theme",
+      "implementation": "PARTIAL",
+      "note": "Native WooCommerce type-aware actions; no merchant toggle"
+    },
+    {
+      "key": "price.emphasis",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "PARTIAL",
+      "note": "Native current/range/zero and explicit unavailable labels; no emphasis selector"
+    },
+    {
+      "key": "stock.display",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "PARTIAL",
+      "note": "Native WC availability; no verified-low-stock card setting"
+    },
+    {
+      "key": "variant.presentation",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "PARTIAL",
+      "note": "Native WC select; labelled swatches/radios controls missing"
+    },
+    {
+      "key": "variant.show_unavailable",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "PARTIAL",
+      "note": "Native WC variation eligibility; no theme override control"
+    },
+    {
+      "key": "gallery.zoom",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "PARTIAL",
+      "note": "Native WC gallery support enabled; no toggle control"
+    },
+    {
+      "key": "gallery.video",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "gallery.spin",
+      "specification_support_class": "constrained",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "gallery.thumb_position",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "PARTIAL",
+      "note": "Native WC thumbnail gallery; custom position control missing"
+    },
+    {
+      "key": "purchase.sticky",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "purchase.show_terms",
+      "specification_support_class": "constrained",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "offers.layout",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "offers.show_reputation",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "offers.default_sort",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "specs.layout",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "specs.show_provenance",
+      "specification_support_class": "constrained",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "compatibility.show_evidence",
+      "specification_support_class": "constrained",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "compatibility.block_unsafe",
+      "specification_support_class": "constrained",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "bundle.show_components",
+      "specification_support_class": "constrained",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "service.default_selected",
+      "specification_support_class": "constrained",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "reviews.show_verified",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "PARTIAL",
+      "note": "Native WC review verification; no theme toggle"
+    },
+    {
+      "key": "reviews.page_size",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "qa.page_size",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "qa.allow_guest",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "facets.presentation",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "facets.counts",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "facets.apply_mode",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "catalog.view",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "catalog.page_size",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "catalog.enhanced_loading",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "wishlist.max_items",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "compare.max_items",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "account.navigation",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "PARTIAL",
+      "note": "Native responsive WC account navigation; alternative tabs setting missing"
+    },
+    {
+      "key": "account.page_size",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "checkout.summary_sticky",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "tracking.group_sellers",
+      "specification_support_class": "constrained",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "tracking.show_dates",
+      "specification_support_class": "constrained",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "seller.banner",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "seller.accent",
+      "specification_support_class": "constrained",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "seller.show_rating",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "seller.dashboard_density",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "seller.metrics_period",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "notifications.channel_default",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "notifications.marketing_default",
+      "specification_support_class": "constrained",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "compare.differences",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "editorial.card_ratio",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "PARTIAL",
+      "note": "Native4:3 feature images; block-level editing only"
+    },
+    {
+      "key": "editorial.show_byline",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "PARTIAL",
+      "note": "Native post-author/date in single template; no extra toggle"
+    },
+    {
+      "key": "states.illustration",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "states.retry_timeout",
+      "specification_support_class": "constrained",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "history.window_days",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "loyalty.show_estimate",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "custom.javascript",
+      "specification_support_class": "unavailable",
+      "owner": "theme",
+      "implementation": "NO_THEME_INPUT",
+      "note": "No custom mutation/import/input exists. Privileged native WordPress administration remains outside this guarantee."
+    },
+    {
+      "key": "custom.php",
+      "specification_support_class": "unavailable",
+      "owner": "theme",
+      "implementation": "NO_THEME_INPUT",
+      "note": "No custom mutation/import/input exists. Privileged native WordPress administration remains outside this guarantee."
+    },
+    {
+      "key": "custom.html_unsafe",
+      "specification_support_class": "unavailable",
+      "owner": "theme",
+      "implementation": "NO_THEME_INPUT",
+      "note": "No custom mutation/import/input exists. Privileged native WordPress administration remains outside this guarantee."
+    },
+    {
+      "key": "custom.css_unvalidated",
+      "specification_support_class": "unavailable",
+      "owner": "theme",
+      "implementation": "NO_THEME_INPUT",
+      "note": "No custom mutation/import/input exists. Privileged native WordPress administration remains outside this guarantee."
+    },
+    {
+      "key": "font.remote_unlicensed",
+      "specification_support_class": "unavailable",
+      "owner": "theme",
+      "implementation": "NO_THEME_INPUT",
+      "note": "No custom mutation/import/input exists. Privileged native WordPress administration remains outside this guarantee."
+    },
+    {
+      "key": "seller.global_templates",
+      "specification_support_class": "unavailable",
+      "owner": "theme",
+      "implementation": "NO_THEME_INPUT",
+      "note": "No custom mutation/import/input exists. Privileged native WordPress administration remains outside this guarantee."
+    },
+    {
+      "key": "bundle.max_components",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "bundle.marketplace_enabled",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "campaign.max_active",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "campaign.countdown_enabled",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "campaign.badge_limit",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "compare.expiry_days",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "compatibility.review_days",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "compatibility.require_region",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "compatibility.unknown_purchase_policy",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "recommendation.limit",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "recommendation.personalized",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "recommendation.sponsored_label",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "alerts.max_per_recipient",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "alerts.expiry_days",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "alerts.cooldown_hours",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "relationships.max_per_type",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "relationships.require_review",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "specs.max_fields",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "specs.require_evidence",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "qa.max_question_chars",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "qa.rate_per_day",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "recent.max_items",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "recent.expiry_days",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "recent.account_sync",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "reviews.media_enabled",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "reviews.min_seller_sample",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "search.max_query",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "search.max_facets",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "search.synonyms_revision",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "wishlist.guest_days",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "wishlist.share_enabled",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "service.marketplace_enabled",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "service.quote_expiry_minutes",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "delivery.location_prompt",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "delivery.estimate_cache_minutes",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "delivery.show_confidence",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "notifications.delivery_metadata_days",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "notifications.max_attempts",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "history.min_observations",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "history.public_enabled",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "loyalty.enabled",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "loyalty.pending_days",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "loyalty.expiry_days",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "incentives.max_rules",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "incentives.auto_gift",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "incentives.stacking",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "analytics.enabled",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "analytics.raw_query",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "analytics.client_retention_days",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "import.max_rows",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "import.chunk_rows",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "export.expiry_hours",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "diagnostics.report_hours",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "jobs.max_retries",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "jobs.lease_seconds",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "connectors.timeout_seconds",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "connectors.max_payload_kb",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "connectors.replay_window_seconds",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "marketplace.enabled",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "marketplace.catalog_mode",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "marketplace.complex_types",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "media.max_image_mb",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "media.max_document_mb",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "media.spin_enabled",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "profile.max_import_kb",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "profile.include_personal_data",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "profile.unknown_keys",
+      "specification_support_class": "extended",
+      "owner": "plugin",
+      "implementation": "PLUGIN_OWNED",
+      "note": "Theme does not implement or claim this business setting; consult plugin evidence."
+    },
+    {
+      "key": "footer.columns",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "card.quick_view",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "footer.show_newsletter",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "sizeguide.presentation",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    },
+    {
+      "key": "warranty.presentation",
+      "specification_support_class": "extended",
+      "owner": "theme",
+      "implementation": "NOT_IMPLEMENTED",
+      "note": "No corresponding custom editor control; defaults/native WC styling are not counted as a working inventory control."
+    }
+  ],
+  "additional_presentation_controls": {
+    "store-header.announcement": "Plain text up to240characters; empty removes notice",
+    "category-shortcuts.count": "2..16 category maximum, not a category.columns control",
+    "store-footer.minimal": "Minimal or default two-column shell",
+    "enhancement.surface": "Allowlisted registered plugin surface; no owner or arbitrary shortcode attribute"
+  },
+  "notes": [
+    "Native platform presence is not full acceptance of every documented field/state.",
+    "Theme owns no persistent commerce records or financial calculation.",
+    "Local fixtures are additive and independently installed; a third runtime site and full safe profile import/export are not implemented.",
+    "See docs/implementation/evidence-implement_theme.json for actual commands and results."
+  ]
+}

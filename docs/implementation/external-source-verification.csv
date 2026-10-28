@@ -1,0 +1,5 @@
+source_url,retrieved_date,version,verified_claim,limitation
+https://github.com/actions/checkout/releases/tag/v4.2.2,2026-10-28,4.2.2,Official release links to commit11bd71901bbe5b1630ceea73d27597364c9af683,Identity verification only;not a current support or vulnerability clearance
+https://github.com/actions/checkout/commit/11bd71901bbe5b1630ceea73d27597364c9af683,2026-10-28,4.2.2,Official commit changes package version to4.2.2;used immutable workflow pin,Remote CI NOT_RUN;upstream transitive supply-chain review pending
+https://registry.npmjs.org/-/npm/v1/security/advisories/bulk,2026-10-28,root package-lock dependencies,Actual npm audit request failed ECONNRESET,Advisory results BLOCKED;no zero-findings claim
+https://registry.npmjs.org/-/npm/v1/security/advisories/bulk,2026-10-28,root package-lock dependencies,Second actual npm audit request failed ETIMEDOUT,Advisory results still BLOCKED;no zero-findings claim

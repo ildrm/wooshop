@@ -1,0 +1,86 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+  "version": 3,
+  "title": "Outdoor",
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "canvas",
+          "name": "Canvas",
+          "color": "#F6F5EF"
+        },
+        {
+          "slug": "surface",
+          "name": "Surface",
+          "color": "#FFFFFF"
+        },
+        {
+          "slug": "text",
+          "name": "Text",
+          "color": "#17212B"
+        },
+        {
+          "slug": "secondary",
+          "name": "Secondary",
+          "color": "#4A5968"
+        },
+        {
+          "slug": "action",
+          "name": "Action",
+          "color": "#245746"
+        },
+        {
+          "slug": "success",
+          "name": "Success",
+          "color": "#17663A"
+        },
+        {
+          "slug": "warning",
+          "name": "Warning",
+          "color": "#704C00"
+        },
+        {
+          "slug": "danger",
+          "name": "Danger",
+          "color": "#A12622"
+        },
+        {
+          "slug": "info",
+          "name": "Info",
+          "color": "#174E83"
+        },
+        {
+          "slug": "border",
+          "name": "Border",
+          "color": "#C7CFD8"
+        },
+        {
+          "slug": "focus",
+          "name": "Focus",
+          "color": "#005FCC"
+        },
+        {
+          "slug": "subtle",
+          "name": "Subtle",
+          "color": "#EEF1F4"
+        }
+      ]
+    },
+    "custom": {
+      "radius": {
+        "card": "8px",
+        "control": "8px"
+      },
+      "card": {
+        "padding": "16px"
+      }
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var:preset|color|canvas",
+      "text": "var:preset|color|text"
+    }
+  }
+}

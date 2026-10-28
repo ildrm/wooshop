@@ -1,0 +1,238 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-28T11:59:33.212610+00:00",
+  "scope": "Actual direct custom-product/runtime prerequisites and complete root npm lock dependency list; not an upstream WordPress/WooCommerce/container OS transitive SBOM",
+  "limitations": "No claim of verified licensing for every upstream bundled component, vulnerability clearance, paid extension availability or production approval.",
+  "custom_products": [
+    {
+      "name": "wooshop",
+      "version": "0.1.0",
+      "license": "GPL-2.0-or-later",
+      "third_party_runtime_code_bundled": false
+    },
+    {
+      "name": "wooshop-commerce",
+      "version": "0.1.0",
+      "license": "GPL-2.0-or-later",
+      "third_party_runtime_code_bundled": false
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "WordPress",
+      "version": "7.1.3",
+      "scope": "external runtime",
+      "source": "https://wordpress.org/download/releases/",
+      "integrity": "wordpress Docker digest a928da055e6506c17189e232d226dc1f86bc1f229902a88e6ec063650149aba8",
+      "license": "GPL-2.0-or-later",
+      "owner": "WooCommerce Solution Specialist",
+      "cost": "open source; hosting separate",
+      "verification": "Installed runtime version; finite native local checks; not broad supported matrix",
+      "exit": "Native export/data ownership; reviewed migration required"
+    },
+    {
+      "name": "WooCommerce",
+      "version": "11.2.1",
+      "scope": "external runtime; not bundled",
+      "source": "https://downloads.wordpress.org/plugin/woocommerce.11.2.1.zip",
+      "integrity": "sha256:5317434cb381b5fdc7c1dd6ee258324f08c390976aaf8d1199f2a0e9a3ab8586",
+      "license": "GPL-3.0-or-later",
+      "owner": "WooCommerce Solution Specialist",
+      "cost": "open source; optional providers separate",
+      "verification": "Installed header/source/license; native CRUD/StoreAPI checks; initial legacy storage, HPOS evidence separate",
+      "exit": "Preserve native products/orders; supported migration and obligation transfer"
+    },
+    {
+      "name": "PHP",
+      "version": "8.4.27 runtime;8.5.8 host",
+      "scope": "runtime/development",
+      "source": "https://www.php.net/releases/",
+      "integrity": "Container digest pin; host runtime version observed",
+      "license": "PHP-3.01",
+      "owner": "DevOps/SRE Engineer",
+      "cost": "open source",
+      "verification": "Actual container execution and host lint/domain only",
+      "exit": "Retest declared PHP compatibility before upgrade"
+    },
+    {
+      "name": "Python/zlib",
+      "version": "Python3.14.5;zlib1.2.12",
+      "scope": "development build tooling",
+      "source": "Existing host runtime",
+      "integrity": "Observed sys.version and zlib.ZLIB_RUNTIME_VERSION",
+      "license": "PSF/zlib upstream terms;not bundled",
+      "owner": "Release/Maintenance Owner",
+      "cost": "open source",
+      "verification": "Two consecutive frozen-source ZIP builds byte-identical in this environment",
+      "exit": "Retest packaging and guard scripts before runtime upgrade"
+    },
+    {
+      "name": "Node.js/npm",
+      "version": "Node26.12.0;npm11.20",
+      "scope": "development tooling;not bundled",
+      "source": "Existing host runtimes;root package-lock.json",
+      "integrity": "Observed local CLI versions and npm package integrity fields",
+      "license": "Upstream Node MIT/npm Artistic-2.0 terms;not redistributed",
+      "owner": "Test Automation Engineer",
+      "cost": "open source",
+      "verification": "Browser tests/syntax checks executed; advisory service unavailable on two attempts",
+      "exit": "Retest locked development dependencies before update"
+    },
+    {
+      "name": "MariaDB",
+      "version": "10.11.19-MariaDB-ubu2204",
+      "scope": "local database",
+      "source": "https://hub.docker.com/_/mariadb",
+      "integrity": "sha256:d769e37960821dfdcf096954f6e7ac89f747e116c1bba98e48edd265dfc7deae",
+      "license": "GPL-2.0-only core;image component licenses not exhaustively inventoried",
+      "owner": "Database/Data Architect",
+      "cost": "open source; operations separate",
+      "verification": "SELECT VERSION; InnoDB transactions and real20worker reservation race; no MySQL support inference",
+      "exit": "Supported SQL export/recovery plus business reconciliation"
+    },
+    {
+      "name": "WP-CLI",
+      "version": "2.12.0",
+      "scope": "development",
+      "source": "https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar",
+      "integrity": "sha256:ce34ddd838f7351d6759068d09793f26755463b4a4610a5a5c0a97b68220d85c",
+      "license": "MIT",
+      "owner": "Release/Maintenance Owner",
+      "cost": "open source",
+      "verification": "Existing official installed PHAR copied locally; exact hash verified",
+      "exit": "Development tool only; no shipped dependency"
+    },
+    {
+      "name": "Google Chrome",
+      "version": "156.0.8078.48",
+      "scope": "existing development browser",
+      "source": "existing /Applications/Google Chrome.app",
+      "integrity": "Local installed executable version observed; not downloaded/bundled",
+      "license": "Vendor terms; not redistributed",
+      "owner": "Test Automation Engineer",
+      "cost": "existing local installation",
+      "verification": "Actual headless Playwright browser execution; temporary profiles",
+      "exit": "Retest supported browser matrix; alternate engines NOT RUN"
+    },
+    {
+      "name": "actions/checkout",
+      "version": "4.2.2",
+      "scope": "CI only; not executed remotely",
+      "source": "https://github.com/actions/checkout/releases/tag/v4.2.2",
+      "integrity": "commit:11bd71901bbe5b1630ceea73d27597364c9af683",
+      "license": "Upstream repository license review pending;not redistributed",
+      "owner": "Release/Maintenance Owner",
+      "cost": "runner/service usage separate",
+      "verification": "Official release/commit identity verified2026-10-28; persist-credentials:false; CI support/vulnerability execution remains NOT_RUN",
+      "exit": "Replace CI checkout step; no runtime business dependency"
+    },
+    {
+      "name": "@playwright/test",
+      "version": "1.64.1",
+      "scope": "development only; not bundled",
+      "source": "https://registry.npmjs.org/@playwright/test/-/test-1.64.1.tgz",
+      "integrity": "sha512-IaYGml/nSOiZWROfPtuIL7neuu9qDOZ3TNvNljUIrhDMxiGTgPjzj/g9p9RxpS2tSepPDRY+UwAaEeiKtUvIAg==",
+      "license": "Apache-2.0",
+      "owner": "Test Automation Engineer",
+      "cost": "open source",
+      "verification": "Locked npm input; lifecycle scripts ignored; real tests executed; advisory audit BLOCKED ECONNRESET",
+      "exit": "Replace development runner with equivalent behavioral checks"
+    },
+    {
+      "name": "playwright",
+      "version": "1.64.1",
+      "scope": "development only; not bundled",
+      "source": "https://registry.npmjs.org/playwright/-/playwright-1.64.1.tgz",
+      "integrity": "sha512-HCrVhHr5QQuwYoswEUGTb7gGp522yflbv/ST8nF4sFWGuLjQCt17Q/EubpGGSNKYn1tsTCPZxqHhHCfVURu7UA==",
+      "license": "Apache-2.0",
+      "owner": "Test Automation Engineer",
+      "cost": "open source",
+      "verification": "Locked npm input; lifecycle scripts ignored; real tests executed; advisory audit BLOCKED ECONNRESET",
+      "exit": "Replace development runner with equivalent behavioral checks"
+    },
+    {
+      "name": "playwright-core",
+      "version": "1.64.1",
+      "scope": "development only; not bundled",
+      "source": "https://registry.npmjs.org/playwright-core/-/playwright-core-1.64.1.tgz",
+      "integrity": "sha512-BC4s8y6SEVA6Q1rSxZTto8hI1KUI3xXlHGZgvGqP4IqPdI/a6FX9H29IDNz7vKo9l21b6LfYosScPL6M3xxyDQ==",
+      "license": "Apache-2.0",
+      "owner": "Test Automation Engineer",
+      "cost": "open source",
+      "verification": "Locked npm input; lifecycle scripts ignored; real tests executed; advisory audit BLOCKED ECONNRESET",
+      "exit": "Replace development runner with equivalent behavioral checks"
+    },
+    {
+      "name": "marketplace/payment/payout provider",
+      "version": "UNSELECTED",
+      "scope": "external prerequisite",
+      "source": "docs/09-api-integrations/integration-catalog-and-data-mapping.md",
+      "integrity": "NOT_AVAILABLE",
+      "license": "UNVERIFIED;no purchase or redistribution authorized",
+      "owner": "API/Integration Engineer",
+      "cost": "unselected;potential usage/subscription/license cost",
+      "verification": "BLOCKED selected exact version/account/contract and business decisions absent; independent implementation continues",
+      "exit": "Approved export/obligation handoff and provider-specific exit plan required"
+    },
+    {
+      "name": "MFA/step-up provider",
+      "version": "UNSELECTED",
+      "scope": "external prerequisite",
+      "source": "docs/09-api-integrations/integration-catalog-and-data-mapping.md",
+      "integrity": "NOT_AVAILABLE",
+      "license": "UNVERIFIED;no purchase or redistribution authorized",
+      "owner": "API/Integration Engineer",
+      "cost": "unselected;potential usage/subscription/license cost",
+      "verification": "BLOCKED selected exact version/account/contract and business decisions absent; independent implementation continues",
+      "exit": "Approved export/obligation handoff and provider-specific exit plan required"
+    },
+    {
+      "name": "mail/SMS/recipient verification provider",
+      "version": "UNSELECTED",
+      "scope": "external prerequisite",
+      "source": "docs/09-api-integrations/integration-catalog-and-data-mapping.md",
+      "integrity": "NOT_AVAILABLE",
+      "license": "UNVERIFIED;no purchase or redistribution authorized",
+      "owner": "API/Integration Engineer",
+      "cost": "unselected;potential usage/subscription/license cost",
+      "verification": "BLOCKED selected exact version/account/contract and business decisions absent; independent implementation continues",
+      "exit": "Approved export/obligation handoff and provider-specific exit plan required"
+    },
+    {
+      "name": "malware scanning provider",
+      "version": "UNSELECTED",
+      "scope": "external prerequisite",
+      "source": "docs/09-api-integrations/integration-catalog-and-data-mapping.md",
+      "integrity": "NOT_AVAILABLE",
+      "license": "UNVERIFIED;no purchase or redistribution authorized",
+      "owner": "API/Integration Engineer",
+      "cost": "unselected;potential usage/subscription/license cost",
+      "verification": "BLOCKED selected exact version/account/contract and business decisions absent; independent implementation continues",
+      "exit": "Approved export/obligation handoff and provider-specific exit plan required"
+    },
+    {
+      "name": "advanced bundles/composites/subscription/booking/service extensions",
+      "version": "UNSELECTED",
+      "scope": "external prerequisite",
+      "source": "docs/09-api-integrations/integration-catalog-and-data-mapping.md",
+      "integrity": "NOT_AVAILABLE",
+      "license": "UNVERIFIED;no purchase or redistribution authorized",
+      "owner": "API/Integration Engineer",
+      "cost": "unselected;potential usage/subscription/license cost",
+      "verification": "BLOCKED selected exact version/account/contract and business decisions absent; independent implementation continues",
+      "exit": "Approved export/obligation handoff and provider-specific exit plan required"
+    },
+    {
+      "name": "external search/feed/analytics provider",
+      "version": "UNSELECTED",
+      "scope": "external prerequisite",
+      "source": "docs/09-api-integrations/integration-catalog-and-data-mapping.md",
+      "integrity": "NOT_AVAILABLE",
+      "license": "UNVERIFIED;no purchase or redistribution authorized",
+      "owner": "API/Integration Engineer",
+      "cost": "unselected;potential usage/subscription/license cost",
+      "verification": "BLOCKED selected exact version/account/contract and business decisions absent; independent implementation continues",
+      "exit": "Approved export/obligation handoff and provider-specific exit plan required"
+    }
+  ]
+}

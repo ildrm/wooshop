@@ -1,0 +1,84 @@
+name: wooshop-development
+services:
+  db:
+    image: mariadb:10.11@sha256:d769e37960821dfdcf096954f6e7ac89f747e116c1bba98e48edd265dfc7deae
+    environment:
+      MARIADB_ROOT_PASSWORD: ${WOOSHOP_DB_ROOT_PASSWORD}
+    volumes:
+      - ./.local/database:/var/lib/mysql
+      - ./.local/db-init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: [CMD, healthcheck.sh, --connect, --innodb_initialized]
+      interval: 3s
+      timeout: 3s
+      retries: 40
+  outdoor:
+    image: wordpress:7.1.3-php8.4-apache@sha256:a928da055e6506c17189e232d226dc1f86bc1f229902a88e6ec063650149aba8
+    depends_on:
+      db: {condition: service_healthy}
+    ports: ["127.0.0.1:18880:80"]
+    environment: &wordpress_environment
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wooshop_outdoor
+      WORDPRESS_DB_PASSWORD: ${WOOSHOP_OUTDOOR_DB_PASSWORD}
+      WORDPRESS_DB_NAME: wooshop_outdoor
+      WORDPRESS_DEBUG: "1"
+      WORDPRESS_CONFIG_EXTRA: |
+        define('WP_ENVIRONMENT_TYPE', 'local');
+        define('DISALLOW_FILE_EDIT', true);
+        define('WP_HTTP_BLOCK_EXTERNAL', true);
+        define('WP_DEBUG_LOG', true);
+        define('WP_DEBUG_DISPLAY', false);
+        define('WOOSHOP_LOCAL_FIXTURES', true);
+    volumes:
+      - ./.local/sites/outdoor:/var/www/html
+      - ./packages/theme/wooshop:/var/www/html/wp-content/themes/wooshop:ro
+      - ./packages/plugin/wooshop-commerce:/var/www/html/wp-content/plugins/wooshop-commerce:ro
+      - ./tools/dev-guard.php:/var/www/html/wp-content/mu-plugins/wooshop-local-guard.php:ro
+      - ./tools:/workspace/tools:ro
+      - ./tests:/workspace/tests:ro
+      - ./profiles:/workspace/profiles:ro
+      - ./packages:/workspace/packages:ro
+      - ./docs:/workspace/docs:ro
+      - ./.local/cache:/workspace/.local/cache:ro
+  smart-home:
+    image: wordpress:7.1.3-php8.4-apache@sha256:a928da055e6506c17189e232d226dc1f86bc1f229902a88e6ec063650149aba8
+    depends_on:
+      db: {condition: service_healthy}
+    ports: ["127.0.0.1:18881:80"]
+    environment:
+      <<: *wordpress_environment
+      WORDPRESS_DB_NAME: wooshop_smart_home
+      WORDPRESS_DB_USER: wooshop_smart
+      WORDPRESS_DB_PASSWORD: ${WOOSHOP_SMART_DB_PASSWORD}
+    volumes:
+      - ./.local/sites/smart-home:/var/www/html
+      - ./packages/theme/wooshop:/var/www/html/wp-content/themes/wooshop:ro
+      - ./packages/plugin/wooshop-commerce:/var/www/html/wp-content/plugins/wooshop-commerce:ro
+      - ./tools/dev-guard.php:/var/www/html/wp-content/mu-plugins/wooshop-local-guard.php:ro
+      - ./tools:/workspace/tools:ro
+      - ./tests:/workspace/tests:ro
+      - ./profiles:/workspace/profiles:ro
+      - ./packages:/workspace/packages:ro
+      - ./docs:/workspace/docs:ro
+      - ./.local/cache:/workspace/.local/cache:ro
+  package-check:
+    profiles: [verification]
+    image: wordpress:7.1.3-php8.4-apache@sha256:a928da055e6506c17189e232d226dc1f86bc1f229902a88e6ec063650149aba8
+    depends_on:
+      db: {condition: service_healthy}
+    ports: ["127.0.0.1:18882:80"]
+    environment:
+      <<: *wordpress_environment
+      WORDPRESS_DB_NAME: wooshop_package_check
+      WORDPRESS_DB_USER: wooshop_package
+      WORDPRESS_DB_PASSWORD: ${WOOSHOP_PACKAGE_DB_PASSWORD}
+    volumes:
+      - ./.local/sites/package-check:/var/www/html
+      - ./tools/dev-guard.php:/var/www/html/wp-content/mu-plugins/wooshop-local-guard.php:ro
+      - ./tools:/workspace/tools:ro
+      - ./tests:/workspace/tests:ro
+      - ./profiles:/workspace/profiles:ro
+      - ./docs:/workspace/docs:ro
+      - ./artifacts/releases:/workspace/releases:ro
+      - ./.local/cache:/workspace/.local/cache:ro

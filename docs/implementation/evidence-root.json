@@ -1,0 +1,290 @@
+{
+  "schema_version": 1,
+  "worker": "root",
+  "updated_at": "2026-10-28T11:59:33.212610+00:00",
+  "delivery_status": "IN_PROGRESS; complete project acceptance not achieved",
+  "read_paths": [
+    {
+      "path": "docs/07-plugin/plugin-kernel-and-module-lifecycle.md",
+      "sha256": "c09d257e730ae3da9e70542834c1a47804478c58b4f5f3aec47a07e90c8e15f6",
+      "reading_status": "full",
+      "note": "Actual bounded root intake; earlier unretained reads are not silently counted."
+    },
+    {
+      "path": "docs/07-plugin/activation-migration-deactivation-uninstall.md",
+      "sha256": "45b24f8e89e04a59da51bf8b422b3cc322b4e1a5587ca3536575c2e8358c528f",
+      "reading_status": "full",
+      "note": "Actual bounded root intake; earlier unretained reads are not silently counted."
+    },
+    {
+      "path": "docs/07-plugin/settings-permissions-and-diagnostics.md",
+      "sha256": "5d13a16c61181ff7099d833dc3fa3dcc5dc7d45350eb5aa3b292929cc6b13708",
+      "reading_status": "full",
+      "note": "Actual bounded root intake; earlier unretained reads are not silently counted."
+    },
+    {
+      "path": "docs/06-theme/customization-and-editor-permissions.md",
+      "sha256": "0745cc3f0a98f8bc103204ad773ad420004f2b3a9c767fcc23bc9012e2ba2d02",
+      "reading_status": "full",
+      "note": "Actual bounded root intake; earlier unretained reads are not silently counted."
+    },
+    {
+      "path": "docs/07-plugin/module-catalog.csv",
+      "sha256": "5197e8f06942bc1893b82a454db93c0c3f958a624ff3d368e3b1e5e52ac07185",
+      "reading_status": "full",
+      "note": "Actual bounded root intake; earlier unretained reads are not silently counted."
+    },
+    {
+      "path": "docs/09-api-integrations/webhook-and-job-contracts.md",
+      "sha256": "8f90533ed7d24d099c832882204977f56a55a7214ac7d8d3ed707bad397082d3",
+      "reading_status": "full",
+      "note": "Actual bounded root intake; earlier unretained reads are not silently counted."
+    },
+    {
+      "path": "docs/09-api-integrations/versioning-errors-idempotency-and-limits.md",
+      "sha256": "36f4c71efe028a79b2b38feeda50ba0f22be626e8caca51c1782814fa7dd8e44",
+      "reading_status": "full",
+      "note": "Actual bounded root intake; earlier unretained reads are not silently counted."
+    },
+    {
+      "path": "docs/11-security-privacy/identity-api-upload-and-content-security.md",
+      "sha256": "90ece8112de9ba5ad9d4f3b6c8ffbdb0a0b8b7bc03ee63b7c583db45b2416db1",
+      "reading_status": "full",
+      "note": "Actual bounded root intake; earlier unretained reads are not silently counted."
+    },
+    {
+      "path": "docs/11-security-privacy/supply-chain-secure-development-and-updates.md",
+      "sha256": "5b545888745c2a6dd86755926b1e807c17f2c988ad58e3c1a67644c70002621f",
+      "reading_status": "full",
+      "note": "Actual bounded root intake; earlier unretained reads are not silently counted."
+    },
+    {
+      "path": "docs/13-operations/backups-recovery-and-runbooks.md",
+      "sha256": "f60fc406e66e6f367f3a0784cd87aaead346adc4cbdc521e08ad00e4354428d5",
+      "reading_status": "full",
+      "note": "Actual bounded root intake; earlier unretained reads are not silently counted."
+    },
+    {
+      "path": "docs/14-delivery/quality-gates-and-handover.md",
+      "sha256": "2a3292d50ea04cb487d246a8ecf4706fc36fb143612ef2f66e06965b79d47274",
+      "reading_status": "full",
+      "note": "Actual bounded root intake; earlier unretained reads are not silently counted."
+    },
+    {
+      "path": "docs/14-delivery/future-engineering-standards-and-repository-layout.md",
+      "sha256": "f68cac51bc6bffdd38c034408aaaaaae0abcb2d68987748345ba22185f37d8b6",
+      "reading_status": "full",
+      "note": "Actual bounded root intake; earlier unretained reads are not silently counted."
+    },
+    {
+      "path": "docs/02-requirements/requirements.csv",
+      "sha256": "a38e5862696535fd4837e6327fbb067f8213ea4bbf96df9cc1535c875e0d5efd",
+      "reading_status": "selected portions",
+      "note": "Actual bounded root intake; earlier unretained reads are not silently counted."
+    },
+    {
+      "path": "docs/02-requirements/nonfunctional-requirements.csv",
+      "sha256": "f4b1bc1d996518e7d3e2cb59a422629dc23f62658488f9b85712d2ee6b8290c7",
+      "reading_status": "selected portions",
+      "note": "Actual bounded root intake; earlier unretained reads are not silently counted."
+    },
+    {
+      "path": "docs/00-governance/raci.csv",
+      "sha256": "5be19b0dc9a4dea7643fe3a1b9c7701969a9346652039dcf4c8e4bb5be021a43",
+      "reading_status": "selected portions",
+      "note": "Actual bounded root intake; earlier unretained reads are not silently counted."
+    },
+    {
+      "path": "docs/14-delivery/work-breakdown-structure.csv",
+      "sha256": "bc1d6d1890ce71cfa5abd555df4de4307f07d667c5584500ef120c15ea257cda",
+      "reading_status": "selected portions",
+      "note": "Actual bounded root intake; earlier unretained reads are not silently counted."
+    },
+    {
+      "path": "docs/14-delivery/implementation-backlog.csv",
+      "sha256": "5c8cb87cfa08eef3a19ac9810f1b7cc555a7a36df361e918a46a6ecdcf1faf99",
+      "reading_status": "selected portions",
+      "note": "Actual bounded root intake; earlier unretained reads are not silently counted."
+    },
+    {
+      "path": "docs/09-api-integrations/openapi.yaml",
+      "sha256": "3561b41e11bf569640d00fb64ca88deb42be66e6842456eb72e069dd43a8f6a0",
+      "reading_status": "selected portions",
+      "note": "Actual bounded root intake; earlier unretained reads are not silently counted."
+    },
+    {
+      "path": "docs/implementation/master-implementation-prompt.md",
+      "sha256": "9601fecdebb2d507c47072915d835bb2a211fb2fc3f8ba9f429f2203a07cbbdd",
+      "reading_status": "selected portions",
+      "note": "Actual bounded root intake; earlier unretained reads are not silently counted."
+    }
+  ],
+  "source_fingerprints": {
+    "packages/plugin/wooshop-commerce/LICENSE": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+    "packages/plugin/wooshop-commerce/assets/catalog.css": "63d372e3448b4cb74c898d525e91d0061499800f42254dd138dbf67a2d773b24",
+    "packages/plugin/wooshop-commerce/assets/catalog.js": "d3fdfab9b6574bfa066ecfd3870801ba94c4260fc28797141dbe4f6ef66554fc",
+    "packages/plugin/wooshop-commerce/assets/marketplace.css": "9c7dfbdc3993e2a7a2110012eff58c5d91a9bf6f96ab13df0e764cd98815869e",
+    "packages/plugin/wooshop-commerce/assets/marketplace.js": "a6ae36061fd7dc0f7bec326cfd34103f1423c021c6a3badf79c1776485f0c238",
+    "packages/plugin/wooshop-commerce/autoload.php": "340bb6402ef55db3683d67745fdbb250a1f94e2e146f8b69692c4e75185007c9",
+    "packages/plugin/wooshop-commerce/resources/modules.json": "4f5f4e158f8c4df1de3965e70d1e428334126d024729b8ada56e6ec84dc0618d",
+    "packages/plugin/wooshop-commerce/resources/openapi.json": "3561b41e11bf569640d00fb64ca88deb42be66e6842456eb72e069dd43a8f6a0",
+    "packages/plugin/wooshop-commerce/resources/settings.json": "9894c8ff319ea1ef15a1171ad927ba3349005edea05385e011c1a032ab337fe1",
+    "packages/plugin/wooshop-commerce/src/Catalog/Admin.php": "c5df10d6e5b6a71a89872b8c5de0c806f0545b442c0930f3d629decdc77b7ab5",
+    "packages/plugin/wooshop-commerce/src/Catalog/CatalogModule.php": "b7025431cf5cabe26e8939b1c420e10987ce008e9e3a973ae8fffd43381d845b",
+    "packages/plugin/wooshop-commerce/src/Catalog/Community.php": "4d2e29b69704d0bd1e71df2d0e0d0ac3b9967a8608fa6c19dbaa610967ae984c",
+    "packages/plugin/wooshop-commerce/src/Catalog/Compatibility.php": "728195b392db80770c8c24e394b467ed236fbc17e179545e1c48a2a56a8791ac",
+    "packages/plugin/wooshop-commerce/src/Catalog/Input.php": "f5e3cf39508bd67d9ab94f6303c85635bf5a377462515fdb790b2d95572a74ec",
+    "packages/plugin/wooshop-commerce/src/Catalog/ModuleAccess.php": "5f8bdff5a873413b4cc4920dd01c63e263fc1c5932a75ad6a0f069a9de759bcd",
+    "packages/plugin/wooshop-commerce/src/Catalog/Options.php": "4e12588d03ff7660bf36bd0b57bc7f31c5bb5fff56685f1a75dcbf1e7746466b",
+    "packages/plugin/wooshop-commerce/src/Catalog/Products.php": "ca473d0e4a3278b96112e644826622adba1ad56d0a1136c382deb6332f2cec65",
+    "packages/plugin/wooshop-commerce/src/Catalog/RateLimit.php": "1357b5fc2e67544ffbb7b2a57902ceb59be9c701e31a420732d461f1fc8825ba",
+    "packages/plugin/wooshop-commerce/src/Catalog/RestController.php": "54d1d8e7afb310240b8d55c8581ed4ae904ae63e2dd5ccd44ca1a89901d7a21c",
+    "packages/plugin/wooshop-commerce/src/Catalog/Search.php": "f980eb8a38b972c259e2a7315804aa54cf4208f606bc5f5fda98af3657e8fc92",
+    "packages/plugin/wooshop-commerce/src/Catalog/Specifications.php": "23a5544727da3a1b9c9359ab4e5e21c6c5ea36b34ca12110c1f3d7c5409512e6",
+    "packages/plugin/wooshop-commerce/src/Catalog/Units.php": "b1c68592e44a19579690071caefae27de314b1809cae37f18a9a9657de9b0587",
+    "packages/plugin/wooshop-commerce/src/Catalog/Views.php": "3c8f390afa8ff67dd86064f97204d832b97ec3341ba139b94c27a8f022248571",
+    "packages/plugin/wooshop-commerce/src/Customer/CustomerService.php": "17fbfdbb075b7e95e3ab47c59a0817a69d32e2bd2ce6d683d75f28c99a1b0658",
+    "packages/plugin/wooshop-commerce/src/Customer/Notifications.php": "e440fe4bb3d695700975c6a766631af1b9553846c62c9917d40eb57da3e7b1a5",
+    "packages/plugin/wooshop-commerce/src/Customer/Privacy.php": "b90cbea1ffd2c6acace83debf042bafa511dfe7b09d57fdca3b90c6aa045ad05",
+    "packages/plugin/wooshop-commerce/src/Customer/Records.php": "e909b3076ec2aec359a95ccb55ff31032e65c144a043231b520b53718ef87096",
+    "packages/plugin/wooshop-commerce/src/Customer/Session.php": "42860d0647c23b08845a9d34b654538eeb805cd32f84675d697df489955ec301",
+    "packages/plugin/wooshop-commerce/src/Finance/Allocation.php": "9a2fd097b94a39489ece3cc5f079b4c40849616323f1951388ffd16d374bcc51",
+    "packages/plugin/wooshop-commerce/src/Finance/CommissionPolicy.php": "d57b7d5a994a4181b12da4ff61b6068814104e8805af8595f4df6565ebf4db4c",
+    "packages/plugin/wooshop-commerce/src/Finance/Ledger.php": "a0901eb7c18f80b64cfbb70b78a0621efb4d967a6f219d0d7473d2271bc02c4f",
+    "packages/plugin/wooshop-commerce/src/Finance/Money.php": "981850527a82d8f6bb9309becc7df2ee22a848977af0d8dc299f359fa5a04518",
+    "packages/plugin/wooshop-commerce/src/Finance/RefundAllocation.php": "c3cb1ecadb0ae6e8926a6ba399cca4d73ffe2b2c850689d4a13b5e1df184f21f",
+    "packages/plugin/wooshop-commerce/src/Infrastructure/Database.php": "3554bae997f98291f7fdcee5049e212d612f488428d124d04f1e122023b0abcb",
+    "packages/plugin/wooshop-commerce/src/Infrastructure/EntityStore.php": "e895e8456999ad49c4d9850fb6101c42d4bde922ef0de2a4d5f3a01107b9fbb5",
+    "packages/plugin/wooshop-commerce/src/Infrastructure/Idempotency.php": "a01e3651117fd69590e37bad50eab17d7bd83e97af38e4f788d6f4e24594742d",
+    "packages/plugin/wooshop-commerce/src/Infrastructure/Schema.php": "fb30deee42482a90fa84cbfc10f05b987a069921dc4b4f9c0b4abcad1f4ba152",
+    "packages/plugin/wooshop-commerce/src/Inventory/CaptureVerifier.php": "b40156ac5a96c66da031dab4d1e8b799a4b90b61db306aac75df66e632dc1d9a",
+    "packages/plugin/wooshop-commerce/src/Inventory/InventoryService.php": "21d338155b863e0de81020acc0e4075645d5b48813785c0a9db463c024d39294",
+    "packages/plugin/wooshop-commerce/src/Jobs/Queue.php": "379d113ecd1fcbc36527486b499a3a1db673b494638f2852377aafb90e35fda1",
+    "packages/plugin/wooshop-commerce/src/Kernel/ModuleRegistry.php": "ce3fb925bd28dee29b6db1f2470e0171d0205e9ee6cc6c85dd468bc528d7aeb4",
+    "packages/plugin/wooshop-commerce/src/Kernel/Plugin.php": "23557c3aeab84694b3cac77b618aee8c7273e8e6d7e85ff8621ea9216e1c2236",
+    "packages/plugin/wooshop-commerce/src/Marketplace/ActivationGate.php": "7cac96f0f578909ee534b31f20165b29aad297f508b5f938d5060d4650e7bb64",
+    "packages/plugin/wooshop-commerce/src/Marketplace/AllocationService.php": "4f11da813479a11f2124bb3fe3e858b091b5a94df81ec91032d76695195f273d",
+    "packages/plugin/wooshop-commerce/src/Marketplace/Cursor.php": "107412885158ce6294cbc15d99ac91b61ced68147ef6e5a3c69d7b353c3e473f",
+    "packages/plugin/wooshop-commerce/src/Marketplace/HumanVerifier.php": "4502ddf75098b63e72de0fd29725925be296103cb079a55fda836f8dd5ddd6b6",
+    "packages/plugin/wooshop-commerce/src/Marketplace/Input.php": "d11b2f748d23b681baaa3443e5d3f13b85e4ddee6f11bb9a80476d8fca4f55d1",
+    "packages/plugin/wooshop-commerce/src/Marketplace/MarketplaceModule.php": "b6a1482e8baa39879f5b947619bfcc08a092f376d47104e0c1cb1a15c5049462",
+    "packages/plugin/wooshop-commerce/src/Marketplace/NativeGuard.php": "6ced8ee682b1ea39db312b71f3c1f00d60c67ae4261aadb36f055fc1cb708e61",
+    "packages/plugin/wooshop-commerce/src/Marketplace/OfferService.php": "fda0f512a14b189d00bff71eb8864ce2c0e015f0ec1c9f91d952b2733acb17fd",
+    "packages/plugin/wooshop-commerce/src/Marketplace/OrderSnapshots.php": "9c5e04879b58873165372a2cff43d8d8eca6364e56606331c7590c21a7526422",
+    "packages/plugin/wooshop-commerce/src/Marketplace/Records.php": "deda3b3790e9b563c09b823bdd715bd9c93651e0353e57aba778307b6898de6a",
+    "packages/plugin/wooshop-commerce/src/Marketplace/Schema.php": "9d871b31f421579a69a59c377a69c4fcc97be1e7574300d4d98166c9b03e5b01",
+    "packages/plugin/wooshop-commerce/src/Marketplace/SellerPortal.php": "d51e0e9a7294939e2fb0a9ae000f5751a2dbe927079bdb661c336365ca5cd97c",
+    "packages/plugin/wooshop-commerce/src/Marketplace/SellerService.php": "cd43ae84a439809deec51b738582c958589b3b1eb3efff998755228d5a032dcb",
+    "packages/plugin/wooshop-commerce/src/Merchandising/IncentiveRule.php": "c01329d42537ff9d1dd160864a3e6e500ff950b849476e245074debfb19f8eb6",
+    "packages/plugin/wooshop-commerce/src/Merchandising/Incentives.php": "c4696a1e11b589e66528335b8b14c8f37201c7f25aa18a09fe7352fac636f888",
+    "packages/plugin/wooshop-commerce/src/Merchandising/Loyalty.php": "a45cb34ced5d69cd3af549a45a028eee79c743413b0d238d14f402aaf415beac",
+    "packages/plugin/wooshop-commerce/src/Merchandising/LoyaltyPolicy.php": "ac8f0039c3b6f0d675b4fe84eb8ae865e2050e58d4e247c94f6fd6f213c61aaa",
+    "packages/plugin/wooshop-commerce/src/Merchandising/Merchandising.php": "77fec2afb654e49cc4b5e8d31c21873b5092beb6a79bbeeadba88980ed94d2f6",
+    "packages/plugin/wooshop-commerce/src/Merchandising/PriceHistory.php": "f04d5252f323caa705446d118ac3ad7aa44f39475af66504fd1d6d728b5d35e9",
+    "packages/plugin/wooshop-commerce/src/Security/Authorization.php": "801476a90921b82365c878adf0ba8316089c69f7e1bb662bfecad1bd0f25db84",
+    "packages/plugin/wooshop-commerce/src/Seo/Policy.php": "bc4307b40f0f85d19e8898f41518ef85887017e347d4676bd24e848e05d3e8db",
+    "packages/plugin/wooshop-commerce/src/Settings/SettingsService.php": "35b24cd7fb2af9e016b3d2e7d090ccd22665f1d75651cc0f17d85de4375d7517",
+    "packages/plugin/wooshop-commerce/src/Settings/Validator.php": "ac74aaf31d3909e785a9e3c2217ac9358c4865369d8d4689a1638bd70985d656",
+    "packages/plugin/wooshop-commerce/src/Support/DomainError.php": "1a5d280fd01aab13ed4accec0ffe60ae24ecbbd456e3aee8e2e1bcd37c7dadc2",
+    "packages/plugin/wooshop-commerce/src/Support/Ids.php": "1790790736b45ee67b54997b9c4288c90f747ef4520e68c7e5aeae11451c8668",
+    "packages/plugin/wooshop-commerce/src/Support/Rest.php": "19267e396949e96d820b3e5f2ae01e0fddd7a19846b8460576a2793dd981541e",
+    "packages/plugin/wooshop-commerce/src/Support/SchemaValidator.php": "7e2f7b0ad66400910211b460584856eab7f0f0506bb5b664ae3f8bdbb68ee59f",
+    "packages/plugin/wooshop-commerce/uninstall.php": "7aadfa326be6ddfc1da96c7346eef714810ab04e5202edbe2b02fd3b27d6b2a0",
+    "packages/plugin/wooshop-commerce/views/marketplace/portal.php": "f5ce627f19e5d39822a0a2257c2604f227ea95a637920a3df5d5057fcd8a3364",
+    "packages/plugin/wooshop-commerce/wooshop-commerce.php": "eecb2b4a055f06ec98abf1ee3f67ec7255831d6f1974e3cb51d783c91ea6a711",
+    "packages/theme/wooshop/LICENSE": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+    "packages/theme/wooshop/README.txt": "2cd95aeddd59078654bc791bf5d4e4f58472d7399fee456c13ecb45a9762dd6b",
+    "packages/theme/wooshop/assets/connected.svg": "2bdd8483763cecaf7fe1e784e2aaa0e9e394efe4f1a6426800ab5a0e57e23576",
+    "packages/theme/wooshop/assets/editor.js": "2396514c751f843501fa1a784a61848e989364785c2798ff6679a33a9768e2a5",
+    "packages/theme/wooshop/assets/landscape.svg": "6f650a7a50d462c73736c04158ca315407745d1ac10334278c013fec713d6d4a",
+    "packages/theme/wooshop/assets/store.css": "e2dc2a3aa8df639c4dd7844dc9fdd2eb88d5b358974c3caac0a35e59fe54a097",
+    "packages/theme/wooshop/assets/store.js": "4dcc883443f05075906065d2980f0ddd105a9b4e8683888f9b25a3cea3db5f53",
+    "packages/theme/wooshop/coverage.json": "1ba811361fc53d684bda0835b105c44b7365b6da3d14a9de7877fe87e1ca4261",
+    "packages/theme/wooshop/functions.php": "2c318294667cc4744b3a0474f2c824520b5d605b65143aae74fde000e69d2361",
+    "packages/theme/wooshop/inc/presentation.php": "baaf0349c4268e37725a604052363f5a99ddc52758012a5f24579c4c2dfa93c9",
+    "packages/theme/wooshop/languages/fa_IR.mo": "bf59383e37631d3372a1f87d60f21bc8038ee8d514942dd84b6e2615731c05e2",
+    "packages/theme/wooshop/languages/fa_IR.po": "9e473f86540d7df7c684fc365e8c7896b66bfb9c51048a833fb56818af9d8383",
+    "packages/theme/wooshop/languages/wooshop-fa_IR-wooshop-editor.json": "638fd389b030c022bf5a399f97db78051b2858d47740c7f7ec6ce89409e218b9",
+    "packages/theme/wooshop/languages/wooshop.pot": "3a5614de060da78e814dee43d36baa0ddd84bc55f9d502fdf767a56314d84aac",
+    "packages/theme/wooshop/parts/footer-minimal.html": "4968394a78db2fda39e8cde0decce9109eaeefccb2dca6e761ffc130d93da039",
+    "packages/theme/wooshop/parts/footer.html": "4d2c5e6d95ba4a339dee6e4d11a897cc84bfd2896778775e9aa4fbe2ebffcb07",
+    "packages/theme/wooshop/parts/header-minimal.html": "a9906db483b7cf72ec8717f83868eabb14e6f124e3dc5f9b2df61e628ba1f0db",
+    "packages/theme/wooshop/parts/header.html": "5e663e49c6443353ba3e77c8720de651e08110c34a8e5095fdf0345e6da00ec1",
+    "packages/theme/wooshop/patterns/guides-heading.php": "c6c21dde036c3c2cba5cfeb400d3dc0ecf03c9f94f3bbc64157cb89ed34b4653",
+    "packages/theme/wooshop/patterns/home.php": "f36e80f34aa0afd84bfe7718b3d1173f3a1e5cef70efcd9ca4250b46f60b84cf",
+    "packages/theme/wooshop/patterns/no-results.php": "6e4c156a66678722d44e16142f24448a2a8e7d52ec99d1b1924187956ec611e5",
+    "packages/theme/wooshop/patterns/not-found.php": "ecc88fefdbb2a796f263af0a5bc9f82884e73c8aa1b48e1455ea6ee8d84dc9dc",
+    "packages/theme/wooshop/patterns/outdoor-home.php": "5e9fc79738b4aeec4ea3161aef42a18aeef4d40e24e264bada1ef84257494452",
+    "packages/theme/wooshop/patterns/published-guides.php": "d422289a902661295487c4237db4817ac0abf25fde4afc1f0603d35fad8ac049",
+    "packages/theme/wooshop/patterns/smart-home.php": "3fb2dea97a36169182acda924be7f8af384b5488bb2b48b469447a22b497f8f8",
+    "packages/theme/wooshop/style.css": "0ddd9907997b0bf5c36fddd720c55b063256feeefcf54050084ce723eae4b944",
+    "packages/theme/wooshop/styles/neutral.json": "2bdf4dba444eb12e6dcc09c9d12798ff05b4234d4194a50df905f3b534d99ea7",
+    "packages/theme/wooshop/styles/outdoor.json": "29102994e6f7a1a3805908ed9a4d743e8f4d06e4a57122ab2b69c9979b2748b3",
+    "packages/theme/wooshop/styles/smart-home.json": "b217d1f46fca69b149cf42863497577cbf0d038068d83280d21a9519e143a78b",
+    "packages/theme/wooshop/templates/404.html": "7399f2caea6acbb30e9ca2c0df1d6f8bd552bf48250b110b85eca3cbc63f712c",
+    "packages/theme/wooshop/templates/archive-product.html": "c0bfd7c4b6012e8a12098e827933d512b47597d1a97cc42feecdc3f7895ef5e7",
+    "packages/theme/wooshop/templates/archive.html": "25969e0c75619db70f704ed95bdab0393ddb50059fa7c8d940e5d38adf79d94b",
+    "packages/theme/wooshop/templates/campaign.html": "da046404449a3a6b88f42600ce5db4a7414899ea52e9f283a4b75cd541a770c6",
+    "packages/theme/wooshop/templates/front-page.html": "1e99343b67ccbeca0d2c756e3fcf6f1143b2c481ea1a0a3f760266a8d0401647",
+    "packages/theme/wooshop/templates/home.html": "7ddd0c8f42e91c2e215cb04cc6bcf90d4a9ecacded84ec0cb5ce12cfdd932cac",
+    "packages/theme/wooshop/templates/index.html": "a4de40503ce9b51cb3ed4b0052bb038bbd88385af20ed3d754b8b974315c7db0",
+    "packages/theme/wooshop/templates/page-cart.html": "70047bd79aa80413c0465a80dc0ff6d93a9f1b1b585e2ac707a939cf9e0aaccb",
+    "packages/theme/wooshop/templates/page-checkout.html": "70047bd79aa80413c0465a80dc0ff6d93a9f1b1b585e2ac707a939cf9e0aaccb",
+    "packages/theme/wooshop/templates/page-my-account.html": "da046404449a3a6b88f42600ce5db4a7414899ea52e9f283a4b75cd541a770c6",
+    "packages/theme/wooshop/templates/page.html": "da046404449a3a6b88f42600ce5db4a7414899ea52e9f283a4b75cd541a770c6",
+    "packages/theme/wooshop/templates/product-search-results.html": "c0bfd7c4b6012e8a12098e827933d512b47597d1a97cc42feecdc3f7895ef5e7",
+    "packages/theme/wooshop/templates/readable.html": "8fa1c6f3c5a7471d2aed1de72877a6f84765e31401a95bb023b9df0e0648f27c",
+    "packages/theme/wooshop/templates/search.html": "71c065ff009f5fcf5d4f10cb576b78860ed47922191086a8f8bc77114be6dc41",
+    "packages/theme/wooshop/templates/single-product.html": "464331d5a3ce7c5dd6e12b64406505acadf448b21b519c859ac2701f01cad271",
+    "packages/theme/wooshop/templates/single.html": "c0380d4bc8115cd880e7be09a5cfdc01e5f8d1dfdf2b975e9ea2ee9160c7878d",
+    "packages/theme/wooshop/templates/taxonomy-product_attribute.html": "c0bfd7c4b6012e8a12098e827933d512b47597d1a97cc42feecdc3f7895ef5e7",
+    "packages/theme/wooshop/templates/taxonomy-product_brand.html": "c0bfd7c4b6012e8a12098e827933d512b47597d1a97cc42feecdc3f7895ef5e7",
+    "packages/theme/wooshop/templates/taxonomy-product_cat.html": "c0bfd7c4b6012e8a12098e827933d512b47597d1a97cc42feecdc3f7895ef5e7",
+    "packages/theme/wooshop/templates/taxonomy-product_tag.html": "c0bfd7c4b6012e8a12098e827933d512b47597d1a97cc42feecdc3f7895ef5e7",
+    "packages/theme/wooshop/templates/wide.html": "5164fa72d23de15309bf93ec926319947969ff890d4b73821c98277bfa566660",
+    "packages/theme/wooshop/templates/workspace.html": "a5e7843b7bd0bd7c150a2bb7ae0e0b735686119ae9a90e86ca08dfd69026fc08",
+    "packages/theme/wooshop/theme.json": "442d8e746824bd74ab520431468245eeacf7008ee4a762934150b093e2fd45b3",
+    "packages/theme/wooshop/woocommerce/global/wrapper-end.php": "ce5fcaa912152e201d025c15af60bc467bc84fdf29e53c8f9d54758bf0a42665",
+    "packages/theme/wooshop/woocommerce/global/wrapper-start.php": "c14f484267eca13591bf0dc1b31ff9fa9d89057ad910b0766f2d256709b3a556"
+  },
+  "commands": [
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor eval-file /workspace/tests/core/wordpress.php",
+      "result": "PASS 25 actual WordPress/MariaDB checks after optional registry transitions",
+      "environment": "WP7.1.3/WC11.2.1/PHP8.4.27/MariaDB10.11.19; legacy WC order storage at execution"
+    },
+    {
+      "command": "rtk proxy npx playwright test --grep 'actual WordPress' --output artifacts/auth-browser",
+      "result": "PASS 1 actual login/REST nonce/idempotency browser test; report stats expected1 unexpected0 duration9.263s",
+      "environment": "Playwright1.64.1; installed Google Chrome156; localhost18880; synthetic credentials"
+    },
+    {
+      "command": "rtk proxy python3 tools/bootstrap.py --verify-only",
+      "result": "PASS reviewed WP-CLI and WC input hashes",
+      "environment": "Host filesystem; no new network download through this helper"
+    },
+    {
+      "command": "rtk proxy npm audit --json",
+      "result": "BLOCKED two actual advisory attempts: ECONNRESET then ETIMEDOUT; both exit1; no vulnerability result",
+      "environment": "Official registry.npmjs.org advisory API"
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py up",
+      "result": "PASS restored healthy local services after daemon interruption; preserved existing database/source binds",
+      "environment": "Official digest-pinned Docker images; no reinstall/database reset"
+    },
+    {
+      "command": ".github/workflows/verify.yml",
+      "result": "NOT_RUN remote CI workflow authored only",
+      "environment": "ubuntu24.04 runner execution not available in this run"
+    }
+  ],
+  "failures_and_limits": [
+    "Initial login race exposed a synthetic fixture password in a failure context; removed artifact, rotated all fixture administrators and invalidated sessions.",
+    "Official Chromium download blocked403 location policy; used existing Chrome instead.",
+    "Initial product browser assertions expected old WC markup; corrected against installed WC11.2.1, preserving cart and supplier-behavior assertions.",
+    "Docker daemon stopped during execution; local runtime restarted without data reset.",
+    "Initial native CRUD evidence is legacy storage only; later explicit supported HPOS evidence is in assurance-followup.json.",
+    "No complete upstream/container vulnerability, WCAG, SEO, privacy, performance, disaster recovery or provider approval claim."
+  ]
+}

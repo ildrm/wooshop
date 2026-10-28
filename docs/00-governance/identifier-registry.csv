@@ -1,0 +1,1807 @@
+id,kind,definition_path
+ADR-01,architecture decision,03-architecture/adr/adr-01-block-theme.md
+ADR-02,architecture decision,03-architecture/adr/adr-02-modular-monolith.md
+ADR-03,architecture decision,03-architecture/adr/adr-03-native-capability-ownership.md
+ADR-04,architecture decision,03-architecture/adr/adr-04-product-type-adapters.md
+ADR-05,architecture decision,03-architecture/adr/adr-05-seller-product-offer.md
+ADR-06,architecture decision,03-architecture/adr/adr-06-marketplace-build-integrate.md
+ADR-07,architecture decision,03-architecture/adr/adr-07-price-stock-authority.md
+ADR-08,architecture decision,03-architecture/adr/adr-08-order-allocation.md
+ADR-09,architecture decision,03-architecture/adr/adr-09-payment-settlement.md
+ADR-10,architecture decision,03-architecture/adr/adr-10-storage-indexing.md
+ADR-11,architecture decision,03-architecture/adr/adr-11-caching-search.md
+ADR-12,architecture decision,03-architecture/adr/adr-12-customization-inheritance.md
+ADR-13,architecture decision,03-architecture/adr/adr-13-seo-ownership.md
+ADR-14,architecture decision,03-architecture/adr/adr-14-independent-sites.md
+ADR-15,architecture decision,03-architecture/adr/adr-15-localization.md
+ADR-16,architecture decision,03-architecture/adr/adr-16-upgrade-deactivation.md
+API-D001,registry record,09-api-integrations/api-operation-catalog.csv
+API-D002,registry record,09-api-integrations/api-operation-catalog.csv
+API-D003,registry record,09-api-integrations/api-operation-catalog.csv
+API-D004,registry record,09-api-integrations/api-operation-catalog.csv
+API-D005,registry record,09-api-integrations/api-operation-catalog.csv
+API-D006,registry record,09-api-integrations/api-operation-catalog.csv
+API-D007,registry record,09-api-integrations/api-operation-catalog.csv
+API-D008,registry record,09-api-integrations/api-operation-catalog.csv
+API-D009,registry record,09-api-integrations/api-operation-catalog.csv
+API-D010,registry record,09-api-integrations/api-operation-catalog.csv
+API-D011,registry record,09-api-integrations/api-operation-catalog.csv
+API-D012,registry record,09-api-integrations/api-operation-catalog.csv
+API-D013,registry record,09-api-integrations/api-operation-catalog.csv
+API-D014,registry record,09-api-integrations/api-operation-catalog.csv
+API-D015,registry record,09-api-integrations/api-operation-catalog.csv
+API-D016,registry record,09-api-integrations/api-operation-catalog.csv
+API-D017,registry record,09-api-integrations/api-operation-catalog.csv
+API-D018,registry record,09-api-integrations/api-operation-catalog.csv
+API-D019,registry record,09-api-integrations/api-operation-catalog.csv
+API-D020,registry record,09-api-integrations/api-operation-catalog.csv
+API-D021,registry record,09-api-integrations/api-operation-catalog.csv
+API-D022,registry record,09-api-integrations/api-operation-catalog.csv
+API-D023,registry record,09-api-integrations/api-operation-catalog.csv
+API-D024,registry record,09-api-integrations/api-operation-catalog.csv
+API-D025,registry record,09-api-integrations/api-operation-catalog.csv
+API-D026,registry record,09-api-integrations/api-operation-catalog.csv
+API-D027,registry record,09-api-integrations/api-operation-catalog.csv
+API-D028,registry record,09-api-integrations/api-operation-catalog.csv
+API-D029,registry record,09-api-integrations/api-operation-catalog.csv
+API-D030,registry record,09-api-integrations/api-operation-catalog.csv
+API-D031,registry record,09-api-integrations/api-operation-catalog.csv
+API-D032,registry record,09-api-integrations/api-operation-catalog.csv
+API-D033,registry record,09-api-integrations/api-operation-catalog.csv
+API-D034,registry record,09-api-integrations/api-operation-catalog.csv
+API-D035,registry record,09-api-integrations/api-operation-catalog.csv
+API-D036,registry record,09-api-integrations/api-operation-catalog.csv
+API-D037,registry record,09-api-integrations/api-operation-catalog.csv
+API-D038,registry record,09-api-integrations/api-operation-catalog.csv
+ASM-01,registry record,00-governance/assumptions.csv
+ASM-02,registry record,00-governance/assumptions.csv
+ASM-03,registry record,00-governance/assumptions.csv
+ASM-04,registry record,00-governance/assumptions.csv
+ASM-05,registry record,00-governance/assumptions.csv
+ASM-06,registry record,00-governance/assumptions.csv
+ASM-07,registry record,00-governance/assumptions.csv
+ASM-08,registry record,00-governance/assumptions.csv
+AUTH-S001,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S002,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S003,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S004,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S005,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S006,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S007,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S008,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S009,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S010,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S011,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S012,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S013,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S014,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S015,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S016,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S017,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S018,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S019,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S020,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S021,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S022,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S023,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S024,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S025,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S026,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S027,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S028,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S029,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S030,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S031,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S032,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S033,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S034,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S035,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S036,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S037,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S038,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S039,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+AUTH-S040,registry record,11-security-privacy/roles-capabilities-and-object-authorization.csv
+BL-G001,registry record,14-delivery/implementation-backlog.csv
+BL-G002,registry record,14-delivery/implementation-backlog.csv
+BL-G003,registry record,14-delivery/implementation-backlog.csv
+BL-G004,registry record,14-delivery/implementation-backlog.csv
+BL-G005,registry record,14-delivery/implementation-backlog.csv
+BL-G006,registry record,14-delivery/implementation-backlog.csv
+BL-G007,registry record,14-delivery/implementation-backlog.csv
+BL-G008,registry record,14-delivery/implementation-backlog.csv
+BL-G009,registry record,14-delivery/implementation-backlog.csv
+BL-G010,registry record,14-delivery/implementation-backlog.csv
+BL-G011,registry record,14-delivery/implementation-backlog.csv
+BL-G012,registry record,14-delivery/implementation-backlog.csv
+BL-G013,registry record,14-delivery/implementation-backlog.csv
+BL-G014,registry record,14-delivery/implementation-backlog.csv
+BL-G015,registry record,14-delivery/implementation-backlog.csv
+BL-G016,registry record,14-delivery/implementation-backlog.csv
+BL-G017,registry record,14-delivery/implementation-backlog.csv
+BL-G018,registry record,14-delivery/implementation-backlog.csv
+BL-G019,registry record,14-delivery/implementation-backlog.csv
+BL-G020,registry record,14-delivery/implementation-backlog.csv
+BL-G021,registry record,14-delivery/implementation-backlog.csv
+BL-G022,registry record,14-delivery/implementation-backlog.csv
+BL-G023,registry record,14-delivery/implementation-backlog.csv
+BL-G024,registry record,14-delivery/implementation-backlog.csv
+BL-G025,registry record,14-delivery/implementation-backlog.csv
+BL-G026,registry record,14-delivery/implementation-backlog.csv
+BL-G027,registry record,14-delivery/implementation-backlog.csv
+BL-G028,registry record,14-delivery/implementation-backlog.csv
+BL-G029,registry record,14-delivery/implementation-backlog.csv
+BL-G030,registry record,14-delivery/implementation-backlog.csv
+BL-G031,registry record,14-delivery/implementation-backlog.csv
+BL-G032,registry record,14-delivery/implementation-backlog.csv
+BL-G033,registry record,14-delivery/implementation-backlog.csv
+BL-G034,registry record,14-delivery/implementation-backlog.csv
+BL-G035,registry record,14-delivery/implementation-backlog.csv
+BL-G036,registry record,14-delivery/implementation-backlog.csv
+BL-G037,registry record,14-delivery/implementation-backlog.csv
+BL-G038,registry record,14-delivery/implementation-backlog.csv
+BL-G039,registry record,14-delivery/implementation-backlog.csv
+BL-G040,registry record,14-delivery/implementation-backlog.csv
+BL-G041,registry record,14-delivery/implementation-backlog.csv
+BL-G042,registry record,14-delivery/implementation-backlog.csv
+BL-G043,registry record,14-delivery/implementation-backlog.csv
+BL-G044,registry record,14-delivery/implementation-backlog.csv
+BL-G045,registry record,14-delivery/implementation-backlog.csv
+BL-G046,registry record,14-delivery/implementation-backlog.csv
+BL-G047,registry record,14-delivery/implementation-backlog.csv
+BL-G048,registry record,14-delivery/implementation-backlog.csv
+BL-G049,registry record,14-delivery/implementation-backlog.csv
+BL-G050,registry record,14-delivery/implementation-backlog.csv
+BL-G051,registry record,14-delivery/implementation-backlog.csv
+BL-G052,registry record,14-delivery/implementation-backlog.csv
+BL-G053,registry record,14-delivery/implementation-backlog.csv
+BL-G054,registry record,14-delivery/implementation-backlog.csv
+BL-G055,registry record,14-delivery/implementation-backlog.csv
+BL-G056,registry record,14-delivery/implementation-backlog.csv
+BL-G057,registry record,14-delivery/implementation-backlog.csv
+BL-G058,registry record,14-delivery/implementation-backlog.csv
+BL-G059,registry record,14-delivery/implementation-backlog.csv
+BL-G060,registry record,14-delivery/implementation-backlog.csv
+BL-G061,registry record,14-delivery/implementation-backlog.csv
+BL-G062,registry record,14-delivery/implementation-backlog.csv
+BL-G063,registry record,14-delivery/implementation-backlog.csv
+BL-G064,registry record,14-delivery/implementation-backlog.csv
+BL-G065,registry record,14-delivery/implementation-backlog.csv
+BL-G066,registry record,14-delivery/implementation-backlog.csv
+BL-G067,registry record,14-delivery/implementation-backlog.csv
+BL-G068,registry record,14-delivery/implementation-backlog.csv
+BL-G069,registry record,14-delivery/implementation-backlog.csv
+BL-G070,registry record,14-delivery/implementation-backlog.csv
+BL-G071,registry record,14-delivery/implementation-backlog.csv
+BL-G072,registry record,14-delivery/implementation-backlog.csv
+BL-G073,registry record,14-delivery/implementation-backlog.csv
+BL-G074,registry record,14-delivery/implementation-backlog.csv
+BL-G075,registry record,14-delivery/implementation-backlog.csv
+BL-G076,registry record,14-delivery/implementation-backlog.csv
+BL-G077,registry record,14-delivery/implementation-backlog.csv
+BL-G078,registry record,14-delivery/implementation-backlog.csv
+BL-G079,registry record,14-delivery/implementation-backlog.csv
+BL-G080,registry record,14-delivery/implementation-backlog.csv
+BL-G081,registry record,14-delivery/implementation-backlog.csv
+BL-G082,registry record,14-delivery/implementation-backlog.csv
+BL-G083,registry record,14-delivery/implementation-backlog.csv
+BL-G084,registry record,14-delivery/implementation-backlog.csv
+BL-G085,registry record,14-delivery/implementation-backlog.csv
+BL-G086,registry record,14-delivery/implementation-backlog.csv
+BL-G087,registry record,14-delivery/implementation-backlog.csv
+BL-G088,registry record,14-delivery/implementation-backlog.csv
+BL-G089,registry record,14-delivery/implementation-backlog.csv
+BL-G090,registry record,14-delivery/implementation-backlog.csv
+BL-G091,registry record,14-delivery/implementation-backlog.csv
+BL-G092,registry record,14-delivery/implementation-backlog.csv
+BL-G093,registry record,14-delivery/implementation-backlog.csv
+BL-G094,registry record,14-delivery/implementation-backlog.csv
+BL-G095,registry record,14-delivery/implementation-backlog.csv
+BL-G096,registry record,14-delivery/implementation-backlog.csv
+BL-G097,registry record,14-delivery/implementation-backlog.csv
+BL-G098,registry record,14-delivery/implementation-backlog.csv
+BL-G099,registry record,14-delivery/implementation-backlog.csv
+BL-G100,registry record,14-delivery/implementation-backlog.csv
+BL-G101,registry record,14-delivery/implementation-backlog.csv
+BL-G102,registry record,14-delivery/implementation-backlog.csv
+BL-G103,registry record,14-delivery/implementation-backlog.csv
+BL-G104,registry record,14-delivery/implementation-backlog.csv
+BL-G105,registry record,14-delivery/implementation-backlog.csv
+BL-G106,registry record,14-delivery/implementation-backlog.csv
+BL-G107,registry record,14-delivery/implementation-backlog.csv
+BL-G108,registry record,14-delivery/implementation-backlog.csv
+BL-G109,registry record,14-delivery/implementation-backlog.csv
+BL-G110,registry record,14-delivery/implementation-backlog.csv
+BL-G111,registry record,14-delivery/implementation-backlog.csv
+BL-G112,registry record,14-delivery/implementation-backlog.csv
+BL-G113,registry record,14-delivery/implementation-backlog.csv
+BL-G114,registry record,14-delivery/implementation-backlog.csv
+BL-G115,registry record,14-delivery/implementation-backlog.csv
+BL-G116,registry record,14-delivery/implementation-backlog.csv
+BL-G117,registry record,14-delivery/implementation-backlog.csv
+BL-G118,registry record,14-delivery/implementation-backlog.csv
+BL-G119,registry record,14-delivery/implementation-backlog.csv
+BL-G120,registry record,14-delivery/implementation-backlog.csv
+BL-G121,registry record,14-delivery/implementation-backlog.csv
+BL-G122,registry record,14-delivery/implementation-backlog.csv
+BL-G123,registry record,14-delivery/implementation-backlog.csv
+BL-G124,registry record,14-delivery/implementation-backlog.csv
+BL-G125,registry record,14-delivery/implementation-backlog.csv
+BL-G126,registry record,14-delivery/implementation-backlog.csv
+BL-G127,registry record,14-delivery/implementation-backlog.csv
+BL-G128,registry record,14-delivery/implementation-backlog.csv
+BL-G129,registry record,14-delivery/implementation-backlog.csv
+BL-G130,registry record,14-delivery/implementation-backlog.csv
+BL-G131,registry record,14-delivery/implementation-backlog.csv
+BL-G132,registry record,14-delivery/implementation-backlog.csv
+BL-G133,registry record,14-delivery/implementation-backlog.csv
+BL-G134,registry record,14-delivery/implementation-backlog.csv
+BL-G135,registry record,14-delivery/implementation-backlog.csv
+BL-G136,registry record,14-delivery/implementation-backlog.csv
+BL-G137,registry record,14-delivery/implementation-backlog.csv
+BL-G138,registry record,14-delivery/implementation-backlog.csv
+BL-G139,registry record,14-delivery/implementation-backlog.csv
+BL-G140,registry record,14-delivery/implementation-backlog.csv
+BL-G141,registry record,14-delivery/implementation-backlog.csv
+BL-G142,registry record,14-delivery/implementation-backlog.csv
+BL-G143,registry record,14-delivery/implementation-backlog.csv
+BL-G144,registry record,14-delivery/implementation-backlog.csv
+BL-G145,registry record,14-delivery/implementation-backlog.csv
+BL-G146,registry record,14-delivery/implementation-backlog.csv
+BL-G147,registry record,14-delivery/implementation-backlog.csv
+BL-G148,registry record,14-delivery/implementation-backlog.csv
+BL-G149,registry record,14-delivery/implementation-backlog.csv
+BL-G150,registry record,14-delivery/implementation-backlog.csv
+BL-G151,registry record,14-delivery/implementation-backlog.csv
+BL-G152,registry record,14-delivery/implementation-backlog.csv
+BL-G153,registry record,14-delivery/implementation-backlog.csv
+BL-G154,registry record,14-delivery/implementation-backlog.csv
+BL-G155,registry record,14-delivery/implementation-backlog.csv
+BL-G156,registry record,14-delivery/implementation-backlog.csv
+BL-G157,registry record,14-delivery/implementation-backlog.csv
+BL-G158,registry record,14-delivery/implementation-backlog.csv
+BL-G159,registry record,14-delivery/implementation-backlog.csv
+BL-G160,registry record,14-delivery/implementation-backlog.csv
+BL-G161,registry record,14-delivery/implementation-backlog.csv
+BL-G162,registry record,14-delivery/implementation-backlog.csv
+BL-G163,registry record,14-delivery/implementation-backlog.csv
+BL-G164,registry record,14-delivery/implementation-backlog.csv
+BL-G165,registry record,14-delivery/implementation-backlog.csv
+BL-G166,registry record,14-delivery/implementation-backlog.csv
+BL-G167,registry record,14-delivery/implementation-backlog.csv
+BL-G168,registry record,14-delivery/implementation-backlog.csv
+BL-G169,registry record,14-delivery/implementation-backlog.csv
+BL-G170,registry record,14-delivery/implementation-backlog.csv
+BL-G171,registry record,14-delivery/implementation-backlog.csv
+BL-G172,registry record,14-delivery/implementation-backlog.csv
+BL-G173,registry record,14-delivery/implementation-backlog.csv
+BL-G174,registry record,14-delivery/implementation-backlog.csv
+BL-G175,registry record,14-delivery/implementation-backlog.csv
+BL-G176,registry record,14-delivery/implementation-backlog.csv
+BL-G177,registry record,14-delivery/implementation-backlog.csv
+BL-G178,registry record,14-delivery/implementation-backlog.csv
+BL-G179,registry record,14-delivery/implementation-backlog.csv
+BL-G180,registry record,14-delivery/implementation-backlog.csv
+BL-G181,registry record,14-delivery/implementation-backlog.csv
+BL-G182,registry record,14-delivery/implementation-backlog.csv
+BL-G183,registry record,14-delivery/implementation-backlog.csv
+BL-G184,registry record,14-delivery/implementation-backlog.csv
+BL-G185,registry record,14-delivery/implementation-backlog.csv
+BL-G186,registry record,14-delivery/implementation-backlog.csv
+BL-G187,registry record,14-delivery/implementation-backlog.csv
+BL-G188,registry record,14-delivery/implementation-backlog.csv
+BL-G189,registry record,14-delivery/implementation-backlog.csv
+BL-G190,registry record,14-delivery/implementation-backlog.csv
+BL-G191,registry record,14-delivery/implementation-backlog.csv
+BL-G192,registry record,14-delivery/implementation-backlog.csv
+BL-G193,registry record,14-delivery/implementation-backlog.csv
+BL-G194,registry record,14-delivery/implementation-backlog.csv
+BL-G195,registry record,14-delivery/implementation-backlog.csv
+BL-G196,registry record,14-delivery/implementation-backlog.csv
+BL-G197,registry record,14-delivery/implementation-backlog.csv
+BL-G198,registry record,14-delivery/implementation-backlog.csv
+BL-G199,registry record,14-delivery/implementation-backlog.csv
+BL-G200,registry record,14-delivery/implementation-backlog.csv
+BL-G201,registry record,14-delivery/implementation-backlog.csv
+BL-G202,registry record,14-delivery/implementation-backlog.csv
+BL-G203,registry record,14-delivery/implementation-backlog.csv
+BL-G204,registry record,14-delivery/implementation-backlog.csv
+BL-G205,registry record,14-delivery/implementation-backlog.csv
+BL-G206,registry record,14-delivery/implementation-backlog.csv
+BL-G207,registry record,14-delivery/implementation-backlog.csv
+BL-G208,registry record,14-delivery/implementation-backlog.csv
+BL-G209,registry record,14-delivery/implementation-backlog.csv
+BL-G210,registry record,14-delivery/implementation-backlog.csv
+BL-G211,registry record,14-delivery/implementation-backlog.csv
+BL-G212,registry record,14-delivery/implementation-backlog.csv
+BL-G213,registry record,14-delivery/implementation-backlog.csv
+BL-G214,registry record,14-delivery/implementation-backlog.csv
+BL-G215,registry record,14-delivery/implementation-backlog.csv
+BL-G216,registry record,14-delivery/implementation-backlog.csv
+BL-G217,registry record,14-delivery/implementation-backlog.csv
+BL-G218,registry record,14-delivery/implementation-backlog.csv
+BL-G219,registry record,14-delivery/implementation-backlog.csv
+BL-G220,registry record,14-delivery/implementation-backlog.csv
+BL-G221,registry record,14-delivery/implementation-backlog.csv
+BL-G222,registry record,14-delivery/implementation-backlog.csv
+BL-G223,registry record,14-delivery/implementation-backlog.csv
+BL-G224,registry record,14-delivery/implementation-backlog.csv
+BL-G225,registry record,14-delivery/implementation-backlog.csv
+BL-G226,registry record,14-delivery/implementation-backlog.csv
+BL-G227,registry record,14-delivery/implementation-backlog.csv
+BL-G228,registry record,14-delivery/implementation-backlog.csv
+CAP-D001,registry record,02-requirements/capability-and-compatibility-matrix.csv
+CAP-D002,registry record,02-requirements/capability-and-compatibility-matrix.csv
+CAP-D003,registry record,02-requirements/capability-and-compatibility-matrix.csv
+CAP-D004,registry record,02-requirements/capability-and-compatibility-matrix.csv
+CAP-D005,registry record,02-requirements/capability-and-compatibility-matrix.csv
+CAP-D006,registry record,02-requirements/capability-and-compatibility-matrix.csv
+CAP-D007,registry record,02-requirements/capability-and-compatibility-matrix.csv
+CAP-D008,registry record,02-requirements/capability-and-compatibility-matrix.csv
+CAP-D009,registry record,02-requirements/capability-and-compatibility-matrix.csv
+CAP-D010,registry record,02-requirements/capability-and-compatibility-matrix.csv
+CAP-D011,registry record,02-requirements/capability-and-compatibility-matrix.csv
+CAP-D012,registry record,02-requirements/capability-and-compatibility-matrix.csv
+CAP-D013,registry record,02-requirements/capability-and-compatibility-matrix.csv
+CAP-D014,registry record,02-requirements/capability-and-compatibility-matrix.csv
+CAP-D015,registry record,02-requirements/capability-and-compatibility-matrix.csv
+CAP-D016,registry record,02-requirements/capability-and-compatibility-matrix.csv
+CAP-D017,registry record,02-requirements/capability-and-compatibility-matrix.csv
+CAP-D018,registry record,02-requirements/capability-and-compatibility-matrix.csv
+CAP-D019,registry record,02-requirements/capability-and-compatibility-matrix.csv
+CAP-D020,registry record,02-requirements/capability-and-compatibility-matrix.csv
+CAP-D021,registry record,02-requirements/capability-and-compatibility-matrix.csv
+CAP-D022,registry record,02-requirements/capability-and-compatibility-matrix.csv
+CAP-D023,registry record,02-requirements/capability-and-compatibility-matrix.csv
+CAP-D024,registry record,02-requirements/capability-and-compatibility-matrix.csv
+CAP-D025,registry record,02-requirements/capability-and-compatibility-matrix.csv
+CAP-D026,registry record,02-requirements/capability-and-compatibility-matrix.csv
+CAP-D027,registry record,02-requirements/capability-and-compatibility-matrix.csv
+CMP-U001,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U002,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U003,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U004,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U005,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U006,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U007,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U008,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U009,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U010,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U011,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U012,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U013,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U014,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U015,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U016,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U017,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U018,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U019,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U020,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U021,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U022,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U023,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U024,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U025,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U026,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U027,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U028,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U029,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U030,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U031,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U032,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U033,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U034,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U035,screen/component/internal command,05-ux-ui/component-specifications.md
+CMP-U036,screen/component/internal command,05-ux-ui/component-specifications.md
+CTRL-S001,registry record,11-security-privacy/controls-and-verification-matrix.csv
+CTRL-S002,registry record,11-security-privacy/controls-and-verification-matrix.csv
+CTRL-S003,registry record,11-security-privacy/controls-and-verification-matrix.csv
+CTRL-S004,registry record,11-security-privacy/controls-and-verification-matrix.csv
+CTRL-S005,registry record,11-security-privacy/controls-and-verification-matrix.csv
+CTRL-S006,registry record,11-security-privacy/controls-and-verification-matrix.csv
+CTRL-S007,registry record,11-security-privacy/controls-and-verification-matrix.csv
+CTRL-S008,registry record,11-security-privacy/controls-and-verification-matrix.csv
+CTRL-S009,registry record,11-security-privacy/controls-and-verification-matrix.csv
+CTRL-S010,registry record,11-security-privacy/controls-and-verification-matrix.csv
+CTRL-S011,registry record,11-security-privacy/controls-and-verification-matrix.csv
+CTRL-S012,registry record,11-security-privacy/controls-and-verification-matrix.csv
+CTRL-S013,registry record,11-security-privacy/controls-and-verification-matrix.csv
+CTRL-S014,registry record,11-security-privacy/controls-and-verification-matrix.csv
+CTRL-S015,registry record,11-security-privacy/controls-and-verification-matrix.csv
+CTRL-S016,registry record,11-security-privacy/controls-and-verification-matrix.csv
+CTRL-S017,registry record,11-security-privacy/controls-and-verification-matrix.csv
+CTRL-S018,registry record,11-security-privacy/controls-and-verification-matrix.csv
+CTRL-S019,registry record,11-security-privacy/controls-and-verification-matrix.csv
+CTRL-S020,registry record,11-security-privacy/controls-and-verification-matrix.csv
+CTRL-S021,registry record,11-security-privacy/controls-and-verification-matrix.csv
+CTRL-S022,registry record,11-security-privacy/controls-and-verification-matrix.csv
+CTRL-S023,registry record,11-security-privacy/controls-and-verification-matrix.csv
+CTRL-S024,registry record,11-security-privacy/controls-and-verification-matrix.csv
+CTRL-S025,registry record,11-security-privacy/controls-and-verification-matrix.csv
+CTRL-S026,registry record,11-security-privacy/controls-and-verification-matrix.csv
+CTRL-S027,registry record,11-security-privacy/controls-and-verification-matrix.csv
+DATA-D01,domain entity,04-data/domain-model-and-erd.md
+DATA-D02,domain entity,04-data/domain-model-and-erd.md
+DATA-D03,domain entity,04-data/domain-model-and-erd.md
+DATA-D04,domain entity,04-data/domain-model-and-erd.md
+DATA-D05,domain entity,04-data/domain-model-and-erd.md
+DATA-D06,domain entity,04-data/domain-model-and-erd.md
+DATA-D07,domain entity,04-data/domain-model-and-erd.md
+DATA-D08,domain entity,04-data/domain-model-and-erd.md
+DATA-D09,domain entity,04-data/domain-model-and-erd.md
+DATA-D10,domain entity,04-data/domain-model-and-erd.md
+DATA-D11,domain entity,04-data/domain-model-and-erd.md
+DATA-D12,domain entity,04-data/domain-model-and-erd.md
+DEC-01,registry record,00-governance/decisions.csv
+DEC-02,registry record,00-governance/decisions.csv
+DEC-03,registry record,00-governance/decisions.csv
+DEC-04,registry record,00-governance/decisions.csv
+DEC-05,registry record,00-governance/decisions.csv
+DEC-06,registry record,00-governance/decisions.csv
+DEC-07,registry record,00-governance/decisions.csv
+DEC-08,registry record,00-governance/decisions.csv
+DEC-09,registry record,00-governance/decisions.csv
+DEC-10,registry record,00-governance/decisions.csv
+DEC-11,registry record,00-governance/decisions.csv
+DEC-12,registry record,00-governance/decisions.csv
+DOC-D-ADR-01,artifact,03-architecture/adr/adr-01-block-theme.md
+DOC-D-ADR-02,artifact,03-architecture/adr/adr-02-modular-monolith.md
+DOC-D-ADR-03,artifact,03-architecture/adr/adr-03-native-capability-ownership.md
+DOC-D-ADR-04,artifact,03-architecture/adr/adr-04-product-type-adapters.md
+DOC-D-ADR-05,artifact,03-architecture/adr/adr-05-seller-product-offer.md
+DOC-D-ADR-06,artifact,03-architecture/adr/adr-06-marketplace-build-integrate.md
+DOC-D-ADR-07,artifact,03-architecture/adr/adr-07-price-stock-authority.md
+DOC-D-ADR-08,artifact,03-architecture/adr/adr-08-order-allocation.md
+DOC-D-ADR-09,artifact,03-architecture/adr/adr-09-payment-settlement.md
+DOC-D-ADR-10,artifact,03-architecture/adr/adr-10-storage-indexing.md
+DOC-D-ADR-11,artifact,03-architecture/adr/adr-11-caching-search.md
+DOC-D-ADR-12,artifact,03-architecture/adr/adr-12-customization-inheritance.md
+DOC-D-ADR-13,artifact,03-architecture/adr/adr-13-seo-ownership.md
+DOC-D-ADR-14,artifact,03-architecture/adr/adr-14-independent-sites.md
+DOC-D-ADR-15,artifact,03-architecture/adr/adr-15-localization.md
+DOC-D-ADR-16,artifact,03-architecture/adr/adr-16-upgrade-deactivation.md
+DOC-D-ADR-INDEX,artifact,03-architecture/adr/README.md
+DOC-D-ARCH-OVERVIEW,artifact,03-architecture/architecture-overview.md
+DOC-D-BUYBOX,artifact,08-marketplace/offers-buy-box-and-seller-policies.md
+DOC-D-CHECKOUT,artifact,08-marketplace/cart-checkout-and-order-allocation.md
+DOC-D-DEPLOYMENT,artifact,03-architecture/deployment-and-site-isolation.md
+DOC-D-DICTIONARY,artifact,04-data/data-dictionary.md
+DOC-D-DOMAIN,artifact,04-data/domain-model-and-erd.md
+DOC-D-EXAMPLES,artifact,08-marketplace/worked-transaction-examples.md
+DOC-D-FINANCE-DATA,artifact,04-data/orders-financial-records-and-invariants.md
+DOC-D-IMPORT,artifact,04-data/import-export-and-migration.md
+DOC-D-INVENTORY,artifact,04-data/offers-inventory-and-reservations.md
+DOC-D-LIFECYCLE,artifact,04-data/lifecycle-retention-and-deletion.md
+DOC-D-MIGRATION,artifact,08-marketplace/single-seller-to-marketplace-migration.md
+DOC-D-MKT-MODELS,artifact,08-marketplace/operating-models-and-catalog-governance.md
+DOC-D-MODERATION,artifact,08-marketplace/moderation-fraud-and-seller-performance.md
+DOC-D-NATIVE,artifact,03-architecture/native-versus-custom-decisions.md
+DOC-D-OWNERSHIP,artifact,03-architecture/ownership-and-module-boundaries.md
+DOC-D-PROVIDERS,artifact,03-architecture/marketplace-provider-evaluation.md
+DOC-D-RETURNS,artifact,08-marketplace/returns-refunds-disputes-and-chargebacks.md
+DOC-D-SELLERS,artifact,08-marketplace/seller-onboarding-teams-and-portals.md
+DOC-D-SETTLEMENT,artifact,08-marketplace/commissions-ledger-payouts-and-reconciliation.md
+DOC-D-SHIPPING,artifact,08-marketplace/shipping-fulfillment-and-tracking.md
+DOC-D-SPECS,artifact,04-data/product-specifications-and-compatibility.md
+DOC-D-STORAGE,artifact,04-data/ownership-and-storage-mapping.md
+DOC-D-TYPES,artifact,04-data/product-types-and-capabilities.md
+DOC-D-VIEWS,artifact,03-architecture/system-views-and-data-flows.md
+DOC-G-ACCEPTANCE,artifact,02-requirements/acceptance-model.md
+DOC-G-API-AUTH,artifact,09-api-integrations/api-and-authentication-strategy.md
+DOC-G-API-JOBS,artifact,09-api-integrations/webhook-and-job-contracts.md
+DOC-G-API-VERSION,artifact,09-api-integrations/versioning-errors-idempotency-and-limits.md
+DOC-G-CHARTER,artifact,00-governance/project-charter.md
+DOC-G-CONVENTIONS,artifact,00-governance/documentation-conventions.md
+DOC-G-COVERAGE,artifact,17-validation/traceability-and-completeness-report.md
+DOC-G-ENGINEERING,artifact,14-delivery/future-engineering-standards-and-repository-layout.md
+DOC-G-EVIDENCE,artifact,00-governance/evidence-and-research-notes.md
+DOC-G-GATES,artifact,14-delivery/quality-gates-and-handover.md
+DOC-G-HANDOVER,artifact,17-validation/final-handover-summary.md
+DOC-G-INTEGRATIONS,artifact,09-api-integrations/integration-catalog-and-data-mapping.md
+DOC-G-METRICS,artifact,01-product/release-scope-and-success-metrics.md
+DOC-G-PERSONAS,artifact,01-product/personas-journeys-and-service-blueprints.md
+DOC-G-PRD,artifact,01-product/product-requirements.md
+DOC-G-PROVIDER-EXIT,artifact,09-api-integrations/provider-verification-and-exit-plans.md
+DOC-G-RACI,artifact,00-governance/roles-raci-and-handoffs.md
+DOC-G-READINESS,artifact,17-validation/unresolved-decisions-and-readiness-gates.md
+DOC-G-README,artifact,README.md
+DOC-G-REVIEW,artifact,17-validation/cross-disciplinary-review.md
+DOC-G-RISKS,artifact,00-governance/risks-dependencies-and-change-control.md
+DOC-G-ROADMAP,artifact,14-delivery/phased-roadmap-and-dependencies.md
+DOC-G-SCOPE,artifact,00-governance/scope-assumptions-and-decisions.md
+DOC-G-SRS,artifact,02-requirements/software-requirements-specification.md
+DOC-G-STAFFING,artifact,14-delivery/staffing-estimation-and-procurement.md
+DOC-G-STATUS,artifact,GENERATION_STATUS.md
+DOC-G-USECASES,artifact,01-product/use-cases-and-business-rules.md
+DOC-G-VALIDATION,artifact,17-validation/documentation-validation-report.md
+DOC-S-GUIDE01,artifact,16-guides/developer-extension-guide.md
+DOC-S-GUIDE02,artifact,16-guides/administrator-customization-guide.md
+DOC-S-GUIDE03,artifact,16-guides/catalog-editor-and-merchandiser-guide.md
+DOC-S-GUIDE04,artifact,16-guides/seller-and-finance-operations-guide.md
+DOC-S-GUIDE05,artifact,16-guides/customer-support-and-training-guide.md
+DOC-S-GUIDE06,artifact,16-guides/documentation-maintenance-and-change-log.md
+DOC-S-OPS01,artifact,13-operations/environments-release-and-maintenance.md
+DOC-S-OPS02,artifact,13-operations/capacity-performance-and-cache-design.md
+DOC-S-OPS03,artifact,13-operations/slos-monitoring-alerts-and-analytics.md
+DOC-S-OPS04,artifact,13-operations/backups-recovery-and-runbooks.md
+DOC-S-OPS05,artifact,13-operations/support-upgrades-and-end-of-life.md
+DOC-S-QA01,artifact,12-quality/quality-and-test-strategy.md
+DOC-S-QA02,artifact,12-quality/compatibility-and-risk-based-coverage.md
+DOC-S-QA03,artifact,12-quality/accessibility-localization-and-visual-tests.md
+DOC-S-QA04,artifact,12-quality/performance-concurrency-and-recovery-tests.md
+DOC-S-QA05,artifact,12-quality/security-privacy-and-seo-tests.md
+DOC-S-QA06,artifact,12-quality/fixtures-migration-and-user-acceptance.md
+DOC-S-SEC01,artifact,11-security-privacy/security-requirements-and-threat-model.md
+DOC-S-SEC02,artifact,11-security-privacy/identity-api-upload-and-content-security.md
+DOC-S-SEC03,artifact,11-security-privacy/financial-integrity-and-abuse-prevention.md
+DOC-S-SEC04,artifact,11-security-privacy/data-protection-consent-and-retention.md
+DOC-S-SEC05,artifact,11-security-privacy/jurisdiction-and-compliance-decision-matrix.md
+DOC-S-SEC06,artifact,11-security-privacy/supply-chain-secure-development-and-updates.md
+DOC-S-SEC07,artifact,11-security-privacy/incident-response-and-disclosure.md
+DOC-S-SEO01,artifact,10-seo/seo-strategy-and-responsibility-boundaries.md
+DOC-S-SEO02,artifact,10-seo/facets-pagination-and-crawl-management.md
+DOC-S-SEO03,artifact,10-seo/structured-data-and-schema-ownership.md
+DOC-S-SEO04,artifact,10-seo/content-international-and-marketplace-seo.md
+DOC-S-SEO05,artifact,10-seo/merchant-feeds-and-data-consistency.md
+DOC-S-SEO06,artifact,10-seo/migration-monitoring-and-seo-acceptance.md
+DOC-U-01,artifact,05-ux-ui/reference-audit.md
+DOC-U-02,artifact,05-ux-ui/information-architecture-and-navigation.md
+DOC-U-03,artifact,05-ux-ui/design-system-and-tokens.md
+DOC-U-04,artifact,05-ux-ui/responsive-rtl-and-interactions.md
+DOC-U-05,artifact,05-ux-ui/accessibility-and-content-design.md
+DOC-U-06,artifact,05-ux-ui/design-handoff-and-prototype-validation.md
+DOC-U-07,artifact,05-ux-ui/component-specifications.md
+DOC-U-08,artifact,05-ux-ui/screen-and-template-specifications.md
+DOC-U-09,artifact,05-ux-ui/journeys-task-flows-and-wireframes.md
+DOC-U-10,artifact,06-theme/theme-functional-specification.md
+DOC-U-11,artifact,06-theme/templates-patterns-and-block-contracts.md
+DOC-U-12,artifact,06-theme/customization-and-editor-permissions.md
+DOC-U-13,artifact,06-theme/presets-and-store-branding.md
+DOC-U-14,artifact,06-theme/fallback-compatibility-and-upgrades.md
+DOC-U-15,artifact,07-plugin/plugin-kernel-and-module-lifecycle.md
+DOC-U-16,artifact,07-plugin/settings-permissions-and-diagnostics.md
+DOC-U-17,artifact,07-plugin/extension-contracts-and-provider-adapters.md
+DOC-U-18,artifact,07-plugin/jobs-notifications-and-observability.md
+DOC-U-19,artifact,07-plugin/activation-migration-deactivation-uninstall.md
+DOC-U-20,artifact,15-store-profiles/outdoor-store-profile.md
+DOC-U-21,artifact,15-store-profiles/smart-home-store-profile.md
+DOC-U-22,artifact,15-store-profiles/independent-configuration-and-onboarding.md
+DOC-U-23,artifact,07-plugin/module-command-contracts.md
+DOC-U-M001,artifact,07-plugin/modules/product-specifications.md
+DOC-U-M002,artifact,07-plugin/modules/search-and-facets.md
+DOC-U-M003,artifact,07-plugin/modules/wishlists.md
+DOC-U-M004,artifact,07-plugin/modules/comparisons.md
+DOC-U-M005,artifact,07-plugin/modules/recent-history.md
+DOC-U-M006,artifact,07-plugin/modules/product-alerts.md
+DOC-U-M007,artifact,07-plugin/modules/questions-and-answers.md
+DOC-U-M008,artifact,07-plugin/modules/review-enhancements.md
+DOC-U-M009,artifact,07-plugin/modules/campaigns-and-badges.md
+DOC-U-M010,artifact,07-plugin/modules/merchandising-recommendations.md
+DOC-U-M011,artifact,07-plugin/modules/product-relationships.md
+DOC-U-M012,artifact,07-plugin/modules/compatibility-evidence.md
+DOC-U-M013,artifact,07-plugin/modules/bundles-and-kits.md
+DOC-U-M014,artifact,07-plugin/modules/installation-and-services.md
+DOC-U-M015,artifact,07-plugin/modules/delivery-messaging.md
+DOC-U-M016,artifact,07-plugin/modules/notifications-and-preferences.md
+DOC-U-M017,artifact,07-plugin/modules/price-history.md
+DOC-U-M018,artifact,07-plugin/modules/loyalty-and-rewards.md
+DOC-U-M019,artifact,07-plugin/modules/cart-incentives.md
+DOC-U-M020,artifact,07-plugin/modules/analytics.md
+DOC-U-M021,artifact,07-plugin/modules/imports-and-exports.md
+DOC-U-M022,artifact,07-plugin/modules/diagnostics-and-jobs.md
+DOC-U-M023,artifact,07-plugin/modules/webhooks-and-connectors.md
+DOC-U-M024,artifact,07-plugin/modules/marketplace-adapters.md
+DOC-U-M025,artifact,07-plugin/modules/product-media.md
+DOC-U-M026,artifact,07-plugin/modules/configuration-profiles.md
+DOC-U-MINDEX,artifact,07-plugin/modules/README.md
+EVT-D001,registry record,09-api-integrations/event-catalog.csv
+EVT-D002,registry record,09-api-integrations/event-catalog.csv
+EVT-D003,registry record,09-api-integrations/event-catalog.csv
+EVT-D004,registry record,09-api-integrations/event-catalog.csv
+EVT-D005,registry record,09-api-integrations/event-catalog.csv
+EVT-D006,registry record,09-api-integrations/event-catalog.csv
+EVT-D007,registry record,09-api-integrations/event-catalog.csv
+EVT-D008,registry record,09-api-integrations/event-catalog.csv
+EVT-D009,registry record,09-api-integrations/event-catalog.csv
+EVT-D010,registry record,09-api-integrations/event-catalog.csv
+EVT-D011,registry record,09-api-integrations/event-catalog.csv
+EVT-D012,registry record,09-api-integrations/event-catalog.csv
+EVT-D013,registry record,09-api-integrations/event-catalog.csv
+EVT-D014,registry record,09-api-integrations/event-catalog.csv
+EVT-D015,registry record,09-api-integrations/event-catalog.csv
+EVT-D016,registry record,09-api-integrations/event-catalog.csv
+EVT-D017,registry record,09-api-integrations/event-catalog.csv
+EVT-D018,registry record,09-api-integrations/event-catalog.csv
+EVT-D019,registry record,09-api-integrations/event-catalog.csv
+EVT-D020,registry record,09-api-integrations/event-catalog.csv
+EVT-D021,registry record,09-api-integrations/event-catalog.csv
+EVT-D022,registry record,09-api-integrations/event-catalog.csv
+EVT-D023,registry record,09-api-integrations/event-catalog.csv
+EVT-D024,registry record,09-api-integrations/event-catalog.csv
+EVT-D025,registry record,09-api-integrations/event-catalog.csv
+EVT-D026,registry record,09-api-integrations/event-catalog.csv
+EVT-D027,registry record,09-api-integrations/event-catalog.csv
+EVT-D028,registry record,09-api-integrations/event-catalog.csv
+EVT-D029,registry record,09-api-integrations/event-catalog.csv
+EVT-D030,registry record,09-api-integrations/event-catalog.csv
+EVT-D031,registry record,09-api-integrations/event-catalog.csv
+EVT-D032,registry record,09-api-integrations/event-catalog.csv
+EVT-D033,registry record,09-api-integrations/event-catalog.csv
+EVT-D034,registry record,09-api-integrations/event-catalog.csv
+EVT-D035,registry record,09-api-integrations/event-catalog.csv
+EVT-D036,registry record,09-api-integrations/event-catalog.csv
+EVT-D037,registry record,09-api-integrations/event-catalog.csv
+EVT-D038,registry record,09-api-integrations/event-catalog.csv
+EVT-D039,registry record,09-api-integrations/event-catalog.csv
+EVT-D040,registry record,09-api-integrations/event-catalog.csv
+FAMILY-00,responsibility/gate,00-governance/raci.csv
+FAMILY-01,responsibility/gate,00-governance/raci.csv
+FAMILY-02,responsibility/gate,00-governance/raci.csv
+FAMILY-03,responsibility/gate,00-governance/raci.csv
+FAMILY-04,responsibility/gate,00-governance/raci.csv
+FAMILY-05,responsibility/gate,00-governance/raci.csv
+FAMILY-06,responsibility/gate,00-governance/raci.csv
+FAMILY-07,responsibility/gate,00-governance/raci.csv
+FAMILY-08,responsibility/gate,00-governance/raci.csv
+FAMILY-09,responsibility/gate,00-governance/raci.csv
+FAMILY-10,responsibility/gate,00-governance/raci.csv
+FAMILY-11,responsibility/gate,00-governance/raci.csv
+FAMILY-12,responsibility/gate,00-governance/raci.csv
+FAMILY-13,responsibility/gate,00-governance/raci.csv
+FAMILY-14,responsibility/gate,00-governance/raci.csv
+FAMILY-15,responsibility/gate,00-governance/raci.csv
+FAMILY-16,responsibility/gate,00-governance/raci.csv
+FAMILY-17,responsibility/gate,00-governance/raci.csv
+FIN-CHECK01,registry record,17-validation/financial-example-checks.csv
+FIN-CHECK02,registry record,17-validation/financial-example-checks.csv
+FIN-CHECK03,registry record,17-validation/financial-example-checks.csv
+FIN-CHECK04,registry record,17-validation/financial-example-checks.csv
+FIN-CHECK05,registry record,17-validation/financial-example-checks.csv
+FIN-CHECK06,registry record,17-validation/financial-example-checks.csv
+FIN-CHECK07,registry record,17-validation/financial-example-checks.csv
+FIN-CHECK08,registry record,17-validation/financial-example-checks.csv
+FIN-CHECK09,registry record,17-validation/financial-example-checks.csv
+FIN-CHECK10,registry record,17-validation/financial-example-checks.csv
+FIN-CHECK11,registry record,17-validation/financial-example-checks.csv
+FIN-CHECK12,registry record,17-validation/financial-example-checks.csv
+FIN-CHECK13,registry record,17-validation/financial-example-checks.csv
+FIN-CHECK14,registry record,17-validation/financial-example-checks.csv
+FIN-CHECK15,registry record,17-validation/financial-example-checks.csv
+FIN-CHECK16,registry record,17-validation/financial-example-checks.csv
+FIX-S-AUTH,synthetic fixture,12-quality/fixtures-migration-and-user-acceptance.md
+FIX-S-EVENT,synthetic fixture,12-quality/fixtures-migration-and-user-acceptance.md
+FIX-S-HOME,synthetic fixture,12-quality/fixtures-migration-and-user-acceptance.md
+FIX-S-MIG,synthetic fixture,12-quality/fixtures-migration-and-user-acceptance.md
+FIX-S-MONEY,synthetic fixture,12-quality/fixtures-migration-and-user-acceptance.md
+FIX-S-OUT,synthetic fixture,12-quality/fixtures-migration-and-user-acceptance.md
+FIX-S-SEO,synthetic fixture,12-quality/fixtures-migration-and-user-acceptance.md
+FIX-S-TYPES,synthetic fixture,12-quality/fixtures-migration-and-user-acceptance.md
+FR-D001,registry record,02-requirements/requirements.csv
+FR-D002,registry record,02-requirements/requirements.csv
+FR-D003,registry record,02-requirements/requirements.csv
+FR-D004,registry record,02-requirements/requirements.csv
+FR-D005,registry record,02-requirements/requirements.csv
+FR-D006,registry record,02-requirements/requirements.csv
+FR-D007,registry record,02-requirements/requirements.csv
+FR-D008,registry record,02-requirements/requirements.csv
+FR-D009,registry record,02-requirements/requirements.csv
+FR-D010,registry record,02-requirements/requirements.csv
+FR-D011,registry record,02-requirements/requirements.csv
+FR-D012,registry record,02-requirements/requirements.csv
+FR-D013,registry record,02-requirements/requirements.csv
+FR-D014,registry record,02-requirements/requirements.csv
+FR-D015,registry record,02-requirements/requirements.csv
+FR-D016,registry record,02-requirements/requirements.csv
+FR-D017,registry record,02-requirements/requirements.csv
+FR-D018,registry record,02-requirements/requirements.csv
+FR-D019,registry record,02-requirements/requirements.csv
+FR-D020,registry record,02-requirements/requirements.csv
+FR-D021,registry record,02-requirements/requirements.csv
+FR-D022,registry record,02-requirements/requirements.csv
+FR-D023,registry record,02-requirements/requirements.csv
+FR-D024,registry record,02-requirements/requirements.csv
+FR-D025,registry record,02-requirements/requirements.csv
+FR-D026,registry record,02-requirements/requirements.csv
+FR-D027,registry record,02-requirements/requirements.csv
+FR-D028,registry record,02-requirements/requirements.csv
+FR-D029,registry record,02-requirements/requirements.csv
+FR-D030,registry record,02-requirements/requirements.csv
+FR-D031,registry record,02-requirements/requirements.csv
+FR-D032,registry record,02-requirements/requirements.csv
+FR-D033,registry record,02-requirements/requirements.csv
+FR-D034,registry record,02-requirements/requirements.csv
+FR-D035,registry record,02-requirements/requirements.csv
+FR-D036,registry record,02-requirements/requirements.csv
+FR-D037,registry record,02-requirements/requirements.csv
+FR-D038,registry record,02-requirements/requirements.csv
+FR-D039,registry record,02-requirements/requirements.csv
+FR-D040,registry record,02-requirements/requirements.csv
+FR-D041,registry record,02-requirements/requirements.csv
+FR-D042,registry record,02-requirements/requirements.csv
+FR-D043,registry record,02-requirements/requirements.csv
+FR-D044,registry record,02-requirements/requirements.csv
+FR-D045,registry record,02-requirements/requirements.csv
+FR-D046,registry record,02-requirements/requirements.csv
+FR-D047,registry record,02-requirements/requirements.csv
+FR-D048,registry record,02-requirements/requirements.csv
+FR-D049,registry record,02-requirements/requirements.csv
+FR-D050,registry record,02-requirements/requirements.csv
+FR-D051,registry record,02-requirements/requirements.csv
+FR-D052,registry record,02-requirements/requirements.csv
+FR-D053,registry record,02-requirements/requirements.csv
+FR-D054,registry record,02-requirements/requirements.csv
+FR-D055,registry record,02-requirements/requirements.csv
+FR-D056,registry record,02-requirements/requirements.csv
+FR-D057,registry record,02-requirements/requirements.csv
+FR-D058,registry record,02-requirements/requirements.csv
+FR-D059,registry record,02-requirements/requirements.csv
+FR-D060,registry record,02-requirements/requirements.csv
+FR-D061,registry record,02-requirements/requirements.csv
+FR-D062,registry record,02-requirements/requirements.csv
+FR-D063,registry record,02-requirements/requirements.csv
+FR-D064,registry record,02-requirements/requirements.csv
+FR-D065,registry record,02-requirements/requirements.csv
+FR-D066,registry record,02-requirements/requirements.csv
+FR-D067,registry record,02-requirements/requirements.csv
+FR-D068,registry record,02-requirements/requirements.csv
+FR-D069,registry record,02-requirements/requirements.csv
+FR-D070,registry record,02-requirements/requirements.csv
+FR-D071,registry record,02-requirements/requirements.csv
+FR-D072,registry record,02-requirements/requirements.csv
+FR-D073,registry record,02-requirements/requirements.csv
+FR-D074,registry record,02-requirements/requirements.csv
+FR-D075,registry record,02-requirements/requirements.csv
+FR-D076,registry record,02-requirements/requirements.csv
+FR-D077,registry record,02-requirements/requirements.csv
+FR-D078,registry record,02-requirements/requirements.csv
+FR-D079,registry record,02-requirements/requirements.csv
+FR-D080,registry record,02-requirements/requirements.csv
+FR-D081,registry record,02-requirements/requirements.csv
+FR-D082,registry record,02-requirements/requirements.csv
+FR-D083,registry record,02-requirements/requirements.csv
+FR-D084,registry record,02-requirements/requirements.csv
+FR-D085,registry record,02-requirements/requirements.csv
+FR-D086,registry record,02-requirements/requirements.csv
+FR-D087,registry record,02-requirements/requirements.csv
+FR-D088,registry record,02-requirements/requirements.csv
+FR-D089,registry record,02-requirements/requirements.csv
+FR-D090,registry record,02-requirements/requirements.csv
+FR-D091,registry record,02-requirements/requirements.csv
+FR-D092,registry record,02-requirements/requirements.csv
+FR-D093,registry record,02-requirements/requirements.csv
+FR-D094,registry record,02-requirements/requirements.csv
+FR-D095,registry record,02-requirements/requirements.csv
+FR-G001,registry record,02-requirements/requirements.csv
+FR-G002,registry record,02-requirements/requirements.csv
+FR-G003,registry record,02-requirements/requirements.csv
+FR-G004,registry record,02-requirements/requirements.csv
+FR-G005,registry record,02-requirements/requirements.csv
+FR-G006,registry record,02-requirements/requirements.csv
+FR-G007,registry record,02-requirements/requirements.csv
+FR-G008,registry record,02-requirements/requirements.csv
+FR-G009,registry record,02-requirements/requirements.csv
+FR-G010,registry record,02-requirements/requirements.csv
+FR-G011,registry record,02-requirements/requirements.csv
+FR-G012,registry record,02-requirements/requirements.csv
+FR-G013,registry record,02-requirements/requirements.csv
+FR-G014,registry record,02-requirements/requirements.csv
+FR-G015,registry record,02-requirements/requirements.csv
+FR-G016,registry record,02-requirements/requirements.csv
+FR-G017,registry record,02-requirements/requirements.csv
+FR-G018,registry record,02-requirements/requirements.csv
+FR-G019,registry record,02-requirements/requirements.csv
+FR-G020,registry record,02-requirements/requirements.csv
+FR-G021,registry record,02-requirements/requirements.csv
+FR-S001,registry record,02-requirements/requirements.csv
+FR-S002,registry record,02-requirements/requirements.csv
+FR-S003,registry record,02-requirements/requirements.csv
+FR-S004,registry record,02-requirements/requirements.csv
+FR-S005,registry record,02-requirements/requirements.csv
+FR-S006,registry record,02-requirements/requirements.csv
+FR-S007,registry record,02-requirements/requirements.csv
+FR-S008,registry record,02-requirements/requirements.csv
+FR-S009,registry record,02-requirements/requirements.csv
+FR-S010,registry record,02-requirements/requirements.csv
+FR-S011,registry record,02-requirements/requirements.csv
+FR-U001,registry record,02-requirements/requirements.csv
+FR-U002,registry record,02-requirements/requirements.csv
+FR-U003,registry record,02-requirements/requirements.csv
+FR-U004,registry record,02-requirements/requirements.csv
+FR-U005,registry record,02-requirements/requirements.csv
+FR-U006,registry record,02-requirements/requirements.csv
+FR-U007,registry record,02-requirements/requirements.csv
+FR-U008,registry record,02-requirements/requirements.csv
+FR-U009,registry record,02-requirements/requirements.csv
+FR-U010,registry record,02-requirements/requirements.csv
+FR-U011,registry record,02-requirements/requirements.csv
+FR-U012,registry record,02-requirements/requirements.csv
+FR-U013,registry record,02-requirements/requirements.csv
+FR-U014,registry record,02-requirements/requirements.csv
+FR-U015,registry record,02-requirements/requirements.csv
+FR-U016,registry record,02-requirements/requirements.csv
+FR-U017,registry record,02-requirements/requirements.csv
+FR-U018,registry record,02-requirements/requirements.csv
+FR-U019,registry record,02-requirements/requirements.csv
+FR-U020,registry record,02-requirements/requirements.csv
+FR-U021,registry record,02-requirements/requirements.csv
+FR-U022,registry record,02-requirements/requirements.csv
+FR-U023,registry record,02-requirements/requirements.csv
+FR-U024,registry record,02-requirements/requirements.csv
+FR-U025,registry record,02-requirements/requirements.csv
+FR-U026,registry record,02-requirements/requirements.csv
+FR-U027,registry record,02-requirements/requirements.csv
+FR-U028,registry record,02-requirements/requirements.csv
+FR-U029,registry record,02-requirements/requirements.csv
+FR-U030,registry record,02-requirements/requirements.csv
+FR-U031,registry record,02-requirements/requirements.csv
+FR-U032,registry record,02-requirements/requirements.csv
+FR-U033,registry record,02-requirements/requirements.csv
+FR-U034,registry record,02-requirements/requirements.csv
+FR-U035,registry record,02-requirements/requirements.csv
+FR-U036,registry record,02-requirements/requirements.csv
+FR-U041,registry record,02-requirements/requirements.csv
+FR-U042,registry record,02-requirements/requirements.csv
+FR-U043,registry record,02-requirements/requirements.csv
+FR-U044,registry record,02-requirements/requirements.csv
+FR-U045,registry record,02-requirements/requirements.csv
+FR-U046,registry record,02-requirements/requirements.csv
+FR-U047,registry record,02-requirements/requirements.csv
+FR-U048,registry record,02-requirements/requirements.csv
+FR-U049,registry record,02-requirements/requirements.csv
+FR-U050,registry record,02-requirements/requirements.csv
+FR-U051,registry record,02-requirements/requirements.csv
+FR-U052,registry record,02-requirements/requirements.csv
+FR-U053,registry record,02-requirements/requirements.csv
+FR-U054,registry record,02-requirements/requirements.csv
+FR-U055,registry record,02-requirements/requirements.csv
+FR-U056,registry record,02-requirements/requirements.csv
+FR-U057,registry record,02-requirements/requirements.csv
+FR-U058,registry record,02-requirements/requirements.csv
+FR-U059,registry record,02-requirements/requirements.csv
+FR-U060,registry record,02-requirements/requirements.csv
+FR-U061,registry record,02-requirements/requirements.csv
+FR-U062,registry record,02-requirements/requirements.csv
+FR-U063,registry record,02-requirements/requirements.csv
+FR-U064,registry record,02-requirements/requirements.csv
+FR-U065,registry record,02-requirements/requirements.csv
+FR-U066,registry record,02-requirements/requirements.csv
+FTR-G001,registry record,01-product/feature-catalog.csv
+FTR-G002,registry record,01-product/feature-catalog.csv
+FTR-G003,registry record,01-product/feature-catalog.csv
+FTR-G004,registry record,01-product/feature-catalog.csv
+FTR-G005,registry record,01-product/feature-catalog.csv
+FTR-G006,registry record,01-product/feature-catalog.csv
+FTR-G007,registry record,01-product/feature-catalog.csv
+FTR-G008,registry record,01-product/feature-catalog.csv
+FTR-G009,registry record,01-product/feature-catalog.csv
+FTR-G010,registry record,01-product/feature-catalog.csv
+FTR-G011,registry record,01-product/feature-catalog.csv
+FTR-G012,registry record,01-product/feature-catalog.csv
+FTR-G013,registry record,01-product/feature-catalog.csv
+FTR-G014,registry record,01-product/feature-catalog.csv
+FTR-G015,registry record,01-product/feature-catalog.csv
+FTR-G016,registry record,01-product/feature-catalog.csv
+FTR-G017,registry record,01-product/feature-catalog.csv
+FTR-G018,registry record,01-product/feature-catalog.csv
+FTR-G019,registry record,01-product/feature-catalog.csv
+FTR-G020,registry record,01-product/feature-catalog.csv
+FTR-G021,registry record,01-product/feature-catalog.csv
+FTR-G022,registry record,01-product/feature-catalog.csv
+FTR-G023,registry record,01-product/feature-catalog.csv
+FTR-G024,registry record,01-product/feature-catalog.csv
+FTR-G025,registry record,01-product/feature-catalog.csv
+FTR-G026,registry record,01-product/feature-catalog.csv
+FTR-G027,registry record,01-product/feature-catalog.csv
+FTR-G028,registry record,01-product/feature-catalog.csv
+FTR-G029,registry record,01-product/feature-catalog.csv
+FTR-G030,registry record,01-product/feature-catalog.csv
+FTR-G031,registry record,01-product/feature-catalog.csv
+FTR-G032,registry record,01-product/feature-catalog.csv
+FTR-G033,registry record,01-product/feature-catalog.csv
+FTR-G034,registry record,01-product/feature-catalog.csv
+FTR-G035,registry record,01-product/feature-catalog.csv
+FTR-G036,registry record,01-product/feature-catalog.csv
+FTR-G037,registry record,01-product/feature-catalog.csv
+FTR-G038,registry record,01-product/feature-catalog.csv
+FTR-G039,registry record,01-product/feature-catalog.csv
+FTR-G040,registry record,01-product/feature-catalog.csv
+FTR-G041,registry record,01-product/feature-catalog.csv
+FTR-G042,registry record,01-product/feature-catalog.csv
+FTR-G043,registry record,01-product/feature-catalog.csv
+FTR-G044,registry record,01-product/feature-catalog.csv
+FTR-G045,registry record,01-product/feature-catalog.csv
+FTR-G046,registry record,01-product/feature-catalog.csv
+FTR-G047,registry record,01-product/feature-catalog.csv
+FTR-G048,registry record,01-product/feature-catalog.csv
+FTR-G049,registry record,01-product/feature-catalog.csv
+FTR-G050,registry record,01-product/feature-catalog.csv
+FTR-G051,registry record,01-product/feature-catalog.csv
+FTR-G052,registry record,01-product/feature-catalog.csv
+FTR-G053,registry record,01-product/feature-catalog.csv
+FTR-G054,registry record,01-product/feature-catalog.csv
+FTR-G055,registry record,01-product/feature-catalog.csv
+FTR-G056,registry record,01-product/feature-catalog.csv
+FTR-G057,registry record,01-product/feature-catalog.csv
+FTR-G058,registry record,01-product/feature-catalog.csv
+FTR-G059,registry record,01-product/feature-catalog.csv
+FTR-G060,registry record,01-product/feature-catalog.csv
+FTR-G061,registry record,01-product/feature-catalog.csv
+FTR-G062,registry record,01-product/feature-catalog.csv
+FTR-G063,registry record,01-product/feature-catalog.csv
+FTR-G064,registry record,01-product/feature-catalog.csv
+FTR-G065,registry record,01-product/feature-catalog.csv
+FTR-G066,registry record,01-product/feature-catalog.csv
+FTR-G067,registry record,01-product/feature-catalog.csv
+FTR-G068,registry record,01-product/feature-catalog.csv
+FTR-G069,registry record,01-product/feature-catalog.csv
+FTR-G070,registry record,01-product/feature-catalog.csv
+FTR-G071,registry record,01-product/feature-catalog.csv
+FTR-G072,registry record,01-product/feature-catalog.csv
+FTR-G073,registry record,01-product/feature-catalog.csv
+FTR-G074,registry record,01-product/feature-catalog.csv
+FTR-G075,registry record,01-product/feature-catalog.csv
+FTR-G076,registry record,01-product/feature-catalog.csv
+FTR-G077,registry record,01-product/feature-catalog.csv
+FTR-G078,registry record,01-product/feature-catalog.csv
+FTR-G079,registry record,01-product/feature-catalog.csv
+FTR-G080,registry record,01-product/feature-catalog.csv
+FTR-G081,registry record,01-product/feature-catalog.csv
+FTR-G082,registry record,01-product/feature-catalog.csv
+FTR-G083,registry record,01-product/feature-catalog.csv
+FTR-G084,registry record,01-product/feature-catalog.csv
+FTR-G085,registry record,01-product/feature-catalog.csv
+FTR-G086,registry record,01-product/feature-catalog.csv
+FTR-G087,registry record,01-product/feature-catalog.csv
+FTR-G088,registry record,01-product/feature-catalog.csv
+FTR-G089,registry record,01-product/feature-catalog.csv
+FTR-G090,registry record,01-product/feature-catalog.csv
+FTR-G091,registry record,01-product/feature-catalog.csv
+FTR-G092,registry record,01-product/feature-catalog.csv
+FTR-G093,registry record,01-product/feature-catalog.csv
+FTR-G094,registry record,01-product/feature-catalog.csv
+FTR-G095,registry record,01-product/feature-catalog.csv
+FTR-G096,registry record,01-product/feature-catalog.csv
+FTR-G097,registry record,01-product/feature-catalog.csv
+FTR-G098,registry record,01-product/feature-catalog.csv
+FTR-G099,registry record,01-product/feature-catalog.csv
+FTR-G100,registry record,01-product/feature-catalog.csv
+FTR-G101,registry record,01-product/feature-catalog.csv
+FTR-G102,registry record,01-product/feature-catalog.csv
+FTR-G103,registry record,01-product/feature-catalog.csv
+FTR-G104,registry record,01-product/feature-catalog.csv
+FTR-G105,registry record,01-product/feature-catalog.csv
+FTR-G106,registry record,01-product/feature-catalog.csv
+FTR-G107,registry record,01-product/feature-catalog.csv
+FTR-G108,registry record,01-product/feature-catalog.csv
+FTR-G109,registry record,01-product/feature-catalog.csv
+FTR-G110,registry record,01-product/feature-catalog.csv
+FTR-G111,registry record,01-product/feature-catalog.csv
+FTR-G112,registry record,01-product/feature-catalog.csv
+FTR-G113,registry record,01-product/feature-catalog.csv
+FTR-G114,registry record,01-product/feature-catalog.csv
+FTR-G115,registry record,01-product/feature-catalog.csv
+FTR-G116,registry record,01-product/feature-catalog.csv
+FTR-G117,registry record,01-product/feature-catalog.csv
+FTR-G118,registry record,01-product/feature-catalog.csv
+FTR-G119,registry record,01-product/feature-catalog.csv
+FTR-G120,registry record,01-product/feature-catalog.csv
+FTR-G121,registry record,01-product/feature-catalog.csv
+FTR-G122,registry record,01-product/feature-catalog.csv
+FTR-G123,registry record,01-product/feature-catalog.csv
+FTR-G124,registry record,01-product/feature-catalog.csv
+FTR-G125,registry record,01-product/feature-catalog.csv
+FTR-G126,registry record,01-product/feature-catalog.csv
+FTR-G127,registry record,01-product/feature-catalog.csv
+FTR-G128,registry record,01-product/feature-catalog.csv
+FTR-G129,registry record,01-product/feature-catalog.csv
+FTR-G130,registry record,01-product/feature-catalog.csv
+FTR-G131,registry record,01-product/feature-catalog.csv
+FTR-G132,registry record,01-product/feature-catalog.csv
+FTR-G133,registry record,01-product/feature-catalog.csv
+FTR-G134,registry record,01-product/feature-catalog.csv
+FTR-G135,registry record,01-product/feature-catalog.csv
+FTR-G136,registry record,01-product/feature-catalog.csv
+FTR-G137,registry record,01-product/feature-catalog.csv
+FTR-G138,registry record,01-product/feature-catalog.csv
+FTR-G139,registry record,01-product/feature-catalog.csv
+FTR-G140,registry record,01-product/feature-catalog.csv
+FTR-G141,registry record,01-product/feature-catalog.csv
+FTR-G142,registry record,01-product/feature-catalog.csv
+FTR-G143,registry record,01-product/feature-catalog.csv
+FTR-G144,registry record,01-product/feature-catalog.csv
+FTR-G145,registry record,01-product/feature-catalog.csv
+FTR-G146,registry record,01-product/feature-catalog.csv
+FTR-G147,registry record,01-product/feature-catalog.csv
+FTR-G148,registry record,01-product/feature-catalog.csv
+FTR-G149,registry record,01-product/feature-catalog.csv
+FTR-G150,registry record,01-product/feature-catalog.csv
+FTR-G151,registry record,01-product/feature-catalog.csv
+FTR-G152,registry record,01-product/feature-catalog.csv
+FTR-G153,registry record,01-product/feature-catalog.csv
+FTR-G154,registry record,01-product/feature-catalog.csv
+FTR-G155,registry record,01-product/feature-catalog.csv
+FTR-G156,registry record,01-product/feature-catalog.csv
+FTR-G157,registry record,01-product/feature-catalog.csv
+FTR-G158,registry record,01-product/feature-catalog.csv
+FTR-G159,registry record,01-product/feature-catalog.csv
+FTR-G160,registry record,01-product/feature-catalog.csv
+FTR-G161,registry record,01-product/feature-catalog.csv
+FTR-G162,registry record,01-product/feature-catalog.csv
+FTR-G163,registry record,01-product/feature-catalog.csv
+FTR-G164,registry record,01-product/feature-catalog.csv
+FTR-G165,registry record,01-product/feature-catalog.csv
+FTR-G166,registry record,01-product/feature-catalog.csv
+FTR-G167,registry record,01-product/feature-catalog.csv
+FTR-G168,registry record,01-product/feature-catalog.csv
+FTR-G169,registry record,01-product/feature-catalog.csv
+FTR-G170,registry record,01-product/feature-catalog.csv
+FTR-G171,registry record,01-product/feature-catalog.csv
+FTR-G172,registry record,01-product/feature-catalog.csv
+FTR-G173,registry record,01-product/feature-catalog.csv
+FTR-G174,registry record,01-product/feature-catalog.csv
+FTR-G175,registry record,01-product/feature-catalog.csv
+FTR-G176,registry record,01-product/feature-catalog.csv
+FTR-G177,registry record,01-product/feature-catalog.csv
+FTR-G178,registry record,01-product/feature-catalog.csv
+FTR-G179,registry record,01-product/feature-catalog.csv
+FTR-G180,registry record,01-product/feature-catalog.csv
+FTR-G181,registry record,01-product/feature-catalog.csv
+FTR-G182,registry record,01-product/feature-catalog.csv
+FTR-G183,registry record,01-product/feature-catalog.csv
+FTR-G184,registry record,01-product/feature-catalog.csv
+FTR-G185,registry record,01-product/feature-catalog.csv
+FTR-G186,registry record,01-product/feature-catalog.csv
+FTR-G187,registry record,01-product/feature-catalog.csv
+FTR-G188,registry record,01-product/feature-catalog.csv
+FTR-G189,registry record,01-product/feature-catalog.csv
+FTR-G190,registry record,01-product/feature-catalog.csv
+FTR-G191,registry record,01-product/feature-catalog.csv
+FTR-G192,registry record,01-product/feature-catalog.csv
+FTR-G193,registry record,01-product/feature-catalog.csv
+FTR-G194,registry record,01-product/feature-catalog.csv
+FTR-G195,registry record,01-product/feature-catalog.csv
+FTR-G196,registry record,01-product/feature-catalog.csv
+FTR-G197,registry record,01-product/feature-catalog.csv
+FTR-G198,registry record,01-product/feature-catalog.csv
+FTR-G199,registry record,01-product/feature-catalog.csv
+FTR-G200,registry record,01-product/feature-catalog.csv
+FTR-G201,registry record,01-product/feature-catalog.csv
+FTR-G202,registry record,01-product/feature-catalog.csv
+FTR-G203,registry record,01-product/feature-catalog.csv
+FTR-G204,registry record,01-product/feature-catalog.csv
+FTR-G205,registry record,01-product/feature-catalog.csv
+FTR-G206,registry record,01-product/feature-catalog.csv
+FTR-G207,registry record,01-product/feature-catalog.csv
+FTR-G208,registry record,01-product/feature-catalog.csv
+FTR-G209,registry record,01-product/feature-catalog.csv
+FTR-G210,registry record,01-product/feature-catalog.csv
+FTR-G211,registry record,01-product/feature-catalog.csv
+FTR-G212,registry record,01-product/feature-catalog.csv
+FTR-G213,registry record,01-product/feature-catalog.csv
+FTR-G214,registry record,01-product/feature-catalog.csv
+FTR-G215,registry record,01-product/feature-catalog.csv
+FTR-G216,registry record,01-product/feature-catalog.csv
+FTR-G217,registry record,01-product/feature-catalog.csv
+FTR-G218,registry record,01-product/feature-catalog.csv
+FTR-G219,registry record,01-product/feature-catalog.csv
+FTR-G220,registry record,01-product/feature-catalog.csv
+FTR-G221,registry record,01-product/feature-catalog.csv
+FTR-G222,registry record,01-product/feature-catalog.csv
+FTR-G223,registry record,01-product/feature-catalog.csv
+FTR-G224,registry record,01-product/feature-catalog.csv
+FTR-G225,registry record,01-product/feature-catalog.csv
+FTR-G226,registry record,01-product/feature-catalog.csv
+FTR-G227,registry record,01-product/feature-catalog.csv
+FTR-G228,registry record,01-product/feature-catalog.csv
+FTR-G229,registry record,01-product/feature-catalog.csv
+FTR-G230,registry record,01-product/feature-catalog.csv
+FTR-G231,registry record,01-product/feature-catalog.csv
+FTR-G232,registry record,01-product/feature-catalog.csv
+FTR-G233,registry record,01-product/feature-catalog.csv
+FTR-G234,registry record,01-product/feature-catalog.csv
+FTR-G235,registry record,01-product/feature-catalog.csv
+FTR-G236,registry record,01-product/feature-catalog.csv
+FTR-G237,registry record,01-product/feature-catalog.csv
+FTR-G238,registry record,01-product/feature-catalog.csv
+FTR-G239,registry record,01-product/feature-catalog.csv
+FTR-G240,registry record,01-product/feature-catalog.csv
+FTR-G241,registry record,01-product/feature-catalog.csv
+FTR-G242,registry record,01-product/feature-catalog.csv
+FTR-G243,registry record,01-product/feature-catalog.csv
+FTR-G244,registry record,01-product/feature-catalog.csv
+FTR-G245,registry record,01-product/feature-catalog.csv
+FTR-G246,registry record,01-product/feature-catalog.csv
+FTR-G247,registry record,01-product/feature-catalog.csv
+FTR-G248,registry record,01-product/feature-catalog.csv
+FTR-G249,registry record,01-product/feature-catalog.csv
+FTR-G250,registry record,01-product/feature-catalog.csv
+FTR-G251,registry record,01-product/feature-catalog.csv
+FTR-G252,registry record,01-product/feature-catalog.csv
+FTR-G253,registry record,01-product/feature-catalog.csv
+FTR-G254,registry record,01-product/feature-catalog.csv
+FTR-G255,registry record,01-product/feature-catalog.csv
+FTR-G256,registry record,01-product/feature-catalog.csv
+FTR-G257,registry record,01-product/feature-catalog.csv
+FTR-G258,registry record,01-product/feature-catalog.csv
+FTR-G259,registry record,01-product/feature-catalog.csv
+FTR-G260,registry record,01-product/feature-catalog.csv
+FTR-G261,registry record,01-product/feature-catalog.csv
+FTR-G262,registry record,01-product/feature-catalog.csv
+FTR-G263,registry record,01-product/feature-catalog.csv
+FTR-G264,registry record,01-product/feature-catalog.csv
+FTR-G265,registry record,01-product/feature-catalog.csv
+FTR-G266,registry record,01-product/feature-catalog.csv
+FTR-G267,registry record,01-product/feature-catalog.csv
+FTR-G268,registry record,01-product/feature-catalog.csv
+FTR-G269,registry record,01-product/feature-catalog.csv
+FTR-G270,registry record,01-product/feature-catalog.csv
+FTR-G271,registry record,01-product/feature-catalog.csv
+FTR-G272,registry record,01-product/feature-catalog.csv
+FTR-G273,registry record,01-product/feature-catalog.csv
+FTR-G274,registry record,01-product/feature-catalog.csv
+FTR-G275,registry record,01-product/feature-catalog.csv
+FTR-G276,registry record,01-product/feature-catalog.csv
+FTR-G277,registry record,01-product/feature-catalog.csv
+FTR-G278,registry record,01-product/feature-catalog.csv
+FTR-G279,registry record,01-product/feature-catalog.csv
+FTR-G280,registry record,01-product/feature-catalog.csv
+FTR-G281,registry record,01-product/feature-catalog.csv
+FTR-G282,registry record,01-product/feature-catalog.csv
+FTR-G283,registry record,01-product/feature-catalog.csv
+FTR-G284,registry record,01-product/feature-catalog.csv
+FTR-G285,registry record,01-product/feature-catalog.csv
+FTR-G286,registry record,01-product/feature-catalog.csv
+FTR-G287,registry record,01-product/feature-catalog.csv
+FTR-G288,registry record,01-product/feature-catalog.csv
+FTR-G289,registry record,01-product/feature-catalog.csv
+FTR-G290,registry record,01-product/feature-catalog.csv
+FTR-G291,registry record,01-product/feature-catalog.csv
+FTR-G292,registry record,01-product/feature-catalog.csv
+FTR-G293,registry record,01-product/feature-catalog.csv
+FTR-G294,registry record,01-product/feature-catalog.csv
+FTR-G295,registry record,01-product/feature-catalog.csv
+FTR-G296,registry record,01-product/feature-catalog.csv
+FTR-G297,registry record,01-product/feature-catalog.csv
+FTR-G298,registry record,01-product/feature-catalog.csv
+FTR-G299,registry record,01-product/feature-catalog.csv
+FTR-G300,registry record,01-product/feature-catalog.csv
+FTR-G301,registry record,01-product/feature-catalog.csv
+FTR-G302,registry record,01-product/feature-catalog.csv
+FTR-G303,registry record,01-product/feature-catalog.csv
+FTR-G304,registry record,01-product/feature-catalog.csv
+FTR-G305,registry record,01-product/feature-catalog.csv
+FTR-G306,registry record,01-product/feature-catalog.csv
+FTR-G307,registry record,01-product/feature-catalog.csv
+FTR-G308,registry record,01-product/feature-catalog.csv
+FTR-G309,registry record,01-product/feature-catalog.csv
+FTR-G310,registry record,01-product/feature-catalog.csv
+FTR-G311,registry record,01-product/feature-catalog.csv
+FTR-G312,registry record,01-product/feature-catalog.csv
+FTR-G313,registry record,01-product/feature-catalog.csv
+FTR-G314,registry record,01-product/feature-catalog.csv
+FTR-G315,registry record,01-product/feature-catalog.csv
+FTR-G316,registry record,01-product/feature-catalog.csv
+FTR-G317,registry record,01-product/feature-catalog.csv
+FTR-G318,registry record,01-product/feature-catalog.csv
+FTR-G319,registry record,01-product/feature-catalog.csv
+FTR-G320,registry record,01-product/feature-catalog.csv
+FTR-G321,registry record,01-product/feature-catalog.csv
+FTR-G322,registry record,01-product/feature-catalog.csv
+FTR-G323,registry record,01-product/feature-catalog.csv
+FTR-G324,registry record,01-product/feature-catalog.csv
+FTR-G325,registry record,01-product/feature-catalog.csv
+FTR-G326,registry record,01-product/feature-catalog.csv
+FTR-G327,registry record,01-product/feature-catalog.csv
+FTR-G328,registry record,01-product/feature-catalog.csv
+FTR-G329,registry record,01-product/feature-catalog.csv
+FTR-G330,registry record,01-product/feature-catalog.csv
+GATE-01,responsibility/gate,00-governance/raci.csv
+GATE-02,responsibility/gate,00-governance/raci.csv
+GATE-03,responsibility/gate,00-governance/raci.csv
+GATE-04,responsibility/gate,00-governance/raci.csv
+GATE-05,responsibility/gate,00-governance/raci.csv
+GATE-06,responsibility/gate,00-governance/raci.csv
+GATE-07,responsibility/gate,00-governance/raci.csv
+GATE-08,responsibility/gate,00-governance/raci.csv
+GATE-09,responsibility/gate,00-governance/raci.csv
+GATE-10,responsibility/gate,00-governance/raci.csv
+MOD-U001,registry record,07-plugin/module-catalog.csv
+MOD-U002,registry record,07-plugin/module-catalog.csv
+MOD-U003,registry record,07-plugin/module-catalog.csv
+MOD-U004,registry record,07-plugin/module-catalog.csv
+MOD-U005,registry record,07-plugin/module-catalog.csv
+MOD-U006,registry record,07-plugin/module-catalog.csv
+MOD-U007,registry record,07-plugin/module-catalog.csv
+MOD-U008,registry record,07-plugin/module-catalog.csv
+MOD-U009,registry record,07-plugin/module-catalog.csv
+MOD-U010,registry record,07-plugin/module-catalog.csv
+MOD-U011,registry record,07-plugin/module-catalog.csv
+MOD-U012,registry record,07-plugin/module-catalog.csv
+MOD-U013,registry record,07-plugin/module-catalog.csv
+MOD-U014,registry record,07-plugin/module-catalog.csv
+MOD-U015,registry record,07-plugin/module-catalog.csv
+MOD-U016,registry record,07-plugin/module-catalog.csv
+MOD-U017,registry record,07-plugin/module-catalog.csv
+MOD-U018,registry record,07-plugin/module-catalog.csv
+MOD-U019,registry record,07-plugin/module-catalog.csv
+MOD-U020,registry record,07-plugin/module-catalog.csv
+MOD-U021,registry record,07-plugin/module-catalog.csv
+MOD-U022,registry record,07-plugin/module-catalog.csv
+MOD-U023,registry record,07-plugin/module-catalog.csv
+MOD-U024,registry record,07-plugin/module-catalog.csv
+MOD-U025,registry record,07-plugin/module-catalog.csv
+MOD-U026,registry record,07-plugin/module-catalog.csv
+NFR-S001,registry record,02-requirements/nonfunctional-requirements.csv
+NFR-S002,registry record,02-requirements/nonfunctional-requirements.csv
+NFR-S003,registry record,02-requirements/nonfunctional-requirements.csv
+NFR-S004,registry record,02-requirements/nonfunctional-requirements.csv
+NFR-S005,registry record,02-requirements/nonfunctional-requirements.csv
+NFR-S006,registry record,02-requirements/nonfunctional-requirements.csv
+NFR-S007,registry record,02-requirements/nonfunctional-requirements.csv
+NFR-S008,registry record,02-requirements/nonfunctional-requirements.csv
+NFR-S009,registry record,02-requirements/nonfunctional-requirements.csv
+NFR-S010,registry record,02-requirements/nonfunctional-requirements.csv
+NFR-S011,registry record,02-requirements/nonfunctional-requirements.csv
+NFR-S012,registry record,02-requirements/nonfunctional-requirements.csv
+OPS-G001,responsibility/gate,00-governance/raci.csv
+OPS-G002,responsibility/gate,00-governance/raci.csv
+OPS-G003,responsibility/gate,00-governance/raci.csv
+OPS-G004,responsibility/gate,00-governance/raci.csv
+OPS-G005,responsibility/gate,00-governance/raci.csv
+OPS-G006,responsibility/gate,00-governance/raci.csv
+OPS-G007,responsibility/gate,00-governance/raci.csv
+OPS-G008,responsibility/gate,00-governance/raci.csv
+OPS-G009,responsibility/gate,00-governance/raci.csv
+OPS-G010,responsibility/gate,00-governance/raci.csv
+OPS-G011,responsibility/gate,00-governance/raci.csv
+OPS-G012,responsibility/gate,00-governance/raci.csv
+OPS-G013,responsibility/gate,00-governance/raci.csv
+OPS-G014,responsibility/gate,00-governance/raci.csv
+OPS-G015,responsibility/gate,00-governance/raci.csv
+OPS-G016,responsibility/gate,00-governance/raci.csv
+OPS-G017,responsibility/gate,00-governance/raci.csv
+OPS-G018,responsibility/gate,00-governance/raci.csv
+OPS-G019,responsibility/gate,00-governance/raci.csv
+OPS-G020,responsibility/gate,00-governance/raci.csv
+OPS-G021,responsibility/gate,00-governance/raci.csv
+REG-00-GOVERNANCE-ASSUMPTIONS-CSV,artifact,00-governance/assumptions.csv
+REG-00-GOVERNANCE-DECISIONS-CSV,artifact,00-governance/decisions.csv
+REG-00-GOVERNANCE-ENVIRONMENT-INVENTORY-JSON,artifact,00-governance/environment-inventory.json
+REG-00-GOVERNANCE-IDENTIFIER-REGISTRY-CSV,artifact,00-governance/identifier-registry.csv
+REG-00-GOVERNANCE-RACI-CSV,artifact,00-governance/raci.csv
+REG-00-GOVERNANCE-REQUIRED-DELIVERABLES-CSV,artifact,00-governance/required-deliverables.csv
+REG-00-GOVERNANCE-RISKS-CSV,artifact,00-governance/risks.csv
+REG-00-GOVERNANCE-ROLE-CATALOG-CSV,artifact,00-governance/role-catalog.csv
+REG-00-GOVERNANCE-SOURCES-CSV,artifact,00-governance/sources.csv
+REG-00-GOVERNANCE-VERSION-BASELINE-CSV,artifact,00-governance/version-baseline.csv
+REG-01-PRODUCT-FEATURE-CATALOG-CSV,artifact,01-product/feature-catalog.csv
+REG-02-REQUIREMENTS-CAPABILITY-AND-COMPATIBILITY-MATRIX-CSV,artifact,02-requirements/capability-and-compatibility-matrix.csv
+REG-02-REQUIREMENTS-NONFUNCTIONAL-REQUIREMENTS-CSV,artifact,02-requirements/nonfunctional-requirements.csv
+REG-02-REQUIREMENTS-REQUIREMENTS-CSV,artifact,02-requirements/requirements.csv
+REG-02-REQUIREMENTS-TRACEABILITY-CSV,artifact,02-requirements/traceability.csv
+REG-05-UX-UI-SETTINGS-INVENTORY-CSV,artifact,05-ux-ui/settings-inventory.csv
+REG-05-UX-UI-UI-ANALYTICS-ALIASES-CSV,artifact,05-ux-ui/ui-analytics-aliases.csv
+REG-07-PLUGIN-MODULE-CATALOG-CSV,artifact,07-plugin/module-catalog.csv
+REG-09-API-INTEGRATIONS-API-OPERATION-CATALOG-CSV,artifact,09-api-integrations/api-operation-catalog.csv
+REG-09-API-INTEGRATIONS-EVENT-CATALOG-CSV,artifact,09-api-integrations/event-catalog.csv
+REG-09-API-INTEGRATIONS-OPENAPI-YAML,artifact,09-api-integrations/openapi.yaml
+REG-10-SEO-URL-INDEXATION-CANONICAL-MATRIX-CSV,artifact,10-seo/url-indexation-canonical-matrix.csv
+REG-11-SECURITY-PRIVACY-CONTROLS-AND-VERIFICATION-MATRIX-CSV,artifact,11-security-privacy/controls-and-verification-matrix.csv
+REG-11-SECURITY-PRIVACY-ROLES-CAPABILITIES-AND-OBJECT-AUTHORIZATION-CSV,artifact,11-security-privacy/roles-capabilities-and-object-authorization.csv
+REG-12-QUALITY-TEST-CASES-CSV,artifact,12-quality/test-cases.csv
+REG-14-DELIVERY-IMPLEMENTATION-BACKLOG-CSV,artifact,14-delivery/implementation-backlog.csv
+REG-14-DELIVERY-WORK-BREAKDOWN-STRUCTURE-CSV,artifact,14-delivery/work-breakdown-structure.csv
+REG-14-DELIVERY-WORK-PACKAGE-DEPENDENCIES-CSV,artifact,14-delivery/work-package-dependencies.csv
+REG-17-VALIDATION-FINANCIAL-EXAMPLE-CHECKS-CSV,artifact,17-validation/financial-example-checks.csv
+REG-17-VALIDATION-VALIDATION-RESULTS-JSON,artifact,17-validation/validation-results.json
+REG-17-VALIDATION-WALKTHROUGH-TRACES-CSV,artifact,17-validation/walkthrough-traces.csv
+REG-DOCUMENTATION-MANIFEST-CSV,artifact,DOCUMENTATION_MANIFEST.csv
+REL-G001,responsibility/gate,00-governance/raci.csv
+REL-G002,responsibility/gate,00-governance/raci.csv
+REL-G003,responsibility/gate,00-governance/raci.csv
+REL-G004,responsibility/gate,00-governance/raci.csv
+REL-G005,responsibility/gate,00-governance/raci.csv
+REL-G006,responsibility/gate,00-governance/raci.csv
+REL-G007,responsibility/gate,00-governance/raci.csv
+REL-G008,responsibility/gate,00-governance/raci.csv
+REL-G009,responsibility/gate,00-governance/raci.csv
+REL-G010,responsibility/gate,00-governance/raci.csv
+REL-G011,responsibility/gate,00-governance/raci.csv
+RISK-01,registry record,00-governance/risks.csv
+RISK-02,registry record,00-governance/risks.csv
+RISK-03,registry record,00-governance/risks.csv
+RISK-04,registry record,00-governance/risks.csv
+RISK-05,registry record,00-governance/risks.csv
+RISK-06,registry record,00-governance/risks.csv
+RISK-07,registry record,00-governance/risks.csv
+RISK-08,registry record,00-governance/risks.csv
+RISK-09,registry record,00-governance/risks.csv
+RISK-10,registry record,00-governance/risks.csv
+RISK-11,registry record,00-governance/risks.csv
+RISK-12,registry record,00-governance/risks.csv
+ROLE-G001,registry record,00-governance/role-catalog.csv
+ROLE-G002,registry record,00-governance/role-catalog.csv
+ROLE-G003,registry record,00-governance/role-catalog.csv
+ROLE-G004,registry record,00-governance/role-catalog.csv
+ROLE-G005,registry record,00-governance/role-catalog.csv
+ROLE-G006,registry record,00-governance/role-catalog.csv
+ROLE-G007,registry record,00-governance/role-catalog.csv
+ROLE-G008,registry record,00-governance/role-catalog.csv
+ROLE-G009,registry record,00-governance/role-catalog.csv
+ROLE-G010,registry record,00-governance/role-catalog.csv
+ROLE-G011,registry record,00-governance/role-catalog.csv
+ROLE-G012,registry record,00-governance/role-catalog.csv
+ROLE-G013,registry record,00-governance/role-catalog.csv
+ROLE-G014,registry record,00-governance/role-catalog.csv
+ROLE-G015,registry record,00-governance/role-catalog.csv
+ROLE-G016,registry record,00-governance/role-catalog.csv
+ROLE-G017,registry record,00-governance/role-catalog.csv
+ROLE-G018,registry record,00-governance/role-catalog.csv
+ROLE-G019,registry record,00-governance/role-catalog.csv
+ROLE-G020,registry record,00-governance/role-catalog.csv
+ROLE-G021,registry record,00-governance/role-catalog.csv
+ROLE-G022,registry record,00-governance/role-catalog.csv
+ROLE-G023,registry record,00-governance/role-catalog.csv
+ROLE-G024,registry record,00-governance/role-catalog.csv
+ROLE-G025,registry record,00-governance/role-catalog.csv
+ROLE-G026,registry record,00-governance/role-catalog.csv
+ROLE-G027,registry record,00-governance/role-catalog.csv
+ROLE-G028,registry record,00-governance/role-catalog.csv
+ROLE-G029,registry record,00-governance/role-catalog.csv
+ROLE-G030,registry record,00-governance/role-catalog.csv
+ROLE-G031,registry record,00-governance/role-catalog.csv
+ROLE-G032,registry record,00-governance/role-catalog.csv
+ROLE-G033,registry record,00-governance/role-catalog.csv
+ROLE-G034,registry record,00-governance/role-catalog.csv
+ROLE-G035,registry record,00-governance/role-catalog.csv
+ROLE-G036,registry record,00-governance/role-catalog.csv
+ROLE-G037,registry record,00-governance/role-catalog.csv
+ROLE-G038,registry record,00-governance/role-catalog.csv
+ROLE-G039,registry record,00-governance/role-catalog.csv
+ROLE-G040,registry record,00-governance/role-catalog.csv
+ROLE-G041,registry record,00-governance/role-catalog.csv
+ROLE-G042,registry record,00-governance/role-catalog.csv
+ROLE-G043,registry record,00-governance/role-catalog.csv
+ROLE-G044,registry record,00-governance/role-catalog.csv
+ROLE-G045,registry record,00-governance/role-catalog.csv
+ROLE-G046,registry record,00-governance/role-catalog.csv
+ROLE-G047,registry record,00-governance/role-catalog.csv
+ROLE-G048,registry record,00-governance/role-catalog.csv
+ROLE-G049,registry record,00-governance/role-catalog.csv
+SCR-U001,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U002,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U003,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U004,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U005,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U006,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U007,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U008,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U009,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U010,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U011,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U012,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U013,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U014,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U015,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U016,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U017,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U018,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U019,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U020,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U021,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U022,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U023,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U024,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U025,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U026,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U027,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U028,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U029,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U030,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U031,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U032,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U033,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U034,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U035,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U036,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U037,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U038,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U039,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SCR-U040,screen/component/internal command,05-ux-ui/screen-and-template-specifications.md
+SEC-S001,registry record,02-requirements/requirements.csv
+SEC-S002,registry record,02-requirements/requirements.csv
+SEC-S003,registry record,02-requirements/requirements.csv
+SEC-S004,registry record,02-requirements/requirements.csv
+SEC-S005,registry record,02-requirements/requirements.csv
+SEC-S006,registry record,02-requirements/requirements.csv
+SEC-S007,registry record,02-requirements/requirements.csv
+SEC-S008,registry record,02-requirements/requirements.csv
+SEC-S009,registry record,02-requirements/requirements.csv
+SEC-S010,registry record,02-requirements/requirements.csv
+SEC-S011,registry record,02-requirements/requirements.csv
+SEC-S012,registry record,02-requirements/requirements.csv
+SEC-S013,registry record,02-requirements/requirements.csv
+SEC-S014,registry record,02-requirements/requirements.csv
+SEC-S015,registry record,02-requirements/requirements.csv
+SEC-S016,registry record,02-requirements/requirements.csv
+SEO-S001,registry record,02-requirements/requirements.csv
+SEO-S002,registry record,02-requirements/requirements.csv
+SEO-S003,registry record,02-requirements/requirements.csv
+SEO-S004,registry record,02-requirements/requirements.csv
+SEO-S005,registry record,02-requirements/requirements.csv
+SEO-S006,registry record,02-requirements/requirements.csv
+SEO-S007,registry record,02-requirements/requirements.csv
+SEO-S008,registry record,02-requirements/requirements.csv
+SEO-S009,registry record,02-requirements/requirements.csv
+SEO-S010,registry record,02-requirements/requirements.csv
+SEO-S011,registry record,02-requirements/requirements.csv
+SEO-URL01,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL02,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL03,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL04,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL05,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL06,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL07,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL08,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL09,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL10,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL11,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL12,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL13,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL14,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL15,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL16,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL17,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL18,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL19,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL20,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL21,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL22,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL23,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL24,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL25,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL26,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL27,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL28,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL29,registry record,10-seo/url-indexation-canonical-matrix.csv
+SEO-URL30,registry record,10-seo/url-indexation-canonical-matrix.csv
+SRC-D001,registry record,00-governance/sources.csv
+SRC-D002,registry record,00-governance/sources.csv
+SRC-D003,registry record,00-governance/sources.csv
+SRC-D004,registry record,00-governance/sources.csv
+SRC-D005,registry record,00-governance/sources.csv
+SRC-D006,registry record,00-governance/sources.csv
+SRC-D007,registry record,00-governance/sources.csv
+SRC-D008,registry record,00-governance/sources.csv
+SRC-D009,registry record,00-governance/sources.csv
+SRC-D010,registry record,00-governance/sources.csv
+SRC-D011,registry record,00-governance/sources.csv
+SRC-G001,registry record,00-governance/sources.csv
+SRC-G002,registry record,00-governance/sources.csv
+SRC-G003,registry record,00-governance/sources.csv
+SRC-G004,registry record,00-governance/sources.csv
+SRC-G005,registry record,00-governance/sources.csv
+SRC-G006,registry record,00-governance/sources.csv
+SRC-G007,registry record,00-governance/sources.csv
+SRC-G008,registry record,00-governance/sources.csv
+SRC-G009,registry record,00-governance/sources.csv
+SRC-G010,registry record,00-governance/sources.csv
+SRC-G011,registry record,00-governance/sources.csv
+SRC-G012,registry record,00-governance/sources.csv
+SRC-G013,registry record,00-governance/sources.csv
+SRC-S001,registry record,00-governance/sources.csv
+SRC-S002,registry record,00-governance/sources.csv
+SRC-S003,registry record,00-governance/sources.csv
+SRC-S004,registry record,00-governance/sources.csv
+SRC-S005,registry record,00-governance/sources.csv
+SRC-S006,registry record,00-governance/sources.csv
+SRC-S007,registry record,00-governance/sources.csv
+SRC-S008,registry record,00-governance/sources.csv
+SRC-S009,registry record,00-governance/sources.csv
+SRC-S010,registry record,00-governance/sources.csv
+SRC-S011,registry record,00-governance/sources.csv
+SRC-S012,registry record,00-governance/sources.csv
+SRC-S013,registry record,00-governance/sources.csv
+SRC-S014,registry record,00-governance/sources.csv
+SRC-U001,registry record,00-governance/sources.csv
+SRC-U002,registry record,00-governance/sources.csv
+SRC-U003,registry record,00-governance/sources.csv
+SRC-U004,registry record,00-governance/sources.csv
+SRC-U005,registry record,00-governance/sources.csv
+SRC-U006,registry record,00-governance/sources.csv
+SRC-U007,registry record,00-governance/sources.csv
+SRC-U008,registry record,00-governance/sources.csv
+SRC-U009,registry record,00-governance/sources.csv
+TEST-D001,registry record,12-quality/test-cases.csv
+TEST-D002,registry record,12-quality/test-cases.csv
+TEST-D003,registry record,12-quality/test-cases.csv
+TEST-D004,registry record,12-quality/test-cases.csv
+TEST-D005,registry record,12-quality/test-cases.csv
+TEST-D006,registry record,12-quality/test-cases.csv
+TEST-D007,registry record,12-quality/test-cases.csv
+TEST-D008,registry record,12-quality/test-cases.csv
+TEST-D009,registry record,12-quality/test-cases.csv
+TEST-D010,registry record,12-quality/test-cases.csv
+TEST-D011,registry record,12-quality/test-cases.csv
+TEST-D012,registry record,12-quality/test-cases.csv
+TEST-D013,registry record,12-quality/test-cases.csv
+TEST-D014,registry record,12-quality/test-cases.csv
+TEST-D015,registry record,12-quality/test-cases.csv
+TEST-D016,registry record,12-quality/test-cases.csv
+TEST-D017,registry record,12-quality/test-cases.csv
+TEST-D018,registry record,12-quality/test-cases.csv
+TEST-D019,registry record,12-quality/test-cases.csv
+TEST-D020,registry record,12-quality/test-cases.csv
+TEST-D021,registry record,12-quality/test-cases.csv
+TEST-D022,registry record,12-quality/test-cases.csv
+TEST-D023,registry record,12-quality/test-cases.csv
+TEST-D024,registry record,12-quality/test-cases.csv
+TEST-D025,registry record,12-quality/test-cases.csv
+TEST-D026,registry record,12-quality/test-cases.csv
+TEST-D027,registry record,12-quality/test-cases.csv
+TEST-D028,registry record,12-quality/test-cases.csv
+TEST-D029,registry record,12-quality/test-cases.csv
+TEST-D030,registry record,12-quality/test-cases.csv
+TEST-D031,registry record,12-quality/test-cases.csv
+TEST-D032,registry record,12-quality/test-cases.csv
+TEST-D033,registry record,12-quality/test-cases.csv
+TEST-D034,registry record,12-quality/test-cases.csv
+TEST-D035,registry record,12-quality/test-cases.csv
+TEST-D036,registry record,12-quality/test-cases.csv
+TEST-D037,registry record,12-quality/test-cases.csv
+TEST-D038,registry record,12-quality/test-cases.csv
+TEST-D039,registry record,12-quality/test-cases.csv
+TEST-D040,registry record,12-quality/test-cases.csv
+TEST-D041,registry record,12-quality/test-cases.csv
+TEST-D042,registry record,12-quality/test-cases.csv
+TEST-D043,registry record,12-quality/test-cases.csv
+TEST-D044,registry record,12-quality/test-cases.csv
+TEST-D045,registry record,12-quality/test-cases.csv
+TEST-D046,registry record,12-quality/test-cases.csv
+TEST-D047,registry record,12-quality/test-cases.csv
+TEST-D048,registry record,12-quality/test-cases.csv
+TEST-D049,registry record,12-quality/test-cases.csv
+TEST-D050,registry record,12-quality/test-cases.csv
+TEST-D051,registry record,12-quality/test-cases.csv
+TEST-D052,registry record,12-quality/test-cases.csv
+TEST-D053,registry record,12-quality/test-cases.csv
+TEST-D054,registry record,12-quality/test-cases.csv
+TEST-D055,registry record,12-quality/test-cases.csv
+TEST-D056,registry record,12-quality/test-cases.csv
+TEST-D057,registry record,12-quality/test-cases.csv
+TEST-D058,registry record,12-quality/test-cases.csv
+TEST-D059,registry record,12-quality/test-cases.csv
+TEST-D060,registry record,12-quality/test-cases.csv
+TEST-D061,registry record,12-quality/test-cases.csv
+TEST-D062,registry record,12-quality/test-cases.csv
+TEST-D063,registry record,12-quality/test-cases.csv
+TEST-D064,registry record,12-quality/test-cases.csv
+TEST-D065,registry record,12-quality/test-cases.csv
+TEST-D066,registry record,12-quality/test-cases.csv
+TEST-D067,registry record,12-quality/test-cases.csv
+TEST-D068,registry record,12-quality/test-cases.csv
+TEST-D069,registry record,12-quality/test-cases.csv
+TEST-D070,registry record,12-quality/test-cases.csv
+TEST-D071,registry record,12-quality/test-cases.csv
+TEST-D072,registry record,12-quality/test-cases.csv
+TEST-D073,registry record,12-quality/test-cases.csv
+TEST-D074,registry record,12-quality/test-cases.csv
+TEST-D075,registry record,12-quality/test-cases.csv
+TEST-D076,registry record,12-quality/test-cases.csv
+TEST-D077,registry record,12-quality/test-cases.csv
+TEST-D078,registry record,12-quality/test-cases.csv
+TEST-D079,registry record,12-quality/test-cases.csv
+TEST-D080,registry record,12-quality/test-cases.csv
+TEST-D081,registry record,12-quality/test-cases.csv
+TEST-D082,registry record,12-quality/test-cases.csv
+TEST-D083,registry record,12-quality/test-cases.csv
+TEST-D084,registry record,12-quality/test-cases.csv
+TEST-D085,registry record,12-quality/test-cases.csv
+TEST-D086,registry record,12-quality/test-cases.csv
+TEST-D087,registry record,12-quality/test-cases.csv
+TEST-D088,registry record,12-quality/test-cases.csv
+TEST-D089,registry record,12-quality/test-cases.csv
+TEST-D090,registry record,12-quality/test-cases.csv
+TEST-D091,registry record,12-quality/test-cases.csv
+TEST-D092,registry record,12-quality/test-cases.csv
+TEST-D093,registry record,12-quality/test-cases.csv
+TEST-D094,registry record,12-quality/test-cases.csv
+TEST-D095,registry record,12-quality/test-cases.csv
+TEST-G001,registry record,12-quality/test-cases.csv
+TEST-G002,registry record,12-quality/test-cases.csv
+TEST-G003,registry record,12-quality/test-cases.csv
+TEST-G004,registry record,12-quality/test-cases.csv
+TEST-G005,registry record,12-quality/test-cases.csv
+TEST-G006,registry record,12-quality/test-cases.csv
+TEST-G007,registry record,12-quality/test-cases.csv
+TEST-G008,registry record,12-quality/test-cases.csv
+TEST-G009,registry record,12-quality/test-cases.csv
+TEST-G010,registry record,12-quality/test-cases.csv
+TEST-G011,registry record,12-quality/test-cases.csv
+TEST-G012,registry record,12-quality/test-cases.csv
+TEST-G013,registry record,12-quality/test-cases.csv
+TEST-G014,registry record,12-quality/test-cases.csv
+TEST-G015,registry record,12-quality/test-cases.csv
+TEST-G016,registry record,12-quality/test-cases.csv
+TEST-G017,registry record,12-quality/test-cases.csv
+TEST-G018,registry record,12-quality/test-cases.csv
+TEST-G019,registry record,12-quality/test-cases.csv
+TEST-G020,registry record,12-quality/test-cases.csv
+TEST-G021,registry record,12-quality/test-cases.csv
+TEST-S001,registry record,12-quality/test-cases.csv
+TEST-S002,registry record,12-quality/test-cases.csv
+TEST-S003,registry record,12-quality/test-cases.csv
+TEST-S004,registry record,12-quality/test-cases.csv
+TEST-S005,registry record,12-quality/test-cases.csv
+TEST-S006,registry record,12-quality/test-cases.csv
+TEST-S007,registry record,12-quality/test-cases.csv
+TEST-S008,registry record,12-quality/test-cases.csv
+TEST-S009,registry record,12-quality/test-cases.csv
+TEST-S010,registry record,12-quality/test-cases.csv
+TEST-S011,registry record,12-quality/test-cases.csv
+TEST-S012,registry record,12-quality/test-cases.csv
+TEST-S013,registry record,12-quality/test-cases.csv
+TEST-S014,registry record,12-quality/test-cases.csv
+TEST-S015,registry record,12-quality/test-cases.csv
+TEST-S016,registry record,12-quality/test-cases.csv
+TEST-S017,registry record,12-quality/test-cases.csv
+TEST-S018,registry record,12-quality/test-cases.csv
+TEST-S019,registry record,12-quality/test-cases.csv
+TEST-S020,registry record,12-quality/test-cases.csv
+TEST-S021,registry record,12-quality/test-cases.csv
+TEST-S022,registry record,12-quality/test-cases.csv
+TEST-S023,registry record,12-quality/test-cases.csv
+TEST-S024,registry record,12-quality/test-cases.csv
+TEST-S025,registry record,12-quality/test-cases.csv
+TEST-S026,registry record,12-quality/test-cases.csv
+TEST-S027,registry record,12-quality/test-cases.csv
+TEST-S028,registry record,12-quality/test-cases.csv
+TEST-S029,registry record,12-quality/test-cases.csv
+TEST-S030,registry record,12-quality/test-cases.csv
+TEST-S031,registry record,12-quality/test-cases.csv
+TEST-S032,registry record,12-quality/test-cases.csv
+TEST-S033,registry record,12-quality/test-cases.csv
+TEST-S034,registry record,12-quality/test-cases.csv
+TEST-S035,registry record,12-quality/test-cases.csv
+TEST-S036,registry record,12-quality/test-cases.csv
+TEST-S037,registry record,12-quality/test-cases.csv
+TEST-S038,registry record,12-quality/test-cases.csv
+TEST-S039,registry record,12-quality/test-cases.csv
+TEST-S040,registry record,12-quality/test-cases.csv
+TEST-S041,registry record,12-quality/test-cases.csv
+TEST-S042,registry record,12-quality/test-cases.csv
+TEST-S043,registry record,12-quality/test-cases.csv
+TEST-S044,registry record,12-quality/test-cases.csv
+TEST-S045,registry record,12-quality/test-cases.csv
+TEST-S046,registry record,12-quality/test-cases.csv
+TEST-S047,registry record,12-quality/test-cases.csv
+TEST-S048,registry record,12-quality/test-cases.csv
+TEST-S049,registry record,12-quality/test-cases.csv
+TEST-S050,registry record,12-quality/test-cases.csv
+TEST-S100,registry record,12-quality/test-cases.csv
+TEST-S101,registry record,12-quality/test-cases.csv
+TEST-S102,registry record,12-quality/test-cases.csv
+TEST-S103,registry record,12-quality/test-cases.csv
+TEST-S104,registry record,12-quality/test-cases.csv
+TEST-S105,registry record,12-quality/test-cases.csv
+TEST-S106,registry record,12-quality/test-cases.csv
+TEST-S107,registry record,12-quality/test-cases.csv
+TEST-S108,registry record,12-quality/test-cases.csv
+TEST-S109,registry record,12-quality/test-cases.csv
+TEST-S110,registry record,12-quality/test-cases.csv
+TEST-S111,registry record,12-quality/test-cases.csv
+TEST-S112,registry record,12-quality/test-cases.csv
+TEST-S113,registry record,12-quality/test-cases.csv
+TEST-S114,registry record,12-quality/test-cases.csv
+TEST-S115,registry record,12-quality/test-cases.csv
+TEST-S116,registry record,12-quality/test-cases.csv
+TEST-S117,registry record,12-quality/test-cases.csv
+TEST-S118,registry record,12-quality/test-cases.csv
+TEST-S119,registry record,12-quality/test-cases.csv
+TEST-U001,registry record,12-quality/test-cases.csv
+TEST-U002,registry record,12-quality/test-cases.csv
+TEST-U003,registry record,12-quality/test-cases.csv
+TEST-U004,registry record,12-quality/test-cases.csv
+TEST-U005,registry record,12-quality/test-cases.csv
+TEST-U006,registry record,12-quality/test-cases.csv
+TEST-U007,registry record,12-quality/test-cases.csv
+TEST-U008,registry record,12-quality/test-cases.csv
+TEST-U009,registry record,12-quality/test-cases.csv
+TEST-U010,registry record,12-quality/test-cases.csv
+TEST-U011,registry record,12-quality/test-cases.csv
+TEST-U012,registry record,12-quality/test-cases.csv
+TEST-U013,registry record,12-quality/test-cases.csv
+TEST-U014,registry record,12-quality/test-cases.csv
+TEST-U015,registry record,12-quality/test-cases.csv
+TEST-U016,registry record,12-quality/test-cases.csv
+TEST-U017,registry record,12-quality/test-cases.csv
+TEST-U018,registry record,12-quality/test-cases.csv
+TEST-U019,registry record,12-quality/test-cases.csv
+TEST-U020,registry record,12-quality/test-cases.csv
+TEST-U021,registry record,12-quality/test-cases.csv
+TEST-U022,registry record,12-quality/test-cases.csv
+TEST-U023,registry record,12-quality/test-cases.csv
+TEST-U024,registry record,12-quality/test-cases.csv
+TEST-U025,registry record,12-quality/test-cases.csv
+TEST-U026,registry record,12-quality/test-cases.csv
+TEST-U027,registry record,12-quality/test-cases.csv
+TEST-U028,registry record,12-quality/test-cases.csv
+TEST-U029,registry record,12-quality/test-cases.csv
+TEST-U030,registry record,12-quality/test-cases.csv
+TEST-U031,registry record,12-quality/test-cases.csv
+TEST-U032,registry record,12-quality/test-cases.csv
+TEST-U033,registry record,12-quality/test-cases.csv
+TEST-U034,registry record,12-quality/test-cases.csv
+TEST-U035,registry record,12-quality/test-cases.csv
+TEST-U036,registry record,12-quality/test-cases.csv
+TEST-U041,registry record,12-quality/test-cases.csv
+TEST-U042,registry record,12-quality/test-cases.csv
+TEST-U043,registry record,12-quality/test-cases.csv
+TEST-U044,registry record,12-quality/test-cases.csv
+TEST-U045,registry record,12-quality/test-cases.csv
+TEST-U046,registry record,12-quality/test-cases.csv
+TEST-U047,registry record,12-quality/test-cases.csv
+TEST-U048,registry record,12-quality/test-cases.csv
+TEST-U049,registry record,12-quality/test-cases.csv
+TEST-U050,registry record,12-quality/test-cases.csv
+TEST-U051,registry record,12-quality/test-cases.csv
+TEST-U052,registry record,12-quality/test-cases.csv
+TEST-U053,registry record,12-quality/test-cases.csv
+TEST-U054,registry record,12-quality/test-cases.csv
+TEST-U055,registry record,12-quality/test-cases.csv
+TEST-U056,registry record,12-quality/test-cases.csv
+TEST-U057,registry record,12-quality/test-cases.csv
+TEST-U058,registry record,12-quality/test-cases.csv
+TEST-U059,registry record,12-quality/test-cases.csv
+TEST-U060,registry record,12-quality/test-cases.csv
+TEST-U061,registry record,12-quality/test-cases.csv
+TEST-U062,registry record,12-quality/test-cases.csv
+TEST-U063,registry record,12-quality/test-cases.csv
+TEST-U064,registry record,12-quality/test-cases.csv
+TEST-U065,registry record,12-quality/test-cases.csv
+TEST-U066,registry record,12-quality/test-cases.csv
+UC-G001,use case,01-product/use-cases-and-business-rules.md
+UC-G002,use case,01-product/use-cases-and-business-rules.md
+UC-G003,use case,01-product/use-cases-and-business-rules.md
+UC-G004,use case,01-product/use-cases-and-business-rules.md
+UC-G005,use case,01-product/use-cases-and-business-rules.md
+UC-G006,use case,01-product/use-cases-and-business-rules.md
+UC-G007,use case,01-product/use-cases-and-business-rules.md
+UC-G008,use case,01-product/use-cases-and-business-rules.md
+USER-BRIEF,registry record,00-governance/sources.csv
+WALK-G001,analytical walkthrough,17-validation/cross-disciplinary-review.md
+WALK-G002,analytical walkthrough,17-validation/cross-disciplinary-review.md
+WALK-G003,analytical walkthrough,17-validation/cross-disciplinary-review.md
+WALK-G004,analytical walkthrough,17-validation/cross-disciplinary-review.md
+WALK-G005,analytical walkthrough,17-validation/cross-disciplinary-review.md
+WP-G001,registry record,14-delivery/work-breakdown-structure.csv
+WP-G002,registry record,14-delivery/work-breakdown-structure.csv
+WP-G003,registry record,14-delivery/work-breakdown-structure.csv
+WP-G004,registry record,14-delivery/work-breakdown-structure.csv
+WP-G005,registry record,14-delivery/work-breakdown-structure.csv
+WP-G006,registry record,14-delivery/work-breakdown-structure.csv
+WP-G007,registry record,14-delivery/work-breakdown-structure.csv
+WP-G008,registry record,14-delivery/work-breakdown-structure.csv
+WP-G009,registry record,14-delivery/work-breakdown-structure.csv
+WP-G010,registry record,14-delivery/work-breakdown-structure.csv
+WP-G011,registry record,14-delivery/work-breakdown-structure.csv
+WP-G012,registry record,14-delivery/work-breakdown-structure.csv
+WP-G013,registry record,14-delivery/work-breakdown-structure.csv
+WP-G014,registry record,14-delivery/work-breakdown-structure.csv
+WP-G015,registry record,14-delivery/work-breakdown-structure.csv
+WP-G016,registry record,14-delivery/work-breakdown-structure.csv
+WP-G017,registry record,14-delivery/work-breakdown-structure.csv
+WP-G018,registry record,14-delivery/work-breakdown-structure.csv
+WP-G019,registry record,14-delivery/work-breakdown-structure.csv
+WP-G020,registry record,14-delivery/work-breakdown-structure.csv
+WP-G021,registry record,14-delivery/work-breakdown-structure.csv
+WP-G022,registry record,14-delivery/work-breakdown-structure.csv
+WP-G023,registry record,14-delivery/work-breakdown-structure.csv
+WP-G024,registry record,14-delivery/work-breakdown-structure.csv
+WP-G025,registry record,14-delivery/work-breakdown-structure.csv
+WP-G026,registry record,14-delivery/work-breakdown-structure.csv
+WP-G027,registry record,14-delivery/work-breakdown-structure.csv
+WP-G028,registry record,14-delivery/work-breakdown-structure.csv
+WP-G029,registry record,14-delivery/work-breakdown-structure.csv
+WP-G030,registry record,14-delivery/work-breakdown-structure.csv
+WP-G031,registry record,14-delivery/work-breakdown-structure.csv
+WP-G032,registry record,14-delivery/work-breakdown-structure.csv

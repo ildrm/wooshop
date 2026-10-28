@@ -1,0 +1,17 @@
+id,scenario,documented_expression,observed_integer_result,expected_integer_result,result,scope
+FIN-CHECK01,Example1 gross,10000 + 1000 + 500 + 50,11550,11550,PASS,Documentation arithmetic only;not tax/provider/runtime verification
+FIN-CHECK02,Example1 balanced credits,9500 + 1050 + 1000,11550,11550,PASS,Documentation arithmetic only;not tax/provider/runtime verification
+FIN-CHECK03,Example1 post payout clearing,11550 - 9500,2050,2050,PASS,Documentation arithmetic only;not tax/provider/runtime verification
+FIN-CHECK04,Example2 discounted goods,10000 + 5000 - 1500,13500,13500,PASS,Documentation arithmetic only;not tax/provider/runtime verification
+FIN-CHECK05,Example2 capture,9000 + 4500 + 900 + 450 + 1000 + 500 + 100 + 50,16500,16500,PASS,Documentation arithmetic only;not tax/provider/runtime verification
+FIN-CHECK06,Example2 ledger credits,9100 + 4550 + 1500 + 1350,16500,16500,PASS,Documentation arithmetic only;not tax/provider/runtime verification
+FIN-CHECK07,Example3 refund debits,4050 + 450 + 450,4950,4950,PASS,Documentation arithmetic only;not tax/provider/runtime verification
+FIN-CHECK08,Example3 remaining clearing,16500 - 4950,11550,11550,PASS,Documentation arithmetic only;not tax/provider/runtime verification
+FIN-CHECK09,Example3 remaining balances,5050 + 4550 + 1050 + 900,11550,11550,PASS,Documentation arithmetic only;not tax/provider/runtime verification
+FIN-CHECK10,Example4 clearing after both payouts,16500 - 9100 - 4550,2850,2850,PASS,Documentation arithmetic only;not tax/provider/runtime verification
+FIN-CHECK11,Example4 clearing after refund,2850 - 4950,-2100,-2100,PASS,Documentation arithmetic only;not tax/provider/runtime verification
+FIN-CHECK12,Example4 assets match liabilities/revenue,-2100 + 4050 = 1050 + 900,1950,1950,PASS,Documentation arithmetic only;not tax/provider/runtime verification
+FIN-CHECK13,Example6 gross,3000 + 3200 + 620,6820,6820,PASS,Documentation arithmetic only;not tax/provider/runtime verification
+FIN-CHECK14,Example6 credits,2700 + 2880 + 620 + 620,6820,6820,PASS,Documentation arithmetic only;not tax/provider/runtime verification
+FIN-CHECK15,Largest remainder 1minor among3 equal lines,1 + 0 + 0,1,1,PASS,Documentation arithmetic only;not tax/provider/runtime verification
+FIN-CHECK16,Distinct FIX-S-MONEY fixture,9000 + 4500 + 1000 + 1350,15850,15850,PASS,Documentation arithmetic only;not tax/provider/runtime verification

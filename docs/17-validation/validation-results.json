@@ -1,0 +1,163 @@
+{
+  "date": "2026-10-28",
+  "scope": "documentation artifacts only",
+  "overall": "PASS for executed local checks",
+  "counts": {
+    "files": 182,
+    "markdown": 150,
+    "csv": 29,
+    "json_or_yaml": 3,
+    "requirements": 228,
+    "functional_security_seo_requirements": 216,
+    "nonfunctional_requirements": 12,
+    "test_specifications": 248,
+    "features": 330,
+    "modules": 26,
+    "settings": 196,
+    "screens": 40,
+    "components": 36,
+    "sources": 48,
+    "trace_rows": 4456,
+    "identifiers": 1806,
+    "local_markdown_links": 813,
+    "raci_rows": 286,
+    "work_packages": 32,
+    "api_operations": 38,
+    "event_types": 40
+  },
+  "checks": [
+    {
+      "check": "CSV syntax and row widths",
+      "result": "PASS",
+      "detail": "29CSV files parsed with standard csv parser",
+      "failures": []
+    },
+    {
+      "check": "JSON and JSON-compatible YAML parse",
+      "result": "PASS",
+      "detail": "3 artifacts;YAML uses JSON subset of YAML1.2",
+      "failures": []
+    },
+    {
+      "check": "Artifact manifest exact inventory",
+      "result": "PASS",
+      "detail": "182 actual artifacts compared with manifest",
+      "failures": []
+    },
+    {
+      "check": "Required baseline deliverables",
+      "result": "PASS",
+      "detail": "124 user-listed paths",
+      "failures": []
+    },
+    {
+      "check": "Documentation-only extensions and path containment",
+      "result": "PASS",
+      "detail": "All produced paths inspected;no source/config/executable artifacts or symlinks",
+      "failures": []
+    },
+    {
+      "check": "Original file and root preservation",
+      "result": "PASS",
+      "detail": "README.md/LICENSE SHA256 match initial inventory;only docs added outside existing Git metadata",
+      "failures": []
+    },
+    {
+      "check": "Markdown metadata and local links",
+      "result": "PASS",
+      "detail": "150 Markdown documents;813 local links;no fragment links;rechecked after final reports/status",
+      "failures": []
+    },
+    {
+      "check": "Unique canonical IDs and definition paths",
+      "result": "PASS",
+      "detail": "1806 indexed definitions;per-register IDs unique",
+      "failures": []
+    },
+    {
+      "check": "Referenced stable IDs",
+      "result": "PASS",
+      "detail": "6818file/ID references checked against canonical definitions",
+      "failures": []
+    },
+    {
+      "check": "Requirements and future acceptance tests",
+      "result": "PASS",
+      "detail": "228normative requirements;248future tests;all have owner/specification/criteria/test linkage and runtime NOT RUN;157 equivalent NOT EXECUTED labels normalized to NOT RUN and rechecked",
+      "failures": []
+    },
+    {
+      "check": "Normalized traceability",
+      "result": "PASS",
+      "detail": "4456atomic trace rows;all requirements link specification,test and work package",
+      "failures": []
+    },
+    {
+      "check": "RACI accountable/responsible role integrity",
+      "result": "PASS",
+      "detail": "286assignments;49professional functions",
+      "failures": []
+    },
+    {
+      "check": "Delivery dependency graph and ten phases",
+      "result": "PASS",
+      "detail": "32work packages;72acyclic prerequisite edges;10phases",
+      "failures": []
+    },
+    {
+      "check": "OpenAPI references,operations,parameters and auth structure",
+      "result": "PASS",
+      "detail": "35paths;38operations;52schemas;488local refs;JSON-compatible YAML",
+      "failures": []
+    },
+    {
+      "check": "Settings keys and component control coverage",
+      "result": "PASS",
+      "detail": "196unique settings;75referenced component keys",
+      "failures": []
+    },
+    {
+      "check": "Analytics aliases and event dedup field consistency",
+      "result": "PASS",
+      "detail": "40canonical events;66UI aliases;finance analytics restricted",
+      "failures": []
+    },
+    {
+      "check": "Financial example arithmetic",
+      "result": "PASS",
+      "detail": "16integer arithmetic assertions;no runtime money effects tested",
+      "failures": []
+    },
+    {
+      "check": "Full OpenAPI/JSON-Schema standards validation",
+      "result": "NOT RUN",
+      "detail": "No installed full validator used;bounded structure checks only",
+      "failures": []
+    },
+    {
+      "check": "Mermaid rendering/formal grammar validation",
+      "result": "NOT RUN",
+      "detail": "No installed Mermaid parser/renderer;fences and conceptual diagrams textually reviewed",
+      "failures": []
+    },
+    {
+      "check": "Application/provider/security/accessibility/load/recovery tests",
+      "result": "NOT RUN",
+      "detail": "Documentation-only assignment;all runtime scenarios NOT RUN",
+      "failures": []
+    },
+    {
+      "check": "External link availability sweep",
+      "result": "NOT RUN",
+      "detail": "Sources researched individually;all external links not crawled",
+      "failures": []
+    },
+    {
+      "check": "Human/legal/provider approvals",
+      "result": "NOT RUN",
+      "detail": "Pending designated decision and release gates;AI reviews are not approvals",
+      "failures": []
+    }
+  ],
+  "finalization_note": "Test-status normalization revalidated;manifest/status/reports finalized;no runtime tests executed. Final182-file manifest equality,allCSV/JSON syntax,metadata/local links and containment rechecked after report updates."
+}

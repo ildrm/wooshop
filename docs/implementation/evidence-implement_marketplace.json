@@ -1,0 +1,872 @@
+{
+  "schema_version": 1,
+  "worker": "implement_marketplace",
+  "updated_at": "2026-10-28T10:37:31.250125+00:00",
+  "delivery_status": "Implementation incomplete; verified marketplace/data/finance foundation with explicit disabled provider and activation gates.",
+  "read_paths": [
+    {
+      "path": "docs/implementation/integration-contract.md",
+      "sha256": "9e8287cb456dd1f6c2ce2ae19de43fcd8ee1ffd97d58a737a36a86e07094a29d",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/00-governance/scope-assumptions-and-decisions.md",
+      "sha256": "f5a5fc9e728c6dee45968ea3e72ddf1c7ccc9ed754d384a9a12cafe9913e9a47",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/17-validation/unresolved-decisions-and-readiness-gates.md",
+      "sha256": "d0f4f34718840e0c7965a9e5048b4a3f6044627885a7d179093b86d0be1fb5d4",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/03-architecture/architecture-overview.md",
+      "sha256": "4ee255a5de3a86738f4610961b076e5ad255df26e07cd4a8d1de4424931a68f6",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/03-architecture/ownership-and-module-boundaries.md",
+      "sha256": "b457d436c6a80cd5723e2e99f2ba4879d1279988420e0877a0e2cb75b5c57040",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/03-architecture/native-versus-custom-decisions.md",
+      "sha256": "4ecd2b82f162616c7817ebd362f99f7be86d8677ee70386c03506478cd6c3a34",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/03-architecture/marketplace-provider-evaluation.md",
+      "sha256": "b6fe17c67242c4117b3b8988e5d7e4e31695b0f083d7dc9a7f01d56e73b10306",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/03-architecture/adr/adr-05-seller-product-offer.md",
+      "sha256": "63ea160afcaa8a63389a69ef24fadb16620a2d6a1f726db41aac8795f94e6acd",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/03-architecture/adr/adr-06-marketplace-build-integrate.md",
+      "sha256": "80122255c2684e48ea18642468be6922eecafe654c49864c42ffb3142d363840",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/03-architecture/adr/adr-07-price-stock-authority.md",
+      "sha256": "d1542bdd5d652659946db5e996dedc2c90c9cace6c92bae928039207c6557d1c",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/03-architecture/adr/adr-08-order-allocation.md",
+      "sha256": "84f518ef1986f8b9a2e67ae92911a4e4a473316a7825c131f108ebf5b9a1d8bf",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/03-architecture/adr/adr-09-payment-settlement.md",
+      "sha256": "c2e1b4302a25e8af161cffd75fe507332c7b8f4b690eacf15f5bace5be7c118f",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/03-architecture/adr/adr-10-storage-indexing.md",
+      "sha256": "c7ede242203ba905ad819a63456a7b0a1f150fe8abffa8ee09cb72b6fcb97d1d",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/04-data/data-dictionary.md",
+      "sha256": "9c60adc39f62243280294e47e341e8603ef245e9da671867cebc0855a100eb8d",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/04-data/domain-model-and-erd.md",
+      "sha256": "200545bca37227cabfcfdd16a911005ec9d64eb6401bef179270e8142c0aeb26",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/04-data/ownership-and-storage-mapping.md",
+      "sha256": "9f060d928cb335eee9f5878dc86b1ea5f02ccf8a3c25e3f7a404f5cdfcb5572b",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/04-data/offers-inventory-and-reservations.md",
+      "sha256": "effd5de74599902d00601fe4576df8f28203014dacad51e96110fe00ab9701db",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/04-data/orders-financial-records-and-invariants.md",
+      "sha256": "400ef85829f47897b972836a1c1b56d50557566ec467e356d3e6570543027103",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/04-data/lifecycle-retention-and-deletion.md",
+      "sha256": "08bd523ac9515aa74fbab31aa0084dfb96b7a5239ac3be65082d15d66abd7bb4",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/04-data/import-export-and-migration.md",
+      "sha256": "c900a16053cfc3a74cf04774b1cdaeb0e8c9a8205cd8ce0fa18dc0e7d5421fc5",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/07-plugin/extension-contracts-and-provider-adapters.md",
+      "sha256": "a39ea29c2d94bff72aab089775e246a606ef433c1254e23814463fbff110a8a3",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/08-marketplace/seller-onboarding-teams-and-portals.md",
+      "sha256": "a8332c4087a29523ed2e566141d48fcd6f84bbb069d40f5d9412868589f5f9ec",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/08-marketplace/offers-buy-box-and-seller-policies.md",
+      "sha256": "34aaba4e399408935e2c64561a23bd2f95771d9e4e57d449151bed111fa5348e",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/08-marketplace/cart-checkout-and-order-allocation.md",
+      "sha256": "7c33cffcc25442323646719a2cd79b6d3ce0da787dd4d5b768e330388c394bfe",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/08-marketplace/commissions-ledger-payouts-and-reconciliation.md",
+      "sha256": "9344df152bfe431dfc3772a42071006c8c98fb7cf2af7a7375953992e50775c5",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/08-marketplace/shipping-fulfillment-and-tracking.md",
+      "sha256": "d9d7af66877e85008789a3c51d0e8cf77f63d7c6813e3fda6067d9b24b732f67",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/08-marketplace/returns-refunds-disputes-and-chargebacks.md",
+      "sha256": "34052a64785c6e8bc968d8a8d28b53566d9d8e9e607df9dd0eea937d14bc19f3",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/08-marketplace/moderation-fraud-and-seller-performance.md",
+      "sha256": "77ec721eb6f4b5473bc620cce3139f353b6b8ed5afb20cba50096d6eb69f1372",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/08-marketplace/single-seller-to-marketplace-migration.md",
+      "sha256": "48940d92c320ee62dc559b4062a1253597794a6d10580f1bc05259076a4ba3e1",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/08-marketplace/operating-models-and-catalog-governance.md",
+      "sha256": "391d651af27c2eed85ccfae74ebfd532e173c6f05c21150dc14aac04b672a731",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/08-marketplace/worked-transaction-examples.md",
+      "sha256": "d39067b614be8886d9b2fedb51d8e90d47db5da65a3578e2c110398224f04828",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/09-api-integrations/api-operation-catalog.csv",
+      "sha256": "04bb8dfc4e9a5e15141d33d5aa8573e91b56b2d7e70250c1055814d719a2df21",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/09-api-integrations/api-and-authentication-strategy.md",
+      "sha256": "287ff99f611a3775bcb2eaf7cf1337bbbe6f1855826a660ec896616610bbcd74",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/09-api-integrations/versioning-errors-idempotency-and-limits.md",
+      "sha256": "36f4c71efe028a79b2b38feeda50ba0f22be626e8caca51c1782814fa7dd8e44",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/11-security-privacy/roles-capabilities-and-object-authorization.csv",
+      "sha256": "eed41314eb830738f8fd3fd6e5ea79d62adf30d6a0e3df86ed7cd48de1215d74",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/11-security-privacy/identity-api-upload-and-content-security.md",
+      "sha256": "90ece8112de9ba5ad9d4f3b6c8ffbdb0a0b8b7bc03ee63b7c583db45b2416db1",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/11-security-privacy/financial-integrity-and-abuse-prevention.md",
+      "sha256": "9f03eb5f1a79b8000282b9533dca173eeff75f9aa9752edea02fe0a3c3a59daa",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "docs/12-quality/performance-concurrency-and-recovery-tests.md",
+      "sha256": "cf41567ee80adee76ed885e66ab5cbc03473f404b2659f88b27873f052e9246e",
+      "reading_status": "full",
+      "scope_note": "Relevant implementation input; proposed/drafted status does not establish human approval."
+    },
+    {
+      "path": "/Users/shahinilderemi/Downloads/wp-project.md",
+      "sha256": "9601fecdebb2d507c47072915d835bb2a211fb2fc3f8ba9f429f2203a07cbbdd",
+      "reading_status": "selected portions",
+      "scope_note": "Implementation prompt excerpts and parent task instructions; initial combined output truncated. Do not claim full independent intake."
+    },
+    {
+      "path": "docs/09-api-integrations/openapi.yaml",
+      "sha256": "3561b41e11bf569640d00fb64ca88deb42be66e6842456eb72e069dd43a8f6a0",
+      "reading_status": "selected portions",
+      "scope_note": "Parsed API-D001..016/037 endpoint parameters, response statuses and all used request/response schemas; other modules excluded."
+    },
+    {
+      "path": "docs/02-requirements/requirements.csv",
+      "sha256": "a38e5862696535fd4837e6327fbb067f8213ea4bbf96df9cc1535c875e0d5efd",
+      "reading_status": "selected portions",
+      "scope_note": "Parsed FR-D018..031 and FR-D052..084 statements and acceptance criteria; other owners excluded."
+    },
+    {
+      "path": "docs/12-quality/test-cases.csv",
+      "sha256": "f4b32248622372ad1208553f9b17cea75228be83c88cfd395b0e9a2712dbdc34",
+      "reading_status": "selected portions",
+      "scope_note": "Parsed selected TEST-D018..031/052..084 fields; relevant critical cases explicitly read; combined broad output was truncated."
+    },
+    {
+      "path": "docs/14-delivery/work-breakdown-structure.csv",
+      "sha256": "bc1d6d1890ce71cfa5abd555df4de4307f07d667c5584500ef120c15ea257cda",
+      "reading_status": "selected portions",
+      "scope_note": "Read WP-G008/017/018/019/020/021 rows."
+    },
+    {
+      "path": "docs/14-delivery/implementation-backlog.csv",
+      "sha256": "5c8cb87cfa08eef3a19ac9810f1b7cc555a7a36df361e918a46a6ecdcf1faf99",
+      "reading_status": "selected portions",
+      "scope_note": "Read selected work-package rows; broad result truncated."
+    },
+    {
+      "path": "docs/14-delivery/work-package-dependencies.csv",
+      "sha256": "b4d73e234c1260e7f3dcde818c24e15c3572d45cc11010f7bc2918dcea25ee8a",
+      "reading_status": "selected portions",
+      "scope_note": "Read relationships involving assigned work packages."
+    }
+  ],
+  "platform_source_verification": [
+    {
+      "path": ".local/vendor-source/woocommerce/includes/wc-stock-functions.php",
+      "sha256": "62226f0c2e4ba3f7f433e9a2ff050e494000dab50855433924cfd9bd836bd9c8",
+      "version": "WooCommerce 11.2.1",
+      "verification": "Installed-source hook and Store API extension inspection; not provider compatibility."
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/includes/wc-order-functions.php",
+      "sha256": "9065831bb61e74c99b25c3a50f91d17b1a08ceba1708a26adf18d84583575407",
+      "version": "WooCommerce 11.2.1",
+      "verification": "Installed-source hook and Store API extension inspection; not provider compatibility."
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/includes/class-wc-checkout.php",
+      "sha256": "37dc2a28f4399e1cdad226b4c73e35e37be4ed7a98197f840ac15376af664a1b",
+      "version": "WooCommerce 11.2.1",
+      "verification": "Installed-source hook and Store API extension inspection; not provider compatibility."
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/src/StoreApi/Utilities/CartController.php",
+      "sha256": "0098041a8e4b9ac5ba5fcabed5edb4e88c74f44bec69a90dfa307f0aef290030",
+      "version": "WooCommerce 11.2.1",
+      "verification": "Installed-source hook and Store API extension inspection; not provider compatibility."
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/src/StoreApi/Routes/V1/CartAddItem.php",
+      "sha256": "40e113d5c21523dac1b583003a00eebbb923f0a582a96dbc6fb09608ce897800",
+      "version": "WooCommerce 11.2.1",
+      "verification": "Installed-source hook and Store API extension inspection; not provider compatibility."
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/src/StoreApi/Routes/V1/CartUpdateItem.php",
+      "sha256": "82792be3a99512c99d296e4d1e6731dd7c7f10ab92968a81851c8f71a4d398f8",
+      "version": "WooCommerce 11.2.1",
+      "verification": "Installed-source hook and Store API extension inspection; not provider compatibility."
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/src/StoreApi/Routes/V1/Checkout.php",
+      "sha256": "db2ef259e750517bf19edced3e878f8af59066587e83dce9e42dd03623f85b6f",
+      "version": "WooCommerce 11.2.1",
+      "verification": "Installed-source hook and Store API extension inspection; not provider compatibility."
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/src/StoreApi/Routes/V1/CheckoutOrder.php",
+      "sha256": "a4e55dfffb9c90d3f345349e3577458bbc0864ffb5a6b6011078e2f8d254f382",
+      "version": "WooCommerce 11.2.1",
+      "verification": "Installed-source hook and Store API extension inspection; not provider compatibility."
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/src/StoreApi/Utilities/CheckoutTrait.php",
+      "sha256": "056cdf4cd0deca58a851a7005c9d6ad4c87c5cd6d94e5d51f05d755523a9df17",
+      "version": "WooCommerce 11.2.1",
+      "verification": "Installed-source hook and Store API extension inspection; not provider compatibility."
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/src/StoreApi/Schemas/ExtendSchema.php",
+      "sha256": "6fb2a30ea6798e5ee5724588b6ab3a373667e09b56d6ab41a06272422bf82755",
+      "version": "WooCommerce 11.2.1",
+      "verification": "Installed-source hook and Store API extension inspection; not provider compatibility."
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/src/Blocks/Domain/Bootstrap.php",
+      "sha256": "a0272317e0b31aba4d3ceb1279b1b855bd33380a4caa27ea1c0790ae60bc85b2",
+      "version": "WooCommerce 11.2.1",
+      "verification": "Installed-source hook and Store API extension inspection; not provider compatibility."
+    }
+  ],
+  "graph_context": {
+    "project": "Users-shahinilderemi-Documents-tmp-iranbroker-wp",
+    "generation": "2026-10-28T08:24:29Z",
+    "tier": "task-directed verify",
+    "coverage": "New implementation paths missing from docs-only graph; source read/grep used. README unparseable gap inherited from parent. No exhaustive graph claims."
+  },
+  "changed_files": [
+    "docs/implementation/evidence-implement_marketplace.json",
+    "packages/plugin/wooshop-commerce/assets/marketplace.css",
+    "packages/plugin/wooshop-commerce/assets/marketplace.js",
+    "packages/plugin/wooshop-commerce/src/Finance/Allocation.php",
+    "packages/plugin/wooshop-commerce/src/Finance/CommissionPolicy.php",
+    "packages/plugin/wooshop-commerce/src/Finance/Ledger.php",
+    "packages/plugin/wooshop-commerce/src/Finance/Money.php",
+    "packages/plugin/wooshop-commerce/src/Finance/RefundAllocation.php",
+    "packages/plugin/wooshop-commerce/src/Inventory/CaptureVerifier.php",
+    "packages/plugin/wooshop-commerce/src/Inventory/InventoryService.php",
+    "packages/plugin/wooshop-commerce/src/Marketplace/ActivationGate.php",
+    "packages/plugin/wooshop-commerce/src/Marketplace/AllocationService.php",
+    "packages/plugin/wooshop-commerce/src/Marketplace/Cursor.php",
+    "packages/plugin/wooshop-commerce/src/Marketplace/HumanVerifier.php",
+    "packages/plugin/wooshop-commerce/src/Marketplace/Input.php",
+    "packages/plugin/wooshop-commerce/src/Marketplace/MarketplaceModule.php",
+    "packages/plugin/wooshop-commerce/src/Marketplace/NativeGuard.php",
+    "packages/plugin/wooshop-commerce/src/Marketplace/OfferService.php",
+    "packages/plugin/wooshop-commerce/src/Marketplace/OrderSnapshots.php",
+    "packages/plugin/wooshop-commerce/src/Marketplace/Records.php",
+    "packages/plugin/wooshop-commerce/src/Marketplace/Schema.php",
+    "packages/plugin/wooshop-commerce/src/Marketplace/SellerPortal.php",
+    "packages/plugin/wooshop-commerce/src/Marketplace/SellerService.php",
+    "packages/plugin/wooshop-commerce/views/marketplace/portal.php",
+    "tests/marketplace/FixtureProducts.php",
+    "tests/marketplace/cleanup-owned-probes.php",
+    "tests/marketplace/concurrency.php",
+    "tests/marketplace/domain.php",
+    "tests/marketplace/integration.php",
+    "tests/marketplace/store-api.php"
+  ],
+  "work_packages": {
+    "WP-G008": "PARTIAL; no release gate completion claim",
+    "WP-G017": "PARTIAL; no release gate completion claim",
+    "WP-G018": "PARTIAL; no release gate completion claim",
+    "WP-G019": "PARTIAL; no release gate completion claim",
+    "WP-G020": "PARTIAL; no release gate completion claim",
+    "WP-G021": "PARTIAL; no release gate completion claim"
+  },
+  "requirements": [
+    {
+      "id": "FR-D018",
+      "status": "PARTIAL",
+      "evidence_scope": "Native product/exact variation IDs are validated and distinct offer records exist; full two-seller checkout is blocked."
+    },
+    {
+      "id": "FR-D019",
+      "status": "BLOCKED_OR_NOT_IMPLEMENTED",
+      "evidence_scope": "Reviewed external provider identity mapping/merge/split workflow not implemented; provider not selected."
+    },
+    {
+      "id": "FR-D020",
+      "status": "PARTIAL",
+      "evidence_scope": "Organizations and scoped memberships persist; bounded invitations, account-bound acceptance, revocation and last-owner denial tested. Verified ownership-transfer workflow remains incomplete."
+    },
+    {
+      "id": "FR-D021",
+      "status": "PARTIAL",
+      "evidence_scope": "Authority epochs and native suppression/guard hooks exist and are tested; independent maintenance and verified authority cutover remain blocked."
+    },
+    {
+      "id": "FR-D022",
+      "status": "PARTIAL",
+      "evidence_scope": "Server-side seller/pool/destination/price checks and fail-closed gate; no successful marketplace quote/eligibility path until activation gates close."
+    },
+    {
+      "id": "FR-D023",
+      "status": "PARTIAL",
+      "evidence_scope": "Direct marketplace add/update/checkout is blocked; complete accepted quote/reconfirmation coordinator remains incomplete."
+    },
+    {
+      "id": "FR-D024",
+      "status": "IMPLEMENTED_DOMAIN_OR_SAFE_GUARD",
+      "evidence_scope": "Database-atomic group acquisition, fixed 15-minute TTL, expiry, idempotent terminal commit/release; genuine 20-connection last-unit race. Production commit requires an injected verified payment adapter which is absent."
+    },
+    {
+      "id": "FR-D025",
+      "status": "PARTIAL",
+      "evidence_scope": "Immutable native WC CRUD item snapshots preserve IDs and original goods/discount/tax values. Complete seller/terms/commission/shipping/fee snapshots require the missing marketplace adapter."
+    },
+    {
+      "id": "FR-D026",
+      "status": "PARTIAL",
+      "evidence_scope": "Adapter allocation plans are validated against every WC quantity, aggregate total, shipping/fee/tax component and immutable seller snapshot; not wired to an enabled marketplace checkout."
+    },
+    {
+      "id": "FR-D027",
+      "status": "PARTIAL",
+      "evidence_scope": "Full cart identity hash exists and seller/site distinction is unit tested; successful marketplace cart lines are disabled."
+    },
+    {
+      "id": "FR-D028",
+      "status": "IMPLEMENTED_DOMAIN_OR_SAFE_GUARD",
+      "evidence_scope": "Exact signed minor units, maximum bound, explicit currency/exponent, overflow-safe rational allocation and balanced journal arithmetic."
+    },
+    {
+      "id": "FR-D029",
+      "status": "PARTIAL",
+      "evidence_scope": "Original frozen unit refund arithmetic and explicit commission policy tested; approved refund preparation/provider submission remain blocked."
+    },
+    {
+      "id": "FR-D030",
+      "status": "PARTIAL",
+      "evidence_scope": "Append-only seller receivable/negative balance postings supported; real post-payout provider refund/chargeback not implemented."
+    },
+    {
+      "id": "FR-D031",
+      "status": "PARTIAL",
+      "evidence_scope": "Internal journal and stock effects deduplicate; no selected verified external event adapter."
+    },
+    {
+      "id": "FR-D052",
+      "status": "PARTIAL",
+      "evidence_scope": "Stock movements carry operation/actor/epoch/disposition. Inspected resalable return restock is bounded and idempotent; full inspector workflow is incomplete."
+    },
+    {
+      "id": "FR-D053",
+      "status": "PARTIAL",
+      "evidence_scope": "Drift persists quarantine plus owned inventory.drift case; verified reconciliation repair/unquarantine workflow remains incomplete."
+    },
+    {
+      "id": "FR-D054",
+      "status": "PARTIAL",
+      "evidence_scope": "Reservation and limited seller/shipment/return states are independent; complete payment/dispute/commission/payout state machines and denied-attempt audits remain incomplete."
+    },
+    {
+      "id": "FR-D055",
+      "status": "PARTIAL",
+      "evidence_scope": "Payout availability is deliberately null and payouts blocked; daily provider/order/allocation/transfer reconciliation not implemented."
+    },
+    {
+      "id": "FR-D056",
+      "status": "BLOCKED_OR_NOT_IMPLEMENTED",
+      "evidence_scope": "Offer/stock staged resumable importer not implemented in this worker."
+    },
+    {
+      "id": "FR-D057",
+      "status": "BLOCKED_OR_NOT_IMPLEMENTED",
+      "evidence_scope": "Scoped operational exports and rehearsed marketplace migrations not implemented in this worker."
+    },
+    {
+      "id": "FR-D058",
+      "status": "BLOCKED_OR_NOT_IMPLEMENTED",
+      "evidence_scope": "Cross-projection subject erasure and approved retention schedule not implemented in this worker."
+    },
+    {
+      "id": "FR-D059",
+      "status": "BLOCKED_OR_NOT_IMPLEMENTED",
+      "evidence_scope": "Reviewed reversible canonical duplicate matching/merge not implemented."
+    },
+    {
+      "id": "FR-D060",
+      "status": "IMPLEMENTED_DOMAIN_OR_SAFE_GUARD",
+      "evidence_scope": "Marketplace activation and authority cutover explicitly fail closed on unresolved legal/provider/independent-maintenance verification."
+    },
+    {
+      "id": "FR-D061",
+      "status": "PARTIAL",
+      "evidence_scope": "Terms versions and independent reviewer checks exist; real identity/provider eligibility verification is unavailable."
+    },
+    {
+      "id": "FR-D062",
+      "status": "PARTIAL",
+      "evidence_scope": "Capability subset, invitation expiry/acceptance/replay, live revocation and last-owner denial exist; production privileged changes reject without real fresh step-up."
+    },
+    {
+      "id": "FR-D063",
+      "status": "PARTIAL",
+      "evidence_scope": "Suspension blocks new reservations/offer changes and existing allocations remain; full staged charge/suspension provider race unverified."
+    },
+    {
+      "id": "FR-D064",
+      "status": "BLOCKED_OR_NOT_IMPLEMENTED",
+      "evidence_scope": "Approved preferred-offer ranking, sponsored separation and override workflow not implemented."
+    },
+    {
+      "id": "FR-D065",
+      "status": "PARTIAL",
+      "evidence_scope": "Material terms updates enter review and no silent seller substitution occurs; accepted customer quote reconfirmation remains incomplete."
+    },
+    {
+      "id": "FR-D066",
+      "status": "PARTIAL",
+      "evidence_scope": "Exact illustrative allocation/ledger arithmetic and WC component reconciliation tested; no approved mixed-seller one-payment flow."
+    },
+    {
+      "id": "FR-D067",
+      "status": "PARTIAL",
+      "evidence_scope": "Allocation origin/fulfillment-type grouping and virtual shipment rejection exist; carrier quoting/package checkout adapter absent."
+    },
+    {
+      "id": "FR-D068",
+      "status": "PARTIAL",
+      "evidence_scope": "Scoped atomic shipment quantity preparation implemented; dispatch/cancellation race, carrier callbacks and delivery transition remain incomplete."
+    },
+    {
+      "id": "FR-D069",
+      "status": "BLOCKED_OR_NOT_IMPLEMENTED",
+      "evidence_scope": "Payout preparation/approval/submission disabled pending legal/provider/reconciliation and verified fresh human step-up."
+    },
+    {
+      "id": "FR-D070",
+      "status": "PARTIAL",
+      "evidence_scope": "Exact immutable balances include receivable accounts; available payout remains unknown/blocked pending provider reconciliation/holds."
+    },
+    {
+      "id": "FR-D071",
+      "status": "PARTIAL",
+      "evidence_scope": "Physical return quantities are reserved under allocation row lock; original-unit refund quotes are bounded. Financial remaining-capture reservation/provider effects incomplete."
+    },
+    {
+      "id": "FR-D072",
+      "status": "BLOCKED_OR_NOT_IMPLEMENTED",
+      "evidence_scope": "Dispute deadlines, restricted evidence and provider chargeback outcome workflow not implemented."
+    },
+    {
+      "id": "FR-D073",
+      "status": "BLOCKED_OR_NOT_IMPLEMENTED",
+      "evidence_scope": "Full unsafe-upload/review-manipulation moderation workflow not implemented in this worker."
+    },
+    {
+      "id": "FR-D074",
+      "status": "PARTIAL",
+      "evidence_scope": "Seller transitions have reason/evidence audit and termination blocks unresolved obligations; appeals/risk expiry/performance reviews incomplete."
+    },
+    {
+      "id": "FR-D075",
+      "status": "BLOCKED_OR_NOT_IMPLEMENTED",
+      "evidence_scope": "No marketplace migration executed; cutover blocked until legal/provider/maintenance gates close."
+    },
+    {
+      "id": "FR-D076",
+      "status": "BLOCKED_OR_NOT_IMPLEMENTED",
+      "evidence_scope": "Persisted shell command is gated; active-plugin hooks tested, but independent guard and forced complete dependency-loss recovery not verified."
+    },
+    {
+      "id": "FR-D077",
+      "status": "PARTIAL",
+      "evidence_scope": "Strict minimized public projection and scoped signed cursor available, but marketplace gate means no eligible public sale offers."
+    },
+    {
+      "id": "FR-D078",
+      "status": "IMPLEMENTED_DOMAIN_OR_SAFE_GUARD",
+      "evidence_scope": "Scoped offer PATCH uses allowlist, active membership, expected version and transactional idempotency; real own/foreign REST exercised."
+    },
+    {
+      "id": "FR-D079",
+      "status": "IMPLEMENTED_DOMAIN_OR_SAFE_GUARD",
+      "evidence_scope": "Scoped stock adjustment verifies pool, epoch, version, reason and durable idempotency; own/foreign/replay/changed-body REST exercised."
+    },
+    {
+      "id": "FR-D080",
+      "status": "PARTIAL",
+      "evidence_scope": "Application and independent review are separated; approval fails without actual human/provider prerequisites."
+    },
+    {
+      "id": "FR-D081",
+      "status": "PARTIAL",
+      "evidence_scope": "Team domain enforces subset/single-use/last-owner; external route requires unavailable verified human step-up."
+    },
+    {
+      "id": "FR-D082",
+      "status": "PARTIAL",
+      "evidence_scope": "Owned minimal allocation and shipment APIs with quantity checks implemented; full contact projection and carrier/delivery workflow incomplete."
+    },
+    {
+      "id": "FR-D083",
+      "status": "BLOCKED_OR_NOT_IMPLEMENTED",
+      "evidence_scope": "Refund routes reject missing real human/provider approval; successful financial preparation/provider refund remains unavailable."
+    },
+    {
+      "id": "FR-D084",
+      "status": "BLOCKED_OR_NOT_IMPLEMENTED",
+      "evidence_scope": "Payout routes reject missing real human/provider approval; successful batch preparation/provider payout remains unavailable."
+    }
+  ],
+  "commands": [
+    {
+      "command": "rtk proxy php tests/marketplace/domain.php",
+      "result": "PASS 1032 pure domain assertions",
+      "environment": "Host PHP 8.5.8; no provider/platform claim"
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor eval \"require '/workspace/tests/marketplace/integration.php';\"",
+      "result": "PASS 67 isolated WordPress/WooCommerce/MariaDB assertions",
+      "environment": "WordPress 7.1.3, WooCommerce 11.2.1, PHP 8.4 container, MariaDB 10.11. Explicit test-only HumanVerifier/CaptureVerifier are not provider proof."
+    },
+    {
+      "command": "rtk proxy docker compose --env-file .local/compose.env -f compose.yaml exec -T outdoor php /workspace/tests/marketplace/concurrency.php",
+      "result": "PASS twice with 20 lightweight SHORTINIT workers: exactly 1 held and 19 insufficient_stock; on_hand=1, reserved=1; no payments requested. Latest pass after deterministic seller-before-pool lock ordering."
+    },
+    {
+      "command": "rtk proxy node --check packages/plugin/wooshop-commerce/assets/marketplace.js",
+      "result": "PASS syntax"
+    },
+    {
+      "command": "rtk proxy find owned source/test directories -name '*.php' -exec php -l {} \\;",
+      "result": "PASS PHP syntax on all owned production sources, views and all four test files."
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor eval \"require '/workspace/tests/marketplace/store-api.php';\"",
+      "result": "PASS 7 real WooCommerce Store API assertions: native add works, commerce extension schema present, spoofed offer/money fields503 with unchanged cart, direct mapped shell denied and old cart invalid after current-authority reload.",
+      "scope": "Native Store API integration only; not checkout/payment-provider compatibility."
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor eval \"require '/workspace/tests/marketplace/integration.php';\"",
+      "result": "PASS 67 assertions after root ambient-transaction/savepoint and minimal authorization implication changes."
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor eval \"require '/workspace/tests/marketplace/integration.php';\"",
+      "result": "PASS 70 assertions after latest shared Database/Authorization fixes; includes bodyless GET, fulfillment-to-allocation read implication and origin-bound cleanup verification."
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor eval \"require '/workspace/tests/marketplace/store-api.php';\"",
+      "result": "PASS 8 Store API assertions after latest shared fixes; includes explicit provenance and draft cleanup assertion."
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor eval \"require '/workspace/tests/marketplace/cleanup-owned-probes.php';\"",
+      "result": "Exact positively identified or root-authorized Outdoor legacy product IDs 10,49,53,56,70,79,82,91,84,88,89 were annotated and drafted/hidden through WooCommerce CRUD; no deletion or order/ledger mutation."
+    },
+    {
+      "command": "rtk proxy find tests/marketplace -name '*.php' -exec php -l {} \\;",
+      "result": "PASS all 6 owned PHP test/helper files."
+    }
+  ],
+  "failed_attempts": [
+    {
+      "operation": "Direct sandbox Docker command",
+      "result": "Docker socket denied; continued via approved isolated require_escalated execution."
+    },
+    {
+      "operation": "WP-CLI eval-file strict_types file",
+      "result": "WP-CLI prepends code; strict_types failure. Corrected invocation to wp eval require without weakening strict typing."
+    },
+    {
+      "operation": "Negative stock adjustment integration",
+      "result": "MariaDB unsigned arithmetic underflow caught; corrected availability predicate and assignment to signed CAST; integration passed."
+    },
+    {
+      "operation": "Initial 20 full WordPress/WooCommerce boot race",
+      "result": "Caused local resource contention. Terminated only owned identified PIDs. Replaced worker boot with SHORTINIT and independent wpdb connections; genuine 20-process race passed."
+    },
+    {
+      "operation": "Store API response assertion",
+      "result": "WooCommerce intermediate extensions are stdClass, normalized to actual JSON wire form. Test then exposed stale cart product authority metadata; fixed by loading current metadata through WC CRUD. Rerun passed all 7 assertions."
+    }
+  ],
+  "known_limitations": [
+    "No real/sandbox payment, refund, transfer, payout, identity MFA, carrier or external provider verification. No vendor contact or live funds.",
+    "Marketplace activation/cutover and privileged approvals intentionally remain unavailable; configuration booleans cannot manufacture approval.",
+    "Native snapshots and enabled native purchase do not establish marketplace snapshot, provider or complex-extension compatibility.",
+    "Native mixed-order refund/restock is conservatively blocked for the whole order when any line is mapped; fine-grained epoch-aware legacy recovery remains incomplete.",
+    "No complete quote/reconfirmation coordinator, provider reconciliation, payout-entitlement reservation, dispute workflow, canonical matching, operational exports or rehearsed marketplace migration.",
+    "Seller portal is a working scoped read interface with basic application/SKU forms, not a verified full seller operations UX.",
+    "Database schema migration implemented but production backup/restore, capacity and independent maintenance/dependency-loss verification remain open."
+  ],
+  "next_actions": [
+    "Root completes final browser/package verification after fixture freeze.",
+    "Functional module lifecycle remains explicitly unimplemented (501); quote/reconfirmation, complete purchased snapshots, provider reconciliation, human identity/payment/carrier adapters and marketplace migration remain partial/blocked as recorded."
+  ],
+  "bounded_root_review": {
+    "mode": "Read-only source review; root owns fixes. No root files edited.",
+    "graph_generation": "2026-10-28T09:05:40Z",
+    "coverage": "check_index_coverage called for all 10 root source paths and 5 bounded scopes; metadata_match/no recorded issue. Direct source reads used for material findings.",
+    "findings": [
+      {
+        "severity": "high",
+        "file": "packages/plugin/wooshop-commerce/src/Kernel/ModuleRegistry.php",
+        "issue": "Module lifecycle state changes were persisted without actual mutation route/service enforcement or dependency checking.",
+        "reported_to": "root; pending disposition",
+        "disposition": "Safely mitigated by root: state-changing transitions now explicitly return501 module_lifecycle_unavailable. Functional per-entry gating/drain remains NOT IMPLEMENTED."
+      },
+      {
+        "severity": "high",
+        "file": "packages/plugin/wooshop-commerce/src/Jobs/Queue.php",
+        "issue": "enqueue reuses handler+effect_key without comparing original actor/payload/class intent.",
+        "reported_to": "root; pending disposition",
+        "disposition": "Latest root source rechecked: enqueue compares canonical payload+actor+class; claim UPDATE requires exactly1; retry/poison/cancel counters report lease_lost on zero conditional updates. Root owns execution tests."
+      },
+      {
+        "severity": "high",
+        "file": "packages/plugin/wooshop-commerce/src/Jobs/Queue.php",
+        "issue": "Claim UPDATE result was unchecked, allowing handler invocation without a verified persisted lease; retry/poison counters ignore lost-lease update result.",
+        "reported_to": "root; pending disposition",
+        "disposition": "Latest root source rechecked: enqueue compares canonical payload+actor+class; claim UPDATE requires exactly1; retry/poison/cancel counters report lease_lost on zero conditional updates. Root owns execution tests."
+      },
+      {
+        "severity": "high",
+        "file": "packages/plugin/wooshop-commerce/src/Settings/SettingsService.php",
+        "issue": "Absent settings singleton is presented as virtual version1, but first commit creates version1, so another stale initial version1 commit can still succeed.",
+        "reported_to": "root; pending disposition",
+        "disposition": "Latest root source rechecked: absent singleton is created at1 then update advances first commit to2. Root owns dedicated initial-write concurrency execution."
+      },
+      {
+        "severity": "evidence scope",
+        "file": "packages/plugin/wooshop-commerce/wooshop-commerce.php",
+        "issue": "HPOS true declaration is not proof of complete checkout/refund/lifecycle compatibility; claims must remain bounded to executed native CRUD/current tests.",
+        "reported_to": "root; pending disposition"
+      },
+      {
+        "severity": "migration gate",
+        "file": "packages/plugin/wooshop-commerce/src/Infrastructure/Schema.php",
+        "issue": "Only five core table existences were verified before marking schema current; missing specialized CREATE or non-InnoDB transactional tables need activation failure. Fresh local tables are InnoDB.",
+        "reported_to": "root; pending disposition",
+        "disposition": "Latest root source verifies every merged table exists and uses InnoDB before schema version update. Current marketplace integration install passed."
+      }
+    ],
+    "read_paths": [
+      {
+        "path": "packages/plugin/wooshop-commerce/src/Infrastructure/Database.php",
+        "sha256": "3554bae997f98291f7fdcee5049e212d612f488428d124d04f1e122023b0abcb"
+      },
+      {
+        "path": "packages/plugin/wooshop-commerce/src/Infrastructure/EntityStore.php",
+        "sha256": "8fc89b8f881c2c225d7ea07858c91d121dce2a17b001c1dd496b1dee231fefac"
+      },
+      {
+        "path": "packages/plugin/wooshop-commerce/src/Infrastructure/Idempotency.php",
+        "sha256": "a01e3651117fd69590e37bad50eab17d7bd83e97af38e4f788d6f4e24594742d"
+      },
+      {
+        "path": "packages/plugin/wooshop-commerce/src/Infrastructure/Schema.php",
+        "sha256": "524d883c8b151a81072a89e38a3c3e01e0df6adeb5a9581ffea8b56becfcd631"
+      },
+      {
+        "path": "packages/plugin/wooshop-commerce/src/Security/Authorization.php",
+        "sha256": "801476a90921b82365c878adf0ba8316089c69f7e1bb662bfecad1bd0f25db84"
+      },
+      {
+        "path": "packages/plugin/wooshop-commerce/src/Jobs/Queue.php",
+        "sha256": "2c8ce8ba73bbac68750b23ef0bd1827504b4d0b7e036f98de59de432100f6f4d"
+      },
+      {
+        "path": "packages/plugin/wooshop-commerce/src/Kernel/Plugin.php",
+        "sha256": "d28ec39810469b24970fbb733247c63edc079582bb6ab539c4bce1a2c37c703b"
+      },
+      {
+        "path": "packages/plugin/wooshop-commerce/src/Kernel/ModuleRegistry.php",
+        "sha256": "fa6b501d7b50ae68c66db790187bd49d551d0001c6eaa4cd15ec05c13fa7a44e"
+      },
+      {
+        "path": "packages/plugin/wooshop-commerce/src/Settings/SettingsService.php",
+        "sha256": "18e438111751a2c8ead16704adaed61026e39d08f0e33b0a47d1600c5c75080f"
+      },
+      {
+        "path": "packages/plugin/wooshop-commerce/src/Settings/Validator.php",
+        "sha256": "ac74aaf31d3909e785a9e3c2217ac9358c4865369d8d4689a1638bd70985d656"
+      }
+    ],
+    "latest_source_recheck": [
+      {
+        "path": "packages/plugin/wooshop-commerce/src/Kernel/ModuleRegistry.php",
+        "sha256": "88ca8f1a5a2e8302634892a3e52c5cdbfd0770ca928ef9892599a7d9cb48076b"
+      },
+      {
+        "path": "packages/plugin/wooshop-commerce/src/Infrastructure/Database.php",
+        "sha256": "3554bae997f98291f7fdcee5049e212d612f488428d124d04f1e122023b0abcb"
+      },
+      {
+        "path": "packages/plugin/wooshop-commerce/src/Security/Authorization.php",
+        "sha256": "801476a90921b82365c878adf0ba8316089c69f7e1bb662bfecad1bd0f25db84"
+      },
+      {
+        "path": "packages/plugin/wooshop-commerce/src/Jobs/Queue.php",
+        "sha256": "379d113ecd1fcbc36527486b499a3a1db673b494638f2852377aafb90e35fda1"
+      },
+      {
+        "path": "packages/plugin/wooshop-commerce/src/Settings/SettingsService.php",
+        "sha256": "75b4b643db458f09510e0da77021a2146b21830d3ecc9e16cd863da230ced5a2"
+      },
+      {
+        "path": "packages/plugin/wooshop-commerce/src/Infrastructure/Schema.php",
+        "sha256": "fb30deee42482a90fa84cbfc10f05b987a069921dc4b4f9c0b4abcad1f4ba152"
+      }
+    ]
+  },
+  "fixture_cleanup": {
+    "site": "outdoor-local-18880",
+    "action": "Recoverable draft status and hidden catalog visibility through WooCommerce CRUD; explicit source/run/legacy provenance stored.",
+    "integration_ids": [
+      10,
+      49,
+      53,
+      56,
+      70,
+      79,
+      82,
+      91
+    ],
+    "integration_ownership_evidence": "Each explicit product ID was linked by offer to seller public_slug fixture-<random tag>, exact synthetic profile reference and accepted_terms_version999, matching test actor login marketplace-fixture-<same tag> and fixture SKU tag.",
+    "store_api_ids": [
+      84,
+      88,
+      89
+    ],
+    "store_api_ownership_evidence": "Root explicitly authorized these exact IDs based on this empty isolated invocation and the worker's recorded execution timestamps/source. Each remained without _wooshop_fixture_key and matched the exact Store API test product title before change; original run ID was not invented.",
+    "new_run_behavior": "FixtureProducts.php tags origin and random run before first product save, tracks only that run's object ID, and drafts/marks hidden on explicit cleanup plus shutdown. Both harnesses assert successful cleanup.",
+    "preserved": [
+      "Profile products with _wooshop_fixture_key",
+      "Native orders and immutable purchased snapshots",
+      "Journals and ledger entries",
+      "Seller/allocation/return records",
+      "Independent SQL concurrency fixtures"
+    ],
+    "generic_storefront_name_filter": "None added.",
+    "verification": {
+      "all_11_explicit_ids": "draft with expected origin metadata",
+      "published_owned_probes": 0,
+      "checked_after": "Final 70-assertion integration and 8-assertion Store API runs"
+    }
+  },
+  "installed_suite_header_correction": {
+    "change": "Only the two full-WordPress suites now require WP_PLUGIN_DIR/wooshop-commerce/autoload.php; no /workspace/packages source mount required. Domain and SHORTINIT worker scripts unchanged.",
+    "sha256": {
+      "tests/marketplace/integration.php": "134cfb14c0269e03bc124875153cd2e1c09f44ee9aec9965c7883c7f1b571278",
+      "tests/marketplace/store-api.php": "139ac4d3d65467f3f836a4ee1f59cd67674866d0426a4f4c1b21e8712fb15451"
+    },
+    "syntax": "Both PHP files passed php -l. Runtime rerun awaits root package-site/activation coordination."
+  }
+}

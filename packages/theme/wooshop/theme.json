@@ -1,0 +1,387 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "useRootPaddingAwareAlignments": true,
+    "layout": {
+      "contentSize": "1280px",
+      "wideSize": "1440px"
+    },
+    "color": {
+      "custom": false,
+      "customGradient": false,
+      "defaultPalette": false,
+      "defaultGradients": false,
+      "palette": [
+        {
+          "slug": "canvas",
+          "name": "Canvas",
+          "color": "#F6F7F9"
+        },
+        {
+          "slug": "surface",
+          "name": "Surface",
+          "color": "#FFFFFF"
+        },
+        {
+          "slug": "text",
+          "name": "Text",
+          "color": "#17212B"
+        },
+        {
+          "slug": "secondary",
+          "name": "Secondary",
+          "color": "#4A5968"
+        },
+        {
+          "slug": "action",
+          "name": "Action",
+          "color": "#234D70"
+        },
+        {
+          "slug": "success",
+          "name": "Success",
+          "color": "#17663A"
+        },
+        {
+          "slug": "warning",
+          "name": "Warning",
+          "color": "#704C00"
+        },
+        {
+          "slug": "danger",
+          "name": "Danger",
+          "color": "#A12622"
+        },
+        {
+          "slug": "info",
+          "name": "Info",
+          "color": "#174E83"
+        },
+        {
+          "slug": "border",
+          "name": "Border",
+          "color": "#C7CFD8"
+        },
+        {
+          "slug": "focus",
+          "name": "Focus",
+          "color": "#005FCC"
+        },
+        {
+          "slug": "subtle",
+          "name": "Subtle",
+          "color": "#EEF1F4"
+        }
+      ],
+      "gradients": [
+        {
+          "slug": "mist",
+          "name": "Mist",
+          "gradient": "linear-gradient(135deg, #EEF1F4 0%, #FFFFFF 100%)"
+        }
+      ]
+    },
+    "typography": {
+      "customFontSize": false,
+      "defaultFontSizes": false,
+      "fluid": true,
+      "fontFamilies": [
+        {
+          "slug": "system",
+          "name": "System",
+          "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Tahoma, Arial, sans-serif"
+        }
+      ],
+      "fontSizes": [
+        {
+          "slug": "12",
+          "name": "12",
+          "size": "0.75rem"
+        },
+        {
+          "slug": "14",
+          "name": "14",
+          "size": "0.875rem"
+        },
+        {
+          "slug": "16",
+          "name": "16",
+          "size": "1.0rem"
+        },
+        {
+          "slug": "18",
+          "name": "18",
+          "size": "1.125rem"
+        },
+        {
+          "slug": "20",
+          "name": "20",
+          "size": "1.25rem"
+        },
+        {
+          "slug": "24",
+          "name": "24",
+          "size": "1.5rem"
+        },
+        {
+          "slug": "32",
+          "name": "32",
+          "size": "2.0rem"
+        },
+        {
+          "slug": "40",
+          "name": "40",
+          "size": "2.5rem"
+        },
+        {
+          "slug": "48",
+          "name": "48",
+          "size": "3.0rem"
+        }
+      ]
+    },
+    "spacing": {
+      "customSpacingSize": false,
+      "defaultSpacingSizes": false,
+      "units": [
+        "px",
+        "rem",
+        "%"
+      ],
+      "spacingSizes": [
+        {
+          "slug": "0",
+          "name": "0",
+          "size": "0.0rem"
+        },
+        {
+          "slug": "4",
+          "name": "4",
+          "size": "0.25rem"
+        },
+        {
+          "slug": "8",
+          "name": "8",
+          "size": "0.5rem"
+        },
+        {
+          "slug": "12",
+          "name": "12",
+          "size": "0.75rem"
+        },
+        {
+          "slug": "16",
+          "name": "16",
+          "size": "1.0rem"
+        },
+        {
+          "slug": "24",
+          "name": "24",
+          "size": "1.5rem"
+        },
+        {
+          "slug": "32",
+          "name": "32",
+          "size": "2.0rem"
+        },
+        {
+          "slug": "48",
+          "name": "48",
+          "size": "3.0rem"
+        },
+        {
+          "slug": "64",
+          "name": "64",
+          "size": "4.0rem"
+        }
+      ]
+    },
+    "shadow": {
+      "defaultPresets": false,
+      "presets": [
+        {
+          "slug": "subtle",
+          "name": "Subtle",
+          "shadow": "0 2px 8px rgba(23,33,43,.08)"
+        },
+        {
+          "slug": "dialog",
+          "name": "Dialog",
+          "shadow": "0 12px 36px rgba(23,33,43,.20)"
+        }
+      ]
+    },
+    "custom": {
+      "radius": {
+        "control": "8px",
+        "card": "8px"
+      },
+      "card": {
+        "padding": "12px"
+      },
+      "motion": {
+        "duration": "180ms",
+        "easing": "cubic-bezier(.2,0,0,1)"
+      },
+      "textWidth": "720px"
+    },
+    "blocks": {
+      "core/button": {
+        "border": {
+          "radius": true
+        }
+      },
+      "core/image": {
+        "lightbox": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var:preset|color|canvas",
+      "text": "var:preset|color|text"
+    },
+    "typography": {
+      "fontFamily": "var:preset|font-family|system",
+      "fontSize": "var:preset|font-size|16",
+      "lineHeight": "1.6"
+    },
+    "spacing": {
+      "blockGap": "var:preset|spacing|24",
+      "padding": {
+        "top": "0",
+        "right": "var:preset|spacing|16",
+        "bottom": "0",
+        "left": "var:preset|spacing|16"
+      }
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontWeight": "700",
+          "lineHeight": "1.25"
+        }
+      },
+      "h1": {
+        "typography": {
+          "fontSize": "clamp(2rem, 4vw, 2.5rem)"
+        }
+      },
+      "h2": {
+        "typography": {
+          "fontSize": "clamp(1.5rem, 3vw, 2rem)"
+        }
+      },
+      "link": {
+        "color": {
+          "text": "var:preset|color|action"
+        },
+        ":hover": {
+          "typography": {
+            "textDecoration": "underline"
+          }
+        }
+      },
+      "button": {
+        "color": {
+          "background": "var:preset|color|action",
+          "text": "var:preset|color|surface"
+        },
+        "border": {
+          "radius": "8px"
+        },
+        "typography": {
+          "fontSize": "var:preset|font-size|16",
+          "fontWeight": "600"
+        },
+        "spacing": {
+          "padding": {
+            "top": "12px",
+            "right": "20px",
+            "bottom": "12px",
+            "left": "20px"
+          }
+        }
+      }
+    },
+    "blocks": {
+      "core/site-title": {
+        "typography": {
+          "fontSize": "var:preset|font-size|24",
+          "fontWeight": "700"
+        }
+      },
+      "core/post-title": {
+        "typography": {
+          "lineHeight": "1.25"
+        }
+      },
+      "core/post-excerpt": {
+        "color": {
+          "text": "var:preset|color|secondary"
+        }
+      },
+      "core/navigation": {
+        "typography": {
+          "fontSize": "var:preset|font-size|14"
+        }
+      }
+    }
+  },
+  "customTemplates": [
+    {
+      "name": "wide",
+      "title": "Wide page",
+      "postTypes": [
+        "page"
+      ]
+    },
+    {
+      "name": "readable",
+      "title": "Readable page",
+      "postTypes": [
+        "page"
+      ]
+    },
+    {
+      "name": "campaign",
+      "title": "Campaign landing",
+      "postTypes": [
+        "page"
+      ]
+    },
+    {
+      "name": "workspace",
+      "title": "Customer or seller workspace",
+      "postTypes": [
+        "page"
+      ]
+    }
+  ],
+  "templateParts": [
+    {
+      "name": "header",
+      "title": "Store header",
+      "area": "header"
+    },
+    {
+      "name": "header-minimal",
+      "title": "Commerce header",
+      "area": "header"
+    },
+    {
+      "name": "footer",
+      "title": "Store footer",
+      "area": "footer"
+    },
+    {
+      "name": "footer-minimal",
+      "title": "Commerce footer",
+      "area": "footer"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "profile_key": "outdoor",
+  "classification": "SYNTHETIC LOCAL FIXTURE ONLY",
+  "theme": "wooshop",
+  "plugin": "wooshop-commerce",
+  "fixture_currency": "USD",
+  "fixture_country": "US:CA",
+  "legal_approval": false,
+  "product_claim_review": "NOT SUPPLIED; no real certification or compatibility claims",
+  "image": "assets/outdoor.png",
+  "image_alt": "Original abstract illustration for a synthetic local product; not a photograph",
+  "title": "Wooshop Outdoor · synthetic local store",
+  "preset": "outdoor",
+  "pattern": "wooshop/outdoor-home",
+  "categories": [
+    "Packs and bags",
+    "Shelter",
+    "Clothing",
+    "Footwear",
+    "Lighting",
+    "Accessories"
+  ],
+  "primary_product": "Synthetic Trail Pack 35L",
+  "variable_product": "Synthetic Alpine-2 shelter · چادر کوهنوردی آزمایشی ظرفیت ۲ نفر",
+  "attributes": {
+    "Weight": "980 g — synthetic measurement",
+    "Capacity": "35 L — synthetic measurement",
+    "Materials": "Not supplied",
+    "Certification": "Unknown — no safety claim",
+    "Fixture model": "OUT-P35-M"
+  },
+  "schema_fields": [
+    {
+      "key": "outdoor.weight",
+      "type": "decimal",
+      "dimension": "mass",
+      "unit": "g",
+      "required": false
+    },
+    {
+      "key": "outdoor.capacity",
+      "type": "decimal",
+      "dimension": "volume",
+      "unit": "L",
+      "required": false
+    },
+    {
+      "key": "outdoor.size_fit",
+      "type": "object",
+      "required": false
+    },
+    {
+      "key": "outdoor.certification",
+      "type": "evidence-list",
+      "required": false
+    }
+  ],
+  "guide_title": "Synthetic guide: compare fit and weight",
+  "guide_copy": "Local training content only. Compare the recorded measurements for the exact variation. No safety certification, weather rating or suitability claim is supplied."
+}

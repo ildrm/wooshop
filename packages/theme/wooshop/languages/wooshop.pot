@@ -1,0 +1,275 @@
+msgid ""
+msgstr "Project-Id-Version: Wooshop 0.1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nLanguage: \nPlural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "A closer look. A better choice."
+msgstr ""
+
+msgid "All categories"
+msgstr ""
+
+msgid "Allow announcement dismissal"
+msgstr ""
+
+msgid "Announcement text (empty hides the notice)"
+msgstr ""
+
+msgid "Bestselling"
+msgstr ""
+
+msgid "Bestselling products"
+msgstr ""
+
+msgid "Browse all"
+msgstr ""
+
+msgid "Browse products"
+msgstr ""
+
+msgid "Card spacing"
+msgstr ""
+
+msgid "Cart"
+msgstr ""
+
+msgid "Category media"
+msgstr ""
+
+msgid "Category shortcuts"
+msgstr ""
+
+msgid "Choose header logo"
+msgstr ""
+
+msgid "Circle"
+msgstr ""
+
+msgid "Close categories"
+msgstr ""
+
+msgid "Comfortable"
+msgstr ""
+
+msgid "Commerce module surface"
+msgstr ""
+
+msgid "Compact commerce header"
+msgstr ""
+
+msgid "Comparison"
+msgstr ""
+
+msgid "Consider every connection"
+msgstr ""
+
+msgid "Current offers"
+msgstr ""
+
+msgid "Dense"
+msgstr ""
+
+msgid "Discover the devices"
+msgstr ""
+
+msgid "Dismiss announcement"
+msgstr ""
+
+msgid "Explore devices and check their exact model, region and compatibility details before choosing."
+msgstr ""
+
+msgid "Explore the catalog"
+msgstr ""
+
+msgid "Explore the catalog, compare the details and choose at your own pace."
+msgstr ""
+
+msgid "Explore the categories"
+msgstr ""
+
+msgid "Explore the equipment"
+msgstr ""
+
+msgid "External supplier"
+msgstr ""
+
+msgid "Featured"
+msgstr ""
+
+msgid "Featured products"
+msgstr ""
+
+msgid "Find what fits your everyday."
+msgstr ""
+
+msgid "Footer navigation"
+msgstr ""
+
+msgid "Grid"
+msgstr ""
+
+msgid "Heading"
+msgstr ""
+
+msgid "Heading (empty uses the collection label)"
+msgstr ""
+
+msgid "Ideas and guides"
+msgstr ""
+
+msgid "Keep header visible on tall screens"
+msgstr ""
+
+msgid "Layout"
+msgstr ""
+
+msgid "Look closer at fit, weight and the details that matter to your trip."
+msgstr ""
+
+msgid "Make room for a smarter everyday."
+msgstr ""
+
+msgid "Manual scrolling rail"
+msgstr ""
+
+msgid "Maximum categories"
+msgstr ""
+
+msgid "Maximum logo width"
+msgstr ""
+
+msgid "Maximum products"
+msgstr ""
+
+msgid "Minimal commerce footer"
+msgstr ""
+
+msgid "My account"
+msgstr ""
+
+msgid "Native product collection"
+msgstr ""
+
+msgid "New arrivals"
+msgstr ""
+
+msgid "No results to show"
+msgstr ""
+
+msgid "Notification unsubscribe"
+msgstr ""
+
+msgid "On sale"
+msgstr ""
+
+msgid "Plugin-owned surface"
+msgstr ""
+
+msgid "Presentation"
+msgstr ""
+
+msgid "Price unavailable"
+msgstr ""
+
+msgid "Primary navigation"
+msgstr ""
+
+msgid "Privacy policy"
+msgstr ""
+
+msgid "Product categories"
+msgstr ""
+
+msgid "Product, category or model"
+msgstr ""
+
+msgid "Purchase takes place on the external supplier website."
+msgstr ""
+
+msgid "Scroll to explore. Every product also has a full details page."
+msgstr ""
+
+msgid "Search"
+msgstr ""
+
+msgid "Search the catalog"
+msgstr ""
+
+msgid "Search the site"
+msgstr ""
+
+msgid "Seller dashboard"
+msgstr ""
+
+msgid "Shop by category"
+msgstr ""
+
+msgid "Sign in"
+msgstr ""
+
+msgid "Square"
+msgstr ""
+
+msgid "Store footer"
+msgstr ""
+
+msgid "Store header"
+msgstr ""
+
+msgid "Store panel"
+msgstr ""
+
+msgid "Subcategories of"
+msgstr ""
+
+msgid "Subcategories of %s"
+msgstr ""
+
+msgid "Take the next trail"
+msgstr ""
+
+msgid "Text only"
+msgstr ""
+
+msgid "The address may have changed. Search the site or explore the catalog."
+msgstr ""
+
+msgid "The plugin renders this surface for the authorized visitor. No private records are previewed here."
+msgstr ""
+
+msgid "This feature is unavailable"
+msgstr ""
+
+msgid "This page could not be found"
+msgstr ""
+
+msgid "Try another search or return to the catalog to explore the categories."
+msgstr ""
+
+msgid "Use site identity logo"
+msgstr ""
+
+msgid "Values use native saved block attributes. Responsive layout follows theme rules. Business settings belong to the commerce plugin."
+msgstr ""
+
+msgid "View all products"
+msgstr ""
+
+msgid "Wishlist"
+msgstr ""
+
+msgid "WooCommerce collection"
+msgstr ""
+
+msgid "Wooshop storefront"
+msgstr ""
+
+msgid "You appear to be offline. Reconnect and check the cart or order status before retrying."
+msgstr ""
+
+msgid "You can continue browsing the catalog or sign in to your account."
+msgstr ""
+
+msgid "Your next route starts here."
+msgstr ""
+
+msgid "© %1$s %2$s"
+msgstr ""

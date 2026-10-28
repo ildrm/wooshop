@@ -1,0 +1,11 @@
+component,minimum_proposed,target_proposed,future_test_range,evidence,verification_status,gate,policy
+WordPress,7.1.3,7.1.3,7.1.3 and next stable patch selected at phase8,SRC-G001,released;project tests NOT RUN,DEC-09,Rebaseline security fixes before build/release;no prereleases
+WooCommerce,11.2.1,11.2.1,11.2.1;HPOS on;Cart/Checkout blocks,SRC-G002,released;project tests NOT RUN,DEC-09,Extensions certified separately against exact pinned build
+PHP,8.3 supported patch,8.4 supported patch,8.3 and8.4 exact patched builds at phase3,SRC-G003;SRC-G004,vendor-guidance verified;project tests NOT RUN,DEC-09,8.5 outside proposed range until WC/provider verification
+MariaDB,10.11 supported patch,10.11 supported patch,Exact maintained10.11 patch pinned with host,SRC-G005;SRC-G009,branch proposed;patch verification pending,DEC-09,Preferred engine;transactional storage required
+MySQL alternative,8.4 supported patch,8.4 supported patch,8.4 only if alternative host selected,SRC-G005,8.4 project proposal;exact support/patch verification pending,DEC-09,Not automatic alternate deployment;8.0 vendor lower recommendation not project support promise
+Chrome,154,154 verified stable family,154 plus subsequent stable build pinned at phase8,SRC-G006,release verified;project tests NOT RUN,DEC-09,Old version fixtures not advice to use unpatched browser
+Firefox,158.0.1,159.0,158.0.1 and159.0 on supported OS,SRC-G007;SRC-G010,release verified;project tests NOT RUN,DEC-09,Capture exact browser/OS/assistive tech at release
+Safari,26.6,27,26.6 and27 on compatible macOS/iOS,SRC-G008,release index verified;project tests NOT RUN,DEC-09,Physical mobile test and VoiceOver required
+Edge,unselected,stable Chromium-based release at gate,Explicit version to be pinned phase8,USER-BRIEF,pending external verification,DEC-09,No blanket Chrome compatibility inference
+Extensions/providers,no production selection,version gated per adapter,Named adapter exact release after procurement,USER-BRIEF,pending external verification,DEC-04;DEC-09,Disable unsupported product capability combinations

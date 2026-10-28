@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-28",
+  "root": "/Users/shahinilderemi/Documents/tmp/iranbroker-wp",
+  "initial_files": {
+    "README.md": "2b07bf60a87fbcc644cfffc60ba002d1f06b7effaa1e035daad5632108f59d9a",
+    "LICENSE": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+  },
+  "tools": {
+    "filesystem": true,
+    "web": true,
+    "delegation": true
+  },
+  "initial_docs_exists": false,
+  "boundary": "All writes restricted to docs; no application execution"
+}

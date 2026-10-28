@@ -1,0 +1,556 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-28T10:49:31.562583+00:00",
+  "owner": "implement_marketplace independent followup",
+  "scope": "Only tests/core/package-smoke.php and this evidence file; no runtime source, archives, provider actions or browser tests changed.",
+  "status": "All assigned native/schema/isolation/module-concurrency and recorded clean-package proofs complete, including read-only parity of the updated theme artifact.",
+  "script": "tests/core/package-smoke.php",
+  "script_sha256": "1c188910191a4232cbaae2443a6d42ec1836c04272c21914a9eb3a6c55863c77",
+  "design": [
+    "Uses installed plugin/theme only, with no source autoloader dependency.",
+    "Exact active WordPress7.1.3/WooCommerce11.2.1/plugin0.1.0/theme0.1.0/PHP8.4 versions.",
+    "Checks all15 plugin transactional tables are InnoDB.",
+    "Same fixed entity UUID and native option key are stored with site-local values; emits only non-secret database-scope and fixed-challenge HMAC probes for cross-site comparison.",
+    "Typed plugin settings write occurs inside an outer rollback probe; original settings must remain unchanged.",
+    "Requires actual HPOS usage and OrdersTableDataStore before creating synthetic native order/item snapshots.",
+    "Probes are tagged hidden drafts from the first product save; exact-run cleanup remains a draft and preserves native order/snapshot evidence.",
+    "Runtime production code hashes permit comparison of source bind mounts and clean installed archives without equating version strings with identical code."
+  ],
+  "commands": [
+    {
+      "command": "rtk proxy php -l tests/core/package-smoke.php",
+      "result": "PASS syntax"
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor eval-file /workspace/tests/core/package-smoke.php",
+      "result": "FAIL: HPOS is not enabled for the declared matrix.",
+      "exit_code": 1,
+      "consequence": "Previous native CRUD execution was not evidence of HPOS execution. Failure occurs before product/order probe creation; settings rollback completed. Root notified to prepare/sync/enable HPOS safely on synthetic sites."
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp smart-home eval-file /workspace/tests/core/package-smoke.php",
+      "result": "FAIL: HPOS is not enabled for the declared matrix.",
+      "exit_code": 1
+    },
+    {
+      "command": "Origin/home-bound cleanup of exact assurance.package-smoke entity UUID and wooshop_assurance_site_marker on outdoor",
+      "result": "Both exact failed-run markers removed; coming-soon read no; no product/order probe had been created and no storage/visibility configuration changed."
+    },
+    {
+      "command": "Origin/home-bound cleanup of exact assurance.package-smoke entity UUID and wooshop_assurance_site_marker on smart-home",
+      "result": "Both exact failed-run markers removed; coming-soon read no; no product/order probe had been created and no storage/visibility configuration changed."
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor eval-file /workspace/tests/core/package-smoke.php legacy",
+      "result": "PASS49",
+      "exit_code": 0
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor wc hpos compatibility-info",
+      "result": "1 compatible,0 incompatible,0 uncertain",
+      "exit_code": 0
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor wc hpos status",
+      "result": "HPOS no; initial unsynced17",
+      "exit_code": 0
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor wc hpos sync --batch-size=50",
+      "result": "PASS 17 synced",
+      "exit_code": 0
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor wc hpos verify_data --batch-size=50",
+      "result": "PASS 17 verified",
+      "exit_code": 0
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor wc hpos enable --with-sync",
+      "result": "PASS HPOS and compatibility sync enabled",
+      "exit_code": 0
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor wc hpos status",
+      "result": "HPOS yes; compatibility yes; unsynced0",
+      "exit_code": 0
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor eval-file /workspace/tests/core/package-smoke.php hpos 138 96cf270e663aa6a881a3dfab3a9e9bcf023613bdaf20cac23c6c050320260b33",
+      "result": "PASS55 with prior native identity/digest unchanged",
+      "exit_code": 0
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp smart-home eval-file /workspace/tests/core/package-smoke.php legacy",
+      "result": "PASS49",
+      "exit_code": 0
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp smart-home wc hpos compatibility-info",
+      "result": "1 compatible,0 incompatible,0 uncertain",
+      "exit_code": 0
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp smart-home wc hpos status",
+      "result": "HPOS no; initial unsynced1",
+      "exit_code": 0
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp smart-home wc hpos sync --batch-size=50",
+      "result": "PASS 1 synced",
+      "exit_code": 0
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp smart-home wc hpos verify_data --batch-size=50",
+      "result": "PASS 1 verified",
+      "exit_code": 0
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp smart-home wc hpos enable --with-sync",
+      "result": "PASS HPOS and compatibility sync enabled",
+      "exit_code": 0
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp smart-home wc hpos status",
+      "result": "HPOS yes; compatibility yes; unsynced0",
+      "exit_code": 0
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp smart-home eval-file /workspace/tests/core/package-smoke.php hpos 85 35ebcbbb4551eef442f641c46125468b2c2b3a7144b977ec534efc46d0f48c79",
+      "result": "PASS55 with prior native identity/digest unchanged",
+      "exit_code": 0
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor wc hpos verify_data --batch-size=50",
+      "result": "PASS 18 native orders verified after HPOS probe",
+      "exit_code": 0
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp smart-home wc hpos verify_data --batch-size=50",
+      "result": "PASS 2 native orders verified after HPOS probe",
+      "exit_code": 0
+    },
+    {
+      "command": "rtk proxy php -l tests/core/module-concurrency.php",
+      "result": "PASS syntax"
+    },
+    {
+      "command": "rtk proxy python3 -m py_compile tools/module-concurrency.py",
+      "result": "PASS syntax; only generated module-concurrency bytecode cache was subsequently removed."
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp package-check eval-file /workspace/tests/core/package-smoke.php legacy",
+      "result": "PASS51 installed legacy assertions",
+      "exit_code": 0
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp package-check wc hpos compatibility-info",
+      "result": "1 compatible,0 incompatible,0 uncertain",
+      "exit_code": 0
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp package-check wc hpos status",
+      "result": "Legacy authoritative;1 unsynced",
+      "exit_code": 0
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp package-check wc hpos sync --batch-size=50",
+      "result": "PASS1 synced",
+      "exit_code": 0
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp package-check wc hpos verify_data --batch-size=50",
+      "result": "PASS1 verified",
+      "exit_code": 0
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp package-check wc hpos enable --with-sync",
+      "result": "PASS HPOS/compatibility enabled",
+      "exit_code": 0
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp package-check wc hpos status",
+      "result": "HPOS yes;compatibility yes;unsynced0;cleanup0",
+      "exit_code": 0
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp package-check eval-file /workspace/tests/core/package-smoke.php hpos 11 7570d3e06df468bf72522e99157a6fb62f986429343fcc1b1855d9b0b783b844",
+      "result": "PASS55 with prior native order11/digest unchanged",
+      "exit_code": 0
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp package-check wc hpos verify_data --batch-size=50",
+      "result": "PASS2 orders verified after new HPOS CRUD",
+      "exit_code": 0
+    }
+  ],
+  "limitations": [
+    "No external provider payment/refund/payout or complete marketplace compatibility claim.",
+    "Original earlier CRUD suites ran legacy storage; actual HPOS proof begins with the recorded supervised migrations and explicit HPOS datastore assertions.",
+    "The clean installation proof is scoped to theme ZIPf6c61df739e62a262e51ebc6e13d9981309f176bee2e058b5e499864835690f9 and plugin ZIP78ff95e02bd64d21989309c8b61c80d00d961c68149fb8e2a9b1c70ba914fc67. A subsequent theme header fix requires refreshed artifact parity; no claim is transferred silently.",
+    "Synthetic HPOS migration and native metadata tests do not establish production restore/provider reconciliation or full lifecycle certification.",
+    "Theme-without-plugin/plugin-with-other-theme and broader third-site integration are coordinated separately by root; this worker did not overlap those activation changes."
+  ],
+  "site_results": {
+    "outdoor": {
+      "legacy": {
+        "result": "PASS",
+        "assertions": 49,
+        "actual_datastore": "WC_Order_Data_Store_CPT",
+        "order_id": "138",
+        "snapshot_digest": "96cf270e663aa6a881a3dfab3a9e9bcf023613bdaf20cac23c6c050320260b33",
+        "product_id": "137"
+      },
+      "migration": {
+        "compatibility_info": "1 declared compatible,0 incompatible,0 uncertain plugins",
+        "sync_result": "PASS",
+        "sync_order_count": 17,
+        "verify_before_enable": "PASS all synchronized orders",
+        "enable_result": "PASS via native wc hpos enable --with-sync",
+        "status_before_post_smoke": "HPOS yes; compatibility yes; unsynced0; cleanup0",
+        "forbidden_flags_used": false,
+        "verify_after_hpos_probe": {
+          "result": "PASS",
+          "order_count": 18
+        }
+      },
+      "hpos": {
+        "result": "PASS",
+        "assertions": 55,
+        "actual_datastore": "Automattic\\WooCommerce\\Internal\\DataStores\\Orders\\OrdersTableDataStore",
+        "order_id": "140",
+        "snapshot_digest": "f4767cfabfec9f4381d5f895d8af509c395d4ebb7fc5b9b82ebde50b2508d73c",
+        "product_id": "139",
+        "previous_order_identity_and_digest": "unchanged"
+      },
+      "transactional_tables": {
+        "count": 15,
+        "all_engine": "INNODB"
+      },
+      "database_scope_digest": "e53a1ea7820d28f09b490fa8eb4e3731c72348ad4cbc0eeb377b65e2707560ac",
+      "salt_probe_hmac": "e9b34ffff04b2dd7159f6e21358f2122f49e2f738a5ac5a0f979dd7bfe8eed7e",
+      "fixed_entity_and_native_option_site": "outdoor",
+      "typed_settings_rollback": "PASS",
+      "products_cleanup": "Both origin/run-tagged probes hidden drafts; native order evidence preserved",
+      "versions": {
+        "wordpress": "7.1.3",
+        "woocommerce": "11.2.1",
+        "plugin": "0.1.0",
+        "theme": "0.1.0",
+        "php": "8.4.27"
+      }
+    },
+    "smart-home": {
+      "legacy": {
+        "result": "PASS",
+        "assertions": 49,
+        "actual_datastore": "WC_Order_Data_Store_CPT",
+        "order_id": "85",
+        "snapshot_digest": "35ebcbbb4551eef442f641c46125468b2c2b3a7144b977ec534efc46d0f48c79",
+        "product_id": "84"
+      },
+      "migration": {
+        "compatibility_info": "1 declared compatible,0 incompatible,0 uncertain plugins",
+        "sync_result": "PASS",
+        "sync_order_count": 1,
+        "verify_before_enable": "PASS all synchronized orders",
+        "enable_result": "PASS via native wc hpos enable --with-sync",
+        "status_before_post_smoke": "HPOS yes; compatibility yes; unsynced0; cleanup0",
+        "forbidden_flags_used": false,
+        "verify_after_hpos_probe": {
+          "result": "PASS",
+          "order_count": 2
+        }
+      },
+      "hpos": {
+        "result": "PASS",
+        "assertions": 55,
+        "actual_datastore": "Automattic\\WooCommerce\\Internal\\DataStores\\Orders\\OrdersTableDataStore",
+        "order_id": "87",
+        "snapshot_digest": "7e25a47e4126331ab7f6aec9040dcbc8527dce34818ec7cc9eb89710be2485a3",
+        "product_id": "86",
+        "previous_order_identity_and_digest": "unchanged"
+      },
+      "transactional_tables": {
+        "count": 15,
+        "all_engine": "INNODB"
+      },
+      "database_scope_digest": "614c88efd6b50437a1748c4fdb5fe27f11a3187b41dbf943755e700e9c3b7ddb",
+      "salt_probe_hmac": "911e664e5034b31728cb9eb7cb8f218a93db29cca4736f4f19be616784be29e5",
+      "fixed_entity_and_native_option_site": "smart-home",
+      "typed_settings_rollback": "PASS",
+      "products_cleanup": "Both origin/run-tagged probes hidden drafts; native order evidence preserved",
+      "versions": {
+        "wordpress": "7.1.3",
+        "woocommerce": "11.2.1",
+        "plugin": "0.1.0",
+        "theme": "0.1.0",
+        "php": "8.4.27"
+      }
+    },
+    "package-check": {
+      "legacy": {
+        "result": "PASS",
+        "assertions": 51,
+        "actual_datastore": "WC_Order_Data_Store_CPT",
+        "order_id": "11",
+        "snapshot_digest": "7570d3e06df468bf72522e99157a6fb62f986429343fcc1b1855d9b0b783b844",
+        "product_id": "10"
+      },
+      "migration": {
+        "compatibility_info": "1 declared compatible,0 incompatible,0 uncertain plugins",
+        "sync_result": "PASS1 order",
+        "verify_before_enable": "PASS1 order",
+        "enable_result": "PASS native enable --with-sync",
+        "status": "HPOS yes;compatibility yes;unsynced0;cleanup0",
+        "verify_after_hpos_probe": "PASS2 orders",
+        "forbidden_flags_used": false
+      },
+      "hpos": {
+        "result": "PASS",
+        "assertions": 55,
+        "actual_datastore": "Automattic\\WooCommerce\\Internal\\DataStores\\Orders\\OrdersTableDataStore",
+        "order_id": "13",
+        "snapshot_digest": "4ba16558c37c9c3093a110b2cef90bf8fc058f36bb3628e3d8226a3971b85f4a",
+        "product_id": "12",
+        "previous_order_identity_and_digest": "order11 unchanged"
+      },
+      "transactional_tables": {
+        "count": 15,
+        "all_engine": "INNODB"
+      },
+      "database_scope_digest": "376b296d5d8115c1730398f2a7fd8f7184b11715218f8b799d7a92af3c3414a9",
+      "salt_probe_hmac": "8b574f7954f551d1b596d0882e43cabc8aa7acebca21b1483ab12a654192342f",
+      "fixed_entity_and_native_option_site": "package-check",
+      "typed_settings_rollback": "PASS",
+      "products_cleanup": "IDs10 and12 were origin/run tagged hidden drafts from first save; native orders11/13 retained",
+      "installation_independence": {
+        "source_packages_mount_exists": false,
+        "installed_plugin_is_symlink": false,
+        "installed_theme_is_symlink": false
+      },
+      "versions": {
+        "wordpress": "7.1.3",
+        "woocommerce": "11.2.1",
+        "plugin": "0.1.0",
+        "theme": "0.1.0",
+        "php": "8.4.27"
+      },
+      "installed_trees": {
+        "plugin": {
+          "file_count": 72,
+          "sha256": "e55a37c5a0e14ab7f4b82a2f597d4c7c7ba114536dd8152b24a511c69988c37a"
+        },
+        "theme": {
+          "file_count": 54,
+          "sha256": "ca41e4e8c6e670dcb3f66873b4be3ac54bcf54470fabc22685687b532e3d8ab1"
+        }
+      }
+    }
+  },
+  "cross_site_comparison": {
+    "result": "PASS three independent installations",
+    "distinct_database_scope_digests": true,
+    "distinct_salt_hmac_probes": true,
+    "identical_fixed_entity_uuid": "e3ca0846-9ad0-4d35-a80a-0470a1cf9609",
+    "per_site_entity_and_native_option_values": [
+      "outdoor",
+      "smart-home",
+      "package-check"
+    ],
+    "runtime_trees_match": {
+      "plugin": {
+        "file_count": 72,
+        "sha256": "3fd104332ac8c0cf52b4b9877528099c18de7c69bbb7e15cbcd04392a4622129"
+      },
+      "theme": {
+        "file_count": 54,
+        "sha256": "ca41e4e8c6e670dcb3f66873b4be3ac54bcf54470fabc22685687b532e3d8ab1"
+      }
+    },
+    "salt_values_or_credentials_printed": false,
+    "installed_archive_to_fresh_source_manifest": "PASS all72 plugin and54 theme files; archive SHA256 values also matched manifest.",
+    "note": "Earlier source HPOS tree hashes are point-in-time evidence; the clean install was compared to the newer exact fresh manifest/current source files, not falsely equated to an earlier source revision."
+  },
+  "setup_safety": {
+    "default_matrix": "hpos required, no automatic legacy fallback",
+    "explicit_legacy_matrix": "Append legacy positional argument to eval-file. It only verifies legacy storage and is labeled accordingly.",
+    "preflight": "Expected storage and optional prior-order continuity proof are checked before all setup mutations.",
+    "failure_cleanup": "Only newly created exact origin/site-bound assurance marker entities/options are removed at shutdown on failure; settings write always rolls back; product cleanup is a tracked origin/run-bound hidden draft. Native order evidence is retained intentionally.",
+    "initial_failed_markers": "Both source markers removed with strict matching origin/home/site guards; no coming-soon, launch, home, tax or storage setting was altered."
+  },
+  "hpos_cli_source": {
+    "version": "WooCommerce11.2.1",
+    "path": ".local/vendor-source/woocommerce/src/Database/Migrations/CustomOrderTable/CLIRunner.php",
+    "sha256": "e8f38e1356e9ef2b2fd8ea6d2b9dcd703f420ab29cb791703a98023bead21f18",
+    "read_ranges": [
+      "45..115 registration and command names",
+      "130..280 sync",
+      "310..430 verify_data",
+      "713..850 enable prechecks"
+    ],
+    "verified_commands": [
+      "wc hpos status",
+      "wc hpos compatibility-info",
+      "wc hpos sync --batch-size=50",
+      "wc hpos verify_data --batch-size=50",
+      "wc hpos enable --with-sync"
+    ],
+    "excluded_flags": [
+      "--for-new-shop for an existing-order test",
+      "--ignore-plugin-compatibility",
+      "--re-migrate",
+      "cleanup legacy post data"
+    ],
+    "executed_mutations": "Supported sync/verify/enable commands executed on the two synthetic sources and isolated package-check only after explicit root authorization; exact commands/results above."
+  },
+  "prepared_package_rehearsal": [
+    "After archives are refreshed, run package-smoke.php legacy and retain returned order_id/snapshot_digest.",
+    "Read wc hpos compatibility-info and status.",
+    "Run wc hpos sync --batch-size=50, then wc hpos verify_data --batch-size=50.",
+    "Run wc hpos enable --with-sync only after compatible/zero-unsynced verification; read status.",
+    "Run package-smoke.php hpos PRIOR_ORDER_ID PRIOR_SNAPSHOT_DIGEST to prove old ID/digest survived and new native CRUD uses actual HPOS."
+  ],
+  "membership_security_assessment": {
+    "result": "Already fails closed; no code change needed.",
+    "routes": "MarketplaceModule constructs SellerService without HumanVerifier at line26; membership POST/DELETE delegate to service.",
+    "service": "SellerService::invite line65 and revoke line100 call stepUp before command; private stepUp line115 requires injected trusted HumanVerifier and returns503 when absent.",
+    "production_evidence": "No configured human MFA provider; production privileged membership changes remain BLOCKED.",
+    "test_scope": "Only explicit test doubles in tests/marketplace/integration.php satisfy verifier; they do not establish MFA provider proof."
+  },
+  "module_concurrency": {
+    "result": "PASS",
+    "command": "rtk proxy python3 tools/module-concurrency.py --site outdoor",
+    "site": "outdoor",
+    "run": "1a9881e470f011ab1b8fbf53c05ef836",
+    "real_worker_count": 2,
+    "initialized_stable_record_before_race": true,
+    "module_id": "MOD-U003",
+    "prior_state": "enabled",
+    "prior_version": 1,
+    "held_transaction_seconds": 1.25,
+    "observed_transition_wait_seconds": 1.281991958618164,
+    "event_order": [
+      "shared_lock_ready",
+      "transition_attempt",
+      "command_committed",
+      "transition_committed"
+    ],
+    "new_work_denied_after_transition": true,
+    "admitted_effect_committed_before_disable": true,
+    "restored_state": "enabled",
+    "restored_version": 3,
+    "elapsed_seconds": 6.306,
+    "orders_or_provider_calls": 0,
+    "committed_probe_entity_id": "ce4b87d8-569f-4466-8349-709a1d52cd0f",
+    "cleanup": "Normal versioned restoration; no audit, customer, order or ledger deletion. Unrelated concurrent module changes are protected by run-reason guards.",
+    "bounds": "20-second work phase plus10-second restoration reserve; PHP8-second controlled stdin and5-second session lock wait.",
+    "source_review": "Managed accepts(new) uses a locking current read inside caller transaction; transition locks stable row FOR UPDATE and rechecks expected version. No fatal flaw found in this bounded path.",
+    "review_graph_generation": "2026-10-28T10:27:24Z",
+    "review_coverage": "ModuleRegistry/Database/Idempotency paths metadata_match; direct source inspected; no exhaustive graph or universal concurrency claim.",
+    "script_hashes": {
+      "tests/core/module-concurrency.php": "5198522554945628f1b69a839531c917c031aff8e892dd0649f7a3584eff7c52",
+      "tools/module-concurrency.py": "8cd3b3e9d697ea862e5c926c6294c8e008adfd08e3553f7f0c32ea14ea218a8e"
+    },
+    "retained_transition_audits_verification": {
+      "result": "PASS exact-run readback",
+      "audit_ids": [
+        "16e8d56a-a140-49c3-89f2-3a1c9f33c6c5",
+        "69bf822a-2fd7-429f-b099-60d7169cbbf3"
+      ],
+      "revisions": [
+        2,
+        3
+      ],
+      "transitions": [
+        "enabled -> disabled_new_operations",
+        "disabled_new_operations -> enabled"
+      ]
+    }
+  },
+  "installed_suite_header_correction": {
+    "change": "Only the two full-WordPress suites now require WP_PLUGIN_DIR/wooshop-commerce/autoload.php; no /workspace/packages source mount required. Domain and SHORTINIT worker scripts unchanged.",
+    "sha256": {
+      "tests/marketplace/integration.php": "134cfb14c0269e03bc124875153cd2e1c09f44ee9aec9965c7883c7f1b571278",
+      "tests/marketplace/store-api.php": "139ac4d3d65467f3f836a4ee1f59cd67674866d0426a4f4c1b21e8712fb15451"
+    },
+    "syntax": "Both PHP files passed php -l. Runtime rerun awaits root package-site/activation coordination."
+  },
+  "fresh_archive_manifest_preflight": [
+    {
+      "kind": "theme",
+      "slug": "wooshop",
+      "version": "0.1.0",
+      "file_count": 54,
+      "tree_sha256": "ca41e4e8c6e670dcb3f66873b4be3ac54bcf54470fabc22685687b532e3d8ab1",
+      "archive_sha256": "f6c61df739e62a262e51ebc6e13d9981309f176bee2e058b5e499864835690f9",
+      "archive_matches_manifest": true,
+      "current_source_mismatches": []
+    },
+    {
+      "kind": "plugin",
+      "slug": "wooshop-commerce",
+      "version": "0.1.0",
+      "file_count": 72,
+      "tree_sha256": "e55a37c5a0e14ab7f4b82a2f597d4c7c7ba114536dd8152b24a511c69988c37a",
+      "archive_sha256": "78ff95e02bd64d21989309c8b61c80d00d961c68149fb8e2a9b1c70ba914fc67",
+      "archive_matches_manifest": true,
+      "current_source_mismatches": []
+    }
+  ],
+  "clean_package_tree_verification": [
+    {
+      "kind": "theme",
+      "file_count": 54,
+      "tree_sha256": "ca41e4e8c6e670dcb3f66873b4be3ac54bcf54470fabc22685687b532e3d8ab1",
+      "installed_matches_manifest": true,
+      "archive_sha256": "f6c61df739e62a262e51ebc6e13d9981309f176bee2e058b5e499864835690f9"
+    },
+    {
+      "kind": "plugin",
+      "file_count": 72,
+      "tree_sha256": "e55a37c5a0e14ab7f4b82a2f597d4c7c7ba114536dd8152b24a511c69988c37a",
+      "installed_matches_manifest": true,
+      "archive_sha256": "78ff95e02bd64d21989309c8b61c80d00d961c68149fb8e2a9b1c70ba914fc67"
+    }
+  ],
+  "next_actions": [
+    "Root may resume coordinated theme/plugin independence checks on package-check.",
+    "Continue reporting provider/legal/marketplace gates and broader acceptance gaps separately; this proof does not establish production activation."
+  ],
+  "final_theme_delta_readonly_parity": {
+    "result": "PASS",
+    "mode": "read-only host inspection of the exact Docker package-check bind-mounted installation directories; no WordPress bootstrap, DB mutation, order or activation",
+    "checked_at": "2026-10-28T10:49:31.562583+00:00",
+    "manifest_sha256": "3c54568ab5b98b240e03d5f32ad3a2962f0f26d6797c0dda4f9691b8caa78a67",
+    "packages": [
+      {
+        "kind": "theme",
+        "version": "0.1.0",
+        "file_count": 54,
+        "tree_sha256": "a55507a8f1558eb5a6ef209363b13c6126d964abb3526f727b02dd0ed47475cb",
+        "archive_sha256": "ccc093affc09a3bf132be1672dd6f66e459e087761d18c5546ce881cc5735520",
+        "installed_matches_manifest": true,
+        "current_source_matches_manifest": true,
+        "archive_matches_manifest": true,
+        "missing": [],
+        "extra": [],
+        "changed": []
+      },
+      {
+        "kind": "plugin",
+        "version": "0.1.0",
+        "file_count": 72,
+        "tree_sha256": "e55a37c5a0e14ab7f4b82a2f597d4c7c7ba114536dd8152b24a511c69988c37a",
+        "archive_sha256": "78ff95e02bd64d21989309c8b61c80d00d961c68149fb8e2a9b1c70ba914fc67",
+        "installed_matches_manifest": true,
+        "current_source_matches_manifest": true,
+        "archive_matches_manifest": true,
+        "missing": [],
+        "extra": [],
+        "changed": []
+      }
+    ],
+    "integration_context": "Root report artifacts/verification/20261028T104600Z-integration-package.json verified final unchanged plugin; theme-only header delta verified here."
+  }
+}

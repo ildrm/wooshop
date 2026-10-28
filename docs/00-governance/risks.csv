@@ -1,0 +1,13 @@
+id,description,impact,planning_likelihood,mitigation,owner,phase_gate,requirement,status
+RISK-01,Unapproved legal/provider funds model,critical,unknown,Block payouts until DEC-01/02/04 signed,Legal/Compliance Specialist,1;6,FR-G010,open
+RISK-02,Stock double decrement or oversell during authority switch,critical,medium,Single writer;reservation race tests;frozen migration reconciliation,Marketplace Backend Engineer,3;6;8,FR-G006,open
+RISK-03,Canonical offer model unsupported by marketplace provider,high,high,Score evidence;bounded custom core;adapter gates and exits,Marketplace Solution Architect,3,FR-G005,open
+RISK-04,Cross-seller data leak in API export cache or job,critical,medium,Object ownership checks at every boundary;exhaustive adversarial fixtures,Application Security Engineer,3;6;8,FR-G008,open
+RISK-05,Settlement rounding duplicates or refund-after-payout loss,critical,medium,Immutable balanced ledger;idempotency;daily reconciliation;reserves approved,Payments/Settlement Engineer,6;8,FR-G006,open
+RISK-06,False outdoor safety or home interoperability claim,high,medium,Version/region provenance;specialist approval;unknown fallback,Product Catalog/Merchandising Specialist,7,FR-G012,open
+RISK-07,Theme customization breaks a11y RTL or data controls,high,medium,Token invariants;role limits;preview/revert;manual testing,Design System Designer,2;4;8,FR-G004,open
+RISK-08,Scope exceeds funding and specialist capacity,high,unknown,Gate milestones;estimate ranges;do not silently remove future docs,Project/Program Manager,1;3,FR-G009,open
+RISK-09,Upgrade/data restore loses paid orders,critical,medium,Expand/contract migration;reconciliation;forward recovery;external payment replay,DevOps/SRE Engineer,8;9,FR-G009,open
+RISK-10,Search/feed/schema show stale price or eligibility,high,medium,Shared projection versions;bounded cache;feed/schema mismatch alarms,SEO/Content Strategist,5;8,FR-G007,open
+RISK-11,Unknown retention/legal holds conflict with erasure,high,unknown,Purpose schedules and hold reason;minimum access and export redaction,Privacy Specialist,1;8,FR-G010,open
+RISK-12,Dependency support/version drift,high,high,Pin evidence and builds;review security notices;reserve update capacity,Release/Maintenance Owner,3;8;10,FR-G016,open

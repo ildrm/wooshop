@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "profile_key": "neutral",
+  "classification": "SYNTHETIC LOCAL FIXTURE ONLY",
+  "theme": "wooshop",
+  "plugin": "wooshop-commerce",
+  "fixture_currency": "USD",
+  "fixture_country": "US:CA",
+  "legal_approval": false,
+  "product_claim_review": "NOT SUPPLIED; no real certification or compatibility claims",
+  "image": "assets/neutral.png",
+  "image_alt": "Original abstract illustration for a synthetic local product; not a photograph",
+  "title": "Wooshop Stationery · synthetic local store",
+  "preset": "neutral",
+  "pattern": "wooshop/home",
+  "categories": [
+    "Notebooks",
+    "Paper",
+    "Writing",
+    "Desk storage",
+    "Cases",
+    "Accessories"
+  ],
+  "primary_product": "Synthetic everyday notebook",
+  "variable_product": "Synthetic notebook · دفتر آزمایشی با انتخاب اندازه",
+  "attributes": {
+    "Page count": "120 — synthetic value",
+    "Paper size": "A5 — synthetic value",
+    "Material": "Not supplied",
+    "Fixture model": "NOTE-A5-120"
+  },
+  "schema_fields": [
+    {
+      "key": "stationery.page_count",
+      "type": "integer",
+      "minimum": 1
+    },
+    {
+      "key": "stationery.paper_size",
+      "type": "string",
+      "max_length": 80
+    },
+    {
+      "key": "stationery.material",
+      "type": "string",
+      "max_length": 80
+    }
+  ],
+  "guide_title": "Synthetic guide: compare everyday stationery",
+  "guide_copy": "Local training content only. Compare the recorded paper size, page count and binding. No environmental certification or material provenance is supplied."
+}

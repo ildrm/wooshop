@@ -1,0 +1,1366 @@
+{
+  "schema_version": 1,
+  "task": "implement_theme",
+  "updated_at": "2026-10-28T10:47:04.078184+00:00",
+  "delivery_status": "IMPLEMENTATION_INCOMPLETE",
+  "accountable_role": "WordPress Theme Developer",
+  "implementation_roles": [
+    "WordPress Theme Developer",
+    "Frontend Engineer",
+    "Gutenberg/React Developer",
+    "Store Administrator (synthetic local fixture configuration)"
+  ],
+  "review_perspectives": [
+    "AI self-review:UX/RTL/semantics/security/boundaries",
+    "Actual native WP/WC runtime checks"
+  ],
+  "human_approval": "NOT_PROVIDED",
+  "scope": [
+    "FR-U001..FR-U025 theme presentation slice",
+    "CMP-U001..CMP-U036 coverage manifest",
+    "SCR-U001..SCR-U040 coverage manifest",
+    "WP-G005/WP-G010 partial implementation",
+    "additional delegated profiles/** and tools/seed.php local-only fixtures",
+    "additional delegated native offline purchase assurance in two new test-only files"
+  ],
+  "read_paths": [
+    {
+      "path": "/Users/shahinilderemi/.codex/RTK.md",
+      "sha256": "49c368c302c6f63d089f4c1085b242fc50fe22ce5bc34dada6478083000e7c6f",
+      "status": "READ",
+      "scope": "full document"
+    },
+    {
+      "path": "/Users/shahinilderemi/.codex/skills/codebase-memory/SKILL.md",
+      "sha256": "8efe4aa10efa92b52148cce5840abac552b92e5dc3af567e5d167a5e33624db1",
+      "status": "READ",
+      "scope": "full document"
+    },
+    {
+      "path": "/Users/shahinilderemi/Downloads/wp-project.md",
+      "sha256": "9601fecdebb2d507c47072915d835bb2a211fb2fc3f8ba9f429f2203a07cbbdd",
+      "status": "READ",
+      "scope": "full document"
+    },
+    {
+      "path": "docs/implementation/integration-contract.md",
+      "sha256": "9e8287cb456dd1f6c2ce2ae19de43fcd8ee1ffd97d58a737a36a86e07094a29d",
+      "status": "READ",
+      "scope": "full document"
+    },
+    {
+      "path": "docs/05-ux-ui/accessibility-and-content-design.md",
+      "sha256": "e52e89fbd5469162c37e0ad6ade308647163259bc6b5cc26db26032d4aaadc1b",
+      "status": "READ",
+      "scope": "full document"
+    },
+    {
+      "path": "docs/05-ux-ui/component-specifications.md",
+      "sha256": "cf01ef49094bd4a577d9e5acad65adaae416d609f3547f66b9eacbd0715dc23d",
+      "status": "READ",
+      "scope": "full document"
+    },
+    {
+      "path": "docs/05-ux-ui/design-handoff-and-prototype-validation.md",
+      "sha256": "bb6e41b163813829555345b3ce28decbbed4386c8011b12cd1ca2c46c743c7af",
+      "status": "READ",
+      "scope": "full document"
+    },
+    {
+      "path": "docs/05-ux-ui/design-system-and-tokens.md",
+      "sha256": "6b359f17caf3e23c38f09c3f0399eda4efd2e17d2578d3f3aadf313ebcfe2a92",
+      "status": "READ",
+      "scope": "full document"
+    },
+    {
+      "path": "docs/05-ux-ui/information-architecture-and-navigation.md",
+      "sha256": "3c6feda2d477b91a29554ee099598855b82ce2548e521b8173f27ebc851acb72",
+      "status": "READ",
+      "scope": "full document"
+    },
+    {
+      "path": "docs/05-ux-ui/journeys-task-flows-and-wireframes.md",
+      "sha256": "4ed7044092da7e3b9a79501bd96096f397d14b5e1d3ae91a1e435db01906c2bf",
+      "status": "READ",
+      "scope": "full document"
+    },
+    {
+      "path": "docs/05-ux-ui/reference-audit.md",
+      "sha256": "b3fc92485c7702768a0d4aa86af7ee8d25b03e7c19369f471d525db58d88eb06",
+      "status": "READ",
+      "scope": "full document"
+    },
+    {
+      "path": "docs/05-ux-ui/responsive-rtl-and-interactions.md",
+      "sha256": "e4fc9b977f5529631464b9d9dd818750b45a7adcdf1f2fb314acd33697e9ce01",
+      "status": "READ",
+      "scope": "full document"
+    },
+    {
+      "path": "docs/05-ux-ui/screen-and-template-specifications.md",
+      "sha256": "2947fd7236513fc2f1e6aadcc4042bf4d0a22b0167d3edee15eb836306201f3b",
+      "status": "READ",
+      "scope": "full document"
+    },
+    {
+      "path": "docs/05-ux-ui/settings-inventory.csv",
+      "sha256": "5408a941404d2e6d55b04178cdbc4a17cdc6bcaeb8f1bdd5d54d8e00cf9889b9",
+      "status": "READ_PROJECTED",
+      "scope": "all rows projected through keys/defaults/types/valid ranges/owners/support/native mapping and shared-property variants; implementation gaps explicit"
+    },
+    {
+      "path": "docs/05-ux-ui/ui-analytics-aliases.csv",
+      "sha256": "79493816ccd1427e415fa45a905fb7130c3e9a8d0be96d8304dac63ca7ba0176",
+      "status": "READ_PROJECTED",
+      "scope": "all alias rows and shared privacy/owner/specification fields"
+    },
+    {
+      "path": "docs/06-theme/customization-and-editor-permissions.md",
+      "sha256": "0745cc3f0a98f8bc103204ad773ad420004f2b3a9c767fcc23bc9012e2ba2d02",
+      "status": "READ",
+      "scope": "full document"
+    },
+    {
+      "path": "docs/06-theme/fallback-compatibility-and-upgrades.md",
+      "sha256": "e25721ac10021c8d1421a3adf9a9cc3a556d37c1cc33ea43cdbe85d25a894dc6",
+      "status": "READ",
+      "scope": "full document"
+    },
+    {
+      "path": "docs/06-theme/presets-and-store-branding.md",
+      "sha256": "297d5d969a37ed5f0c17312c62bf289e1479ff90367c8ad4e627dff988ecc25b",
+      "status": "READ",
+      "scope": "full document"
+    },
+    {
+      "path": "docs/06-theme/templates-patterns-and-block-contracts.md",
+      "sha256": "2a2a0694f5084d93bba40718c0f437ffb6bbb796b5b390e57809060a3fb595f5",
+      "status": "READ",
+      "scope": "full document"
+    },
+    {
+      "path": "docs/06-theme/theme-functional-specification.md",
+      "sha256": "70f493f169e68540394164be67c9962289604ecf06952fc31229936b91552049",
+      "status": "READ",
+      "scope": "full document"
+    },
+    {
+      "path": "docs/15-store-profiles/independent-configuration-and-onboarding.md",
+      "sha256": "825079d8c82120cafce2a6f6ab40bf5395eee37ffc1ac1133da8e600b799617d",
+      "status": "READ",
+      "scope": "full document"
+    },
+    {
+      "path": "docs/15-store-profiles/outdoor-store-profile.md",
+      "sha256": "c4a061c88a753b0e758893e95588c8566f0b28eb55765e53a3c132272b6ffc99",
+      "status": "READ",
+      "scope": "full document"
+    },
+    {
+      "path": "docs/15-store-profiles/smart-home-store-profile.md",
+      "sha256": "009ca601d94168c53c0ef7721cc93ec48d74c250219d490b11fd30cf442df24c",
+      "status": "READ",
+      "scope": "full document"
+    },
+    {
+      "path": "docs/02-requirements/requirements.csv",
+      "sha256": "a38e5862696535fd4837e6327fbb067f8213ea4bbf96df9cc1535c875e0d5efd",
+      "status": "READ_SCOPED",
+      "scope": "FR-U001..FR-U025 IDs,statements,acceptance criteria; selected linked requirement metadata"
+    },
+    {
+      "path": "docs/02-requirements/capability-and-compatibility-matrix.csv",
+      "sha256": "0ad2fe6849573342a7ab8c819eb0555e67eefd075a36d89c96d053c6aedbe826",
+      "status": "READ_SCOPED",
+      "scope": "native and gated adapter rows; native purchase/fallback rules; not an extension certification"
+    },
+    {
+      "path": "docs/12-quality/test-cases.csv",
+      "sha256": "f4b32248622372ad1208553f9b17cea75228be83c88cfd395b0e9a2712dbdc34",
+      "status": "READ_SCOPED",
+      "scope": "TEST-U001..025 acceptance actions; shared expected outcome/fixture fields"
+    },
+    {
+      "path": "docs/12-quality/accessibility-localization-and-visual-tests.md",
+      "sha256": "8256caa0d9f2a114f906314f2e9331ee74e5cde2e2540748a713169f3aad5184",
+      "status": "READ",
+      "scope": "full document"
+    },
+    {
+      "path": "docs/12-quality/fixtures-migration-and-user-acceptance.md",
+      "sha256": "c8b12dce6bb2e15a5b98b2799d17ab0a9f6d70934cddf95fcfa7e0b40b64a00d",
+      "status": "READ",
+      "scope": "full document"
+    },
+    {
+      "path": "docs/16-guides/administrator-customization-guide.md",
+      "sha256": "ad9b0e12cd4364f1012963d39a87247ab5b5d48f94586b94283d51023cca7b6a",
+      "status": "READ",
+      "scope": "full document"
+    },
+    {
+      "path": "docs/16-guides/catalog-editor-and-merchandiser-guide.md",
+      "sha256": "335be69ff4e18d41731ff22f1f8275ddc876c503dd6a7d75cbffdc02b123606d",
+      "status": "READ",
+      "scope": "full document"
+    },
+    {
+      "path": "docs/07-plugin/modules/configuration-profiles.md",
+      "sha256": "4113bd2b896a436030fc76c3953b8ea1ad3e12fbe97ac3c059077ecfb47dc628",
+      "status": "READ",
+      "scope": "full document"
+    },
+    {
+      "path": "docs/00-governance/version-baseline.csv",
+      "sha256": "226131a3ff1866a0e4150c6cba8478a56cf33263546589f0fb47b432bf6471d3",
+      "status": "READ",
+      "scope": "full matrix"
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/templates/templates/single-product.html",
+      "sha256": "82818fd16d2e28b32dff7b846c18fe0ee00ddb9b10a20af17de54c6ce27af4a7",
+      "status": "READ",
+      "scope": "full installed native block template"
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/templates/templates/archive-product.html",
+      "sha256": "1ab741d63e3b2461c7ae42e9441e077375e50f055d4e2d4ad3d43295c97b16d3",
+      "status": "READ",
+      "scope": "full installed native block template"
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/assets/client/blocks/mini-cart/block.json",
+      "sha256": "2e744d203340b03d61586025538ddae4c2dc15f6dfd9dedaedd130e70f31f4cb",
+      "status": "READ",
+      "scope": "full installed mini-cart schema"
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/src/Blocks/BlockTypes/ClassicTemplate.php",
+      "sha256": "cb48223c71e17bffc533fad2f10f52a7198416d7cb5b0b534a54b368413f0561",
+      "status": "READ_SCOPED",
+      "scope": "Lines244..310 plus archive boundary hook definitions:before/after main content call native wrappers."
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/includes/shortcodes/class-wc-shortcode-products.php",
+      "sha256": "5e813c98587cec83d71f7af4ce1e58d7b47f0150c5252b658e2058b109f2aae1",
+      "status": "READ_SCOPED",
+      "scope": "lines105..235,480..516 and targeted query/visibility/source definitions"
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/includes/class-wc-shortcodes.php",
+      "sha256": "5e08f8817ebbd6c45b12d11bd3562b5ac0b57dbc17cf4e7d0bb0063112a0b20c",
+      "status": "READ_SCOPED",
+      "scope": "lines264..294 and registered shortcode source mapping"
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/includes/class-wc-install.php",
+      "sha256": "3b836e730053210371fa66621d002a6d4263aa3f574a22eb412c7e23c67c5a46",
+      "status": "READ_SCOPED",
+      "scope": "lines1140..1268,3145..3170,3250..3265; public create-pages filter and native Cart/Checkout trees"
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/includes/class-wc-query.php",
+      "sha256": "875eb35118e413d4d28f9cfcee79a3c0edf2056a6f13b4f30cbadb1014b2eb81",
+      "status": "READ_SCOPED",
+      "scope": "targeted date/ID sort ordering definitions"
+    },
+    {
+      "path": ".local/sites/outdoor/wp-includes/blocks/navigation/block.json",
+      "sha256": "df7eeaa48bddd4986a4b76cc8e3e85ad24b29d06dbaec9122d69cad6db2a57ad",
+      "status": "READ",
+      "scope": "full installed native Navigation schema"
+    },
+    {
+      "path": ".local/sites/outdoor/wp-includes/blocks/template-part/block.json",
+      "sha256": "4f0be35529b24372d70c636cb7a251bdd6dac654020bd9d9a25cab34a66946b1",
+      "status": "READ",
+      "scope": "full installed native template-part schema"
+    },
+    {
+      "path": ".local/sites/outdoor/wp-includes/class-wp-theme-json-resolver.php",
+      "sha256": "8c1eae3025d000dfe828e76f2630caa54084c619b1bf7d1e627108531b433bbe",
+      "status": "READ_SCOPED",
+      "scope": "targeted native user-style post/flag/cache definitions"
+    },
+    {
+      "path": ".local/sites/outdoor/wp-includes/class-wp-term-query.php",
+      "sha256": "af18376c0aa11cac728190fac6dfe59770a1827fcfeda13ec95b53e4a8c70fbf",
+      "status": "READ_SCOPED",
+      "scope": "targeted meta-query defaults/parsing definitions"
+    },
+    {
+      "path": ".local/sites/outdoor/wp-includes/l10n.php",
+      "sha256": "43c9af6b687ee3eb92608fea4697ebe7b62b3d45490a7657efce71033ac82ed7",
+      "status": "READ_SCOPED",
+      "scope": "targeted script-translation handle filename and lookup definitions"
+    },
+    {
+      "path": "tools/dev.py",
+      "sha256": "5f3de171a92a55e75a076bebdef0137a2da6281246205a4b38621333c16fc8e2",
+      "status": "READ_SCOPED",
+      "scope": "approved local wp wrapper paths and install command; no credentials read"
+    },
+    {
+      "path": ".local/sites/outdoor/wp-includes/html-api/class-wp-html-tag-processor.php",
+      "sha256": "e2d3c1511d02a60637ad94b9a2d6a76da234d55f4f86c9d1a6bf016a26c69bd6",
+      "status": "READ_SCOPED",
+      "scope": "Targeted public next_tag(class_name),get_attribute,set_attribute definitions;API exercised by actual native migration tests."
+    },
+    {
+      "path": "tests/browser/storefront.spec.js",
+      "sha256": "87d31e434abf3623b2eae042a1b04acf58a414ebb7ad53739ea2e3217678e6f9",
+      "status": "READ",
+      "scope": "lines1-95 only; no edits in this purchase follow-up"
+    },
+    {
+      "path": "playwright.config.js",
+      "sha256": "9d98c65e3d81ba2453fb75c4354d95537f10b82c2d64e2cc4f42d75f8ebc0da2",
+      "status": "READ",
+      "scope": "full document"
+    },
+    {
+      "path": "package.json",
+      "sha256": "efe8d9b3fc09feba3d727cfc90620fa5b7940fd4e6af756a99d4f81b8ec78dee",
+      "status": "READ_SCOPED",
+      "scope": "Existing pinned @playwright/test1.64.1;no dependency installation or manifest changes."
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/templates/single-product/add-to-cart/external.php",
+      "sha256": "cfc80112fd70036292a7cfa96bf750bd7032644f6549448c498bfea972269f5a",
+      "status": "READ",
+      "scope": "Full native external product GET supplier form/button template."
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/templates/single-product/add-to-cart/simple.php",
+      "sha256": "08dccf0d0fbe6cdb657a59e50829d38354c25e6e787ad5f48ac0a86ef246fe11",
+      "status": "READ",
+      "scope": "Full native simple purchase form and availability template."
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/templates/global/wrapper-start.php",
+      "sha256": "a70255528fd6aadb70afda9408de5e7dc62c616f74fa8b46be05850055cd8791",
+      "status": "READ",
+      "scope": "Full default native content wrapper;emits main under default theme slug."
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/templates/global/wrapper-end.php",
+      "sha256": "fd2a0ca291070da378b5d37de5b5ccc3b21a25a0679ab9105d295bee6fa4229a",
+      "status": "READ",
+      "scope": "Full matching native wrapper close."
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/templates/notices/success.php",
+      "sha256": "6631536114cf1cf1ae151148bff25d013bd215f1521e09406c9b653020490b7b",
+      "status": "READ",
+      "scope": "Full native success notice template;role alert in the pinned native render."
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/src/Blocks/Domain/Services/Notices.php",
+      "sha256": "78b4ad2a711a7448044c0f457e31c8dc863eb131e52b3e7a6b79ea397c91caab",
+      "status": "READ",
+      "scope": "Full service:after_setup_theme detects block theme and replaces core notices with native block-notice templates."
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/templates/block-notices/success.php",
+      "sha256": "e8a22fb4ed4edf4a20818a88114d78beccb0e3bab6c98cb25dd8295bcde4c4a2",
+      "status": "READ",
+      "scope": "Full actual pinned block-theme success alert markup."
+    },
+    {
+      "path": "tools/dev-guard.php",
+      "sha256": "1e9ee4cfd114389b4df3f3b895da34abb322676885d496fd76d99ea90d4426c4",
+      "status": "READ",
+      "scope": "full document; actual mounted guard hash and blocked wp_mail verified inside runtime by fixture"
+    },
+    {
+      "path": "tests/core/wordpress.php",
+      "sha256": "ad60b77616147d773297fed6deabe9f662c17cd8ac3b5fe1ebdb1fed53e7aabe",
+      "status": "READ",
+      "scope": "lines1-100, full current file"
+    },
+    {
+      "path": "docs/04-data/orders-financial-records-and-invariants.md",
+      "sha256": "400ef85829f47897b972836a1c1b56d50557566ec467e356d3e6570543027103",
+      "status": "READ",
+      "scope": "full document63lines"
+    },
+    {
+      "path": "docs/08-marketplace/cart-checkout-and-order-allocation.md",
+      "sha256": "7c33cffcc25442323646719a2cd79b6d3ce0da787dd4d5b768e330388c394bfe",
+      "status": "READ",
+      "scope": "full document33lines"
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/includes/gateways/bacs/class-wc-gateway-bacs.php",
+      "sha256": "1545323f635ee9ae7d136582e3ecbd8d9b54ea774c8b4cf953012117a4550af2",
+      "status": "READ",
+      "scope": "lines1-170,240-365,390-425; selected native constructor/options/thankyou/payment behavior, not full file"
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/includes/class-wc-checkout.php",
+      "sha256": "37dc2a28f4399e1cdad226b4c73e35e37be4ed7a98197f840ac15376af664a1b",
+      "status": "READ",
+      "scope": "lines200-240 plus targeted registration-required searches"
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/includes/class-wc-order.php",
+      "sha256": "82e7d9d5dc26bbce34a10d381d1fe1d18d3a3e16839b1524ff68920deefbfc39",
+      "status": "READ",
+      "scope": "targeted download permission definitions and lines1785-1850; not full file"
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/includes/wc-order-functions.php",
+      "sha256": "9065831bb61e74c99b25c3a50f91d17b1a08ceba1708a26adf18d84583575407",
+      "status": "READ",
+      "scope": "lines460-505; native download entitlement transition hooks"
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/includes/data-stores/class-wc-customer-download-data-store.php",
+      "sha256": "ac0f0625c3e189aeb88b086792d78e5d3df0282bb3ff71f728869be890b3ad8f",
+      "status": "READ",
+      "scope": "lines245-305,405-458 plus method searches; native download permission read API"
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/includes/abstracts/abstract-wc-payment-gateway.php",
+      "sha256": "aa45bcee6eadd3930b921be9c526af0ba1f516a88ba33ce3397a91c48d2cd70d",
+      "status": "READ",
+      "scope": "lines200-245,375-405 plus targeted method searches"
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/src/StoreApi/Routes/V1/Checkout.php",
+      "sha256": "db2ef259e750517bf19edced3e878f8af59066587e83dce9e42dd03623f85b6f",
+      "status": "READ",
+      "scope": "lines960-990; native gateway selection boundary"
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/src/Blocks/BlockTypes/OrderConfirmation/Status.php",
+      "sha256": "87b59ec3c06ff1d75cdc42fb23e039d2519f1c51f4cde632e35f853f00c9b04d",
+      "status": "READ",
+      "scope": "lines1-130 only; native confirmation content"
+    },
+    {
+      "path": "node_modules/playwright/lib/runner/index.js",
+      "sha256": "2cb242134ba364714f289100dbfc02fc496d74bde24274490556395e57109fdb",
+      "status": "READ",
+      "scope": "lines1534-1559; unique JSON reporter output environment option"
+    },
+    {
+      "path": "packages/theme/wooshop/functions.php",
+      "sha256": "2c318294667cc4744b3a0474f2c824520b5d605b65143aae74fde000e69d2361",
+      "status": "READ",
+      "scope": "full file, bounded automatic Block Hooks fix"
+    },
+    {
+      "path": "tests/theme/wordpress.php",
+      "sha256": "e74850eee8f42496b54d5a44edcf294cdf7bae22f48fa116609fc3113883da39",
+      "status": "READ",
+      "scope": "full relevant regression file"
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/src/Blocks/BlockTypes/CustomerAccount.php",
+      "sha256": "a416c24f0a518b2e3512b8437f107a6606f522527cebe2866c2b8d398acbb4a5",
+      "status": "READ",
+      "scope": "lines20-137; native hook placement/signature/attributes/version gate"
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/src/Blocks/BlockTypes/MiniCart.php",
+      "sha256": "55865429911728a0f3802a6c20594c7ee2fc71230bef2f943cfb2dc45cbe6245",
+      "status": "READ",
+      "scope": "lines48-68 plus targeted hook signature searches"
+    },
+    {
+      "path": ".local/vendor-source/woocommerce/src/Blocks/Utils/BlockHooksTrait.php",
+      "sha256": "19c08aa95cbcfd27d518e461e32029c18004ba80574b177d30b9c046ea12b1d4",
+      "status": "READ",
+      "scope": "full file, actual native auto-insertion context/version policy"
+    },
+    {
+      "path": ".local/sites/outdoor/wp-includes/blocks.php",
+      "sha256": "99de93fa9afbf4576d5a34d1e46365980d510de59f565bece9f4db178625a460",
+      "status": "READ",
+      "scope": "lines998-1088,1160-1178; native hook filter signatures and freeform nullable block anchor"
+    },
+    {
+      "path": ".local/sites/outdoor/wp-includes/block-template-utils.php",
+      "sha256": "931a19ae4ae61cfbd07b34da9ebf6298706dfde28584886623c4578a02888211",
+      "status": "READ",
+      "scope": "lines1685-1742 only; native metadata context"
+    }
+  ],
+  "changed_files": [
+    {
+      "path": "packages/theme/wooshop/LICENSE",
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+      "bytes": 18092
+    },
+    {
+      "path": "packages/theme/wooshop/README.txt",
+      "sha256": "2cd95aeddd59078654bc791bf5d4e4f58472d7399fee456c13ecb45a9762dd6b",
+      "bytes": 5336
+    },
+    {
+      "path": "packages/theme/wooshop/assets/connected.svg",
+      "sha256": "2bdd8483763cecaf7fe1e784e2aaa0e9e394efe4f1a6426800ab5a0e57e23576",
+      "bytes": 985
+    },
+    {
+      "path": "packages/theme/wooshop/assets/editor.js",
+      "sha256": "2396514c751f843501fa1a784a61848e989364785c2798ff6679a33a9768e2a5",
+      "bytes": 6893
+    },
+    {
+      "path": "packages/theme/wooshop/assets/landscape.svg",
+      "sha256": "6f650a7a50d462c73736c04158ca315407745d1ac10334278c013fec713d6d4a",
+      "bytes": 603
+    },
+    {
+      "path": "packages/theme/wooshop/assets/store.css",
+      "sha256": "e2dc2a3aa8df639c4dd7844dc9fdd2eb88d5b358974c3caac0a35e59fe54a097",
+      "bytes": 28725
+    },
+    {
+      "path": "packages/theme/wooshop/assets/store.js",
+      "sha256": "4dcc883443f05075906065d2980f0ddd105a9b4e8683888f9b25a3cea3db5f53",
+      "bytes": 7149
+    },
+    {
+      "path": "packages/theme/wooshop/coverage.json",
+      "sha256": "1ba811361fc53d684bda0835b105c44b7365b6da3d14a9de7877fe87e1ca4261",
+      "bytes": 77179
+    },
+    {
+      "path": "packages/theme/wooshop/functions.php",
+      "sha256": "2c318294667cc4744b3a0474f2c824520b5d605b65143aae74fde000e69d2361",
+      "bytes": 4451
+    },
+    {
+      "path": "packages/theme/wooshop/inc/presentation.php",
+      "sha256": "baaf0349c4268e37725a604052363f5a99ddc52758012a5f24579c4c2dfa93c9",
+      "bytes": 17924
+    },
+    {
+      "path": "packages/theme/wooshop/languages/fa_IR.mo",
+      "sha256": "bf59383e37631d3372a1f87d60f21bc8038ee8d514942dd84b6e2615731c05e2",
+      "bytes": 6716
+    },
+    {
+      "path": "packages/theme/wooshop/languages/fa_IR.po",
+      "sha256": "9e473f86540d7df7c684fc365e8c7896b66bfb9c51048a833fb56818af9d8383",
+      "bytes": 7551
+    },
+    {
+      "path": "packages/theme/wooshop/languages/wooshop-fa_IR-wooshop-editor.json",
+      "sha256": "638fd389b030c022bf5a399f97db78051b2858d47740c7f7ec6ce89409e218b9",
+      "bytes": 6095
+    },
+    {
+      "path": "packages/theme/wooshop/languages/wooshop.pot",
+      "sha256": "3a5614de060da78e814dee43d36baa0ddd84bc55f9d502fdf767a56314d84aac",
+      "bytes": 4251
+    },
+    {
+      "path": "packages/theme/wooshop/parts/footer-minimal.html",
+      "sha256": "4968394a78db2fda39e8cde0decce9109eaeefccb2dca6e761ffc130d93da039",
+      "bytes": 51
+    },
+    {
+      "path": "packages/theme/wooshop/parts/footer.html",
+      "sha256": "4d2c5e6d95ba4a339dee6e4d11a897cc84bfd2896778775e9aa4fbe2ebffcb07",
+      "bytes": 206
+    },
+    {
+      "path": "packages/theme/wooshop/parts/header-minimal.html",
+      "sha256": "a9906db483b7cf72ec8717f83868eabb14e6f124e3dc5f9b2df61e628ba1f0db",
+      "bytes": 66
+    },
+    {
+      "path": "packages/theme/wooshop/parts/header.html",
+      "sha256": "5e663e49c6443353ba3e77c8720de651e08110c34a8e5095fdf0345e6da00ec1",
+      "bytes": 222
+    },
+    {
+      "path": "packages/theme/wooshop/patterns/guides-heading.php",
+      "sha256": "c6c21dde036c3c2cba5cfeb400d3dc0ecf03c9f94f3bbc64157cb89ed34b4653",
+      "bytes": 253
+    },
+    {
+      "path": "packages/theme/wooshop/patterns/home.php",
+      "sha256": "f36e80f34aa0afd84bfe7718b3d1173f3a1e5cef70efcd9ca4250b46f60b84cf",
+      "bytes": 1663
+    },
+    {
+      "path": "packages/theme/wooshop/patterns/no-results.php",
+      "sha256": "6e4c156a66678722d44e16142f24448a2a8e7d52ec99d1b1924187956ec611e5",
+      "bytes": 667
+    },
+    {
+      "path": "packages/theme/wooshop/patterns/not-found.php",
+      "sha256": "ecc88fefdbb2a796f263af0a5bc9f82884e73c8aa1b48e1455ea6ee8d84dc9dc",
+      "bytes": 1113
+    },
+    {
+      "path": "packages/theme/wooshop/patterns/outdoor-home.php",
+      "sha256": "5e9fc79738b4aeec4ea3161aef42a18aeef4d40e24e264bada1ef84257494452",
+      "bytes": 1647
+    },
+    {
+      "path": "packages/theme/wooshop/patterns/published-guides.php",
+      "sha256": "d422289a902661295487c4237db4817ac0abf25fde4afc1f0603d35fad8ac049",
+      "bytes": 915
+    },
+    {
+      "path": "packages/theme/wooshop/patterns/smart-home.php",
+      "sha256": "3fb2dea97a36169182acda924be7f8af384b5488bb2b48b469447a22b497f8f8",
+      "bytes": 1696
+    },
+    {
+      "path": "packages/theme/wooshop/style.css",
+      "sha256": "0ddd9907997b0bf5c36fddd720c55b063256feeefcf54050084ce723eae4b944",
+      "bytes": 463
+    },
+    {
+      "path": "packages/theme/wooshop/styles/neutral.json",
+      "sha256": "2bdf4dba444eb12e6dcc09c9d12798ff05b4234d4194a50df905f3b534d99ea7",
+      "bytes": 1725
+    },
+    {
+      "path": "packages/theme/wooshop/styles/outdoor.json",
+      "sha256": "29102994e6f7a1a3805908ed9a4d743e8f4d06e4a57122ab2b69c9979b2748b3",
+      "bytes": 1713
+    },
+    {
+      "path": "packages/theme/wooshop/styles/smart-home.json",
+      "sha256": "b217d1f46fca69b149cf42863497577cbf0d038068d83280d21a9519e143a78b",
+      "bytes": 1717
+    },
+    {
+      "path": "packages/theme/wooshop/templates/404.html",
+      "sha256": "7399f2caea6acbb30e9ca2c0df1d6f8bd552bf48250b110b85eca3cbc63f712c",
+      "bytes": 617
+    },
+    {
+      "path": "packages/theme/wooshop/templates/archive-product.html",
+      "sha256": "c0bfd7c4b6012e8a12098e827933d512b47597d1a97cc42feecdc3f7895ef5e7",
+      "bytes": 639
+    },
+    {
+      "path": "packages/theme/wooshop/templates/archive.html",
+      "sha256": "25969e0c75619db70f704ed95bdab0393ddb50059fa7c8d940e5d38adf79d94b",
+      "bytes": 1524
+    },
+    {
+      "path": "packages/theme/wooshop/templates/campaign.html",
+      "sha256": "da046404449a3a6b88f42600ce5db4a7414899ea52e9f283a4b75cd541a770c6",
+      "bytes": 662
+    },
+    {
+      "path": "packages/theme/wooshop/templates/front-page.html",
+      "sha256": "1e99343b67ccbeca0d2c756e3fcf6f1143b2c481ea1a0a3f760266a8d0401647",
+      "bytes": 612
+    },
+    {
+      "path": "packages/theme/wooshop/templates/home.html",
+      "sha256": "7ddd0c8f42e91c2e215cb04cc6bcf90d4a9ecacded84ec0cb5ce12cfdd932cac",
+      "bytes": 1487
+    },
+    {
+      "path": "packages/theme/wooshop/templates/index.html",
+      "sha256": "a4de40503ce9b51cb3ed4b0052bb038bbd88385af20ed3d754b8b974315c7db0",
+      "bytes": 1495
+    },
+    {
+      "path": "packages/theme/wooshop/templates/page-cart.html",
+      "sha256": "70047bd79aa80413c0465a80dc0ff6d93a9f1b1b585e2ac707a939cf9e0aaccb",
+      "bytes": 644
+    },
+    {
+      "path": "packages/theme/wooshop/templates/page-checkout.html",
+      "sha256": "70047bd79aa80413c0465a80dc0ff6d93a9f1b1b585e2ac707a939cf9e0aaccb",
+      "bytes": 644
+    },
+    {
+      "path": "packages/theme/wooshop/templates/page-my-account.html",
+      "sha256": "da046404449a3a6b88f42600ce5db4a7414899ea52e9f283a4b75cd541a770c6",
+      "bytes": 662
+    },
+    {
+      "path": "packages/theme/wooshop/templates/page.html",
+      "sha256": "da046404449a3a6b88f42600ce5db4a7414899ea52e9f283a4b75cd541a770c6",
+      "bytes": 662
+    },
+    {
+      "path": "packages/theme/wooshop/templates/product-search-results.html",
+      "sha256": "c0bfd7c4b6012e8a12098e827933d512b47597d1a97cc42feecdc3f7895ef5e7",
+      "bytes": 639
+    },
+    {
+      "path": "packages/theme/wooshop/templates/readable.html",
+      "sha256": "8fa1c6f3c5a7471d2aed1de72877a6f84765e31401a95bb023b9df0e0648f27c",
+      "bytes": 813
+    },
+    {
+      "path": "packages/theme/wooshop/templates/search.html",
+      "sha256": "71c065ff009f5fcf5d4f10cb576b78860ed47922191086a8f8bc77114be6dc41",
+      "bytes": 1535
+    },
+    {
+      "path": "packages/theme/wooshop/templates/single-product.html",
+      "sha256": "464331d5a3ce7c5dd6e12b64406505acadf448b21b519c859ac2701f01cad271",
+      "bytes": 638
+    },
+    {
+      "path": "packages/theme/wooshop/templates/single.html",
+      "sha256": "c0380d4bc8115cd880e7be09a5cfdc01e5f8d1dfdf2b975e9ea2ee9160c7878d",
+      "bytes": 1195
+    },
+    {
+      "path": "packages/theme/wooshop/templates/taxonomy-product_attribute.html",
+      "sha256": "c0bfd7c4b6012e8a12098e827933d512b47597d1a97cc42feecdc3f7895ef5e7",
+      "bytes": 639
+    },
+    {
+      "path": "packages/theme/wooshop/templates/taxonomy-product_brand.html",
+      "sha256": "c0bfd7c4b6012e8a12098e827933d512b47597d1a97cc42feecdc3f7895ef5e7",
+      "bytes": 639
+    },
+    {
+      "path": "packages/theme/wooshop/templates/taxonomy-product_cat.html",
+      "sha256": "c0bfd7c4b6012e8a12098e827933d512b47597d1a97cc42feecdc3f7895ef5e7",
+      "bytes": 639
+    },
+    {
+      "path": "packages/theme/wooshop/templates/taxonomy-product_tag.html",
+      "sha256": "c0bfd7c4b6012e8a12098e827933d512b47597d1a97cc42feecdc3f7895ef5e7",
+      "bytes": 639
+    },
+    {
+      "path": "packages/theme/wooshop/templates/wide.html",
+      "sha256": "5164fa72d23de15309bf93ec926319947969ff890d4b73821c98277bfa566660",
+      "bytes": 700
+    },
+    {
+      "path": "packages/theme/wooshop/templates/workspace.html",
+      "sha256": "a5e7843b7bd0bd7c150a2bb7ae0e0b735686119ae9a90e86ca08dfd69026fc08",
+      "bytes": 815
+    },
+    {
+      "path": "packages/theme/wooshop/theme.json",
+      "sha256": "442d8e746824bd74ab520431468245eeacf7008ee4a762934150b093e2fd45b3",
+      "bytes": 7928
+    },
+    {
+      "path": "packages/theme/wooshop/woocommerce/global/wrapper-end.php",
+      "sha256": "ce5fcaa912152e201d025c15af60bc467bc84fdf29e53c8f9d54758bf0a42665",
+      "bytes": 153
+    },
+    {
+      "path": "packages/theme/wooshop/woocommerce/global/wrapper-start.php",
+      "sha256": "c14f484267eca13591bf0dc1b31ff9fa9d89057ad910b0766f2d256709b3a556",
+      "bytes": 205
+    },
+    {
+      "path": "profiles/README.md",
+      "sha256": "e3b1e016f47b24e87209e74a3e9758c655cc6b3cbd3e65bd684b9aa94a75d1f2",
+      "bytes": 3951
+    },
+    {
+      "path": "profiles/assets/neutral.png",
+      "sha256": "b950891da400685a0d790d88e487043647aa64f340c2bcf67355d6345524b2c6",
+      "bytes": 4216
+    },
+    {
+      "path": "profiles/assets/outdoor.png",
+      "sha256": "889009954878f871d149efaaec25e4892e3e68b6233e76efdb9452e600061335",
+      "bytes": 4293
+    },
+    {
+      "path": "profiles/assets/smart-home.png",
+      "sha256": "ddc18f82b77dff7770f792594d25d9ac6dbad53ad652da584e360d7e11a84960",
+      "bytes": 4384
+    },
+    {
+      "path": "profiles/neutral.json",
+      "sha256": "5e8f853c52f5b671e681accedb331b3536816dce5571f004f0ca5063713af6d6",
+      "bytes": 1578
+    },
+    {
+      "path": "profiles/outdoor.json",
+      "sha256": "15529743817ce27ff787920b2ec5590ca4aa4d667a80b2c06cf3d4925ff96b9d",
+      "bytes": 1860
+    },
+    {
+      "path": "profiles/smart-home.json",
+      "sha256": "5ddba6003ede5057784d29762c3a9fd677cb9cbd38b4d387a0eccc56ab2b8f20",
+      "bytes": 2170
+    },
+    {
+      "path": "tests/browser/storefront.spec.js",
+      "sha256": "87d31e434abf3623b2eae042a1b04acf58a414ebb7ad53739ea2e3217678e6f9",
+      "bytes": 8133,
+      "ownership_scope": "Two product-action test blocks only;auth test preserved."
+    },
+    {
+      "path": "tests/theme/check.py",
+      "sha256": "09628d3370f98c51767092c23c46d8b7fbad0ff0c5ec6fc731a639279f93b4f8",
+      "bytes": 5025
+    },
+    {
+      "path": "tests/theme/crawl.py",
+      "sha256": "84c05e5bc526872daa9823500af57d128887b92e0533da703c2cb6e73ce68a00",
+      "bytes": 4476
+    },
+    {
+      "path": "tests/theme/fixtures.php",
+      "sha256": "18f0451ec5c47d9ab1a5863fcc049614f7de6b870d3b18990e8d0b7b94d0f35d",
+      "bytes": 6593
+    },
+    {
+      "path": "tests/theme/hero.php",
+      "sha256": "386c405a6be1e2a86dca4cd3bc18415bdbb3213f924d036c392966c604d31973",
+      "bytes": 4194
+    },
+    {
+      "path": "tests/theme/suite.php",
+      "sha256": "9d504e0be0175591650bcce04977acf11a1a9e4b4a49015bb62577327031065c",
+      "bytes": 184
+    },
+    {
+      "path": "tests/theme/wordpress.php",
+      "sha256": "e74850eee8f42496b54d5a44edcf294cdf7bae22f48fa116609fc3113883da39",
+      "bytes": 10424
+    },
+    {
+      "path": "tools/seed.php",
+      "sha256": "9f0bb4756297df28c008268dabdecf4bec0791f62eb11b00fec21b39f2cd8f53",
+      "bytes": 27498
+    },
+    {
+      "path": "tests/browser/purchase.spec.js",
+      "sha256": "3ba801bad1c5253d9dddfa5e655da7fbc723f6602e2ea5adc4b8b5e544953e95",
+      "bytes": 6323
+    },
+    {
+      "path": "tests/core/native-checkout-fixture.php",
+      "sha256": "37ea57cdaabb8328d8e091179c42a65b2a9b063ce2e78c264b7d903fbeb3069d",
+      "bytes": 12737
+    },
+    {
+      "path": "tests/theme/header-browser.cjs",
+      "sha256": "1883474ca76ce42900501cfeb69916abb2ee9c64fc0c502ccda76e42a849c92c",
+      "bytes": 3482
+    }
+  ],
+  "evidence_file": "docs/implementation/evidence-implement_theme.json",
+  "implemented": [
+    "Installable native block theme,version0.1.0 with native theme.json defaults and3 style variations;no required build step",
+    "Native templates/parts,original editable homepage patterns,actual bounded WooCommerce collections/category navigation",
+    "Native Navigation inner blocks,logo/announcement/density/media presentation controls;server-side validation/escaping",
+    "Progressive category disclosures/mobile focus containment,inert background,Escape/restoration,RTL logical layouts,reduced motion",
+    "Native WC product/archive/gallery/variable/grouped/external/digital/cart/checkout/account composition;explicit unknown price and external supplier disclosure",
+    "Conditional registered plugin surfaces;catalog specs/Q&A use plugin native tabs;no duplicate output",
+    "3 profile manifests and original labelled fixture artwork;two independent local sites seeded with25fixtureproducts+2variations,site-local pages/navigation/presets",
+    "Local-only additive importer with explicit once-only configure-profile marker,preserved native page/styles;unsubscribe route;protected native download example",
+    "91 extracted strings;81 authored Persian translations;10 English fallbacks;fluent review pending"
+  ],
+  "coverage_manifest": "packages/theme/wooshop/coverage.json",
+  "commands": [
+    {
+      "command": "rtk proxy python3 tests/theme/check.py",
+      "result": "PASS",
+      "exit_code": 0,
+      "checks": 230,
+      "scope": "package integrity;all theme PHP and JS syntax;native block comment balance;32 default palette contrast pairs;local fixture guard;3 safe profile manifests",
+      "host": {
+        "php": "8.5.8",
+        "node": "26.12.0",
+        "python": "3.14.5"
+      },
+      "limitation": "Host PHP syntax only;target platform behavior verified separately atPHP8.4.27."
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor eval-file /workspace/tests/theme/suite.php outdoor",
+      "result": "PASS",
+      "exit_code": 0,
+      "checks": {
+        "fixture_identity_and_native_edit_preservation": 20,
+        "hero_migration_and_merchant_url_preservation": 8,
+        "native_theme_and_rendering": 239
+      },
+      "runtime": {
+        "wordpress": "7.1.3",
+        "woocommerce": "11.2.1",
+        "php": "8.4.27"
+      }
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp smart-home eval-file /workspace/tests/theme/suite.php smart-home",
+      "result": "PASS",
+      "exit_code": 0,
+      "checks": {
+        "fixture_identity_and_native_edit_preservation": 20,
+        "hero_migration_and_merchant_url_preservation": 8,
+        "native_theme_and_rendering": 239
+      },
+      "runtime": {
+        "wordpress": "7.1.3",
+        "woocommerce": "11.2.1",
+        "php": "8.4.27"
+      }
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor eval-file /workspace/tools/seed.php outdoor configure-profile",
+      "result": "PASS",
+      "exit_code": 0,
+      "observed": "One-time local configuration applied;43 fixture objects reused,4 native config objects created. Later unsubscribe addition created1page only,config not reapplied. Final suite reseed created0 objects."
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp smart-home eval-file /workspace/tools/seed.php smart-home configure-profile",
+      "result": "PASS",
+      "exit_code": 0,
+      "observed": "Initial seed created47 objects and configured local defaults;once-only marker migrated without reapplying. Later unsubscribe addition created1page only. Final suite reseed created0 objects."
+    },
+    {
+      "command": "rtk proxy curl --max-time 10 -s -o /dev/null -w '%{http_code}\\n' http://localhost:18880/wp-content/uploads/woocommerce_uploads/wooshop-synthetic-outdoor.txt",
+      "result": "PASS",
+      "exit_code": 0,
+      "http_status": 403,
+      "scope": "direct synthetic download access denied by local Apache"
+    },
+    {
+      "command": "rtk proxy curl --max-time 10 -s -o /dev/null -w '%{http_code}\\n' http://localhost:18881/wp-content/uploads/woocommerce_uploads/wooshop-synthetic-smart-home.txt",
+      "result": "PASS",
+      "exit_code": 0,
+      "http_status": 403,
+      "scope": "direct synthetic download access denied by local Apache"
+    },
+    {
+      "command": "rtk proxy python3 tests/theme/crawl.py outdoor",
+      "result": "PASS",
+      "exit_code": 0,
+      "checked_public_destinations": 13,
+      "all_http_statuses": 200,
+      "hero_cta": "http://localhost:18880/shop-2/",
+      "utility_labels": {
+        "account": "Sign in",
+        "full_cart": "Cart"
+      },
+      "scope": "Read-only HTTP crawl of rendered header/footer/hero/category links;redirects restricted to exact local origin;mutating query actions excluded.",
+      "limitation": "HTTP does not establish browser AX,reflow,keyboard or screen-reader behavior."
+    },
+    {
+      "command": "rtk proxy python3 tests/theme/crawl.py smart-home",
+      "result": "PASS",
+      "exit_code": 0,
+      "checked_public_destinations": 13,
+      "all_http_statuses": 200,
+      "hero_cta": "http://localhost:18881/shop-2/",
+      "utility_labels": {
+        "account": "Sign in",
+        "full_cart": "Cart"
+      },
+      "scope": "Read-only HTTP crawl of rendered header/footer/hero/category links;redirects restricted to exact local origin;mutating query actions excluded.",
+      "limitation": "HTTP does not establish browser AX,reflow,keyboard or screen-reader behavior."
+    },
+    {
+      "command": "rtk proxy npx playwright test --grep 'native simple|external product'",
+      "result": "PASS",
+      "exit_code": 0,
+      "tests": 2,
+      "duration_seconds": 17.9,
+      "scope": "Real Chrome product→nativeWCcart→checkout interface;committed cart quantity;nativeexternalGETsupplierform,no localcart mutation,requiredvariationselection;single main landmarks.",
+      "artifacts": [
+        "artifacts/browser/native-cart.png",
+        "artifacts/browser/native-checkout.png"
+      ],
+      "limitations": "No order/payment submit;no external supplier navigation;auth test not selected."
+    },
+    {
+      "command": "Read-only local HTTP landmark inspection of both shop and category routes",
+      "result": "PASS",
+      "exit_code": 0,
+      "routes": 4,
+      "observed": "Exactly1 main#main-content on both /shop-2/ and /product-category/synthetic-{profile}-0/ routes."
+    },
+    {
+      "command": "rtk proxy php -l tests/core/native-checkout-fixture.php; rtk proxy node --check tests/browser/purchase.spec.js (separate actual commands)",
+      "result": "PASS",
+      "exit_code": 0
+    },
+    {
+      "command": "rtk proxy npx playwright test tests/browser/purchase.spec.js --list --reporter=list",
+      "result": "PASS",
+      "exit_code": 0,
+      "tests": 1,
+      "order_producing": false
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor eval-file /workspace/tests/core/native-checkout-fixture.php preflight native-preflight-20261028",
+      "result": "PASS",
+      "exit_code": 0,
+      "observed": "Actual mounted mail/HTTP fence checked; blocked wp_mail=false. Native fixture product19,virtual/download,USD4.90; no order creation."
+    },
+    {
+      "command": "rtk proxy env PLAYWRIGHT_JSON_OUTPUT_FILE=artifacts/purchase-browser-results.json npx playwright test tests/browser/purchase.spec.js --output artifacts/purchase-browser --reporter=list,json",
+      "result": "PASS",
+      "exit_code": 0,
+      "tests": 1,
+      "duration_seconds": 13.0,
+      "order_id": 141,
+      "artifacts": [
+        "artifacts/purchase-browser-results.json"
+      ],
+      "scope": "Native Store API browser checkout, actual BACS unpaid on-hold order, 11 WC CRUD assertions and exact 6-option finally restoration."
+    },
+    {
+      "command": "Read-only rtk proxy python3 tools/dev.py wp outdoor eval after purchase",
+      "result": "PASS",
+      "exit_code": 0,
+      "observed": {
+        "retained_order_id": 141,
+        "status": "on-hold",
+        "total": "4.90",
+        "currency": "USD",
+        "download_permitted": false,
+        "download_permissions_granted": false,
+        "native_gateway_enabled": {
+          "bacs": "no",
+          "cheque": "no",
+          "cod": "yes"
+        },
+        "fixture_lock_absent": true,
+        "failed_attempt_regular_order_ids": []
+      }
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor eval-file /workspace/tests/core/native-checkout-fixture.php restore native-297f7146-eda6-4286-b5c1-eaafff5da1b2",
+      "result": "PASS",
+      "exit_code": 0,
+      "observed": "Restoration idempotent: already_restored=true,6optionvalues/existencematch."
+    },
+    {
+      "command": "rtk proxy python3 tests/theme/check.py",
+      "result": "PASS",
+      "exit_code": 0,
+      "checks": 230,
+      "scope": "Final bounded header-fix package syntax/structure/contrast checks"
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor eval-file /workspace/tests/theme/wordpress.php",
+      "result": "PASS",
+      "exit_code": 0,
+      "checks": 247,
+      "native_hook_version": "11.2.1",
+      "actual_duplicate_controls_reproduced_without_filter": true
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp smart-home eval-file /workspace/tests/theme/wordpress.php",
+      "result": "PASS",
+      "exit_code": 0,
+      "checks": 247,
+      "native_hook_version": false,
+      "scope": "Preserved disabled native auto-hook policy while testing helper/explicit-block preservation"
+    },
+    {
+      "command": "rtk proxy node tests/theme/header-browser.cjs",
+      "result": "PASS",
+      "exit_code": 0,
+      "cases": 4,
+      "scope": "Actual Chrome1440/390px both stores; no purchases/config changes; four header-only screenshots"
+    }
+  ],
+  "encountered_failures": [
+    {
+      "command": "initial un-escalated local Docker/curl access",
+      "result": "ENVIRONMENT_PERMISSION_DENIED",
+      "resolution": "Authorized sandbox escalation used;later actual commands succeeded. No automatic approval rejection occurred."
+    },
+    {
+      "command": "initial repeat Outdoor seed with shorthand product_cat meta_key/meta_value",
+      "result": "FAIL",
+      "observed": "Term already exists because WC taxonomy ordering rewrites shorthand meta_key. Explicit meta_query preserves fixture identity.",
+      "resolution": "Fixed;final repeat-import/edit-preservation suites pass both sites."
+    },
+    {
+      "command": "initial Smart Home theme-only test first-product assertion",
+      "result": "FAIL_TEST_ORACLE",
+      "observed": "Native wc_get_products selected30 and shortcode37 with equal created_at2026-10-28T08:53:49Z;installed WC shortcode ordering adds ID tie-breaker.",
+      "resolution": "Test now asserts one exact rendered native published/visible product identity and matching permalink, rather than equating two different native query defaults. Final235checks pass both sites."
+    },
+    {
+      "command": "first rtk proxy npx playwright test --grep 'native simple|external product'",
+      "result": "ENVIRONMENT_PRECONDITION_FAIL",
+      "observed": "Both selected product routes rendered nativeWoo coming-soon content,so maincount0 before any cart action. Actual coming_soon=yes/store_pages_only=yes independently confirmed.",
+      "resolution": "Parent explicitly restored coming_soon=no on loopback-only synthetic sites;unchanged two product cases then passed."
+    },
+    {
+      "command": "first isolated native offline BACS purchase browser attempt",
+      "result": "TEST_FIXTURE_INPUT_ORDER_FAIL",
+      "observed": "Native country selection after ZIP entry cleared postcode; native address validation stopped checkout on /checkout-2/. No regular order found for that synthetic failed-attempt email. Native checkout-draft retention was not exhaustively attributed. All6temporary options restored in finally.",
+      "resolution": "Changed only new purchase test to select country/state before entering address/ZIP, assert final postcode, and capture safe native checkout response. Subsequent test passed.",
+      "artifact": "artifacts/purchase-browser-attempt1-results.json"
+    },
+    {
+      "command": "first native header-fix regression",
+      "result": "FIXED_IMPLEMENTATION_TYPE_ERROR",
+      "observed": "WP7 native hook can pass null for a freeform block anchor despite the documented string parameter. Initial strict string signature failed while rendering native mini-cart templates.",
+      "resolution": "Changed theme hook anchor to nullable string and added real freeform/null pass-through regression; final native suite247PASS on both stores."
+    },
+    {
+      "command": "initial Smart Home actual-auto-insert precondition assertion",
+      "result": "FIXED_TEST_PRECONDITION",
+      "observed": "Smart Home native woocommerce_hooked_blocks_version=false disables native auto-insertion; Outdoor11.2.1 setting enables it.",
+      "resolution": "Read native BlockHooksTrait version policy; test respects existing disabled/version gate, proves actual enabled regression on Outdoor, and never changes the setting."
+    }
+  ],
+  "runtime_fixture_pages": {
+    "outdoor": {
+      "home": 40,
+      "shop": 41,
+      "cart": 42,
+      "checkout": 43,
+      "myaccount": 44,
+      "help": 45,
+      "wishlist": 46,
+      "compare": 47,
+      "unsubscribe": 93
+    },
+    "smart-home": {
+      "home": 38,
+      "shop": 39,
+      "cart": 40,
+      "checkout": 41,
+      "myaccount": 42,
+      "help": 43,
+      "wishlist": 44,
+      "compare": 45,
+      "unsubscribe": 58
+    }
+  },
+  "graph_verification": {
+    "project": "Users-shahinilderemi-Documents-tmp-iranbroker-wp",
+    "tier": "Verify",
+    "initial_generation": "2026-10-28T08:24:29Z",
+    "initial_query": "search_graph file_pattern=packages/theme/wooshop/.* returned0;filesystem confirmed empty package",
+    "latest_generation": "2026-10-28T09:14:31Z",
+    "coverage_scopes": [
+      "packages/theme/wooshop",
+      "tests/theme",
+      "profiles",
+      "tools/seed.php"
+    ],
+    "known_gaps": "7mixedPHP/HTML patterns parse_partial;2SVG+3PNG excluded suffixes;.local vendor/site sources ignored by design",
+    "fallback": "All7pattern files source-read after coverage check;block delimiters and PHP syntax verified. SVG authored/source reviewed;original PNG inspected locally. Relevant ignored vendor/native source read directly;no exhaustive graph completeness claim."
+  },
+  "primary_sources": [
+    {
+      "url": "https://developer.wordpress.org/themes/core-concepts/theme-structure/",
+      "retrieved": "2026-10-28",
+      "verified": "Required style.css and templates/index.html plus native parts/patterns/styles layout"
+    },
+    {
+      "url": "https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/theme-json-living/",
+      "retrieved": "2026-10-28",
+      "verified": "Version3 introduced atWP6.6;use versioned conservative schema while declaring actual project minimum7.1.3"
+    },
+    {
+      "url": "https://developer.woocommerce.com/docs/theming/block-theme-development/theming-and-blocks/",
+      "retrieved": "2026-10-28",
+      "verified": false,
+      "fallback": "Unreachable;used installed pinned WC11.2.1 source and actual runtime."
+    }
+  ],
+  "incomplete_scope": [
+    "Full196-setting custom controls/permissioned appearance search,preview,diff,reset,revisions,import/export/migration",
+    "Complete five-state fixtures for all36components and40screens",
+    "Quick view,custom swatches,custom facet drawer/list/enhanced loading,video/360,sticky purchase,bundle/subscription/booking UI",
+    "Campaign schedule/countdown,recent/recommended collections,newsletter consent/trust panels",
+    "Seller directory/storefront/onboarding/catalog/fulfillment/finance and complete customer returns/support/preferences timelines",
+    "Qualified evidence-backed safety/compatibility/manual/size-guide/warranty workflows and plugin typed-schema import from profile manifests",
+    "Third neutral profile runtime installation,all adapter/provider combinations,PHP8.3/otherbrowser/platform compatibility",
+    "Browser screenshots/manual keyboard/AT/zoom/allpresets/RTL visual acceptance owned by parent;not claimed by this worker",
+    "Theme/plugin independence and clean release archive install/upgrade rollback acceptance owned by parent;not fully claimed here",
+    "Human design,fluent Persian,accessibility,legal/finance/business/provider approvals and production activation"
+  ],
+  "next_task": "Inspect parent browser findings;then implement remaining theme-owned controls/quick-view/facet/state surfaces against the existing native/plugin contracts,updating coverage and acceptance evidence without overwriting saved user templates or styles.",
+  "browser_followup": {
+    "findings_from_parent": [
+      "Responsive CSS hid visible account/cart labels while SVGs were aria-hidden,resulting in unnamed mobile links.",
+      "Fixture pattern content serialized its hero CTA before assigning its new native WC shop page."
+    ],
+    "fixes": [
+      "Translated aria-labels on both utility links and44px minimum width.",
+      "Local importer records default fixture hero target and repairs only one unambiguous importer-owned unchanged/default CTA to wc_get_page_permalink(shop);all other bytes and explicitly edited merchant URLs remain.",
+      "New8-check actual WP regression verifies active native target,legacy migration and explicit merchant URL preservation."
+    ],
+    "worker_browser_access": "CUA iab unavailable;listBrowsers returned empty. Parent owns browser6 verification.",
+    "worker_verification": "Both suites pass20+8+239;both13-link HTTP crawls pass200."
+  },
+  "product_browser_followup": {
+    "source_frozen": true,
+    "parent_ownership_contract": "Only product-action tests originally lines31..61 of tests/browser/storefront.spec.js edited;auth test preserved. Theme-owned wrapper presentation files added for real nested-main defect.",
+    "oracle_corrections": [
+      "Native simple success asserted by accessible alert plus committed Store API cart quantity delta,not a legacyCSS selector.",
+      "Native external purchase is form.cart method=get with external action and submit button,no local add-to-cart control;no outbound click performed."
+    ],
+    "real_theme_defect": "Installed WC11 ClassicTemplate calls default Woo wrapper hooks inside the theme main. Neutral wrapper-start/end overrides remove the second main while retaining native hooks and the block-template main.",
+    "browser_result": "2passed17.9s;single main verified on product/cart/checkout,external andvariable surfaces.",
+    "side_effects": "One item added to a fresh isolated browser guest cart and checkout UI visited. No final order/payment submission;the browser context closes after test. Native WC may persist a guest session or checkout draft;final observed order/draft/stock comparison appended separately.",
+    "source_files": [
+      "packages/theme/wooshop/woocommerce/global/wrapper-start.php",
+      "packages/theme/wooshop/woocommerce/global/wrapper-end.php",
+      "tests/browser/storefront.spec.js"
+    ],
+    "native_notice_owner": "Woo11.2.1 Blocks\\Domain\\Services\\Notices detects wp_is_block_theme and maps notices/success.php to templates/block-notices/success.php;legacy .woocommerce-message is not its rendered class. Accessible alert semantics are retained.",
+    "observed_fixture_effects": {
+      "native_order_ids_unchanged": true,
+      "native_order_count_before": 16,
+      "native_order_count_after": 16,
+      "checkout_draft_ids_before": [],
+      "checkout_draft_ids_after": [],
+      "fixture_product_id": 13,
+      "stock_quantity_before": 5,
+      "stock_quantity_after": 5,
+      "guest_cart_effect": "Browser assertion verified exactly one additional product unit in its fresh guest session;context closed by Playwright. Server-side guest session cleanup/retention not asserted.",
+      "financial_or_communication_action": "No checkout commit,payment,refund,supplier navigation or customer message invoked by these two selected tests."
+    }
+  },
+  "purchase_browser_followup": {
+    "date": "2026-10-28",
+    "implementation_files": [
+      "tests/browser/purchase.spec.js",
+      "tests/core/native-checkout-fixture.php"
+    ],
+    "result": "PASS",
+    "execution_environment": "Loopback Outdoor WordPress7.1.3/WooCommerce11.2.1/PHP8.4.27 after marketplace worker confirmed HPOS migration/integrity completion",
+    "native_order_proof": {
+      "result": "VERIFIED",
+      "run": "native-297f7146-eda6-4286-b5c1-eaafff5da1b2",
+      "order_id": 141,
+      "status": "on-hold",
+      "gateway": "bacs",
+      "created_via": "store-api",
+      "currency": "USD",
+      "total": "4.90",
+      "items": [
+        {
+          "product_id": 19,
+          "quantity": 1,
+          "total": "4.9"
+        }
+      ],
+      "download_permission_count": 0,
+      "fixture_origin": {
+        "fixture": "native-checkout",
+        "run_id": "native-297f7146-eda6-4286-b5c1-eaafff5da1b2",
+        "profile": "outdoor",
+        "environment": "local",
+        "origin": "browser-native-store-api-checkout",
+        "payment": "native-bacs-unpaid",
+        "annotation": "verified-after-browser-order-creation"
+      },
+      "checks": {
+        "native_store_api_origin": true,
+        "on_hold": true,
+        "unpaid": true,
+        "currency": true,
+        "total": true,
+        "line_total": true,
+        "no_shipping_tax_discount_or_fee": true,
+        "download_not_permitted": true,
+        "download_permissions_not_granted": true,
+        "no_available_download_items": true,
+        "exact_fixture_metadata": true
+      }
+    },
+    "finally_restoration": {
+      "result": "RESTORED",
+      "run": "native-297f7146-eda6-4286-b5c1-eaafff5da1b2",
+      "option_values_and_existence_match": true,
+      "restored_option_count": 6,
+      "original_snapshot_sha256": "863642267c03802fa88aa7ef7064236ca08c1c37a005193bcbb0fbd631b0e675"
+    },
+    "annotation_semantics": "Synthetic fixture-origin metadata is added with native WC_Order CRUD after validating the browser-created order; it is not claimed to have been inserted by an application checkout hook.",
+    "fixture_effects": "Retained actual native order141 and a local safe run-evidence option. Guarded blocked synthetic mail probes returnedfalse; native receipt attempts could not leave the transport fence. Temporary BACS/COD/cheque settings,BACSaccounts,gatewayorder and guest-checkout values/existence exactly restored; existing options retain update_option autoload behavior. No order deletion, fake-paid status, bank/provider call, real funds, carrier, or admin authentication.",
+    "privacy": "Purchase screenshots,trace,video disabled. Safe report excludes native order keys, download tokens, billing address and credentials. Failure context contains only synthetic contact data.",
+    "limits": "One positive-price virtual/download native BACS path in Outdoor. No provider payment/capture/refund/marketplace settlement/fulfillment/customer email delivery or paid download entitlement proven. No application/package source modified. Anonymous checkout-draft effects from the first failed UI attempt were not exhaustively attributed.",
+    "graph": {
+      "generation": "2026-10-28T10:23:03Z",
+      "nodes": 3661,
+      "edges": 9037,
+      "query": "search_graph checkout in tests/core and tests/browser returned0; targeted source fallback used",
+      "coverage": "Existing test paths had no recorded issues at generation; .local native vendor/runtime bind targets excluded. Actual mounted guard checked in runtime. New test files authored/read directly; no graph completeness claim."
+    }
+  },
+  "header_hook_followup": {
+    "result": "PASS",
+    "trigger": "Parent actual desktop screenshot showed duplicate vertically stacked account/cart controls below Navigation. Actual DOM identified native automatic woocommerce/customer-account and woocommerce/mini-cart siblings.",
+    "application_change": "Theme functions.php filters hooked_block_types at priority20 only after core/navigation in contexts containing wooshop/store-header. It removes those two automatic siblings, preserving other hooked types and explicitly saved merchant blocks. No stored content/settings or CSS/grid/seeder changes.",
+    "native_regressions": {
+      "outdoor": {
+        "checks": 247,
+        "native_hook_version": "11.2.1",
+        "actual_duplicates_reproduced_without_filter": true
+      },
+      "smart-home": {
+        "checks": 247,
+        "native_hook_version": false,
+        "native_disabled_setting_preserved": true
+      }
+    },
+    "browser": {
+      "result": "PASS",
+      "cases": [
+        {
+          "site": "outdoor",
+          "view": "desktop",
+          "result": "PASS",
+          "navigation_height": 56,
+          "duplicate_automatic_account_and_cart": false,
+          "intentional_utility_links": "Sign in and full Cart",
+          "native_mini_cart_count": 1,
+          "category_escape_focus_restored": true
+        },
+        {
+          "site": "outdoor",
+          "view": "mobile",
+          "result": "PASS",
+          "navigation_height": 150,
+          "duplicate_automatic_account_and_cart": false,
+          "intentional_utility_links": "Sign in and full Cart",
+          "native_mini_cart_count": 1,
+          "category_escape_focus_restored": true
+        },
+        {
+          "site": "smart-home",
+          "view": "desktop",
+          "result": "PASS",
+          "navigation_height": 56,
+          "duplicate_automatic_account_and_cart": false,
+          "intentional_utility_links": "Sign in and full Cart",
+          "native_mini_cart_count": 1,
+          "category_escape_focus_restored": true
+        },
+        {
+          "site": "smart-home",
+          "view": "mobile",
+          "result": "PASS",
+          "navigation_height": 150,
+          "duplicate_automatic_account_and_cart": false,
+          "intentional_utility_links": "Sign in and full Cart",
+          "native_mini_cart_count": 1,
+          "category_escape_focus_restored": true
+        }
+      ],
+      "limitation": "Header only; no full mini-cart state, design approval, full keyboard/AT conformance or purchase claim."
+    },
+    "artifacts": [
+      "artifacts/theme-header-regression/results.json",
+      "artifacts/theme-header-regression/outdoor-desktop.png",
+      "artifacts/theme-header-regression/outdoor-mobile.png",
+      "artifacts/theme-header-regression/smart-home-desktop.png",
+      "artifacts/theme-header-regression/smart-home-mobile.png"
+    ],
+    "visual_review": "Corrected Outdoor screenshot inspected. Desktop Navigation row56px. No human design approval. Six featured products on five columns remain5+1, unchanged and recorded as an unapproved layout finding.",
+    "limits": "Mini-cart/component state coverage remains partial; this regression checks header count/geometry/accessible utility names and category Escape/focus only. Third package-site old ZIP proof remains valid for old hash; parent must rebuild/reinstall updated theme and recapture installed parity before independence matrix."
+  }
+}

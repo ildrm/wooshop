@@ -1,0 +1,39 @@
+id,method,path,purpose,authorization,requirement_id,response_schema,status
+API-D001,GET,/offers,List publicly eligible offers,public approved fields only; product/variation/destination filter validated,FR-D077,OfferPage,proposed; not implemented
+API-D002,PATCH,/offers/{offer_id},Update own commercial offer fields,commerce.offer.write + current active membership in offer seller; canonical fields immutable,FR-D078,OwnedOffer,proposed; not implemented
+API-D003,POST,/inventory-pools/{pool_id}/adjustments,Record authorized inventory adjustment,commerce.offer.write + own seller pool + current authority epoch,FR-D079,InventoryResult,proposed; not implemented
+API-D004,POST,/seller-applications,Submit seller application,authenticated applicant owns application; terms version current,FR-D080,Seller,proposed; not implemented
+API-D005,POST,/sellers/{seller_id}/transitions,Review or change seller status,commerce.seller.manage; independent reviewer; valid transition,FR-D080,Seller,proposed; not implemented
+API-D006,POST,/sellers/{seller_id}/memberships,Invite seller team member,commerce.team.manage + own seller organization; capability subset only,FR-D081,Operation,proposed; not implemented
+API-D007,DELETE,/sellers/{seller_id}/memberships/{membership_id},Revoke seller team member,commerce.team.manage + own seller; last owner transfer required,FR-D081,Membership,proposed; not implemented
+API-D008,GET,/allocations,List allocations visible to current seller,commerce.allocation.read.own + seller scope; platform capability explicit,FR-D082,AllocationPage,proposed; not implemented
+API-D009,GET,/allocations/{allocation_id},Read one allocation projection,commerce.allocation.read.own + owning seller; PII minimized by task,FR-D082,Allocation,proposed; not implemented
+API-D010,POST,/shipments,Record assigned shipment,commerce.allocation.fulfill + allocation seller; quantity bounds,FR-D082,Shipment,proposed; not implemented
+API-D011,POST,/returns,Request return of owned purchased quantity,customer owns order or commerce.refund.request for own allocation; quantity/policy checks,FR-D083,ReturnCase,proposed; not implemented
+API-D012,POST,/refunds,Prepare refund from original allocations,commerce.refund.request + resource scope; remaining refundable amount reserved,FR-D083,Operation,proposed; not implemented
+API-D013,POST,/refunds/{refund_id}/approval,Approve prepared refund,commerce.refund.approve; independent approver; exact prepared amount digest,FR-D083,Operation,proposed; not implemented
+API-D014,POST,/payouts,Prepare reconciled seller payout,commerce.payout.prepare; finance scope; no active holds; reconciled ledger,FR-D084,Payout,proposed; not implemented
+API-D015,POST,/payouts/{payout_id}/approval,Approve exact payout batch,commerce.payout.approve; different principal; unchanged batch digest; verified destination,FR-D084,Payout,proposed; not implemented
+API-D016,GET,/payouts/{payout_id},Read scoped payout status,commerce.finance.read.own for payout seller or explicit platform finance scope,FR-D084,Payout,proposed; not implemented
+API-D017,GET,/wishlists/me,Read own account or guest wishlist,own user or signed guest session only,FR-D085,Wishlist,proposed; not implemented
+API-D018,POST,/wishlists/me/items,Add item to own wishlist,own account or signed guest session; valid published product; bounded list,FR-D085,Wishlist,proposed; not implemented
+API-D019,DELETE,/wishlists/me/items/{product_id},Remove item from own wishlist,own account or signed guest session only; removes matching product selections,FR-D085,Wishlist,proposed; not implemented
+API-D020,GET,/preferences/me,Read own optional-feature preferences,own authenticated account or signed guest session,FR-D086,Preferences,proposed; not implemented
+API-D021,PATCH,/preferences/me,Update own consent/preferences,own account or signed guest session; current notice; no prechecked marketing consent,FR-D086,Preferences,proposed; not implemented
+API-D022,POST,/alerts,Request product stock or price alert,own verified account contact; channel opt-in; one active equivalent alert,FR-D086,Operation,proposed; not implemented
+API-D023,GET,/questions,List published product questions,public approved fields only,FR-D087,QuestionPage,proposed; not implemented
+API-D024,POST,/questions,Submit moderated product question,authenticated customer; rate/abuse limits; no raw contact details,FR-D087,Question,proposed; not implemented
+API-D025,POST,/comparisons,Compare a bounded set of products,own account or signed guest session; published product values only,FR-D088,Comparison,proposed; not implemented
+API-D026,POST,/compatibility/evaluate,Evaluate evidence-scoped product compatibility,own account or signed guest session; published evidence projection only,FR-D088,CompatibilityResult,proposed; not implemented
+API-D027,GET,/specification-schemas,List published specification schemas,public safe schema labels/units only,FR-D089,SpecificationSchemaPage,proposed; not implemented
+API-D028,GET,/products/{product_id}/specifications,Read published product specifications,public approved technical claims only,FR-D089,SpecificationValues,proposed; not implemented
+API-D029,PUT,/products/{product_id}/specifications,Propose or update authorized product specifications,catalog approval capability for canonical write; seller proposal stays moderated,FR-D089,SpecificationValues,proposed; not implemented
+API-D030,GET,/search/suggestions,Return public normalized search suggestions,public approved catalog; no personal query history or private seller records,FR-D090,SuggestionPage,proposed; not implemented
+API-D031,POST,/imports,Stage catalog or offer import,commerce.import.own or catalog import capability; current seller scope fixed server-side,FR-D091,Operation,proposed; not implemented
+API-D032,GET,/operations/{operation_id},Read own asynchronous operation status,original principal/resource scope or assigned operator; no unrelated job details,FR-D091,Operation,proposed; not implemented
+API-D033,GET,/diagnostics,Read redacted system diagnostics,commerce.diagnostics.read; platform scope; no secrets or customer payloads,FR-D092,Diagnostics,proposed; not implemented
+API-D034,POST,/modules/{module_key}/lifecycle,Transition module lifecycle safely,commerce.settings.manage; dependency preflight and obligation drain; no destructive purge,FR-D092,Operation,proposed; not implemented
+API-D035,POST,/settings/preview,Validate and preview controlled settings,commerce.settings.manage or own seller-branding subset; scope allowlist,FR-D093,SettingsPreviewResult,proposed; not implemented
+API-D036,POST,/settings/export,Create scoped export without secrets,commerce.settings.manage for configuration or commerce.export.own for permitted own data,FR-D093,Operation,proposed; not implemented
+API-D037,GET,/refunds/{refund_id},Read exact prepared refund for independent human approval,commerce.refund.request or commerce.refund.approve with order/allocation scope,FR-D083,RefundPreparation,proposed; not implemented
+API-D038,POST,/notifications/unsubscribe,Signed scoped login-free suppression,Valid suppression-only token;no recipient disclosure,FR-G021,204 no body,proposed;NOT RUN

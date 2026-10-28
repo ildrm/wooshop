@@ -1,0 +1,14 @@
+{
+  "name": "wooshop-development",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local verification and packaging for the Wooshop WordPress theme and commerce plugin.",
+  "license": "GPL-2.0-or-later",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test:browser": "playwright test",
+    "check": "python3 tools/check.py",
+    "package": "python3 tools/package.py"
+  },
+  "devDependencies": { "@playwright/test": "1.64.1" }
+}

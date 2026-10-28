@@ -1,0 +1,1371 @@
+{
+  "schema_version": 1,
+  "task": "implement_catalog",
+  "updated_at": "2026-10-28T10:38:02.008179+00:00",
+  "delivery_status": "Implementation incomplete; named persistent native slices implemented and tested, all broader requirement/workflow scope accurately PARTIAL.",
+  "source_freeze_requested": true,
+  "accountable_role": "WordPress Plugin/PHP Developer",
+  "implementation_roles": [
+    "WooCommerce Extension Developer",
+    "Database/Data Architect",
+    "Search Engineer",
+    "API/Integration Engineer"
+  ],
+  "review_perspectives": [
+    "Security",
+    "Privacy",
+    "Accessibility",
+    "SEO",
+    "QA"
+  ],
+  "human_approval_claimed": false,
+  "read_paths": [
+    {
+      "path": "docs/implementation/integration-contract.md",
+      "sha256": "9e8287cb456dd1f6c2ce2ae19de43fcd8ee1ffd97d58a737a36a86e07094a29d",
+      "reading_status": "read",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "docs/07-plugin/modules/product-specifications.md",
+      "sha256": "3bf6425d2be04f2ff4b86dfa70719650f1452bf856c42d1fdf1b39663e77f0b9",
+      "reading_status": "read",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "docs/07-plugin/modules/search-and-facets.md",
+      "sha256": "d56b126d8d69d8b1148f58f51a50fcb4b21aa252123671ca274b2a4ac4f944c7",
+      "reading_status": "read",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "docs/07-plugin/modules/wishlists.md",
+      "sha256": "7a538b87da3080fbc4b2eae5e28910333451c8c1898865b1443b550c46e4ce2c",
+      "reading_status": "read",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "docs/07-plugin/modules/comparisons.md",
+      "sha256": "4aa4b6fba5cfc699a6d69c4e51a9817148536addcef9b207ca18ed4fec3010bf",
+      "reading_status": "read",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "docs/07-plugin/modules/recent-history.md",
+      "sha256": "8af299f6e28bbb649f1ce75e2591648bc8a71c60f8e7f238abdf0cb9bb1c5536",
+      "reading_status": "read",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "docs/07-plugin/modules/questions-and-answers.md",
+      "sha256": "3705f642cd8205d453de5bcd97d318836db434c6419ad5430b17d30e1bf4c6b7",
+      "reading_status": "read",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "docs/07-plugin/modules/review-enhancements.md",
+      "sha256": "02c68546462b8e3c26ba9741919f5f7cef6c9e27321414a1d265026b5306c175",
+      "reading_status": "read",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "docs/07-plugin/modules/product-alerts.md",
+      "sha256": "5b96de9afd20eeb9a0f5ae47e382661e76b9c787b529726e7022ed6178f5e9a1",
+      "reading_status": "read",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "docs/07-plugin/modules/notifications-and-preferences.md",
+      "sha256": "4f8261b59abe1038eddcb274c27184e288a901ed78942cdc5f036d53a4d53550",
+      "reading_status": "read",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "docs/07-plugin/modules/compatibility-evidence.md",
+      "sha256": "dc7bc486a085a32648ac90b88f8db6c52542494e15536db417241abecd544081",
+      "reading_status": "read",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "docs/07-plugin/modules/product-relationships.md",
+      "sha256": "8063efe2f879632d8298cd162be51d09c38c6c67407e2a6451e0022b1e132bdc",
+      "reading_status": "read",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "docs/07-plugin/modules/campaigns-and-badges.md",
+      "sha256": "b953df763ee9c47421cd26ffcd84c2ad891b4ce4c2c5d8ee8749394bc609943f",
+      "reading_status": "read",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "docs/07-plugin/modules/merchandising-recommendations.md",
+      "sha256": "6e7b793b56701449713560dfdc9f9f24261bf754999889e53caf6692732c1f4e",
+      "reading_status": "read",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "docs/07-plugin/modules/price-history.md",
+      "sha256": "6d2c6bfd5ab9b6df0a5e3ce53c5fa11b9eff3f830bc451983a859e90eeb82ff3",
+      "reading_status": "read",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "docs/07-plugin/modules/loyalty-and-rewards.md",
+      "sha256": "e011defbc9b68603eedf8960edaa9395a3d9ffb3a4d120a5b574b8f569b1866b",
+      "reading_status": "read",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "docs/07-plugin/modules/cart-incentives.md",
+      "sha256": "5f7574c01df4b8be76a8669d2737b5292556e880be1735c29125f1a4f0fed4a7",
+      "reading_status": "read",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "docs/04-data/product-specifications-and-compatibility.md",
+      "sha256": "79bf2c43a6b8c83608144d05b8876a7d564c5ab5208ef61aa743902a6eee8814",
+      "reading_status": "read",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "docs/04-data/product-types-and-capabilities.md",
+      "sha256": "49d7c886c8db866dda1e5ceb81820edb9bd5037bd67d4c8d395cb886ca32e9ae",
+      "reading_status": "read",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "docs/11-security-privacy/identity-api-upload-and-content-security.md",
+      "sha256": "90ece8112de9ba5ad9d4f3b6c8ffbdb0a0b8b7bc03ee63b7c583db45b2416db1",
+      "reading_status": "read",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "docs/11-security-privacy/data-protection-consent-and-retention.md",
+      "sha256": "95544536663a003088fd2c314132d68620b186e3bea9faa7e56efab375692953",
+      "reading_status": "read",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "docs/10-seo/seo-strategy-and-responsibility-boundaries.md",
+      "sha256": "7cabebdd42edb7e157f80866b8385eede3d65eb426141e7bedd182bf699b2d36",
+      "reading_status": "read",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "docs/10-seo/facets-pagination-and-crawl-management.md",
+      "sha256": "f55073bb4e89ab7158d7c7673c33058b6e9b4771d415ffa2b022b76667ce97ec",
+      "reading_status": "read",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "docs/15-store-profiles/outdoor-store-profile.md",
+      "sha256": "c4a061c88a753b0e758893e95588c8566f0b28eb55765e53a3c132272b6ffc99",
+      "reading_status": "read",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "docs/15-store-profiles/smart-home-store-profile.md",
+      "sha256": "009ca601d94168c53c0ef7721cc93ec48d74c250219d490b11fd30cf442df24c",
+      "reading_status": "read",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "/Users/shahinilderemi/.codex/RTK.md",
+      "sha256": "49c368c302c6f63d089f4c1085b242fc50fe22ce5bc34dada6478083000e7c6f",
+      "reading_status": "read",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "/Users/shahinilderemi/.codex/skills/codebase-memory/SKILL.md",
+      "sha256": "8efe4aa10efa92b52148cce5840abac552b92e5dc3af567e5d167a5e33624db1",
+      "reading_status": "read",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "/Users/shahinilderemi/Downloads/wp-project.md",
+      "sha256": null,
+      "reading_status": "selected_sections",
+      "human_approval_inferred": false,
+      "note": "Initial content read was truncated; final fingerprint source no longer exists. Root owns full master intake.",
+      "fingerprint_status": "unavailable_at_final_pass"
+    },
+    {
+      "path": "docs/07-plugin/module-command-contracts.md",
+      "sha256": "e54ad45bcdeb78ea2021b82f47bc4c960782efc48ebdd69fbade97eb7a56a064",
+      "reading_status": "selected_sections",
+      "human_approval_inferred": false,
+      "note": "Applicable commands 001–012 and exact 017–019; unrelated rows not relied upon."
+    },
+    {
+      "path": "docs/09-api-integrations/openapi.yaml",
+      "sha256": "3561b41e11bf569640d00fb64ca88deb42be66e6842456eb72e069dd43a8f6a0",
+      "reading_status": "selected_sections",
+      "human_approval_inferred": false,
+      "note": "Exact API-D017–030 and D038 operations, security, requests/responses/components parsed; unrelated paths not relied upon."
+    },
+    {
+      "path": "docs/09-api-integrations/api-and-authentication-strategy.md",
+      "sha256": "287ff99f611a3775bcb2eaf7cf1337bbbe6f1855826a660ec896616610bbcd74",
+      "reading_status": "selected_sections",
+      "human_approval_inferred": false,
+      "note": "Authentication and signed unsubscribe sections."
+    },
+    {
+      "path": "docs/02-requirements/requirements.csv",
+      "sha256": "a38e5862696535fd4837e6327fbb067f8213ea4bbf96df9cc1535c875e0d5efd",
+      "reading_status": "selected_sections",
+      "human_approval_inferred": false,
+      "note": "Exact owned requirement rows extracted."
+    },
+    {
+      "path": "docs/12-quality/test-cases.csv",
+      "sha256": "f4b32248622372ad1208553f9b17cea75228be83c88cfd395b0e9a2712dbdc34",
+      "reading_status": "selected_sections",
+      "human_approval_inferred": false,
+      "note": "TEST-U041–059, TEST-D049–051, TEST-G021 selected rows."
+    },
+    {
+      "path": "docs/11-security-privacy/roles-capabilities-and-object-authorization.csv",
+      "sha256": "eed41314eb830738f8fd3fd6e5ea79d62adf30d6a0e3df86ed7cd48de1215d74",
+      "reading_status": "selected_sections",
+      "human_approval_inferred": false,
+      "note": "Finance-related capability rows searched."
+    },
+    {
+      "path": "docs/07-plugin/plugin-kernel-and-module-lifecycle.md",
+      "sha256": "c09d257e730ae3da9e70542834c1a47804478c58b4f5f3aec47a07e90c8e15f6",
+      "reading_status": "read; bounded lifecycle followup",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "docs/07-plugin/activation-migration-deactivation-uninstall.md",
+      "sha256": "45b24f8e89e04a59da51bf8b422b3cc322b4e1a5587ca3536575c2e8358c528f",
+      "reading_status": "read; bounded lifecycle followup",
+      "human_approval_inferred": false
+    },
+    {
+      "path": "packages/plugin/wooshop-commerce/src/Kernel/ModuleRegistry.php",
+      "sha256": "ce3fb925bd28dee29b6db1f2470e0171d0205e9ee6cc6c85dd468bc528d7aeb4",
+      "reading_status": "read; bounded lifecycle followup",
+      "human_approval_inferred": false
+    }
+  ],
+  "codebase_memory": {
+    "tier": "Verify",
+    "project": "Users-shahinilderemi-Documents-tmp-iranbroker-wp",
+    "generation": "2026-10-28T08:24:29Z",
+    "coverage": "Actual index_status/check_index_coverage used on module commands/OpenAPI/new source scope; clean best-effort metadata not completeness. New source read directly."
+  },
+  "requirements": [
+    {
+      "requirement_id": "FR-U041",
+      "module_id": "MOD-U001",
+      "status": "PARTIAL",
+      "specification_path": "docs/07-plugin/modules/product-specifications.md",
+      "test_id": "TEST-U041",
+      "implemented_features": [
+        "immutable_schemas",
+        "typed_values",
+        "dimension_safe_conversion",
+        "evidence_review",
+        "approved_public_projection"
+      ],
+      "unfinished": [
+        "seller_scoped_specification_proposal_adapter",
+        "field_based_editor_controls",
+        "profile_composite_value_schemas"
+      ],
+      "blocked": [],
+      "verification_limit": "Named features verified in listed checks; complete normative lifecycle/browser/provider/capacity scope remains incomplete. Descriptor flags are not compatibility evidence."
+    },
+    {
+      "requirement_id": "FR-U042",
+      "module_id": "MOD-U002",
+      "status": "PARTIAL",
+      "specification_path": "docs/07-plugin/modules/search-and-facets.md",
+      "test_id": "TEST-U042",
+      "implemented_features": [
+        "native_bounded_search",
+        "persian_normalization",
+        "exact_sku_ranking",
+        "typed_facets",
+        "public_suggestions"
+      ],
+      "unfinished": [
+        "external_index",
+        "synonym_configuration",
+        "unbounded_catalog_index"
+      ],
+      "blocked": [],
+      "verification_limit": "Named features verified in listed checks; complete normative lifecycle/browser/provider/capacity scope remains incomplete. Descriptor flags are not compatibility evidence."
+    },
+    {
+      "requirement_id": "FR-U043",
+      "module_id": "MOD-U003",
+      "status": "PARTIAL",
+      "specification_path": "docs/07-plugin/modules/wishlists.md",
+      "test_id": "TEST-U043",
+      "implemented_features": [
+        "private_guest_account_lists",
+        "union_merge",
+        "session_rotation",
+        "idempotency",
+        "capacity",
+        "tombstones",
+        "lifecycle_read_new_cleanup",
+        "retained_reenable"
+      ],
+      "unfinished": [
+        "revocable_sharing_adapter",
+        "configuration_identity_adapter",
+        "configured_capacity_above_100"
+      ],
+      "blocked": [],
+      "verification_limit": "Actual registry/service/internal REST/native shortcode lifecycle checks passed on both isolated stores. Internal REST does not prove browser authentication. Complete normative controls/guest export/provider/capacity scope remains PARTIAL."
+    },
+    {
+      "requirement_id": "FR-U044",
+      "module_id": "MOD-U004",
+      "status": "PARTIAL",
+      "specification_path": "docs/07-plugin/modules/comparisons.md",
+      "test_id": "TEST-U044",
+      "implemented_features": [
+        "private_saved_comparison",
+        "two_to_four_products",
+        "normalized_units",
+        "missing_not_zero",
+        "semantic_table",
+        "owner_revision_clear",
+        "lifecycle_read_new_cleanup",
+        "retained_reenable"
+      ],
+      "unfinished": [
+        "differences_only_control",
+        "display_unit_preference_control"
+      ],
+      "blocked": [],
+      "verification_limit": "Actual registry/service/internal REST/native shortcode lifecycle checks passed on both isolated stores. Internal REST does not prove browser authentication. Complete normative controls/guest export/provider/capacity scope remains PARTIAL."
+    },
+    {
+      "requirement_id": "FR-U045",
+      "module_id": "MOD-U005",
+      "status": "PARTIAL",
+      "specification_path": "docs/07-plugin/modules/recent-history.md",
+      "test_id": "TEST-U045",
+      "implemented_features": [
+        "consent_gate",
+        "device_history_rail",
+        "internal_record_read_clear",
+        "deletion_revision",
+        "bounded_expiry_cron",
+        "lifecycle_read_new_cleanup",
+        "device_disable_cleanup",
+        "consent_module_revision_tombstones"
+      ],
+      "unfinished": [
+        "explicit_account_sync_choice_ui"
+      ],
+      "blocked": [],
+      "verification_limit": "Actual registry/service/internal REST/native shortcode lifecycle checks passed on both isolated stores. Internal REST does not prove browser authentication. Complete normative controls/guest export/provider/capacity scope remains PARTIAL."
+    },
+    {
+      "requirement_id": "FR-U046",
+      "module_id": "MOD-U006",
+      "status": "PARTIAL",
+      "specification_path": "docs/07-plugin/modules/product-alerts.md",
+      "test_id": "TEST-U046",
+      "implemented_features": [
+        "verified_account_requests",
+        "pending_persistence",
+        "send_time_eligibility",
+        "suppression"
+      ],
+      "unfinished": [],
+      "blocked": [
+        "approved_email_sms_provider",
+        "recipient_verification_provider",
+        "trigger_evaluation_jobs"
+      ],
+      "verification_limit": "Named features verified in listed checks; complete normative lifecycle/browser/provider/capacity scope remains incomplete. Descriptor flags are not compatibility evidence."
+    },
+    {
+      "requirement_id": "FR-U047",
+      "module_id": "MOD-U007",
+      "status": "PARTIAL",
+      "specification_path": "docs/07-plugin/modules/questions-and-answers.md",
+      "test_id": "TEST-U047",
+      "implemented_features": [
+        "moderated_submission",
+        "rate_limit",
+        "independent_answer_review",
+        "public_approved_archive"
+      ],
+      "unfinished": [
+        "author_pending_queue_ui",
+        "seller_answer_scope_adapter",
+        "abuse_report_queue",
+        "moderation_notification_provider"
+      ],
+      "blocked": [],
+      "verification_limit": "Named features verified in listed checks; complete normative lifecycle/browser/provider/capacity scope remains incomplete. Descriptor flags are not compatibility evidence."
+    },
+    {
+      "requirement_id": "FR-U048",
+      "module_id": "MOD-U008",
+      "status": "PARTIAL",
+      "specification_path": "docs/07-plugin/modules/review-enhancements.md",
+      "test_id": "TEST-U048",
+      "implemented_features": [
+        "native_review_authority",
+        "verified_purchase_projection",
+        "deduplicated_helpful_vote"
+      ],
+      "unfinished": [
+        "media_scan_provider",
+        "helpful_vote_ui",
+        "abuse_review_queue"
+      ],
+      "blocked": [],
+      "verification_limit": "Named features verified in listed checks; complete normative lifecycle/browser/provider/capacity scope remains incomplete. Descriptor flags are not compatibility evidence."
+    },
+    {
+      "requirement_id": "FR-U049",
+      "module_id": "MOD-U009",
+      "status": "PARTIAL",
+      "specification_path": "docs/07-plugin/modules/campaigns-and-badges.md",
+      "test_id": "TEST-U049",
+      "implemented_features": [
+        "persistent_drafts",
+        "independent_funding_review",
+        "request_time_expiry"
+      ],
+      "unfinished": [],
+      "blocked": [
+        "commercial_legal_activation_policy"
+      ],
+      "verification_limit": "Named features verified in listed checks; complete normative lifecycle/browser/provider/capacity scope remains incomplete. Descriptor flags are not compatibility evidence."
+    },
+    {
+      "requirement_id": "FR-U050",
+      "module_id": "MOD-U010",
+      "status": "PARTIAL",
+      "specification_path": "docs/07-plugin/modules/merchandising-recommendations.md",
+      "test_id": "TEST-U050",
+      "implemented_features": [
+        "curated_placements",
+        "public_eligibility_recheck",
+        "sponsored_label",
+        "accessible_product_links"
+      ],
+      "unfinished": [
+        "native_aggregate_strategy_adapters",
+        "external_recommender_provider"
+      ],
+      "blocked": [],
+      "verification_limit": "Named features verified in listed checks; complete normative lifecycle/browser/provider/capacity scope remains incomplete. Descriptor flags are not compatibility evidence."
+    },
+    {
+      "requirement_id": "FR-U051",
+      "module_id": "MOD-U011",
+      "status": "PARTIAL",
+      "specification_path": "docs/07-plugin/modules/product-relationships.md",
+      "test_id": "TEST-U051",
+      "implemented_features": [
+        "typed_directional_relationships",
+        "evidence_required_compatibility",
+        "expiry_revocation_recheck",
+        "bounded_one_hop"
+      ],
+      "unfinished": [
+        "seller_proposal_moderation_adapter"
+      ],
+      "blocked": [],
+      "verification_limit": "Named features verified in listed checks; complete normative lifecycle/browser/provider/capacity scope remains incomplete. Descriptor flags are not compatibility evidence."
+    },
+    {
+      "requirement_id": "FR-U052",
+      "module_id": "MOD-U012",
+      "status": "PARTIAL",
+      "specification_path": "docs/07-plugin/modules/compatibility-evidence.md",
+      "test_id": "TEST-U052",
+      "implemented_features": [
+        "approved_scoped_evidence",
+        "unknown_by_default",
+        "conflict_quarantine",
+        "numeric_dotted_firmware"
+      ],
+      "unfinished": [
+        "manufacturer_specific_version_comparators",
+        "expiry_review_jobs"
+      ],
+      "blocked": [],
+      "verification_limit": "Named features verified in listed checks; complete normative lifecycle/browser/provider/capacity scope remains incomplete. Descriptor flags are not compatibility evidence."
+    },
+    {
+      "requirement_id": "FR-U056",
+      "module_id": "MOD-U016",
+      "status": "PARTIAL",
+      "specification_path": "docs/07-plugin/modules/notifications-and-preferences.md",
+      "test_id": "TEST-U056",
+      "implemented_features": [
+        "private_preferences",
+        "immediate_withdrawal",
+        "signed_scoped_unsubscribe",
+        "pending_operation"
+      ],
+      "unfinished": [],
+      "blocked": [
+        "approved_message_provider",
+        "delivery_callbacks",
+        "reconciliation"
+      ],
+      "verification_limit": "Named features verified in listed checks; complete normative lifecycle/browser/provider/capacity scope remains incomplete. Descriptor flags are not compatibility evidence."
+    },
+    {
+      "requirement_id": "FR-U057",
+      "module_id": "MOD-U017",
+      "status": "PARTIAL",
+      "specification_path": "docs/07-plugin/modules/price-history.md",
+      "test_id": "TEST-U057",
+      "implemented_features": [
+        "immutable_native_price_observations",
+        "deduplicated_source_revisions",
+        "currency_tax_separation",
+        "table_projection"
+      ],
+      "unfinished": [
+        "marketplace_offer_observation_adapter",
+        "correction_workflow"
+      ],
+      "blocked": [
+        "legal_public_history_policy"
+      ],
+      "verification_limit": "Named features verified in listed checks; complete normative lifecycle/browser/provider/capacity scope remains incomplete. Descriptor flags are not compatibility evidence."
+    },
+    {
+      "requirement_id": "FR-U058",
+      "module_id": "MOD-U018",
+      "status": "PARTIAL",
+      "specification_path": "docs/07-plugin/modules/loyalty-and-rewards.md",
+      "test_id": "TEST-U058",
+      "implemented_features": [
+        "immutable_point_journal",
+        "source_order_refund_dedup",
+        "original_rule_refund_reversal",
+        "restricted_negative_points",
+        "atomic_redemption_reservations",
+        "owner_bound_native_coupons",
+        "pending_release_expiry_drain",
+        "private_reward_shortcode"
+      ],
+      "unfinished": [
+        "dual_review_manual_adjustment_adapter",
+        "marketplace_reward_funding",
+        "scalable_journal_projection"
+      ],
+      "blocked": [
+        "production_finance_reviewed_policy_adapter",
+        "expiry_notice_provider_when_required"
+      ],
+      "verification_limit": "Named features verified in listed checks; complete normative lifecycle/browser/provider/capacity scope remains incomplete. Descriptor flags are not compatibility evidence."
+    },
+    {
+      "requirement_id": "FR-U059",
+      "module_id": "MOD-U019",
+      "status": "PARTIAL",
+      "specification_path": "docs/07-plugin/modules/cart-incentives.md",
+      "test_id": "TEST-U059",
+      "implemented_features": [
+        "immutable_reviewed_rules",
+        "server_native_cart_basis",
+        "after_shared_coupon_threshold",
+        "exclusive_stacking_groups",
+        "native_coupon_apply_once",
+        "native_cart_recalculation_removal",
+        "classic_store_api_checkout_validation"
+      ],
+      "unfinished": [
+        "marketplace_funding_allocation",
+        "product_scoped_threshold_adapter",
+        "gift_shipping_adapters"
+      ],
+      "blocked": [
+        "production_finance_reviewed_funding_policy"
+      ],
+      "verification_limit": "Named features verified in listed checks; complete normative lifecycle/browser/provider/capacity scope remains incomplete. Descriptor flags are not compatibility evidence."
+    },
+    {
+      "requirement_id": "FR-D049",
+      "status": "PARTIAL",
+      "note": "Primitive typed schema/unit arithmetic verified. Composite profile schema and seller proposal workflow unfinished."
+    },
+    {
+      "requirement_id": "FR-D050",
+      "status": "PARTIAL",
+      "note": "Two independent specialist safety approvals, provenance and revocation verified on synthetic evidence. No real certification or human approval claimed."
+    },
+    {
+      "requirement_id": "FR-D051",
+      "status": "PARTIAL",
+      "note": "Exact model/region/numeric dotted firmware and live revocation implemented. Manufacturer comparators and full review jobs unfinished."
+    },
+    {
+      "requirement_id": "FR-D085",
+      "status": "PARTIAL",
+      "note": "Persistent own account/guest API, optimistic update and deterministic merge verified through internal REST/services; parent owns browser nonce and cross-site HTTP suite."
+    },
+    {
+      "requirement_id": "FR-D086",
+      "status": "PARTIAL",
+      "note": "Current notice, verified-contact gate, opt-in, pending operation and immediate suppression implemented. Provider/contact verification transport unavailable."
+    },
+    {
+      "requirement_id": "FR-D087",
+      "status": "PARTIAL",
+      "note": "Published-only API, plain-text submission/moderation and quotas implemented; author queue, seller answer scope and abuse queues unfinished."
+    },
+    {
+      "requirement_id": "FR-D088",
+      "status": "PARTIAL",
+      "note": "Bounded approved comparison/evaluator implemented; display controls and provider comparators unfinished."
+    },
+    {
+      "requirement_id": "FR-D089",
+      "status": "PARTIAL",
+      "note": "Schema/key/unit/version/catalog permissions validated; seller proposal workflow unfinished."
+    },
+    {
+      "requirement_id": "FR-D090",
+      "status": "PARTIAL",
+      "note": "Bounded native suggestions normalize Persian variants and exclude nonpublic products; module does not persist raw queries. External index/synonyms/telemetry absent."
+    },
+    {
+      "requirement_id": "FR-G021",
+      "status": "PARTIAL",
+      "note": "Signed per-site recipient-purpose-channel token, generic acknowledgement and replay-safe suppression implemented. Provider delivery and full invalid/expired/foreign-site HTTP matrix not claimed."
+    },
+    {
+      "requirement_id": "SEC-S005",
+      "status": "PARTIAL",
+      "note": "Random signed HttpOnly per-site guest sessions, X-Commerce-CSRF, logged-in nonce and owner checks implemented; parent owns full browser auth proof."
+    },
+    {
+      "requirement_id": "SEC-S006",
+      "status": "PARTIAL",
+      "note": "Input allowlists, typed validation, prepared extension storage and escaped output implemented; full project security audit not claimed."
+    },
+    {
+      "requirement_id": "SEC-S012",
+      "status": "PARTIAL",
+      "note": "Default-off optional tracking, device isolation, withdrawal and scoped privacy callbacks implemented; governed financial/archive retention disclosed."
+    },
+    {
+      "requirement_id": "SEC-S013",
+      "status": "PARTIAL",
+      "note": "Optional erasure and immutable reward liability retention callbacks implemented; provider/backup deletion reconciliation absent."
+    },
+    {
+      "requirement_id": "SEO-S001",
+      "status": "PARTIAL",
+      "note": "Native renderer ownership manifest and no second custom commerce graph; verified third-party adapters absent."
+    },
+    {
+      "requirement_id": "SEO-S003",
+      "status": "PARTIAL",
+      "note": "Noindex, deterministic facet canonicals and malformed/empty filter 404 guard; complete redirect/crawl matrix not verified."
+    },
+    {
+      "requirement_id": "SEO-S004",
+      "status": "PARTIAL",
+      "note": "Server-rendered paging and normal product links; full crawler/no-JS/browser matrix not executed by worker."
+    },
+    {
+      "requirement_id": "FR-U026",
+      "status": "PARTIAL",
+      "specification_path": "docs/07-plugin/plugin-kernel-and-module-lifecycle.md",
+      "test_id": "TEST-U026",
+      "note": "Bounded contribution only: MOD-U003/004/005 execution-time read/new/cleanup guards, read-only drain, current transaction recheck using root shared locking guard, retained reenable, translated unavailable UI. Kernel, other modules and full dependency/migration matrix belong to parent; no whole requirement completion claimed."
+    },
+    {
+      "requirement_id": "FR-U030",
+      "status": "PARTIAL",
+      "specification_path": "docs/07-plugin/activation-migration-deactivation-uninstall.md",
+      "test_id": "TEST-U030",
+      "note": "Bounded contribution only: disabled wishlist/comparison retain records; full history disable emits necessary local cache cleanup, account data retained; own cleanup/consent withdrawal/native privacy export-erasure remain available. No full backup/uninstall/economic-obligation handoff claim."
+    }
+  ],
+  "module_capabilities": {
+    "MOD-U001": {
+      "state": "partial",
+      "features": [
+        "immutable_schemas",
+        "typed_values",
+        "dimension_safe_conversion",
+        "evidence_review",
+        "approved_public_projection"
+      ],
+      "unfinished": [
+        "seller_scoped_specification_proposal_adapter",
+        "field_based_editor_controls",
+        "profile_composite_value_schemas"
+      ]
+    },
+    "MOD-U002": {
+      "state": "partial",
+      "features": [
+        "native_bounded_search",
+        "persian_normalization",
+        "exact_sku_ranking",
+        "typed_facets",
+        "public_suggestions"
+      ],
+      "unfinished": [
+        "external_index",
+        "synonym_configuration",
+        "unbounded_catalog_index"
+      ]
+    },
+    "MOD-U003": {
+      "state": "partial",
+      "features": [
+        "private_guest_account_lists",
+        "union_merge",
+        "session_rotation",
+        "idempotency",
+        "capacity",
+        "tombstones",
+        "lifecycle_read_new_cleanup",
+        "retained_reenable"
+      ],
+      "unfinished": [
+        "revocable_sharing_adapter",
+        "configuration_identity_adapter",
+        "configured_capacity_above_100"
+      ]
+    },
+    "MOD-U004": {
+      "state": "partial",
+      "features": [
+        "private_saved_comparison",
+        "two_to_four_products",
+        "normalized_units",
+        "missing_not_zero",
+        "semantic_table",
+        "owner_revision_clear",
+        "lifecycle_read_new_cleanup",
+        "retained_reenable"
+      ],
+      "unfinished": [
+        "differences_only_control",
+        "display_unit_preference_control"
+      ]
+    },
+    "MOD-U005": {
+      "state": "partial",
+      "features": [
+        "consent_gate",
+        "device_history_rail",
+        "internal_record_read_clear",
+        "deletion_revision",
+        "bounded_expiry_cron",
+        "lifecycle_read_new_cleanup",
+        "device_disable_cleanup",
+        "consent_module_revision_tombstones"
+      ],
+      "unfinished": [
+        "explicit_account_sync_choice_ui"
+      ]
+    },
+    "MOD-U006": {
+      "state": "partial",
+      "features": [
+        "verified_account_requests",
+        "pending_persistence",
+        "send_time_eligibility",
+        "suppression"
+      ],
+      "blocked": [
+        "approved_email_sms_provider",
+        "recipient_verification_provider",
+        "trigger_evaluation_jobs"
+      ]
+    },
+    "MOD-U007": {
+      "state": "partial",
+      "features": [
+        "moderated_submission",
+        "rate_limit",
+        "independent_answer_review",
+        "public_approved_archive"
+      ],
+      "unfinished": [
+        "author_pending_queue_ui",
+        "seller_answer_scope_adapter",
+        "abuse_report_queue",
+        "moderation_notification_provider"
+      ]
+    },
+    "MOD-U008": {
+      "state": "partial",
+      "features": [
+        "native_review_authority",
+        "verified_purchase_projection",
+        "deduplicated_helpful_vote"
+      ],
+      "unfinished": [
+        "media_scan_provider",
+        "helpful_vote_ui",
+        "abuse_review_queue"
+      ]
+    },
+    "MOD-U009": {
+      "state": "partial",
+      "features": [
+        "persistent_drafts",
+        "independent_funding_review",
+        "request_time_expiry"
+      ],
+      "blocked": [
+        "commercial_legal_activation_policy"
+      ]
+    },
+    "MOD-U010": {
+      "state": "partial",
+      "features": [
+        "curated_placements",
+        "public_eligibility_recheck",
+        "sponsored_label",
+        "accessible_product_links"
+      ],
+      "unfinished": [
+        "native_aggregate_strategy_adapters",
+        "external_recommender_provider"
+      ]
+    },
+    "MOD-U011": {
+      "state": "partial",
+      "features": [
+        "typed_directional_relationships",
+        "evidence_required_compatibility",
+        "expiry_revocation_recheck",
+        "bounded_one_hop"
+      ],
+      "unfinished": [
+        "seller_proposal_moderation_adapter"
+      ]
+    },
+    "MOD-U012": {
+      "state": "partial",
+      "features": [
+        "approved_scoped_evidence",
+        "unknown_by_default",
+        "conflict_quarantine",
+        "numeric_dotted_firmware"
+      ],
+      "unfinished": [
+        "manufacturer_specific_version_comparators",
+        "expiry_review_jobs"
+      ]
+    },
+    "MOD-U016": {
+      "state": "partial",
+      "features": [
+        "private_preferences",
+        "immediate_withdrawal",
+        "signed_scoped_unsubscribe",
+        "pending_operation"
+      ],
+      "blocked": [
+        "approved_message_provider",
+        "delivery_callbacks",
+        "reconciliation"
+      ]
+    },
+    "MOD-U017": {
+      "state": "partial",
+      "features": [
+        "immutable_native_price_observations",
+        "deduplicated_source_revisions",
+        "currency_tax_separation",
+        "table_projection"
+      ],
+      "blocked": [
+        "legal_public_history_policy"
+      ],
+      "unfinished": [
+        "marketplace_offer_observation_adapter",
+        "correction_workflow"
+      ]
+    },
+    "MOD-U018": {
+      "state": "partial",
+      "features": [
+        "immutable_point_journal",
+        "source_order_refund_dedup",
+        "original_rule_refund_reversal",
+        "restricted_negative_points",
+        "atomic_redemption_reservations",
+        "owner_bound_native_coupons",
+        "pending_release_expiry_drain",
+        "private_reward_shortcode"
+      ],
+      "blocked": [
+        "production_finance_reviewed_policy_adapter",
+        "expiry_notice_provider_when_required"
+      ],
+      "unfinished": [
+        "dual_review_manual_adjustment_adapter",
+        "marketplace_reward_funding",
+        "scalable_journal_projection"
+      ]
+    },
+    "MOD-U019": {
+      "state": "partial",
+      "features": [
+        "immutable_reviewed_rules",
+        "server_native_cart_basis",
+        "after_shared_coupon_threshold",
+        "exclusive_stacking_groups",
+        "native_coupon_apply_once",
+        "native_cart_recalculation_removal",
+        "classic_store_api_checkout_validation"
+      ],
+      "blocked": [
+        "production_finance_reviewed_funding_policy"
+      ],
+      "unfinished": [
+        "marketplace_funding_allocation",
+        "product_scoped_threshold_adapter",
+        "gift_shipping_adapters"
+      ]
+    },
+    "provider_product_types": {
+      "state": "unavailable",
+      "blocked": [
+        "verified_extension_adapters"
+      ]
+    }
+  },
+  "changed_files": [
+    "packages/plugin/wooshop-commerce/assets/catalog.css",
+    "packages/plugin/wooshop-commerce/assets/catalog.js",
+    "packages/plugin/wooshop-commerce/src/Catalog/Admin.php",
+    "packages/plugin/wooshop-commerce/src/Catalog/CatalogModule.php",
+    "packages/plugin/wooshop-commerce/src/Catalog/Community.php",
+    "packages/plugin/wooshop-commerce/src/Catalog/Compatibility.php",
+    "packages/plugin/wooshop-commerce/src/Catalog/Input.php",
+    "packages/plugin/wooshop-commerce/src/Catalog/ModuleAccess.php",
+    "packages/plugin/wooshop-commerce/src/Catalog/Options.php",
+    "packages/plugin/wooshop-commerce/src/Catalog/Products.php",
+    "packages/plugin/wooshop-commerce/src/Catalog/RateLimit.php",
+    "packages/plugin/wooshop-commerce/src/Catalog/RestController.php",
+    "packages/plugin/wooshop-commerce/src/Catalog/Search.php",
+    "packages/plugin/wooshop-commerce/src/Catalog/Specifications.php",
+    "packages/plugin/wooshop-commerce/src/Catalog/Units.php",
+    "packages/plugin/wooshop-commerce/src/Catalog/Views.php",
+    "packages/plugin/wooshop-commerce/src/Customer/CustomerService.php",
+    "packages/plugin/wooshop-commerce/src/Customer/Notifications.php",
+    "packages/plugin/wooshop-commerce/src/Customer/Privacy.php",
+    "packages/plugin/wooshop-commerce/src/Customer/Records.php",
+    "packages/plugin/wooshop-commerce/src/Customer/Session.php",
+    "packages/plugin/wooshop-commerce/src/Merchandising/IncentiveRule.php",
+    "packages/plugin/wooshop-commerce/src/Merchandising/Incentives.php",
+    "packages/plugin/wooshop-commerce/src/Merchandising/Loyalty.php",
+    "packages/plugin/wooshop-commerce/src/Merchandising/LoyaltyPolicy.php",
+    "packages/plugin/wooshop-commerce/src/Merchandising/Merchandising.php",
+    "packages/plugin/wooshop-commerce/src/Merchandising/PriceHistory.php",
+    "packages/plugin/wooshop-commerce/src/Seo/Policy.php",
+    "tests/catalog/domain.php",
+    "tests/catalog/fixture-cleanup.php",
+    "tests/catalog/hide-probes.php",
+    "tests/catalog/history-device.js",
+    "tests/catalog/incentives-wordpress.php",
+    "tests/catalog/lifecycle.php",
+    "tests/catalog/loyalty-concurrency.php",
+    "tests/catalog/loyalty-fixture.php",
+    "tests/catalog/loyalty-wordpress.php",
+    "tests/catalog/wordpress.php",
+    "docs/implementation/evidence-implement_catalog.json"
+  ],
+  "file_fingerprints": {
+    "packages/plugin/wooshop-commerce/assets/catalog.css": "63d372e3448b4cb74c898d525e91d0061499800f42254dd138dbf67a2d773b24",
+    "packages/plugin/wooshop-commerce/assets/catalog.js": "d3fdfab9b6574bfa066ecfd3870801ba94c4260fc28797141dbe4f6ef66554fc",
+    "packages/plugin/wooshop-commerce/src/Catalog/Admin.php": "c5df10d6e5b6a71a89872b8c5de0c806f0545b442c0930f3d629decdc77b7ab5",
+    "packages/plugin/wooshop-commerce/src/Catalog/CatalogModule.php": "b7025431cf5cabe26e8939b1c420e10987ce008e9e3a973ae8fffd43381d845b",
+    "packages/plugin/wooshop-commerce/src/Catalog/Community.php": "4d2e29b69704d0bd1e71df2d0e0d0ac3b9967a8608fa6c19dbaa610967ae984c",
+    "packages/plugin/wooshop-commerce/src/Catalog/Compatibility.php": "728195b392db80770c8c24e394b467ed236fbc17e179545e1c48a2a56a8791ac",
+    "packages/plugin/wooshop-commerce/src/Catalog/Input.php": "f5e3cf39508bd67d9ab94f6303c85635bf5a377462515fdb790b2d95572a74ec",
+    "packages/plugin/wooshop-commerce/src/Catalog/ModuleAccess.php": "5f8bdff5a873413b4cc4920dd01c63e263fc1c5932a75ad6a0f069a9de759bcd",
+    "packages/plugin/wooshop-commerce/src/Catalog/Options.php": "4e12588d03ff7660bf36bd0b57bc7f31c5bb5fff56685f1a75dcbf1e7746466b",
+    "packages/plugin/wooshop-commerce/src/Catalog/Products.php": "ca473d0e4a3278b96112e644826622adba1ad56d0a1136c382deb6332f2cec65",
+    "packages/plugin/wooshop-commerce/src/Catalog/RateLimit.php": "1357b5fc2e67544ffbb7b2a57902ceb59be9c701e31a420732d461f1fc8825ba",
+    "packages/plugin/wooshop-commerce/src/Catalog/RestController.php": "54d1d8e7afb310240b8d55c8581ed4ae904ae63e2dd5ccd44ca1a89901d7a21c",
+    "packages/plugin/wooshop-commerce/src/Catalog/Search.php": "f980eb8a38b972c259e2a7315804aa54cf4208f606bc5f5fda98af3657e8fc92",
+    "packages/plugin/wooshop-commerce/src/Catalog/Specifications.php": "23a5544727da3a1b9c9359ab4e5e21c6c5ea36b34ca12110c1f3d7c5409512e6",
+    "packages/plugin/wooshop-commerce/src/Catalog/Units.php": "b1c68592e44a19579690071caefae27de314b1809cae37f18a9a9657de9b0587",
+    "packages/plugin/wooshop-commerce/src/Catalog/Views.php": "3c8f390afa8ff67dd86064f97204d832b97ec3341ba139b94c27a8f022248571",
+    "packages/plugin/wooshop-commerce/src/Customer/CustomerService.php": "17fbfdbb075b7e95e3ab47c59a0817a69d32e2bd2ce6d683d75f28c99a1b0658",
+    "packages/plugin/wooshop-commerce/src/Customer/Notifications.php": "e440fe4bb3d695700975c6a766631af1b9553846c62c9917d40eb57da3e7b1a5",
+    "packages/plugin/wooshop-commerce/src/Customer/Privacy.php": "b90cbea1ffd2c6acace83debf042bafa511dfe7b09d57fdca3b90c6aa045ad05",
+    "packages/plugin/wooshop-commerce/src/Customer/Records.php": "e909b3076ec2aec359a95ccb55ff31032e65c144a043231b520b53718ef87096",
+    "packages/plugin/wooshop-commerce/src/Customer/Session.php": "42860d0647c23b08845a9d34b654538eeb805cd32f84675d697df489955ec301",
+    "packages/plugin/wooshop-commerce/src/Merchandising/IncentiveRule.php": "c01329d42537ff9d1dd160864a3e6e500ff950b849476e245074debfb19f8eb6",
+    "packages/plugin/wooshop-commerce/src/Merchandising/Incentives.php": "c4696a1e11b589e66528335b8b14c8f37201c7f25aa18a09fe7352fac636f888",
+    "packages/plugin/wooshop-commerce/src/Merchandising/Loyalty.php": "a45cb34ced5d69cd3af549a45a028eee79c743413b0d238d14f402aaf415beac",
+    "packages/plugin/wooshop-commerce/src/Merchandising/LoyaltyPolicy.php": "ac8f0039c3b6f0d675b4fe84eb8ae865e2050e58d4e247c94f6fd6f213c61aaa",
+    "packages/plugin/wooshop-commerce/src/Merchandising/Merchandising.php": "77fec2afb654e49cc4b5e8d31c21873b5092beb6a79bbeeadba88980ed94d2f6",
+    "packages/plugin/wooshop-commerce/src/Merchandising/PriceHistory.php": "f04d5252f323caa705446d118ac3ad7aa44f39475af66504fd1d6d728b5d35e9",
+    "packages/plugin/wooshop-commerce/src/Seo/Policy.php": "bc4307b40f0f85d19e8898f41518ef85887017e347d4676bd24e848e05d3e8db",
+    "tests/catalog/domain.php": "b8225c3fcbeaaac2efc183846ef205ae98d5687103b424017cdf31a3e12fde1a",
+    "tests/catalog/fixture-cleanup.php": "ace6305742cd33a56d63abb3861da9dd819046c4951694e5e92d87378aef41de",
+    "tests/catalog/hide-probes.php": "53ba957f4513379dbfb79476b4040a3776b3b0fb8cce948a78cb195c5a5b039b",
+    "tests/catalog/history-device.js": "26ff686055a4362e655ae870a97de9533cb12a8b3648500621403cffbcf2fe22",
+    "tests/catalog/incentives-wordpress.php": "fa4364bb09a7f2512eeb974e7db4e3bd09c3d5a07af6ba314c1c83e2d7b02b3e",
+    "tests/catalog/lifecycle.php": "76369d0a4812439fa3646ccb2292765ebd410e4d58d56e2cab41ec86a6c7944c",
+    "tests/catalog/loyalty-concurrency.php": "3528e9de570b10ed9565a1ff0462ca776e85f970adcac8bb92d8ac4c5fb7fcbf",
+    "tests/catalog/loyalty-fixture.php": "b576c27dce29df21dc13e246ac9e948a712c7db24660de8fe89656f803cf9212",
+    "tests/catalog/loyalty-wordpress.php": "5cd6edc9643d7f1709a41b3453760bc84e245e0fb6604611e35dbed52e3f094d",
+    "tests/catalog/wordpress.php": "1b5bd4d4ba2ea741f4f3d0a5c56e5c17e50e7e3c594ad82cd62451e556d94df2"
+  },
+  "commands": [
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor eval-file /workspace/tests/catalog/wordpress.php",
+      "result": "PASS",
+      "checks": 49,
+      "observed": "Latest rerun PASS49 on final lifecycle behavior and native HPOS source installation; synthetic transaction rolled back, origin/shutdown product protection enabled. Internal REST is not browser authentication proof."
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor eval-file /workspace/tests/catalog/loyalty-wordpress.php",
+      "result": "PASS",
+      "checks": 30,
+      "observed": "Actual isolated WP/WC assertions. Native order/refund fixtures do not request gateways. Internal REST is not browser authentication proof. Product origin/shutdown protection enabled on final catalog/incentive scripts. These earlier advanced results predate parent HPOS migration; final HPOS advanced regression is parent-owned and is not newly claimed here."
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor eval-file /workspace/tests/catalog/incentives-wordpress.php",
+      "result": "PASS",
+      "checks": 17,
+      "observed": "Actual isolated WP/WC assertions. Native order/refund fixtures do not request gateways. Internal REST is not browser authentication proof. Product origin/shutdown protection enabled on final catalog/incentive scripts. These earlier advanced results predate parent HPOS migration; final HPOS advanced regression is parent-owned and is not newly claimed here."
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp smart-home eval-file /workspace/tests/catalog/wordpress.php",
+      "result": "PASS",
+      "checks": 49,
+      "observed": "Latest rerun PASS49 on final lifecycle behavior and native HPOS source installation; synthetic transaction rolled back, origin/shutdown product protection enabled. Internal REST is not browser authentication proof."
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp smart-home eval-file /workspace/tests/catalog/loyalty-wordpress.php",
+      "result": "PASS",
+      "checks": 30,
+      "observed": "Actual isolated WP/WC assertions. Native order/refund fixtures do not request gateways. Internal REST is not browser authentication proof. Product origin/shutdown protection enabled on final catalog/incentive scripts. These earlier advanced results predate parent HPOS migration; final HPOS advanced regression is parent-owned and is not newly claimed here."
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp smart-home eval-file /workspace/tests/catalog/incentives-wordpress.php",
+      "result": "PASS",
+      "checks": 17,
+      "observed": "Actual isolated WP/WC assertions. Native order/refund fixtures do not request gateways. Internal REST is not browser authentication proof. Product origin/shutdown protection enabled on final catalog/incentive scripts. These earlier advanced results predate parent HPOS migration; final HPOS advanced regression is parent-owned and is not newly claimed here."
+    },
+    {
+      "command": "rtk proxy php tests/catalog/domain.php",
+      "result": "PASS",
+      "checks": 40,
+      "observed": "Exact measurement/input/search/reward proportional integer arithmetic checks."
+    },
+    {
+      "command": "rtk proxy docker compose --env-file .local/compose.env -f compose.yaml exec -T outdoor php /workspace/tests/catalog/loyalty-concurrency.php",
+      "result": "PASS",
+      "observed": "Actual 20 independent SHORTINIT PHP/MariaDB workers: 1 held, 19 insufficient_points; available=0,held=100. Initial tested revision cleaned its own fixture; later root retention instruction changed future script to retain order/journal evidence. Retention-only revision not rerun."
+    },
+    {
+      "command": "rtk proxy node --check packages/plugin/wooshop-commerce/assets/catalog.js",
+      "result": "PASS",
+      "observed": "Syntax only; worker does not claim browser execution."
+    },
+    {
+      "command": "rtk proxy sh -c 'find packages/plugin/wooshop-commerce/src/Catalog packages/plugin/wooshop-commerce/src/Customer packages/plugin/wooshop-commerce/src/Merchandising packages/plugin/wooshop-commerce/src/Seo tests/catalog -name \"*.php\" -exec php -l {} \\;'",
+      "result": "PASS",
+      "observed": "All owned PHP files passed; subsequent CatalogModule/CustomerService metadata and preflight changes individually linted again."
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor eval-file /workspace/tests/catalog/hide-probes.php",
+      "result": "PASS",
+      "observed": "Only exact test provenance products62,63,72,73,75,76 set draft+hidden; matching fixture schemas, A exact SKU, no _wooshop_fixture_key; unconfirmed0. Orders/journals untouched."
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp smart-home eval-file /workspace/tests/catalog/hide-probes.php",
+      "result": "PASS",
+      "observed": "No candidates, unconfirmed0."
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor eval-file /workspace/tests/catalog/lifecycle.php",
+      "result": "PASS",
+      "checks": 100,
+      "observed": "Latest final-source run. Actual registry transitions for enabled/disabled_new_operations/draining/disabled; service and internal REST denials, read preservation, owner cleanup, replay gate, asset/form behavior, history consent withdrawal and native privacy export/erasure. No orders created; transaction rolled back. Initial pre-cleanup revision passed90; final revision passed100."
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp smart-home eval-file /workspace/tests/catalog/lifecycle.php",
+      "result": "PASS",
+      "checks": 100,
+      "observed": "Latest final-source run. Actual registry transitions for enabled/disabled_new_operations/draining/disabled; service and internal REST denials, read preservation, owner cleanup, replay gate, asset/form behavior, history consent withdrawal and native privacy export/erasure. No orders created; transaction rolled back. Initial pre-cleanup revision passed90; final revision passed100."
+    },
+    {
+      "command": "rtk proxy node tests/catalog/history-device.js",
+      "result": "PASS",
+      "checks": 30,
+      "observed": "Actual shipped JS executed by Node vm with minimal DOM/localStorage harness: drain does not record, safe link rendering, withdrawal and full-disable tombstones, stale page blocked, later explicit consent/module reenable, clear deletion revision. This is not a browser accessibility/authentication test. Initial withdrawal-only revision passed21; final module revision passed30."
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp outdoor eval '$states=\\WooShop\\Commerce\\Kernel\\Plugin::instance()->modules()->all(); $result=[]; foreach ([\"MOD-U003\",\"MOD-U004\",\"MOD-U005\"] as $id) { $result[$id]=array_intersect_key($states[$id],array_flip([\"state\",\"version\"])); } echo wp_json_encode([\"modules\"=>$result,\"remaining_lifecycle_users\"=>count(get_users([\"search\"=>\"lifecycle_*\",\"fields\"=>\"ID\"]))]);'",
+      "result": "PASS",
+      "observed": {
+        "modules": {
+          "MOD-U003": {
+            "state": "enabled",
+            "version": 1
+          },
+          "MOD-U004": {
+            "state": "enabled",
+            "version": 1
+          },
+          "MOD-U005": {
+            "state": "enabled",
+            "version": 1
+          }
+        },
+        "remaining_lifecycle_users": 0
+      },
+      "scope": "Read only exact lifecycle synthetic user prefix and three module states; native orders/journals untouched."
+    },
+    {
+      "command": "rtk proxy python3 tools/dev.py wp smart-home eval '$states=\\WooShop\\Commerce\\Kernel\\Plugin::instance()->modules()->all(); $result=[]; foreach ([\"MOD-U003\",\"MOD-U004\",\"MOD-U005\"] as $id) { $result[$id]=array_intersect_key($states[$id],array_flip([\"state\",\"version\"])); } echo wp_json_encode([\"modules\"=>$result,\"remaining_lifecycle_users\"=>count(get_users([\"search\"=>\"lifecycle_*\",\"fields\"=>\"ID\"]))]);'",
+      "result": "PASS",
+      "observed": {
+        "modules": {
+          "MOD-U003": {
+            "state": "enabled",
+            "version": 1
+          },
+          "MOD-U004": {
+            "state": "enabled",
+            "version": 1
+          },
+          "MOD-U005": {
+            "state": "enabled",
+            "version": 1
+          }
+        },
+        "remaining_lifecycle_users": 0
+      },
+      "scope": "Read only exact lifecycle synthetic user prefix and three module states; native orders/journals untouched."
+    },
+    {
+      "command": "rtk proxy php -l tests/catalog/{lifecycle.php,wordpress.php,loyalty-wordpress.php,incentives-wordpress.php} (each file separately)",
+      "result": "PASS",
+      "observed": "Syntax only on the four test-only installed plugin bootstrap revisions. No clean-package suite execution claimed."
+    }
+  ],
+  "historical_failures": [
+    {
+      "issue": "Host WP-CLI could not reach container DB",
+      "resolution": "Used authorized tools/dev.py isolated container runtime."
+    },
+    {
+      "issue": "Initial WP eval stalled under another full-bootstrap concurrency test",
+      "resolution": "Parent cleared contention and switched race workers to SHORTINIT. No catalog assertion result inferred from stall."
+    },
+    {
+      "issue": "WP-CLI eval-file rejected strict_types placement",
+      "resolution": "Removed strict_types only from eval test; production files remain strict."
+    },
+    {
+      "issue": "First internal REST GET returned500 from root strlen(null)",
+      "resolution": "Direct catalog callbacks succeeded; parent cast native nullable request body; actual global boundary rerun49 passed."
+    },
+    {
+      "issue": "Native Woo cart total string70 mismatched initial float assertion",
+      "resolution": "Compared exact minor-unit values; native totals behavior unchanged. Latest incentive17 passed both stores."
+    },
+    {
+      "issue": "Before shared ambient-transaction fix, synthetic product probes remained published",
+      "resolution": "Positive title+SKU+typed schema ownership proof hid only six outdoor probes. Future products carry origin meta and shutdown hiding. No orders/journals deleted by remediation."
+    }
+  ],
+  "integration_interfaces": {
+    "entry": "WooShop\\Commerce\\Catalog\\CatalogModule(Database,EntityStore)->register()",
+    "services_filter": "wooshop_commerce_catalog_services",
+    "trusted_policy_filter": "wooshop_commerce_reviewed_loyalty_policy returns LoyaltyPolicy; additionally requires loyalty.enabled",
+    "trusted_incentive_filter": "wooshop_commerce_reviewed_incentive_rules returns IncentiveRule objects; default empty",
+    "after_commit_event": "wooshop_commerce_consent_changed(owner,consent_version), synchronous after the Records command transaction returns; callers nesting an ambient outer transaction must account for final outer-commit timing.",
+    "cron_hooks": [
+      "wooshop_commerce_customer_cleanup",
+      "wooshop_commerce_rewards_reconcile"
+    ],
+    "guest_transport": "Per-site wooshop_guest_<sitehash>, random256-bit signed session, HttpOnly/SameSiteLax, Secure overHTTPS, X-Commerce-CSRF; parent recorded IMPL-DEC-002.",
+    "shortcodes": [
+      "commerce_specs",
+      "commerce_wishlist",
+      "commerce_compare",
+      "commerce_questions",
+      "commerce_preferences",
+      "commerce_alerts",
+      "commerce_search",
+      "commerce_history",
+      "commerce_unsubscribe",
+      "commerce_rewards",
+      "commerce_incentives",
+      "commerce_recommendations",
+      "commerce_price_history"
+    ],
+    "lifecycle_guard": "wooshop_commerce_module_accepts(MOD-U003|004|005, read|new|cleanup), with in-transaction new-command recheck; root ModuleRegistry revision used only in local history tombstones."
+  },
+  "primary_installed_source_verification": [
+    {
+      "path": ".local/sites/outdoor/wp-content/plugins/woocommerce/includes/class-wc-coupon.php",
+      "claims": [
+        "WC_Coupon public setters",
+        "is_valid delegates native WC_Discounts"
+      ],
+      "version": "WooCommerce11.2.1 from actual plugin list/native tests"
+    },
+    {
+      "path": ".local/sites/outdoor/wp-content/plugins/woocommerce/includes/class-wc-cart.php",
+      "claims": [
+        "apply_coupon",
+        "get_coupon_discount_amount",
+        "woocommerce_after_calculate_totals"
+      ]
+    },
+    {
+      "path": ".local/sites/outdoor/wp-content/plugins/woocommerce/src/StoreApi/Utilities/CartController.php",
+      "claims": [
+        "woocommerce_store_api_cart_errors receives WP_Error and cart"
+      ]
+    },
+    {
+      "path": ".local/sites/outdoor/wp-content/plugins/woocommerce/includes/class-wc-checkout.php",
+      "claims": [
+        "woocommerce_after_checkout_validation"
+      ]
+    },
+    {
+      "path": ".local/sites/outdoor/wp-includes/rest-api/class-wp-rest-request.php",
+      "claims": [
+        "query map",
+        "nullable body behavior"
+      ]
+    }
+  ],
+  "known_limits_and_risks": [
+    "All whole requirements are PARTIAL; no complete project, human approval, certification, production activation or external success claimed.",
+    "Loyalty requires a trusted LoyaltyPolicy object plus loyalty.enabled=true. Default is disabled. No manual dual-review adjustment/MFA approval adapter or marketplace reward funding.",
+    "Loyalty program-row and account locks provide correctness but serialize mutations across accounts. Large-journal projections and capacity are unverified.",
+    "No real email/SMS/contact verification provider. Alerts stay pending/provider_unavailable. No sent/delivered effect fabricated; notice-required expiry remains blocked.",
+    "Incentives support reviewed single-merchant fixed-cart native coupons only; marketplace.enabled, exact wooshop_offer_id marker and marketplace_plugin product/variation-parent authority fail closed. Product scope, gifts/shipping and mixed-seller funding are unsupported.",
+    "Withdrawing rule configuration while preserving native issued-coupon obligations needs the reviewed native coupon ownership/lifecycle policy.",
+    "Search is a labelled reduced native fallback with bounded candidate scan (200 per variant); synonyms/external index not implemented.",
+    "Measurement arithmetic accepts six integer/six fractional digits; normalization requiring finer precision rejects rather than approximating.",
+    "Admin editorial UI is functional typed JSON, not complete field-specific editorial controls. Composite profile values and seller proposals remain unfinished.",
+    "No full browser accessibility, no-JS/crawler, provider timeout/MFA, performance/capacity, or backup tombstone reconciliation proof supplied by this worker.",
+    "campaign.activation_approved is a new provisional fail-closed gate, not human approval; public history retains history.public_enabled legal gate.",
+    "Provider bundles/services/delivery, analytics/connectors, catalog staging import/export, and scanned media lifecycle are not implemented in this worker scope.",
+    "Lifecycle execution gating is integrated only for MOD-U003/004/005 in this followup. Root correctly rejects unsupported state changes for other modules with501; availability never bypasses their business/provider gates.",
+    "Device-local lifecycle/withdrawal takes effect when a device loads the current server-rendered marker. An offline/open page cannot receive server state synchronously. Consent/module revision tombstones block older pages after the newer marker is observed; server commands always recheck current state.",
+    "Wishlist sharing, configuration digest identity adapter, configured capacity above100 and a standalone guest export/erasure UI remain incomplete; account native privacy callbacks and own cleanup commands are available.",
+    "Consent event is synchronous after Records command returns; when a trusted caller supplies a larger ambient transaction, final outer-commit event ordering still needs the shared after-commit dispatcher contract before a real external sender is enabled."
+  ],
+  "unimplemented_modules": [
+    "MOD-U013",
+    "MOD-U014",
+    "MOD-U015",
+    "MOD-U020",
+    "MOD-U021",
+    "MOD-U023",
+    "MOD-U025 scanned-media lifecycle"
+  ],
+  "next_actions": [
+    "Parent integrated lifecycle/concurrent module transition/browser nonce/ownership/two-store HPOS/package regression; worker source frozen.",
+    "Resume only a new explicitly coordinated bounded slice after shared regression. All finance/legal/provider gates remain disabled absent actual approvals/adapters."
+  ],
+  "source_frozen": true,
+  "source_frozen_at": "2026-10-28T10:35:34.928077+00:00",
+  "source_freeze_scope": "Owned catalog/customer/merchandising/SEO source and catalog assets/tests; parent shared source is outside this fingerprint scope.",
+  "lifecycle_followup": {
+    "modules": [
+      "MOD-U003",
+      "MOD-U004",
+      "MOD-U005"
+    ],
+    "states": {
+      "enabled": [
+        "read",
+        "new",
+        "cleanup"
+      ],
+      "disabled_new_operations": [
+        "read",
+        "cleanup"
+      ],
+      "draining": [
+        "read",
+        "cleanup"
+      ],
+      "disabled": [
+        "cleanup"
+      ]
+    },
+    "production_guard": "Catalog\\ModuleAccess calls the live global wooshop_commerce_module_accepts. Missing root global fails closed inside WordPress; standalone non-WP domain tests may run without kernel.",
+    "transaction_barrier": "Each actual new wishlist/comparison/history command rechecks inside Records command transaction; history false-to-true preference opt-in also checks inside its transaction. Read source confirms root ModuleRegistry shared current-read row lock until commit, conflicting with disable transition FOR UPDATE. Parent owns independent concurrent-transition proof; worker100-check suites exercise sequential actual states.",
+    "ui_assets": "Disabled wishlist/comparison do not enqueue catalog CSS/JS. Disabled history emits only required hidden local cleanup marker plus catalog JS; no catalog CSS. Draining history renders retained data with data-record-enabled=0.",
+    "privacy": "No lifecycle guard in native export/erasure/expiry cleanup; withdrawal and explicit history clear remain available. Tests directly prove account export/erasure and own clear while disabled; bounded expiry implementation remains source-inspected, not newly cron-race tested.",
+    "api_changes": "No additional REST route. Disabled reads/new operations return module_unavailable503; DELETE wishlist own cleanup retains original CSRF/ownership/If-Match/idempotency checks. Own comparison_clear is native admin-post only.",
+    "data_retention": "Transitions never rewrite wishlist/comparison/history records. Reenable preserves saved identities and revisions unless explicit cleanup occurred. Full history disable clears only owner device cache, retaining consent and account extension data for expiry/erase.",
+    "test_cleanup": "Both no-order suites rolled back synthetic users, module transitions/audits and optional customer entities; read-only post-run receipts recorded separately below.",
+    "post_run_receipts": {
+      "outdoor": {
+        "modules": {
+          "MOD-U003": {
+            "state": "enabled",
+            "version": 1
+          },
+          "MOD-U004": {
+            "state": "enabled",
+            "version": 1
+          },
+          "MOD-U005": {
+            "state": "enabled",
+            "version": 1
+          }
+        },
+        "remaining_lifecycle_users": 0
+      },
+      "smart-home": {
+        "modules": {
+          "MOD-U003": {
+            "state": "enabled",
+            "version": 1
+          },
+          "MOD-U004": {
+            "state": "enabled",
+            "version": 1
+          },
+          "MOD-U005": {
+            "state": "enabled",
+            "version": 1
+          }
+        },
+        "remaining_lifecycle_users": 0
+      }
+    }
+  },
+  "test_bootstrap_followup": {
+    "scope": [
+      "tests/catalog/lifecycle.php",
+      "tests/catalog/wordpress.php",
+      "tests/catalog/loyalty-wordpress.php",
+      "tests/catalog/incentives-wordpress.php"
+    ],
+    "implemented": "WP test suites load WP_PLUGIN_DIR/wooshop-commerce/autoload.php, assert the installed plugin is active and already bootstrapped, and assert registered catalog services. Catalog manual-registration fallback removed. Standalone domain tests retain source autoload. No package/application code changed.",
+    "validation": "PHP syntax passed on all four revised tests; superficial static bootstrap inspection only. Clean-package suite execution remains pending parent run.",
+    "prior_results_scope": "Previously recorded source-store results predate this test-only installed-path bootstrap change; they are historical domain/integration observations, not a claim that the new clean-package tests have run."
+  }
+}

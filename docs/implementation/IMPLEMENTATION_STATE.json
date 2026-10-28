@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-28T11:59:33.212610+00:00",
+  "project": "wooshop; independent outdoor and smart-home WordPress stores",
+  "repository_revision": "958fb4274547f130834d5b479bbd0aa57c1787cd",
+  "working_tree": "Uncommitted implementation and original documentation preserved; no commit/push performed",
+  "source_fingerprint": "ad7639afa086834862176bcbc42949052893fbedb370bc7bcec194e4ac63093f",
+  "status": "IN_PROGRESS",
+  "delivery_conclusion": "Implementation incomplete; not a verified release candidate",
+  "stage": "WP-G011 remaining foundation engineering; verified local artifact/independence/recovery checkpoint",
+  "requirement_matrix": "docs/implementation/requirements-implementation-matrix.csv",
+  "work_packages": {
+    "IMPLEMENTED": [],
+    "IN_PROGRESS": [
+      "WP-G003",
+      "WP-G004",
+      "WP-G005",
+      "WP-G007",
+      "WP-G008",
+      "WP-G009",
+      "WP-G010",
+      "WP-G011",
+      "WP-G012",
+      "WP-G013",
+      "WP-G014",
+      "WP-G015",
+      "WP-G017",
+      "WP-G018",
+      "WP-G019",
+      "WP-G020",
+      "WP-G022",
+      "WP-G023",
+      "WP-G024",
+      "WP-G025",
+      "WP-G026",
+      "WP-G027",
+      "WP-G031"
+    ],
+    "NOT_STARTED": [
+      "WP-G001",
+      "WP-G006",
+      "WP-G016",
+      "WP-G021",
+      "WP-G028",
+      "WP-G029",
+      "WP-G030",
+      "WP-G032"
+    ],
+    "BLOCKED": [
+      "WP-G002"
+    ]
+  },
+  "environment": {
+    "WordPress": "7.1.3",
+    "WooCommerce": "11.2.1",
+    "PHP": "8.4.27 runtime;8.5.8 host lint/domain",
+    "MariaDB": "10.11.19-MariaDB-ubu2204",
+    "browser": "Playwright1.64.1 with existing Chrome156.0.8078.48",
+    "storage": "Both source stores HPOS authoritative with native compatibility sync; explicit legacy-to-HPOS order/snapshot continuity PASS; see assurance-followup.json",
+    "sites": [
+      "http://localhost:18880",
+      "http://localhost:18881",
+      "http://localhost:18882"
+    ],
+    "isolation": "Loopback-only, separate synthetic databases/users/uploads; outbound mail and application HTTP fenced"
+  },
+  "business_approvals": "DEC-01..12 and required human signoffs pending; no live activation",
+  "schema": {
+    "plugin_version": 1,
+    "tables": 15,
+    "policy": "Additive dbDelta, all merged tables checked InnoDB; comprehensive resumable upgrades remain unfinished"
+  },
+  "source_roots": [
+    "packages/theme/wooshop",
+    "packages/plugin/wooshop-commerce"
+  ],
+  "latest_recorded_checks": [
+    {
+      "run_id": "20261028T103600Z-integration-outdoor",
+      "recorded_at": "2026-10-28T10:36:16.088276+00:00",
+      "executed_at": "2026-10-28T10:36:00.779487+00:00",
+      "command": "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3 tools/integration.py --site outdoor",
+      "cwd": "/Users/shahinilderemi/Documents/tmp/iranbroker-wp",
+      "environment": "isolated synthetic local environment; no external provider success or production approval",
+      "exit_status": "0",
+      "result": "PASS",
+      "reported_result": "PASS",
+      "source_fingerprint": "715c5c7aa736745540f2394344a26327a989ed38114324f8d4fd8cb6bc16c1a2",
+      "evidence": "artifacts/verification/20261028T103600Z-integration-outdoor.json",
+      "limitations": "Finite named suite only; full requirement verification remains distinct."
+    },
+    {
+      "run_id": "20261028T103719Z-browser",
+      "recorded_at": "2026-10-28T10:37:52.068456+00:00",
+      "executed_at": "2026-10-28T10:37:19.145179+00:00",
+      "command": "npx playwright test storefront.spec.js",
+      "cwd": "/Users/shahinilderemi/Documents/tmp/iranbroker-wp",
+      "environment": "isolated synthetic local environment; no external provider success or production approval",
+      "exit_status": "0",
+      "result": "PASS",
+      "reported_result": "PASS",
+      "source_fingerprint": "7833e56254e752e3abd076e38eadf516ec7f67ab1ecba65616d72963758e4165",
+      "evidence": "artifacts/verification/20261028T103719Z-browser.json",
+      "limitations": "Finite named suite only; full requirement verification remains distinct."
+    },
+    {
+      "run_id": "20261028T103848Z-hygiene",
+      "recorded_at": "2026-10-28T10:38:48.863208+00:00",
+      "executed_at": "2026-10-28T10:38:48.704786+00:00",
+      "command": "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3 tools/security.py",
+      "cwd": "/Users/shahinilderemi/Documents/tmp/iranbroker-wp",
+      "environment": "isolated synthetic local environment; no external provider success or production approval",
+      "exit_status": "0",
+      "result": "PASS",
+      "reported_result": "PASS",
+      "source_fingerprint": "e155b59f5f6d9508e283a9ce50ff41b62bb6ccf595e4b0a699eb94cedd5883f8",
+      "evidence": "artifacts/verification/20261028T103848Z-hygiene.json",
+      "limitations": "Finite named suite only; full requirement verification remains distinct."
+    },
+    {
+      "run_id": "20261028T104333Z-integration-package",
+      "recorded_at": "2026-10-28T10:43:36.528191+00:00",
+      "executed_at": "2026-10-28T10:43:33.054751+00:00",
+      "command": "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3 tools/integration.py --site package-check",
+      "cwd": "/Users/shahinilderemi/Documents/tmp/iranbroker-wp",
+      "environment": "isolated synthetic local environment; no external provider success or production approval",
+      "exit_status": "1",
+      "result": "FAIL",
+      "reported_result": "FAIL",
+      "source_fingerprint": "afb4960fdc9fb3fc71517b060d93270113d04fb004d95301627cf5fbda8c8ad0",
+      "evidence": "artifacts/verification/20261028T104333Z-integration-package.json",
+      "limitations": "Finite named suite only; full requirement verification remains distinct."
+    },
+    {
+      "run_id": "20261028T104600Z-integration-package",
+      "recorded_at": "2026-10-28T10:46:11.547658+00:00",
+      "executed_at": "2026-10-28T10:46:00.202773+00:00",
+      "command": "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3 tools/integration.py --site package-check",
+      "cwd": "/Users/shahinilderemi/Documents/tmp/iranbroker-wp",
+      "environment": "isolated synthetic local environment; no external provider success or production approval",
+      "exit_status": "0",
+      "result": "PASS",
+      "reported_result": "PASS",
+      "source_fingerprint": "ed7071168d0a1aed375bb77c11ba8077544f66741a0e2222e99d829db136bb6d",
+      "evidence": "artifacts/verification/20261028T104600Z-integration-package.json",
+      "limitations": "Finite named suite only; full requirement verification remains distinct."
+    },
+    {
+      "run_id": "20261028T104725Z-static",
+      "recorded_at": "2026-10-28T10:47:31.289213+00:00",
+      "executed_at": "2026-10-28T10:47:25.418583+00:00",
+      "command": "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3 tools/check.py",
+      "cwd": "/Users/shahinilderemi/Documents/tmp/iranbroker-wp",
+      "environment": "isolated synthetic local environment; no external provider success or production approval",
+      "exit_status": "0",
+      "result": "PASS",
+      "reported_result": "PASS",
+      "source_fingerprint": "306c5bde8275f26abf7d313680ec1c9b21ccd2bf6de6508bceef9f2d16a2fca2",
+      "evidence": "artifacts/verification/20261028T104725Z-static.json",
+      "limitations": "Finite named suite only; full requirement verification remains distinct."
+    },
+    {
+      "run_id": "20261028T104929Z-browser",
+      "recorded_at": "2026-10-28T10:49:54.197830+00:00",
+      "executed_at": "2026-10-28T10:49:29.649833+00:00",
+      "command": "npx playwright test storefront.spec.js",
+      "cwd": "/Users/shahinilderemi/Documents/tmp/iranbroker-wp",
+      "environment": "isolated synthetic local environment; no external provider success or production approval",
+      "exit_status": "0",
+      "result": "PASS",
+      "reported_result": "PASS",
+      "source_fingerprint": "28312a9c2125a6067645ca4bf7ec152f88cb1e39d1b646611219a66deaf32d78",
+      "evidence": "artifacts/verification/20261028T104929Z-browser.json",
+      "limitations": "Finite named suite only; full requirement verification remains distinct."
+    },
+    {
+      "run_id": "20261028T111033Z-hygiene",
+      "recorded_at": "2026-10-28T11:10:33.216270+00:00",
+      "executed_at": "2026-10-28T11:10:33.088706+00:00",
+      "command": "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3 tools/security.py",
+      "cwd": "/Users/shahinilderemi/Documents/tmp/iranbroker-wp",
+      "environment": "isolated synthetic local environment; no external provider success or production approval",
+      "exit_status": "0",
+      "result": "PASS",
+      "reported_result": "PASS",
+      "source_fingerprint": "ad03c654418604aad1ad3d0a937f5d5b6aa36a342c986f77707b49e498097a22",
+      "evidence": "artifacts/verification/20261028T111033Z-hygiene.json",
+      "limitations": "Finite named suite only; full requirement verification remains distinct."
+    },
+    {
+      "run_id": "20261028T114033Z-hygiene",
+      "recorded_at": "2026-10-28T11:40:33.415567+00:00",
+      "executed_at": "2026-10-28T11:40:33.246223+00:00",
+      "command": "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3 tools/security.py",
+      "cwd": "/Users/shahinilderemi/Documents/tmp/iranbroker-wp",
+      "environment": "isolated synthetic local environment; no external provider success or production approval",
+      "exit_status": "0",
+      "result": "PASS",
+      "reported_result": "PASS",
+      "source_fingerprint": "20073c9429bc1ff6c05852140156e0abe175c0783b032e55a9f84773443dda59",
+      "evidence": "artifacts/verification/20261028T114033Z-hygiene.json",
+      "limitations": "Finite named suite only; full requirement verification remains distinct."
+    },
+    {
+      "run_id": "20261028T115809Z-hygiene",
+      "recorded_at": "2026-10-28T11:58:09.448552+00:00",
+      "executed_at": "2026-10-28T11:58:09.134545+00:00",
+      "command": "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3 tools/security.py",
+      "cwd": "/Users/shahinilderemi/Documents/tmp/iranbroker-wp",
+      "environment": "isolated synthetic local environment; no external provider success or production approval",
+      "exit_status": "0",
+      "result": "PASS",
+      "reported_result": "PASS",
+      "source_fingerprint": "fe20b876560034f8340a17f8566942ada3c839917f607419973be8643e2f3fd6",
+      "evidence": "artifacts/verification/20261028T115809Z-hygiene.json",
+      "limitations": "Finite named suite only; full requirement verification remains distinct."
+    }
+  ],
+  "missing_prerequisites": [
+    "approved providers/licenses/accounts",
+    "business/legal/finance/domain/retention decisions",
+    "specialist human review",
+    "complete remote CI/advisory and environment compatibility verification"
+  ],
+  "remaining_engineering": [
+    "Full26module lifecycle/dependency/drain behavior; three optional modules active slice",
+    "Complete196settings UI/inheritance/import/export; plugin configuration revision restore verified separately",
+    "Complete advanced commerce and marketplace checkout/refund/reconciliation flows",
+    "Full SEO/privacy/security/a11y/RTL/performance/recovery/migration/scale acceptance",
+    "Production update signing, deployment/recovery/runbooks and operational handover"
+  ],
+  "next_task": "Implement typed dependency/capability negotiation for the remaining module lifecycle, beginning with MOD-U002 bounded native search and dependency tests; preserve catalog evidence, verified003/004/005 cleanup rights and critical obligations. Then implement safe plugin configuration JSON import preview/remapping.",
+  "next_inputs": [
+    "docs/07-plugin/plugin-kernel-and-module-lifecycle.md",
+    "docs/07-plugin/activation-migration-deactivation-uninstall.md",
+    "docs/implementation/RESUME.md"
+  ],
+  "safety": "Preserve databases and existing order/journal evidence; tests only guarded local fixtures; no real funds/messages/deployment; do not print ignored credentials",
+  "bounded_recovery": {
+    "status": "PASS",
+    "evidence": "docs/implementation/recovery-evidence.json",
+    "scope": "Only synthetic wooshop_package_check; explicit user approval supplied after initial auto-review denial",
+    "failed_stage": null,
+    "maintenance": true
+  }
+}

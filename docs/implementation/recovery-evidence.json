@@ -1,0 +1,1964 @@
+{
+  "schema_version": 1,
+  "scope": {
+    "site": "package-check",
+    "url": "http://localhost:18882",
+    "database": "wooshop_package_check",
+    "db_user": "wooshop_package",
+    "source_stores_allowed": false
+  },
+  "status": "PASS",
+  "requirements": {
+    "WP-G027": "PARTIAL",
+    "NFR-S004": "PARTIAL",
+    "FR-S004": "PARTIAL"
+  },
+  "accountable_role": "DevOps/SRE Engineer",
+  "human_signoffs_claimed": false,
+  "codebase_memory": {
+    "tier": "Verify",
+    "project": "Users-shahinilderemi-Documents-tmp-iranbroker-wp",
+    "generation": "2026-10-28T10:38:10Z",
+    "positive_lookup": "tools.dev compose/wp/package_site; three results, no pagination remainder",
+    "coverage": "Six task evidence paths no recorded issue/metadata_match; tools scope has excluded __pycache__, tests/core no recorded issue. Direct exact source read used; no exhaustive coverage claim."
+  },
+  "installed_source_verification": [
+    {
+      "path": ".local/cache/wp-cli.phar",
+      "sha256": "ce34ddd838f7351d6759068d09793f26755463b4a4610a5a5c0a97b68220d85c",
+      "read_scope": "vendor/wp-cli/maintenance-mode-command/src/MaintenanceModeCommand.php; numeric literal timestamp detection verified"
+    },
+    {
+      "path": ".local/sites/package-check/wp-includes/load.php",
+      "sha256": "3efd0934bd8a454a8d7076fbbd21504ea097a753125a48e64b8a1dad380d357a",
+      "read_scope": "wp_maintenance/wp_is_maintenance_mode; 10-minute timestamp expiry verified"
+    }
+  ],
+  "read_paths": [
+    {
+      "path": "docs/13-operations/backups-recovery-and-runbooks.md",
+      "sha256": "f60fc406e66e6f367f3a0784cd87aaead346adc4cbdc521e08ad00e4354428d5"
+    },
+    {
+      "path": "docs/12-quality/performance-concurrency-and-recovery-tests.md",
+      "sha256": "cf41567ee80adee76ed885e66ab5cbc03473f404b2659f88b27873f052e9246e"
+    },
+    {
+      "path": "docs/02-requirements/nonfunctional-requirements.csv",
+      "sha256": "f4b1bc1d996518e7d3e2cb59a422629dc23f62658488f9b85712d2ee6b8290c7"
+    },
+    {
+      "path": "docs/02-requirements/requirements.csv",
+      "sha256": "a38e5862696535fd4837e6327fbb067f8213ea4bbf96df9cc1535c875e0d5efd"
+    },
+    {
+      "path": "docs/14-delivery/work-breakdown-structure.csv",
+      "sha256": "bc1d6d1890ce71cfa5abd555df4de4307f07d667c5584500ef120c15ea257cda"
+    },
+    {
+      "path": "docs/12-quality/test-cases.csv",
+      "sha256": "f4b32248622372ad1208553f9b17cea75228be83c88cfd395b0e9a2712dbdc34"
+    },
+    {
+      "path": "compose.yaml",
+      "sha256": "55cc24c4d62101ce119e67ca28950b18ff965c221a0e734c95999e133c61da3b"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "5ed8febf9a5bd2da140d99d63010ab666f24fbf42a14ad2167d84e2043777c46"
+    },
+    {
+      "path": "tools/dev.py",
+      "sha256": "23b8e79113dda8a91f4e66626c73f686b5e9d44a304ab98542bff148083ffbd5"
+    },
+    {
+      "path": "tools/dev-guard.php",
+      "sha256": "1e9ee4cfd114389b4df3f3b895da34abb322676885d496fd76d99ea90d4426c4"
+    },
+    {
+      "path": "tests/core/native-checkout-fixture.php",
+      "sha256": "37ea57cdaabb8328d8e091179c42a65b2a9b063ce2e78c264b7d903fbeb3069d"
+    },
+    {
+      "path": "packages/plugin/wooshop-commerce/src/Infrastructure/Schema.php",
+      "sha256": "fb30deee42482a90fa84cbfc10f05b987a069921dc4b4f9c0b4abcad1f4ba152"
+    },
+    {
+      "path": "packages/plugin/wooshop-commerce/src/Infrastructure/Database.php",
+      "sha256": "3554bae997f98291f7fdcee5049e212d612f488428d124d04f1e122023b0abcb"
+    },
+    {
+      "path": "packages/plugin/wooshop-commerce/src/Marketplace/Schema.php",
+      "sha256": "9d871b31f421579a69a59c377a69c4fcc97be1e7574300d4d98166c9b03e5b01"
+    },
+    {
+      "path": "packages/plugin/wooshop-commerce/src/Settings/SettingsService.php",
+      "sha256": "35b24cd7fb2af9e016b3d2e7d090ccd22665f1d75651cc0f17d85de4375d7517"
+    },
+    {
+      "path": ".local/sites/package-check/wp-includes/cron.php",
+      "sha256": "dc27910a1ad004eb2aaabc19352246cc0b9e601bf2da870e141646fd9dd95591",
+      "read_scope": "spawn_cron lock read/refresh"
+    },
+    {
+      "path": ".local/sites/package-check/wp-includes/option.php",
+      "sha256": "fe3f0b7e115b2a50c31162ed6428abe4088c080b0f71b9678d84806168fe90d0",
+      "read_scope": "add_option duplicate insert; get_site_transient expiry delete/recreate"
+    },
+    {
+      "path": ".local/sites/package-check/wp-includes/class-wp-theme.php",
+      "sha256": "cbef310938ba91e8e2055f296561afce199eab2a9aa5154ce86d46f2c0ca6656",
+      "read_scope": "1800s native pattern-cache lifecycle"
+    },
+    {
+      "path": ".local/sites/package-check/wp-settings.php",
+      "sha256": "2e3185ee44bcdd9d9c4bef8ce4891827711dec2b5d5d4c08c951738ccef51f8d",
+      "read_scope": "SHORTINIT bootstrap boundary"
+    },
+    {
+      "path": ".local/sites/package-check/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-order.php",
+      "sha256": "76abebbe8b17f0c4ae2c11e462cb0c379df57c3a84ecc81461671d9be7dade8c",
+      "read_scope": "get_data native order-item objects"
+    }
+  ],
+  "changed_files": [
+    "tools/recovery.py",
+    "tests/core/recovery.php",
+    "docs/implementation/recovery-evidence.json"
+  ],
+  "file_fingerprints": {
+    "tools/recovery.py": "dd13710cbdf712818d9f3d0495f90554b50cf631033438f6dd83c0b54bd04745",
+    "tests/core/recovery.php": "3b8f59a57e51a97b851004be26f737de2554e825da0ab49955bc7f5722365884"
+  },
+  "limits": [
+    "Only a coordinated idle, synthetic third database is supported; source stores are refused.",
+    "No production RPO/RTO, encrypted/offsite backups, full disaster recovery or finance/privacy signoff is claimed.",
+    "No real payment, external provider reconciliation or post-snapshot customer transaction is generated.",
+    "Database only; files/media, secrets rotation, remote storage, erasure replay after a recovery-point gap and full incident drills remain unverified.",
+    "128 MiB dataset/dump, 200 InnoDB base tables, 200000 rows and 500 native orders bound this drill."
+  ],
+  "commands": [
+    {
+      "argv": [
+        "docker",
+        "compose",
+        "--profile",
+        "verification",
+        "--env-file",
+        ".local/compose.env",
+        "-f",
+        "compose.yaml",
+        "config",
+        "--format",
+        "json"
+      ],
+      "result": 0,
+      "elapsed_seconds": 0.17507
+    },
+    {
+      "argv": [
+        "docker",
+        "compose",
+        "--profile",
+        "verification",
+        "--env-file",
+        ".local/compose.env",
+        "-f",
+        "compose.yaml",
+        "exec",
+        "-T",
+        "package-check",
+        "php",
+        "/workspace/.local/cache/wp-cli.phar",
+        "--allow-root",
+        "--path=/var/www/html",
+        "eval-file",
+        "/workspace/tests/core/recovery.php",
+        "preflight",
+        "efe1132793c3809e0ebc9255653ffa74"
+      ],
+      "result": 0,
+      "elapsed_seconds": 1.716478
+    },
+    {
+      "argv": [
+        "docker",
+        "compose",
+        "--profile",
+        "verification",
+        "--env-file",
+        ".local/compose.env",
+        "-f",
+        "compose.yaml",
+        "exec",
+        "-T",
+        "package-check",
+        "php",
+        "/workspace/.local/cache/wp-cli.phar",
+        "--allow-root",
+        "--path=/var/www/html",
+        "maintenance-mode",
+        "is-active"
+      ],
+      "result": 0,
+      "elapsed_seconds": 0.896647
+    },
+    {
+      "argv": [
+        "docker",
+        "compose",
+        "--profile",
+        "verification",
+        "--env-file",
+        ".local/compose.env",
+        "-f",
+        "compose.yaml",
+        "exec",
+        "-T",
+        "package-check",
+        "php",
+        "/workspace/.local/cache/wp-cli.phar",
+        "--allow-root",
+        "--path=/var/www/html",
+        "eval-file",
+        "/workspace/tests/core/recovery.php",
+        "snapshot",
+        "efe1132793c3809e0ebc9255653ffa74"
+      ],
+      "result": 0,
+      "elapsed_seconds": 0.917752
+    },
+    {
+      "argv": [
+        "docker",
+        "compose",
+        "--profile",
+        "verification",
+        "--env-file",
+        ".local/compose.env",
+        "-f",
+        "compose.yaml",
+        "exec",
+        "-T",
+        "--env",
+        "MYSQL_PWD",
+        "db",
+        "mariadb",
+        "--user=wooshop_package",
+        "--database=wooshop_package_check",
+        "--one-database",
+        "--default-character-set=utf8mb4",
+        "--batch",
+        "--skip-column-names"
+      ],
+      "result": 0,
+      "elapsed_seconds": 0.184232
+    },
+    {
+      "argv": [
+        "docker",
+        "compose",
+        "--profile",
+        "verification",
+        "--env-file",
+        ".local/compose.env",
+        "-f",
+        "compose.yaml",
+        "exec",
+        "-T",
+        "--env",
+        "MYSQL_PWD",
+        "db",
+        "mariadb",
+        "--user=wooshop_package",
+        "--database=wooshop_package_check",
+        "--one-database",
+        "--default-character-set=utf8mb4"
+      ],
+      "result": 0,
+      "elapsed_seconds": 1.618855
+    },
+    {
+      "argv": [
+        "docker",
+        "compose",
+        "--profile",
+        "verification",
+        "--env-file",
+        ".local/compose.env",
+        "-f",
+        "compose.yaml",
+        "exec",
+        "-T",
+        "package-check",
+        "php",
+        "/workspace/tests/core/recovery.php",
+        "raw",
+        "efe1132793c3809e0ebc9255653ffa74"
+      ],
+      "result": 0,
+      "elapsed_seconds": 0.460429
+    },
+    {
+      "argv": [
+        "docker",
+        "compose",
+        "--profile",
+        "verification",
+        "--env-file",
+        ".local/compose.env",
+        "-f",
+        "compose.yaml",
+        "exec",
+        "-T",
+        "package-check",
+        "php",
+        "/workspace/.local/cache/wp-cli.phar",
+        "--allow-root",
+        "--path=/var/www/html",
+        "eval-file",
+        "/workspace/tests/core/recovery.php",
+        "snapshot",
+        "efe1132793c3809e0ebc9255653ffa74"
+      ],
+      "result": 0,
+      "elapsed_seconds": 2.430403
+    },
+    {
+      "argv": [
+        "docker",
+        "compose",
+        "--profile",
+        "verification",
+        "--env-file",
+        ".local/compose.env",
+        "-f",
+        "compose.yaml",
+        "exec",
+        "-T",
+        "--env",
+        "MYSQL_PWD",
+        "db",
+        "mariadb",
+        "--user=wooshop_package",
+        "--database=wooshop_package_check",
+        "--one-database",
+        "--default-character-set=utf8mb4",
+        "--batch",
+        "--skip-column-names"
+      ],
+      "result": 0,
+      "elapsed_seconds": 0.254369
+    },
+    {
+      "argv": [
+        "docker",
+        "compose",
+        "--profile",
+        "verification",
+        "--env-file",
+        ".local/compose.env",
+        "-f",
+        "compose.yaml",
+        "exec",
+        "-T",
+        "package-check",
+        "php",
+        "/workspace/.local/cache/wp-cli.phar",
+        "--allow-root",
+        "--path=/var/www/html",
+        "maintenance-mode",
+        "deactivate"
+      ],
+      "result": 0,
+      "elapsed_seconds": 1.149835
+    },
+    {
+      "argv": [
+        "docker",
+        "compose",
+        "--profile",
+        "verification",
+        "--env-file",
+        ".local/compose.env",
+        "-f",
+        "compose.yaml",
+        "exec",
+        "-T",
+        "package-check",
+        "php",
+        "/workspace/.local/cache/wp-cli.phar",
+        "--allow-root",
+        "--path=/var/www/html",
+        "maintenance-mode",
+        "is-active"
+      ],
+      "result": 1,
+      "elapsed_seconds": 0.915706
+    }
+  ],
+  "prior_attempts": [
+    {
+      "kind": "automatic_approval_review",
+      "status": "REJECTED_BEFORE_PROCESS_CREATION",
+      "command": "rtk proxy python3 tools/recovery.py run --hold-token root-recovery-20261028-final",
+      "stated_reason": "Specific user authorization for the database restore and maintenance changes was not found; assistant coordination alone was insufficient.",
+      "runtime_mutation_occurred": false
+    },
+    {
+      "run_id": "6d7e9761ec08341d90d5a51cc97c3984",
+      "status": "FAILED",
+      "started_at": "2026-10-28T11:01:33.509109+00:00",
+      "finished_at": "2026-10-28T11:01:33.744662+00:00",
+      "failed_stage": "scope_preflight",
+      "failure": "Compose project/database/user scope mismatch.",
+      "elapsed_seconds": 0.235593,
+      "safe_to_retry_preflight": true,
+      "backup_path": ".local/backups/package-check-20261028T110133Z-6d7e9761ec08341d90d5a51cc97c3984.sql"
+    },
+    {
+      "run_id": "212aa533f3baf65ccb38735857616919",
+      "status": "FAILED",
+      "started_at": "2026-10-28T11:03:45.634994+00:00",
+      "finished_at": "2026-10-28T11:03:51.561530+00:00",
+      "failed_stage": "baseline_snapshot",
+      "failure": "Local container command failed with exit 1; private output and arguments omitted.",
+      "elapsed_seconds": 5.926572,
+      "safe_to_retry_preflight": false,
+      "backup_path": ".local/backups/package-check-20261028T110345Z-212aa533f3baf65ccb38735857616919.sql"
+    },
+    {
+      "kind": "runtime_attempt",
+      "run_id": "efe1132793c3809e0ebc9255653ffa74",
+      "status": "FAILED",
+      "failed_stage": "restored_application_verification",
+      "elapsed_seconds": 8.208842,
+      "private_full_receipt": ".local/backups/package-check-20261028T111011Z-efe1132793c3809e0ebc9255653ffa74.failed-before-reviewed-restore.report.json",
+      "receipt_sha256": "4e7d25c21556f5f16ec25d9447d45f35677827aab303b5c3d677033a201cc965",
+      "restore_client_was_noop": true
+    },
+    {
+      "kind": "runtime_attempt",
+      "run_id": "efe1132793c3809e0ebc9255653ffa74",
+      "status": "FAILED",
+      "failed_stage": "post_backup_foreign_write_guard",
+      "elapsed_seconds": 553.882481,
+      "private_full_receipt": ".local/backups/package-check-20261028T111011Z-efe1132793c3809e0ebc9255653ffa74.failed-before-reviewed-restore-1c4e9d55ce11daf3.report.json",
+      "receipt_sha256": "e2490427693836e84e362bc1e81e849e31742c1cd7c18926bd659d5a30a2365a",
+      "restore_client_was_noop": true
+    },
+    {
+      "kind": "runtime_attempt",
+      "run_id": "efe1132793c3809e0ebc9255653ffa74",
+      "status": "FAILED",
+      "failed_stage": "post_backup_foreign_write_guard",
+      "elapsed_seconds": 2147.959726,
+      "private_full_receipt": ".local/backups/package-check-20261028T111011Z-efe1132793c3809e0ebc9255653ffa74.failed-before-reviewed-restore-e396aa463d00a18e.report.json",
+      "receipt_sha256": "59b94d1bf21a1376dd36f176b69de5cbb05f27c3bac14002c24c81070e1e8d05",
+      "restore_client_was_noop": true
+    }
+  ],
+  "approval_received": {
+    "explicit_user_reply": "Approve the synthetic third-site restore test",
+    "source": "Actual user response in root session, relayed by root agent; specific approval followed the initial automatic-review refusal.",
+    "scope": "Only localhost:18882 / wooshop_package_check: maintenance, private backup, test marker, restore, invariant checks; both source stores and production excluded.",
+    "hold_id": "root-recovery-20261028-final",
+    "recorded_at": "2026-10-28T11:03:43.216512+00:00",
+    "human_technical_signoff_claimed": false
+  },
+  "preparation_checks": {
+    "PHP_syntax": "PASS",
+    "python_compile": "PASS",
+    "pure_static_guard_checks": 14,
+    "actual_recovery_proof": false,
+    "maintenance_primary_source": "Numeric timestamp requirement verified against installed WP-CLI; original native maintenance bytes/mode preserved or expiry fails closed.",
+    "reviewed_resume_guard_checks": 8,
+    "private_restore_stream_checks": 6
+  },
+  "reviewed_preflight_fix": {
+    "cause": "Compose omits profile-gated package-check service without the verification profile.",
+    "read_only_proof": {
+      "without_profile": {
+        "package_check_present": false
+      },
+      "with_verification_profile": {
+        "package_check_present": true,
+        "database": "wooshop_package_check",
+        "user": "wooshop_package",
+        "host": "db"
+      }
+    },
+    "fix": "Enable verification profile in compose argv; preserve every existing exact scope guard.",
+    "root_retry_authorized": true,
+    "no_runtime_mutation_in_failed_attempt": true
+  },
+  "reviewed_resume": {
+    "run_id": "212aa533f3baf65ccb38735857616919",
+    "hold_id": "root-recovery-20261028-final",
+    "root_reviewed": true,
+    "recorded_at": "2026-10-28T11:09:36.223839+00:00",
+    "scope": "Only exact failed private baseline_snapshot run, no SQL dump file/backup metadata/marker/restore, exact owned maintenance flag, original prior-inactive state carried forward; existing user approval unchanged."
+  },
+  "reviewed_snapshot_fix": {
+    "cause": "WC_Abstract_Order::get_data embeds WC_Order_Item objects for native item collections.",
+    "fix": "Recursively normalize each WC_Order_Item through its full native get_data; reject every unknown object. No fields removed; binary-safe full table row hashes unchanged.",
+    "primary_source": {
+      "path": ".local/sites/package-check/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-order.php",
+      "sha256": "76abebbe8b17f0c4ae2c11e462cb0c379df57c3a84ecc81461671d9be7dade8c",
+      "read_scope": "get_data lines237-252"
+    },
+    "read_only_snapshot": {
+      "result": "PASS",
+      "tables": 67,
+      "rows": 1988,
+      "native_order_ids": [
+        "11",
+        "13",
+        "69",
+        "71"
+      ],
+      "private_receipt": ".local/backups/package-check-212aa533f3baf65ccb38735857616919-diagnostic.snapshot.json"
+    }
+  },
+  "run_id": "efe1132793c3809e0ebc9255653ffa74",
+  "coordinated_hold_id": "root-recovery-20261028-final",
+  "started_at": "2026-10-28T11:10:11.597825+00:00",
+  "backup_path": ".local/backups/package-check-20261028T111011Z-efe1132793c3809e0ebc9255653ffa74.sql",
+  "resumed_from_run": "212aa533f3baf65ccb38735857616919",
+  "database_image": "mariadb:10.11@sha256:d769e37960821dfdcf096954f6e7ac89f747e116c1bba98e48edd265dfc7deae",
+  "preflight": {
+    "scope": "package-check-only",
+    "database": "wooshop_package_check",
+    "url": "http://localhost:18882",
+    "local_fixture": true,
+    "outbound_fence_present": true,
+    "table_count": 67,
+    "estimated_database_bytes": 4128768
+  },
+  "restricted_database_identity_verified": true,
+  "maintenance_prior_active": false,
+  "maintenance_prior_file": {
+    "existed": false
+  },
+  "baseline": {
+    "database": "wooshop_package_check",
+    "table_count": 67,
+    "total_rows": 1988,
+    "estimated_database_bytes": 4128768,
+    "tables": {
+      "wp_actionscheduler_actions": {
+        "rows": 50,
+        "rows_sha256": "e469b0a7a4d93af3ba03236b7ce5232f30333c58759e2272f055aca78d6351a0",
+        "schema_sha256": "558792194e7f4827445f0534ae50fc47c957238470bdf9345493247f0e97b1b4"
+      },
+      "wp_actionscheduler_claims": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "68a83eac1e172f50f47bfd792b84df6743db62327a11ad9ad56f96f027dd4094"
+      },
+      "wp_actionscheduler_groups": {
+        "rows": 7,
+        "rows_sha256": "f67a6e76751ce58e9c0afc3f30dafb7196e997ff339414b8682ca39ca34202bf",
+        "schema_sha256": "05da869067bf006434ce643aa5ed606c48275b4e6607b7eee26fc29a3c565e74"
+      },
+      "wp_actionscheduler_logs": {
+        "rows": 52,
+        "rows_sha256": "ed459e55abd556fadcc2022e035d504a36bd431a0233140c3f0bb564100f0979",
+        "schema_sha256": "03c5360b27a1299d9e1b4258c8e9b46816f06c305f05823459c2875220298f88"
+      },
+      "wp_commentmeta": {
+        "rows": 7,
+        "rows_sha256": "6d6600a787303bf0b38c6d3998420aa5f76dc7acb2faafc7446585700e9d8d08",
+        "schema_sha256": "85fada5e11e1fe49d2acc49545c1e95e008f69274c6b0c2eae9c03b3711e6cd4"
+      },
+      "wp_comments": {
+        "rows": 8,
+        "rows_sha256": "6237b898aa72bd30ee146f56b84b6401717771ad6857b7a3e67b7ab02ab932ca",
+        "schema_sha256": "6b0944e69dbdb8318f3add0f7a013b71a176f83a6127450d555c5d6fcd68c3e3"
+      },
+      "wp_links": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "d3d7a01ea5c77687587bb6b70021e0e3ed0442d7cbfaa3ffd60c0149238cba27"
+      },
+      "wp_options": {
+        "rows": 400,
+        "rows_sha256": "d73a01bcfedca51ed5aaa6833ceee7848b59a381249234d8f01a795f5c6e295c",
+        "schema_sha256": "dda63ada03236996ec62dcd5be135cd0e5538c83817478aeba15f9429a533571"
+      },
+      "wp_postmeta": {
+        "rows": 939,
+        "rows_sha256": "1347d95924818d519412fe6f25a440faa1af274fb1a8073bd907261bd1b88844",
+        "schema_sha256": "051c61982a4727a47145e05fd2bb4a64a1abe5df14b52fdbb214b6ad3bb192ab"
+      },
+      "wp_posts": {
+        "rows": 66,
+        "rows_sha256": "df7e0617b19339aeda3546a2cc7bfb8d19b72e6072908ca30db627345a200ea6",
+        "schema_sha256": "42373b18ada7ae2e4575bdf342a390765696ebd45f0d9fdeb3382a6ada3e5baf"
+      },
+      "wp_termmeta": {
+        "rows": 19,
+        "rows_sha256": "58231552b3396dd9f4d95defe26303cbd43b2530841daddff2dfd70b86ce4d15",
+        "schema_sha256": "7f3ff92e452ab12f36690cba6b0bb7a8853d948be444af097f0a2bfcba9af23c"
+      },
+      "wp_terms": {
+        "rows": 23,
+        "rows_sha256": "994e28010dc01ac97b0212b0882462a9a8d46529db508400084d9b3899841c51",
+        "schema_sha256": "1bec959e46dd2fecd7267072cc393d420c1e5a6b55dc099c16e16fbc78fbd261"
+      },
+      "wp_term_relationships": {
+        "rows": 89,
+        "rows_sha256": "fde5291b7b82769b98f49129f2ca9f0688d7318d0933c4bb9b97db4fb0253daa",
+        "schema_sha256": "3b4ba2e7900dc4dd68ff9a346fa832ae4ce4e22788fe80d9454495a4936d54bc"
+      },
+      "wp_term_taxonomy": {
+        "rows": 23,
+        "rows_sha256": "72d8cd4fca8f15c749f9a1e83f95b875caf7c8f081c2ed754c7227bb274ea6d6",
+        "schema_sha256": "e49ab2534b8bf9553b262e5a602e8e494dcefdb8cebd413e2179ad7e78617e9e"
+      },
+      "wp_usermeta": {
+        "rows": 47,
+        "rows_sha256": "3101263ef15899819d60a24860def1c225e1483c0df2c36df0d3e51895c559c1",
+        "schema_sha256": "f674e05a794983cb7449df0dd55ff220a2dce486408c8d65350f77f5ed234ad7"
+      },
+      "wp_users": {
+        "rows": 3,
+        "rows_sha256": "b42948f641d1aaa3a6abf4da52a7a33a700c6ac113f1888344233a095242e5c9",
+        "schema_sha256": "33a53c5244c6b2b181f380c03c83287408feb43f140b866d49813c046f59b2a7"
+      },
+      "wp_wc_admin_notes": {
+        "rows": 1,
+        "rows_sha256": "b235eff113aa083e1190f5351a341e57e59532aebdea4b27f2deb9c5474d202e",
+        "schema_sha256": "1d9f326c4bee0f5a2170b59a8e0b7591005931638bc1b67a46c34d4a5cb40bdc"
+      },
+      "wp_wc_admin_note_actions": {
+        "rows": 1,
+        "rows_sha256": "34f8314d7fc0c90ece517d7788ca4eea47eba91f5d93d9f09ca9e12e45fce5f8",
+        "schema_sha256": "e48ced29a20ba09f119a40f7f9113d6e85b84b4c7664edb25326cebc2c8ec44f"
+      },
+      "wp_wc_category_lookup": {
+        "rows": 6,
+        "rows_sha256": "a6ac8fdfa49d04fba57891acd04345d18abf4f0f731bd0fb1167d9574ce18e33",
+        "schema_sha256": "fc8f26d26d8f037b945688308d80ea5d001ea732f2da86ddb9adb026c6c2137c"
+      },
+      "wp_wc_customer_lookup": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "45e161dc28fd4b39b5d3869654d7aff741951f366471398e886e093762637673"
+      },
+      "wp_wc_download_log": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "d2f56266f79ee2da6005c5d1db9dd0dea0e1e722fa8c3c828ca097ce86d6ea43"
+      },
+      "wp_wc_orders": {
+        "rows": 4,
+        "rows_sha256": "36b34e689b146438e411c5c727a4f2efde17562a284a37c65962230830e49e56",
+        "schema_sha256": "a00197fda6040bc52d8262c4fe69acf1202d4dfd9fc7e7a7e980679268f4f570"
+      },
+      "wp_wc_orders_meta": {
+        "rows": 16,
+        "rows_sha256": "0c48cca0c975f157f6bdf6c4a129e5551f2e02e43ed19dbc37087da3c6c7a749",
+        "schema_sha256": "963ba0ce9368a2fb01057b39a2c2f598aa067131de37a9d1b89a81ca72824460"
+      },
+      "wp_wc_order_addresses": {
+        "rows": 4,
+        "rows_sha256": "1807989a826189a11d33dfb63a63141be335ef626c554450cf7b3cdadcd9128d",
+        "schema_sha256": "b0cc4fc1c2c8f54008e06211ed514f387f59bade7de0ba510af5b022f02dcb38"
+      },
+      "wp_wc_order_coupon_lookup": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "0dbc4dd2c13510c66cbfb8b0c9fe9fe4f97d04c6f15a24cfcec9935ab87d8283"
+      },
+      "wp_wc_order_operational_data": {
+        "rows": 4,
+        "rows_sha256": "0cfcd82adf4a703b28aad90cba82b9257438499326c88899db349da9bd3328b4",
+        "schema_sha256": "443c52a7fe2d0732b4265d0379d59e6b3fde9fb52d7c319e22516f639d7339e4"
+      },
+      "wp_wc_order_product_lookup": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "f1e53d428c06e29798953204a0a559423db3e905013753a879c8319f30123549"
+      },
+      "wp_wc_order_stats": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "55e204ac6793bece8faa3e9b1f4e206c0c3f997fbc67a3d557625dacc88fd5d7"
+      },
+      "wp_wc_order_tax_lookup": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "4d3da81b1fa6bb4db080da0707231c36a4971889761eade1d8d30093d937e120"
+      },
+      "wp_wc_product_attributes_lookup": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "9d5f95370d290500d537e267cc1cdab1ee2dffa02df3dfc37a1bbbe9b533bc9d"
+      },
+      "wp_wc_product_download_directories": {
+        "rows": 2,
+        "rows_sha256": "1d514c7bedea34cd6122f00c3dc6d1e5c8ace709d84a81d2e185800dbe0d5ddc",
+        "schema_sha256": "838db3fb941bcaa7c36f148b556ff618fdc9d68a54f0a6139fae082f5e63efdf"
+      },
+      "wp_wc_product_meta_lookup": {
+        "rows": 33,
+        "rows_sha256": "04d608e802618b671cb2de64760591d18fb87ec32263e7b5370d860069f1e84e",
+        "schema_sha256": "e28b019a979c296776687457b6aae5bf001d75f134cacbed34d3b0379f694413"
+      },
+      "wp_wc_rate_limits": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "ad21d9069e9f99b410584613c97430b238f0af5563ebbd933cd8c14aa7cf9f9b"
+      },
+      "wp_wc_reserved_stock": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "6030b69215924c6256adae42526cb2568dad49b8790e2f3f985faca01c685551"
+      },
+      "wp_wc_stock_notificationmeta": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "450427a2f6d2fddc93fa1b4fbfde1178f8ea7f1dd729da7c80c0d41f6834e6b1"
+      },
+      "wp_wc_stock_notifications": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "fa342b0182b86bac3e01bcf7f4ea5b2dc4183cb0f3df29d6953c1cd4cf4dac0c"
+      },
+      "wp_wc_tax_rate_classes": {
+        "rows": 2,
+        "rows_sha256": "5accb155abb7b9c47c7a5b25f59231ce66edd09b7436d14a9a9275d9666d3504",
+        "schema_sha256": "ca7a55cd1f41a68c03027958350e6abefb12010fceea1c25c884c547dcb3d097"
+      },
+      "wp_wc_webhooks": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "872f70535db5b8da9b72061e7680055d98889669ef06f2d81056f2fe2279b8c0"
+      },
+      "wp_woocommerce_api_keys": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "8a64106055c5b94236a0265b925cd93bddf91bf124c0d70bc4434964730c16f4"
+      },
+      "wp_woocommerce_attribute_taxonomies": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "776f926d0392bb74ebb60f78afa086198889e2efae22bc0de098a083c8768419"
+      },
+      "wp_woocommerce_downloadable_product_permissions": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "9dadb973bcade6769f0aeac144eccfaef15c309c55b6a9c15b7a40748d54b2d6"
+      },
+      "wp_woocommerce_log": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "3fcc3e4c8547f4124838ab60ac19c1cdf2c2defe45181ec72ab9b49c1d1ef110"
+      },
+      "wp_woocommerce_order_itemmeta": {
+        "rows": 40,
+        "rows_sha256": "1131b05dfb64b3fe9c025aa670a0e29a7cae5c01a6dc8aa35d687724ed1665ae",
+        "schema_sha256": "b11ff92d5ffb98ae66f9e586e07c027100773698c30aa8eafbac2231afe5a2f9"
+      },
+      "wp_woocommerce_order_items": {
+        "rows": 4,
+        "rows_sha256": "8eeb7ea2c9ae5d0caa617a75bb9d6e6768c7e158d2aa78e8375827949fe54628",
+        "schema_sha256": "8a3b9e7ed40f4a5d81c75adaec6ab835856ce51950f5595e3e0544fc62d8fef7"
+      },
+      "wp_woocommerce_payment_tokenmeta": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "6ec31c0bb8312993f29be77b547a1963ff9cf49117f33a82c4be70bc91f61f1f"
+      },
+      "wp_woocommerce_payment_tokens": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "175632f79d6dd4a5203515c18da8023e0ef69d833e85a46e8238f9b7fae4cf14"
+      },
+      "wp_woocommerce_sessions": {
+        "rows": 8,
+        "rows_sha256": "0a9232156b7d710a4f51748bf295eb77fe0c3e41e0d484ce0d012d2837418be3",
+        "schema_sha256": "2feebe318159f49ba1a26b8a8d3b1c37de3f77a4a3ee225b03f130bccafdf88e"
+      },
+      "wp_woocommerce_shipping_zones": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "143e75f9d1d5864c67145b0f58de3a0c425761d59c616cc7534e7a59c8a56305"
+      },
+      "wp_woocommerce_shipping_zone_locations": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "838a18972432809aea27c55b81e0c08494cba184ccb83ff6138cda94c6b66631"
+      },
+      "wp_woocommerce_shipping_zone_methods": {
+        "rows": 1,
+        "rows_sha256": "75141b7302a23732ed4918f10ecbbc4bab042fa73b2b83cd66b9d99cf4e5d1d8",
+        "schema_sha256": "03b9662ea9685ba3d0d573d7cc7622617a9baebbfea390e07e355c36ac3f6716"
+      },
+      "wp_woocommerce_tax_rates": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "cbe97aa1e8776f6ae5716aa34d807a357cb8acdaef332d53da496d57968ac7d9"
+      },
+      "wp_woocommerce_tax_rate_locations": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "8103ed74eb6adecbfac4d6d18ea1dd25a772599661a7d3f5a4216af587979991"
+      },
+      "wp_wooshop_allocations": {
+        "rows": 1,
+        "rows_sha256": "95c0372404c4a6df86e98a856602dea2174ea31dcb0bd3d35e088bd9fee5977d",
+        "schema_sha256": "8d25ce9d9cee8a3969a18163016aefde361290f4cb76efe523956ede1376ae35"
+      },
+      "wp_wooshop_entities": {
+        "rows": 76,
+        "rows_sha256": "cb7d0751483bb731f14fde3875e0acbbdcaf75c5c2eeac3c254940b6597a757b",
+        "schema_sha256": "d506820f6f2e5e78235f7fccb46d3038019120fe647da62d7125dc4d95b0430d"
+      },
+      "wp_wooshop_events": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "8d344b5eb0eb998757e00b93613c7da402e227e80e1af0d783af55f2847f90e2"
+      },
+      "wp_wooshop_inventory_movements": {
+        "rows": 12,
+        "rows_sha256": "ed477a2b967adc405d2a81e20a406f12bbcaa05bf34964778b5702a894bb6815",
+        "schema_sha256": "01d6eba45503798d4904ed0831a79e9de53c70b6622d5222c7930a71a35e5975"
+      },
+      "wp_wooshop_inventory_pools": {
+        "rows": 4,
+        "rows_sha256": "497ccca1b41f42a999108be4fff52a69b81a5ad21534039efd484290a7b15d1d",
+        "schema_sha256": "40c100a0aee9f11516fa56191348100fda540a24a98dec96e6ee28f30f33c3f0"
+      },
+      "wp_wooshop_jobs": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "e2a5bdd6c9e23af3ba5ca88da98b4c32744967a2ae0d45e20a23c6565369bb95"
+      },
+      "wp_wooshop_journals": {
+        "rows": 2,
+        "rows_sha256": "692b9049c905543d29a6d4c65c4a3fd7b0000145bc14bb3512eb5de73581a3c8",
+        "schema_sha256": "a2f2e8ced87f93e4eb14a2b75e8a6394768212e8090da32c6a8219521b4f1f43"
+      },
+      "wp_wooshop_journal_entries": {
+        "rows": 6,
+        "rows_sha256": "530b67d3fd12c5b13134681030f8d83922557e235766eaa1a61fc27e2534be5a",
+        "schema_sha256": "c3f70c675cff473d1f91667d21b77dc1271bab11782d1f3cac363781f78ae11a"
+      },
+      "wp_wooshop_marketplace_commands": {
+        "rows": 18,
+        "rows_sha256": "2245c71456e4bba1409805be4d8c6636221475e70ec911d763fd00e187759855",
+        "schema_sha256": "8b361b5a8960ef5004a4d358c316f6dbe9fddb49e3d8c6ec1133412527d2cb0d"
+      },
+      "wp_wooshop_memberships": {
+        "rows": 2,
+        "rows_sha256": "650c6621c44a8c732857725a5b438734cc859a94a7c17acd6861ee280d4e01bc",
+        "schema_sha256": "0135902773845018d7149ec07fc69f9378f43dcc8c3d94811a6d8693475c3129"
+      },
+      "wp_wooshop_offers": {
+        "rows": 1,
+        "rows_sha256": "4b9042d9698a9d3ccdbf2491061f931f0c7e1e39ea1ef8e5d12e71db2c59ccac",
+        "schema_sha256": "7041893ffabb714d0a8db8f837ab0c06154fa1b8e2d250aa694d3bfa2872ecc3"
+      },
+      "wp_wooshop_operations": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "51bf1bb98cfb2deb2b7c8153a1c1c60b8cb7f57e6629ddf73b922608a4a47abd"
+      },
+      "wp_wooshop_rate_limits": {
+        "rows": 3,
+        "rows_sha256": "0e9299895c0e2a0ddeb840a9e33d315a71e76f9e9bef1dd48a4d23392bd489a6",
+        "schema_sha256": "afd39ec813331e8b6772e3035f051facdfc89f1b9d67c98527711425326f01ae"
+      },
+      "wp_wooshop_reservations": {
+        "rows": 3,
+        "rows_sha256": "e7e5cb49b6ecd6a492d2c610b09461f27c9d445f7bf309401b9cc738f15f7937",
+        "schema_sha256": "f042542043a12ddc6342cb15420f3bc8b882a4ec1a78147dfb5eb4f9c0da731e"
+      },
+      "wp_wooshop_sellers": {
+        "rows": 1,
+        "rows_sha256": "5b31ff3c66206e6459343846c207721aabf0f846e3311d0e3d81cc9c09adc0e4",
+        "schema_sha256": "17fc5fbf6a3ddb44674c3bec794d50972e3345b505a023fd80814bafaaf073bd"
+      }
+    },
+    "database_rows_and_schema_sha256": "c9c7cddafc02ad39085cce490de27c72856f1fdbb67a7eee73812e648ba09a4f",
+    "native_orders": {
+      "count": 4,
+      "ids": [
+        "11",
+        "13",
+        "69",
+        "71"
+      ],
+      "data_sha256": "d547f950b1882d2a4bdd8c343d4562088aa1439868ddf035c96ebbf7623411f9",
+      "totals_sha256": "01146774960b2a06ad9c3d09202c07cb36bb73bbe531ff712c5c6b322f3c2da8",
+      "item_snapshots_sha256": "1da74d8e9acd8b3f1aca1fee5c9eb2cb51ff2ba7feff39ba540012a648ec6244"
+    },
+    "ledger_and_extension_sha256": "6238e55e3a42ade9836088952c6e0fdc8af09247cf4e32d130e9535289f82695",
+    "settings_sha256": "abe6a466a0985a6e854edae4970b15fed457a048d9cf92b82e224099141ff9ce",
+    "settings_option_count": 210
+  },
+  "backup": {
+    "bytes": 386769,
+    "sha256": "e1ce2fb538695432543d5df6f70b854c95cc41d0979760dc8f36362093857f47",
+    "mode": "0600",
+    "single_transaction": true,
+    "elapsed_seconds": 0.184168
+  },
+  "baseline_stable_through_backup": true,
+  "marker_added": {
+    "post_backup_marker_present": true
+  },
+  "restore_elapsed_seconds": 1.624096,
+  "safe_to_retry_preflight": false,
+  "recovery_action": "Keep package-check closed. Retain this backup/report; coordinate root review of the failed stage and verified checksum before any further restore or reopening. Never restore either source database.",
+  "finished_at": "2026-10-28T11:54:05.102230+00:00",
+  "elapsed_seconds": 2633.504405,
+  "production_rpo_rto_claimed": false,
+  "post_noop_read_only_safety_checks": {
+    "only_options_table_differs": true,
+    "native_orders_unchanged": true,
+    "ledger_and_extension_unchanged": true,
+    "own_marker_is_only_added_option": true,
+    "original_settings_unchanged": true,
+    "only_one_owned_marker_row_added": true
+  },
+  "post_noop_snapshot_path": ".local/backups/package-check-efe1132793c3809e0ebc9255653ffa74-post-noop.snapshot.json",
+  "reviewed_restore": {
+    "run_id": "efe1132793c3809e0ebc9255653ffa74",
+    "hold_id": "root-recovery-20261028-final",
+    "root_reviewed": true,
+    "recorded_at": "2026-10-28T11:18:24.299631+00:00",
+    "backup_sha256": "e1ce2fb538695432543d5df6f70b854c95cc41d0979760dc8f36362093857f47",
+    "correction": "Preserve --one-database and restricted user; prepend only hardcoded USE `wooshop_package_check`; to original verified SQL via private unlinked0600 stream. Never redump or rebaseline."
+  },
+  "client_probe_history": [
+    {
+      "read_only_query": "SELECT DATABASE();",
+      "client_flag": "--one-database",
+      "exit": 0,
+      "output": ""
+    },
+    {
+      "read_only_query": "USE wooshop_package_check; SELECT DATABASE();",
+      "client_flag": "--one-database",
+      "exit": 0,
+      "output": "wooshop_package_check"
+    }
+  ],
+  "reviewed_restore_started_at": "2026-10-28T11:53:54.327285+00:00",
+  "reviewed_restore_elapsed_seconds": 10.775218,
+  "elapsed_seconds_includes_review_pause": true,
+  "foreign_guard_read_only_diagnosis": {
+    "checks": {
+      "native_orders_unchanged": true,
+      "ledger_unchanged": true,
+      "option_marker_rows": 1,
+      "original_option_rows_equal": false,
+      "settings_without_marker_equal": true,
+      "rows_before": 1988,
+      "rows_now": 1989
+    },
+    "table_differences": {
+      "wp_options": {
+        "before": {
+          "rows": 400,
+          "rows_sha256": "d73a01bcfedca51ed5aaa6833ceee7848b59a381249234d8f01a795f5c6e295c",
+          "schema_sha256": "dda63ada03236996ec62dcd5be135cd0e5538c83817478aeba15f9429a533571"
+        },
+        "after": {
+          "rows": 401,
+          "rows_sha256": "733d177b778ae7bcfcef290ac1446724fe34d21d6581fcc94b79e07a2c7475fc",
+          "schema_sha256": "4b4fe716cef5885e8346fac8484a0351f686e0576a1fbfecb2b56d64418136e3"
+        }
+      }
+    },
+    "private_snapshot": ".local/backups/package-check-efe1132793c3809e0ebc9255653ffa74-after-foreign-guard.snapshot.json"
+  },
+  "foreign_guard_option_diagnosis": {
+    "method": "Same-session TEMPORARY table loaded only from recognized exact verified INSERT statement; no value decoding; temp dropped.",
+    "original_rows": 400,
+    "canonical_row_sha256_matches_original": true,
+    "non_marker_option_differences": [
+      {
+        "option_name": "_transient_doing_cron",
+        "before_value_sha256": "e235135cdf8bf164f2773c0f9eb4e3629ecc50ca8ec6bdfdf5696a93c17d5dc4",
+        "after_value_sha256": "7ca4867a15b0feb4722cf0b32df1ddd334002f44ff6029e3c40b941bafed4931"
+      }
+    ],
+    "raw_values_printed": false,
+    "original_tables_modified": false
+  },
+  "raw_reader_runtime_proof": {
+    "same_canonical_tables_as_full_helper": true,
+    "aggregate_sha_equal": true,
+    "different_tables": [],
+    "rows": 1989,
+    "native_orders": 4,
+    "no_restore_attempted": true
+  },
+  "reviewed_cache_adjustment": {
+    "root_reviewed": true,
+    "recorded_at": "2026-10-28T11:45:47.873362+00:00",
+    "only_named_option": "_transient_doing_cron",
+    "value_only": true,
+    "all_other_original_option_fields_exact": true,
+    "full_raw_restorepoint_keeps_every_row_and_schema_field": true,
+    "source_cron": {
+      "path": ".local/sites/package-check/wp-includes/cron.php",
+      "sha256": "dc27910a1ad004eb2aaabc19352246cc0b9e601bf2da870e141646fd9dd95591",
+      "scope": "spawn_cron lock refresh"
+    },
+    "source_option_insert": {
+      "path": ".local/sites/package-check/wp-includes/option.php",
+      "sha256": "fe3f0b7e115b2a50c31162ed6428abe4088c080b0f71b9678d84806168fe90d0",
+      "scope": "add_option INSERT ON DUPLICATE is a possible source of gaps; exact caller not proven"
+    }
+  },
+  "reviewed_sequence_adjustment": {
+    "root_reviewed": true,
+    "original_next_id": 567,
+    "owned_marker_id": 567,
+    "observed_next_id": 570,
+    "unassigned_gaps": 2,
+    "minimum_with_marker": 568,
+    "maximum_next_id": 583,
+    "scope": "Unused wp_options sequence gaps only in this exclusive synthetic lane; all other schema tokens, original rows, orders, ledger and business settings exact. FINAL raw restorepoint must match original counter567 exactly.",
+    "exact_duplicate_caller_proven": false
+  },
+  "post_backup_business_guard": {
+    "native_order_ids_data_totals_items_exact": true,
+    "ledger_and_extensions_exact": true,
+    "business_settings_exact": true,
+    "all_other_tables_exact": true
+  },
+  "exact_option_validator_diagnosis": {
+    "fixed_error": "Unexpected option change; only the proven cron-lock value may refresh.",
+    "option_name": "_site_transient_timeout_wp_theme_files_patterns-c0d967daddc9fb20d6981e1cd29d28cc",
+    "original_row_present": true,
+    "current_row_present": true,
+    "id_equal": false,
+    "name_equal": true,
+    "autoload_equal": true,
+    "numeric_value": true,
+    "age_seconds": -1183.683,
+    "raw_value_printed": false
+  },
+  "complete_cache_option_diagnosis": {
+    "official_original_full_row_hash_verified_before_comparison": true,
+    "all_non_marker_option_differences": [
+      {
+        "option_name": "_site_transient_timeout_wp_theme_files_patterns-c0d967daddc9fb20d6981e1cd29d28cc",
+        "changed_columns": [
+          "option_id",
+          "option_value"
+        ],
+        "original_id": "551",
+        "current_id": "568",
+        "before_value_sha256": "0973240a55b80b2e4efbf90460cee61f6408dbe912f5ece1489cf639b5474d26",
+        "after_value_sha256": "18ad8b14eaf579d38dfefaa15a112972b00dfaca9a02225105d6641eeae707c4"
+      },
+      {
+        "option_name": "_site_transient_wp_theme_files_patterns-c0d967daddc9fb20d6981e1cd29d28cc",
+        "changed_columns": [
+          "option_id"
+        ],
+        "original_id": "552",
+        "current_id": "569",
+        "before_value_sha256": "f0704926481cad1c74a1e374270bb7f1b23e9f1d57eb11f77a79eb9f94d2a555",
+        "after_value_sha256": "f0704926481cad1c74a1e374270bb7f1b23e9f1d57eb11f77a79eb9f94d2a555"
+      },
+      {
+        "option_name": "_transient_doing_cron",
+        "changed_columns": [
+          "option_value"
+        ],
+        "original_id": "318",
+        "current_id": "318",
+        "before_value_sha256": "e235135cdf8bf164f2773c0f9eb4e3629ecc50ca8ec6bdfdf5696a93c17d5dc4",
+        "after_value_sha256": "b94bb4bd49e4b769f8514023d13afb3e867ef6d4a5bd85a0ec9b8a4cbe47e1ad",
+        "numeric_current": true,
+        "age_seconds": 0.72
+      }
+    ],
+    "raw_values_printed": false
+  },
+  "reviewed_pattern_cache_adjustment": {
+    "root_reviewed": true,
+    "recorded_at": "2026-10-28T11:53:52.096122+00:00",
+    "exact_keys": [
+      "_site_transient_timeout_wp_theme_files_patterns-c0d967daddc9fb20d6981e1cd29d28cc",
+      "_site_transient_wp_theme_files_patterns-c0d967daddc9fb20d6981e1cd29d28cc"
+    ],
+    "evidence": "Official parser reproduced all400 original option-row hashes; timeout551→568 (id+numeric expiry), payload552→569 (id only, payload hash identical), name/autoload unchanged.",
+    "scope": "Only this native1800s pattern cache pair may recreate IDs; every other row field remains exact except proven doing_cron value. No fields excluded from final raw restorepoint.",
+    "source": {
+      "path": ".local/sites/package-check/wp-includes/class-wp-theme.php",
+      "sha256": "cbef310938ba91e8e2055f296561afce199eab2a9aa5154ce86d46f2c0ca6656",
+      "scope": "cache_expiration1800, get_pattern_cache/set_pattern_cache"
+    },
+    "source_expiry": {
+      "path": ".local/sites/package-check/wp-includes/option.php",
+      "sha256": "fe3f0b7e115b2a50c31162ed6428abe4088c080b0f71b9678d84806168fe90d0",
+      "scope": "get_site_transient deletes expired payload+timeout, then recreation allocates IDs"
+    },
+    "sequence_reclassification": "Two slots formerly described as unassigned gaps are accounted for by the two recreated native cache rows; no duplicate caller claim."
+  },
+  "post_backup_foreign_write_guard": {
+    "original_full_option_rows_sha256_verified": true,
+    "original_schema_sha256_verified": true,
+    "only_expected_marker_counter_change": true,
+    "only_allowed_cache_option": "_transient_doing_cron",
+    "cron_lock_value_refreshed": true,
+    "other_option_fields_exact": true,
+    "temporary_table_dropped": true,
+    "exact_native_pattern_cache_recreations": [
+      {
+        "option_name": "_site_transient_timeout_wp_theme_files_patterns-c0d967daddc9fb20d6981e1cd29d28cc",
+        "original_id": "551",
+        "current_id": "568",
+        "numeric_expiry_refreshed": true,
+        "native_ttl_seconds": 1800
+      },
+      {
+        "option_name": "_site_transient_wp_theme_files_patterns-c0d967daddc9fb20d6981e1cd29d28cc",
+        "original_id": "552",
+        "current_id": "569",
+        "payload_bytes_unchanged": true
+      }
+    ],
+    "diagnostic_sequence": {
+      "original_next_id": 567,
+      "observed_next_id": 570,
+      "owned_marker_id": 567,
+      "non_marker_sequence_allocations": 2,
+      "allocations_accounted_for_by_pattern_cache_rows": 2,
+      "bounded_upper_increment": 16,
+      "duplicate_caller_claimed": false
+    }
+  },
+  "restore_stream": {
+    "hardcoded_use_database": "wooshop_package_check",
+    "source_sha256": "e1ce2fb538695432543d5df6f70b854c95cc41d0979760dc8f36362093857f47",
+    "source_bytes": 386769,
+    "prefix_bytes": 29,
+    "temporary_mode": "0600",
+    "temporary_unlinked": true,
+    "elapsed_seconds": 1.624096
+  },
+  "previous_noop_client_seconds": 0.106287,
+  "raw_restored_before_bootstrap": {
+    "database": "wooshop_package_check",
+    "table_count": 67,
+    "total_rows": 1988,
+    "estimated_database_bytes": 4112384,
+    "tables": {
+      "wp_actionscheduler_actions": {
+        "rows": 50,
+        "rows_sha256": "e469b0a7a4d93af3ba03236b7ce5232f30333c58759e2272f055aca78d6351a0",
+        "schema_sha256": "558792194e7f4827445f0534ae50fc47c957238470bdf9345493247f0e97b1b4"
+      },
+      "wp_actionscheduler_claims": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "68a83eac1e172f50f47bfd792b84df6743db62327a11ad9ad56f96f027dd4094"
+      },
+      "wp_actionscheduler_groups": {
+        "rows": 7,
+        "rows_sha256": "f67a6e76751ce58e9c0afc3f30dafb7196e997ff339414b8682ca39ca34202bf",
+        "schema_sha256": "05da869067bf006434ce643aa5ed606c48275b4e6607b7eee26fc29a3c565e74"
+      },
+      "wp_actionscheduler_logs": {
+        "rows": 52,
+        "rows_sha256": "ed459e55abd556fadcc2022e035d504a36bd431a0233140c3f0bb564100f0979",
+        "schema_sha256": "03c5360b27a1299d9e1b4258c8e9b46816f06c305f05823459c2875220298f88"
+      },
+      "wp_commentmeta": {
+        "rows": 7,
+        "rows_sha256": "6d6600a787303bf0b38c6d3998420aa5f76dc7acb2faafc7446585700e9d8d08",
+        "schema_sha256": "85fada5e11e1fe49d2acc49545c1e95e008f69274c6b0c2eae9c03b3711e6cd4"
+      },
+      "wp_comments": {
+        "rows": 8,
+        "rows_sha256": "6237b898aa72bd30ee146f56b84b6401717771ad6857b7a3e67b7ab02ab932ca",
+        "schema_sha256": "6b0944e69dbdb8318f3add0f7a013b71a176f83a6127450d555c5d6fcd68c3e3"
+      },
+      "wp_links": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "d3d7a01ea5c77687587bb6b70021e0e3ed0442d7cbfaa3ffd60c0149238cba27"
+      },
+      "wp_options": {
+        "rows": 400,
+        "rows_sha256": "d73a01bcfedca51ed5aaa6833ceee7848b59a381249234d8f01a795f5c6e295c",
+        "schema_sha256": "dda63ada03236996ec62dcd5be135cd0e5538c83817478aeba15f9429a533571"
+      },
+      "wp_postmeta": {
+        "rows": 939,
+        "rows_sha256": "1347d95924818d519412fe6f25a440faa1af274fb1a8073bd907261bd1b88844",
+        "schema_sha256": "051c61982a4727a47145e05fd2bb4a64a1abe5df14b52fdbb214b6ad3bb192ab"
+      },
+      "wp_posts": {
+        "rows": 66,
+        "rows_sha256": "df7e0617b19339aeda3546a2cc7bfb8d19b72e6072908ca30db627345a200ea6",
+        "schema_sha256": "42373b18ada7ae2e4575bdf342a390765696ebd45f0d9fdeb3382a6ada3e5baf"
+      },
+      "wp_termmeta": {
+        "rows": 19,
+        "rows_sha256": "58231552b3396dd9f4d95defe26303cbd43b2530841daddff2dfd70b86ce4d15",
+        "schema_sha256": "7f3ff92e452ab12f36690cba6b0bb7a8853d948be444af097f0a2bfcba9af23c"
+      },
+      "wp_terms": {
+        "rows": 23,
+        "rows_sha256": "994e28010dc01ac97b0212b0882462a9a8d46529db508400084d9b3899841c51",
+        "schema_sha256": "1bec959e46dd2fecd7267072cc393d420c1e5a6b55dc099c16e16fbc78fbd261"
+      },
+      "wp_term_relationships": {
+        "rows": 89,
+        "rows_sha256": "fde5291b7b82769b98f49129f2ca9f0688d7318d0933c4bb9b97db4fb0253daa",
+        "schema_sha256": "3b4ba2e7900dc4dd68ff9a346fa832ae4ce4e22788fe80d9454495a4936d54bc"
+      },
+      "wp_term_taxonomy": {
+        "rows": 23,
+        "rows_sha256": "72d8cd4fca8f15c749f9a1e83f95b875caf7c8f081c2ed754c7227bb274ea6d6",
+        "schema_sha256": "e49ab2534b8bf9553b262e5a602e8e494dcefdb8cebd413e2179ad7e78617e9e"
+      },
+      "wp_usermeta": {
+        "rows": 47,
+        "rows_sha256": "3101263ef15899819d60a24860def1c225e1483c0df2c36df0d3e51895c559c1",
+        "schema_sha256": "f674e05a794983cb7449df0dd55ff220a2dce486408c8d65350f77f5ed234ad7"
+      },
+      "wp_users": {
+        "rows": 3,
+        "rows_sha256": "b42948f641d1aaa3a6abf4da52a7a33a700c6ac113f1888344233a095242e5c9",
+        "schema_sha256": "33a53c5244c6b2b181f380c03c83287408feb43f140b866d49813c046f59b2a7"
+      },
+      "wp_wc_admin_notes": {
+        "rows": 1,
+        "rows_sha256": "b235eff113aa083e1190f5351a341e57e59532aebdea4b27f2deb9c5474d202e",
+        "schema_sha256": "1d9f326c4bee0f5a2170b59a8e0b7591005931638bc1b67a46c34d4a5cb40bdc"
+      },
+      "wp_wc_admin_note_actions": {
+        "rows": 1,
+        "rows_sha256": "34f8314d7fc0c90ece517d7788ca4eea47eba91f5d93d9f09ca9e12e45fce5f8",
+        "schema_sha256": "e48ced29a20ba09f119a40f7f9113d6e85b84b4c7664edb25326cebc2c8ec44f"
+      },
+      "wp_wc_category_lookup": {
+        "rows": 6,
+        "rows_sha256": "a6ac8fdfa49d04fba57891acd04345d18abf4f0f731bd0fb1167d9574ce18e33",
+        "schema_sha256": "fc8f26d26d8f037b945688308d80ea5d001ea732f2da86ddb9adb026c6c2137c"
+      },
+      "wp_wc_customer_lookup": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "45e161dc28fd4b39b5d3869654d7aff741951f366471398e886e093762637673"
+      },
+      "wp_wc_download_log": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "d2f56266f79ee2da6005c5d1db9dd0dea0e1e722fa8c3c828ca097ce86d6ea43"
+      },
+      "wp_wc_orders": {
+        "rows": 4,
+        "rows_sha256": "36b34e689b146438e411c5c727a4f2efde17562a284a37c65962230830e49e56",
+        "schema_sha256": "a00197fda6040bc52d8262c4fe69acf1202d4dfd9fc7e7a7e980679268f4f570"
+      },
+      "wp_wc_orders_meta": {
+        "rows": 16,
+        "rows_sha256": "0c48cca0c975f157f6bdf6c4a129e5551f2e02e43ed19dbc37087da3c6c7a749",
+        "schema_sha256": "963ba0ce9368a2fb01057b39a2c2f598aa067131de37a9d1b89a81ca72824460"
+      },
+      "wp_wc_order_addresses": {
+        "rows": 4,
+        "rows_sha256": "1807989a826189a11d33dfb63a63141be335ef626c554450cf7b3cdadcd9128d",
+        "schema_sha256": "b0cc4fc1c2c8f54008e06211ed514f387f59bade7de0ba510af5b022f02dcb38"
+      },
+      "wp_wc_order_coupon_lookup": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "0dbc4dd2c13510c66cbfb8b0c9fe9fe4f97d04c6f15a24cfcec9935ab87d8283"
+      },
+      "wp_wc_order_operational_data": {
+        "rows": 4,
+        "rows_sha256": "0cfcd82adf4a703b28aad90cba82b9257438499326c88899db349da9bd3328b4",
+        "schema_sha256": "443c52a7fe2d0732b4265d0379d59e6b3fde9fb52d7c319e22516f639d7339e4"
+      },
+      "wp_wc_order_product_lookup": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "f1e53d428c06e29798953204a0a559423db3e905013753a879c8319f30123549"
+      },
+      "wp_wc_order_stats": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "55e204ac6793bece8faa3e9b1f4e206c0c3f997fbc67a3d557625dacc88fd5d7"
+      },
+      "wp_wc_order_tax_lookup": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "4d3da81b1fa6bb4db080da0707231c36a4971889761eade1d8d30093d937e120"
+      },
+      "wp_wc_product_attributes_lookup": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "9d5f95370d290500d537e267cc1cdab1ee2dffa02df3dfc37a1bbbe9b533bc9d"
+      },
+      "wp_wc_product_download_directories": {
+        "rows": 2,
+        "rows_sha256": "1d514c7bedea34cd6122f00c3dc6d1e5c8ace709d84a81d2e185800dbe0d5ddc",
+        "schema_sha256": "838db3fb941bcaa7c36f148b556ff618fdc9d68a54f0a6139fae082f5e63efdf"
+      },
+      "wp_wc_product_meta_lookup": {
+        "rows": 33,
+        "rows_sha256": "04d608e802618b671cb2de64760591d18fb87ec32263e7b5370d860069f1e84e",
+        "schema_sha256": "e28b019a979c296776687457b6aae5bf001d75f134cacbed34d3b0379f694413"
+      },
+      "wp_wc_rate_limits": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "ad21d9069e9f99b410584613c97430b238f0af5563ebbd933cd8c14aa7cf9f9b"
+      },
+      "wp_wc_reserved_stock": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "6030b69215924c6256adae42526cb2568dad49b8790e2f3f985faca01c685551"
+      },
+      "wp_wc_stock_notificationmeta": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "450427a2f6d2fddc93fa1b4fbfde1178f8ea7f1dd729da7c80c0d41f6834e6b1"
+      },
+      "wp_wc_stock_notifications": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "fa342b0182b86bac3e01bcf7f4ea5b2dc4183cb0f3df29d6953c1cd4cf4dac0c"
+      },
+      "wp_wc_tax_rate_classes": {
+        "rows": 2,
+        "rows_sha256": "5accb155abb7b9c47c7a5b25f59231ce66edd09b7436d14a9a9275d9666d3504",
+        "schema_sha256": "ca7a55cd1f41a68c03027958350e6abefb12010fceea1c25c884c547dcb3d097"
+      },
+      "wp_wc_webhooks": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "872f70535db5b8da9b72061e7680055d98889669ef06f2d81056f2fe2279b8c0"
+      },
+      "wp_woocommerce_api_keys": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "8a64106055c5b94236a0265b925cd93bddf91bf124c0d70bc4434964730c16f4"
+      },
+      "wp_woocommerce_attribute_taxonomies": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "776f926d0392bb74ebb60f78afa086198889e2efae22bc0de098a083c8768419"
+      },
+      "wp_woocommerce_downloadable_product_permissions": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "9dadb973bcade6769f0aeac144eccfaef15c309c55b6a9c15b7a40748d54b2d6"
+      },
+      "wp_woocommerce_log": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "3fcc3e4c8547f4124838ab60ac19c1cdf2c2defe45181ec72ab9b49c1d1ef110"
+      },
+      "wp_woocommerce_order_itemmeta": {
+        "rows": 40,
+        "rows_sha256": "1131b05dfb64b3fe9c025aa670a0e29a7cae5c01a6dc8aa35d687724ed1665ae",
+        "schema_sha256": "b11ff92d5ffb98ae66f9e586e07c027100773698c30aa8eafbac2231afe5a2f9"
+      },
+      "wp_woocommerce_order_items": {
+        "rows": 4,
+        "rows_sha256": "8eeb7ea2c9ae5d0caa617a75bb9d6e6768c7e158d2aa78e8375827949fe54628",
+        "schema_sha256": "8a3b9e7ed40f4a5d81c75adaec6ab835856ce51950f5595e3e0544fc62d8fef7"
+      },
+      "wp_woocommerce_payment_tokenmeta": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "6ec31c0bb8312993f29be77b547a1963ff9cf49117f33a82c4be70bc91f61f1f"
+      },
+      "wp_woocommerce_payment_tokens": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "175632f79d6dd4a5203515c18da8023e0ef69d833e85a46e8238f9b7fae4cf14"
+      },
+      "wp_woocommerce_sessions": {
+        "rows": 8,
+        "rows_sha256": "0a9232156b7d710a4f51748bf295eb77fe0c3e41e0d484ce0d012d2837418be3",
+        "schema_sha256": "2feebe318159f49ba1a26b8a8d3b1c37de3f77a4a3ee225b03f130bccafdf88e"
+      },
+      "wp_woocommerce_shipping_zones": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "143e75f9d1d5864c67145b0f58de3a0c425761d59c616cc7534e7a59c8a56305"
+      },
+      "wp_woocommerce_shipping_zone_locations": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "838a18972432809aea27c55b81e0c08494cba184ccb83ff6138cda94c6b66631"
+      },
+      "wp_woocommerce_shipping_zone_methods": {
+        "rows": 1,
+        "rows_sha256": "75141b7302a23732ed4918f10ecbbc4bab042fa73b2b83cd66b9d99cf4e5d1d8",
+        "schema_sha256": "03b9662ea9685ba3d0d573d7cc7622617a9baebbfea390e07e355c36ac3f6716"
+      },
+      "wp_woocommerce_tax_rates": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "cbe97aa1e8776f6ae5716aa34d807a357cb8acdaef332d53da496d57968ac7d9"
+      },
+      "wp_woocommerce_tax_rate_locations": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "8103ed74eb6adecbfac4d6d18ea1dd25a772599661a7d3f5a4216af587979991"
+      },
+      "wp_wooshop_allocations": {
+        "rows": 1,
+        "rows_sha256": "95c0372404c4a6df86e98a856602dea2174ea31dcb0bd3d35e088bd9fee5977d",
+        "schema_sha256": "8d25ce9d9cee8a3969a18163016aefde361290f4cb76efe523956ede1376ae35"
+      },
+      "wp_wooshop_entities": {
+        "rows": 76,
+        "rows_sha256": "cb7d0751483bb731f14fde3875e0acbbdcaf75c5c2eeac3c254940b6597a757b",
+        "schema_sha256": "d506820f6f2e5e78235f7fccb46d3038019120fe647da62d7125dc4d95b0430d"
+      },
+      "wp_wooshop_events": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "8d344b5eb0eb998757e00b93613c7da402e227e80e1af0d783af55f2847f90e2"
+      },
+      "wp_wooshop_inventory_movements": {
+        "rows": 12,
+        "rows_sha256": "ed477a2b967adc405d2a81e20a406f12bbcaa05bf34964778b5702a894bb6815",
+        "schema_sha256": "01d6eba45503798d4904ed0831a79e9de53c70b6622d5222c7930a71a35e5975"
+      },
+      "wp_wooshop_inventory_pools": {
+        "rows": 4,
+        "rows_sha256": "497ccca1b41f42a999108be4fff52a69b81a5ad21534039efd484290a7b15d1d",
+        "schema_sha256": "40c100a0aee9f11516fa56191348100fda540a24a98dec96e6ee28f30f33c3f0"
+      },
+      "wp_wooshop_jobs": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "e2a5bdd6c9e23af3ba5ca88da98b4c32744967a2ae0d45e20a23c6565369bb95"
+      },
+      "wp_wooshop_journals": {
+        "rows": 2,
+        "rows_sha256": "692b9049c905543d29a6d4c65c4a3fd7b0000145bc14bb3512eb5de73581a3c8",
+        "schema_sha256": "a2f2e8ced87f93e4eb14a2b75e8a6394768212e8090da32c6a8219521b4f1f43"
+      },
+      "wp_wooshop_journal_entries": {
+        "rows": 6,
+        "rows_sha256": "530b67d3fd12c5b13134681030f8d83922557e235766eaa1a61fc27e2534be5a",
+        "schema_sha256": "c3f70c675cff473d1f91667d21b77dc1271bab11782d1f3cac363781f78ae11a"
+      },
+      "wp_wooshop_marketplace_commands": {
+        "rows": 18,
+        "rows_sha256": "2245c71456e4bba1409805be4d8c6636221475e70ec911d763fd00e187759855",
+        "schema_sha256": "8b361b5a8960ef5004a4d358c316f6dbe9fddb49e3d8c6ec1133412527d2cb0d"
+      },
+      "wp_wooshop_memberships": {
+        "rows": 2,
+        "rows_sha256": "650c6621c44a8c732857725a5b438734cc859a94a7c17acd6861ee280d4e01bc",
+        "schema_sha256": "0135902773845018d7149ec07fc69f9378f43dcc8c3d94811a6d8693475c3129"
+      },
+      "wp_wooshop_offers": {
+        "rows": 1,
+        "rows_sha256": "4b9042d9698a9d3ccdbf2491061f931f0c7e1e39ea1ef8e5d12e71db2c59ccac",
+        "schema_sha256": "7041893ffabb714d0a8db8f837ab0c06154fa1b8e2d250aa694d3bfa2872ecc3"
+      },
+      "wp_wooshop_operations": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "51bf1bb98cfb2deb2b7c8153a1c1c60b8cb7f57e6629ddf73b922608a4a47abd"
+      },
+      "wp_wooshop_rate_limits": {
+        "rows": 3,
+        "rows_sha256": "0e9299895c0e2a0ddeb840a9e33d315a71e76f9e9bef1dd48a4d23392bd489a6",
+        "schema_sha256": "afd39ec813331e8b6772e3035f051facdfc89f1b9d67c98527711425326f01ae"
+      },
+      "wp_wooshop_reservations": {
+        "rows": 3,
+        "rows_sha256": "e7e5cb49b6ecd6a492d2c610b09461f27c9d445f7bf309401b9cc738f15f7937",
+        "schema_sha256": "f042542043a12ddc6342cb15420f3bc8b882a4ec1a78147dfb5eb4f9c0da731e"
+      },
+      "wp_wooshop_sellers": {
+        "rows": 1,
+        "rows_sha256": "5b31ff3c66206e6459343846c207721aabf0f846e3311d0e3d81cc9c09adc0e4",
+        "schema_sha256": "17fc5fbf6a3ddb44674c3bec794d50972e3345b505a023fd80814bafaaf073bd"
+      }
+    },
+    "database_rows_and_schema_sha256": "c9c7cddafc02ad39085cce490de27c72856f1fdbb67a7eee73812e648ba09a4f",
+    "marker_absent": true
+  },
+  "marker_restored_absent": {
+    "post_backup_marker_absent": true
+  },
+  "verification": {
+    "native_order_ids_data_totals_items_exact": true,
+    "ledger_and_extensions_exact": true,
+    "business_settings_exact": true,
+    "all_other_tables_exact": true,
+    "all_unmodified_raw_rows_and_schema_exact_before_bootstrap": true
+  },
+  "post_bootstrap_cache_audit": {
+    "original_full_option_rows_sha256_verified": true,
+    "original_schema_sha256_verified": true,
+    "only_expected_marker_counter_change": true,
+    "only_allowed_cache_option": "_transient_doing_cron",
+    "cron_lock_value_refreshed": true,
+    "other_option_fields_exact": true,
+    "temporary_table_dropped": true,
+    "exact_native_pattern_cache_recreations": [
+      {
+        "option_name": "_site_transient_timeout_wp_theme_files_patterns-c0d967daddc9fb20d6981e1cd29d28cc",
+        "original_id": "551",
+        "current_id": "567",
+        "numeric_expiry_refreshed": true,
+        "native_ttl_seconds": 1800
+      },
+      {
+        "option_name": "_site_transient_wp_theme_files_patterns-c0d967daddc9fb20d6981e1cd29d28cc",
+        "original_id": "552",
+        "current_id": "568",
+        "payload_bytes_unchanged": true
+      }
+    ],
+    "diagnostic_sequence": {
+      "original_next_id": 567,
+      "observed_next_id": 569,
+      "owned_marker_id": null,
+      "non_marker_sequence_allocations": 2,
+      "allocations_accounted_for_by_pattern_cache_rows": 2,
+      "bounded_upper_increment": 16,
+      "duplicate_caller_claimed": false
+    }
+  },
+  "restored": {
+    "database": "wooshop_package_check",
+    "table_count": 67,
+    "total_rows": 1988,
+    "estimated_database_bytes": 4112384,
+    "tables": {
+      "wp_actionscheduler_actions": {
+        "rows": 50,
+        "rows_sha256": "e469b0a7a4d93af3ba03236b7ce5232f30333c58759e2272f055aca78d6351a0",
+        "schema_sha256": "558792194e7f4827445f0534ae50fc47c957238470bdf9345493247f0e97b1b4"
+      },
+      "wp_actionscheduler_claims": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "68a83eac1e172f50f47bfd792b84df6743db62327a11ad9ad56f96f027dd4094"
+      },
+      "wp_actionscheduler_groups": {
+        "rows": 7,
+        "rows_sha256": "f67a6e76751ce58e9c0afc3f30dafb7196e997ff339414b8682ca39ca34202bf",
+        "schema_sha256": "05da869067bf006434ce643aa5ed606c48275b4e6607b7eee26fc29a3c565e74"
+      },
+      "wp_actionscheduler_logs": {
+        "rows": 52,
+        "rows_sha256": "ed459e55abd556fadcc2022e035d504a36bd431a0233140c3f0bb564100f0979",
+        "schema_sha256": "03c5360b27a1299d9e1b4258c8e9b46816f06c305f05823459c2875220298f88"
+      },
+      "wp_commentmeta": {
+        "rows": 7,
+        "rows_sha256": "6d6600a787303bf0b38c6d3998420aa5f76dc7acb2faafc7446585700e9d8d08",
+        "schema_sha256": "85fada5e11e1fe49d2acc49545c1e95e008f69274c6b0c2eae9c03b3711e6cd4"
+      },
+      "wp_comments": {
+        "rows": 8,
+        "rows_sha256": "6237b898aa72bd30ee146f56b84b6401717771ad6857b7a3e67b7ab02ab932ca",
+        "schema_sha256": "6b0944e69dbdb8318f3add0f7a013b71a176f83a6127450d555c5d6fcd68c3e3"
+      },
+      "wp_links": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "d3d7a01ea5c77687587bb6b70021e0e3ed0442d7cbfaa3ffd60c0149238cba27"
+      },
+      "wp_options": {
+        "rows": 400,
+        "rows_sha256": "42d68682ece9ad68c2808e970ae6e064a7aaecb3556b7a94782dfcac680dc545",
+        "schema_sha256": "3976f9540441c09b4d4de1ba31348295bb536fc1721b8cc3aba5a393ced22010"
+      },
+      "wp_postmeta": {
+        "rows": 939,
+        "rows_sha256": "1347d95924818d519412fe6f25a440faa1af274fb1a8073bd907261bd1b88844",
+        "schema_sha256": "051c61982a4727a47145e05fd2bb4a64a1abe5df14b52fdbb214b6ad3bb192ab"
+      },
+      "wp_posts": {
+        "rows": 66,
+        "rows_sha256": "df7e0617b19339aeda3546a2cc7bfb8d19b72e6072908ca30db627345a200ea6",
+        "schema_sha256": "42373b18ada7ae2e4575bdf342a390765696ebd45f0d9fdeb3382a6ada3e5baf"
+      },
+      "wp_termmeta": {
+        "rows": 19,
+        "rows_sha256": "58231552b3396dd9f4d95defe26303cbd43b2530841daddff2dfd70b86ce4d15",
+        "schema_sha256": "7f3ff92e452ab12f36690cba6b0bb7a8853d948be444af097f0a2bfcba9af23c"
+      },
+      "wp_terms": {
+        "rows": 23,
+        "rows_sha256": "994e28010dc01ac97b0212b0882462a9a8d46529db508400084d9b3899841c51",
+        "schema_sha256": "1bec959e46dd2fecd7267072cc393d420c1e5a6b55dc099c16e16fbc78fbd261"
+      },
+      "wp_term_relationships": {
+        "rows": 89,
+        "rows_sha256": "fde5291b7b82769b98f49129f2ca9f0688d7318d0933c4bb9b97db4fb0253daa",
+        "schema_sha256": "3b4ba2e7900dc4dd68ff9a346fa832ae4ce4e22788fe80d9454495a4936d54bc"
+      },
+      "wp_term_taxonomy": {
+        "rows": 23,
+        "rows_sha256": "72d8cd4fca8f15c749f9a1e83f95b875caf7c8f081c2ed754c7227bb274ea6d6",
+        "schema_sha256": "e49ab2534b8bf9553b262e5a602e8e494dcefdb8cebd413e2179ad7e78617e9e"
+      },
+      "wp_usermeta": {
+        "rows": 47,
+        "rows_sha256": "3101263ef15899819d60a24860def1c225e1483c0df2c36df0d3e51895c559c1",
+        "schema_sha256": "f674e05a794983cb7449df0dd55ff220a2dce486408c8d65350f77f5ed234ad7"
+      },
+      "wp_users": {
+        "rows": 3,
+        "rows_sha256": "b42948f641d1aaa3a6abf4da52a7a33a700c6ac113f1888344233a095242e5c9",
+        "schema_sha256": "33a53c5244c6b2b181f380c03c83287408feb43f140b866d49813c046f59b2a7"
+      },
+      "wp_wc_admin_notes": {
+        "rows": 1,
+        "rows_sha256": "b235eff113aa083e1190f5351a341e57e59532aebdea4b27f2deb9c5474d202e",
+        "schema_sha256": "1d9f326c4bee0f5a2170b59a8e0b7591005931638bc1b67a46c34d4a5cb40bdc"
+      },
+      "wp_wc_admin_note_actions": {
+        "rows": 1,
+        "rows_sha256": "34f8314d7fc0c90ece517d7788ca4eea47eba91f5d93d9f09ca9e12e45fce5f8",
+        "schema_sha256": "e48ced29a20ba09f119a40f7f9113d6e85b84b4c7664edb25326cebc2c8ec44f"
+      },
+      "wp_wc_category_lookup": {
+        "rows": 6,
+        "rows_sha256": "a6ac8fdfa49d04fba57891acd04345d18abf4f0f731bd0fb1167d9574ce18e33",
+        "schema_sha256": "fc8f26d26d8f037b945688308d80ea5d001ea732f2da86ddb9adb026c6c2137c"
+      },
+      "wp_wc_customer_lookup": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "45e161dc28fd4b39b5d3869654d7aff741951f366471398e886e093762637673"
+      },
+      "wp_wc_download_log": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "d2f56266f79ee2da6005c5d1db9dd0dea0e1e722fa8c3c828ca097ce86d6ea43"
+      },
+      "wp_wc_orders": {
+        "rows": 4,
+        "rows_sha256": "36b34e689b146438e411c5c727a4f2efde17562a284a37c65962230830e49e56",
+        "schema_sha256": "a00197fda6040bc52d8262c4fe69acf1202d4dfd9fc7e7a7e980679268f4f570"
+      },
+      "wp_wc_orders_meta": {
+        "rows": 16,
+        "rows_sha256": "0c48cca0c975f157f6bdf6c4a129e5551f2e02e43ed19dbc37087da3c6c7a749",
+        "schema_sha256": "963ba0ce9368a2fb01057b39a2c2f598aa067131de37a9d1b89a81ca72824460"
+      },
+      "wp_wc_order_addresses": {
+        "rows": 4,
+        "rows_sha256": "1807989a826189a11d33dfb63a63141be335ef626c554450cf7b3cdadcd9128d",
+        "schema_sha256": "b0cc4fc1c2c8f54008e06211ed514f387f59bade7de0ba510af5b022f02dcb38"
+      },
+      "wp_wc_order_coupon_lookup": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "0dbc4dd2c13510c66cbfb8b0c9fe9fe4f97d04c6f15a24cfcec9935ab87d8283"
+      },
+      "wp_wc_order_operational_data": {
+        "rows": 4,
+        "rows_sha256": "0cfcd82adf4a703b28aad90cba82b9257438499326c88899db349da9bd3328b4",
+        "schema_sha256": "443c52a7fe2d0732b4265d0379d59e6b3fde9fb52d7c319e22516f639d7339e4"
+      },
+      "wp_wc_order_product_lookup": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "f1e53d428c06e29798953204a0a559423db3e905013753a879c8319f30123549"
+      },
+      "wp_wc_order_stats": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "55e204ac6793bece8faa3e9b1f4e206c0c3f997fbc67a3d557625dacc88fd5d7"
+      },
+      "wp_wc_order_tax_lookup": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "4d3da81b1fa6bb4db080da0707231c36a4971889761eade1d8d30093d937e120"
+      },
+      "wp_wc_product_attributes_lookup": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "9d5f95370d290500d537e267cc1cdab1ee2dffa02df3dfc37a1bbbe9b533bc9d"
+      },
+      "wp_wc_product_download_directories": {
+        "rows": 2,
+        "rows_sha256": "1d514c7bedea34cd6122f00c3dc6d1e5c8ace709d84a81d2e185800dbe0d5ddc",
+        "schema_sha256": "838db3fb941bcaa7c36f148b556ff618fdc9d68a54f0a6139fae082f5e63efdf"
+      },
+      "wp_wc_product_meta_lookup": {
+        "rows": 33,
+        "rows_sha256": "04d608e802618b671cb2de64760591d18fb87ec32263e7b5370d860069f1e84e",
+        "schema_sha256": "e28b019a979c296776687457b6aae5bf001d75f134cacbed34d3b0379f694413"
+      },
+      "wp_wc_rate_limits": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "ad21d9069e9f99b410584613c97430b238f0af5563ebbd933cd8c14aa7cf9f9b"
+      },
+      "wp_wc_reserved_stock": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "6030b69215924c6256adae42526cb2568dad49b8790e2f3f985faca01c685551"
+      },
+      "wp_wc_stock_notificationmeta": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "450427a2f6d2fddc93fa1b4fbfde1178f8ea7f1dd729da7c80c0d41f6834e6b1"
+      },
+      "wp_wc_stock_notifications": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "fa342b0182b86bac3e01bcf7f4ea5b2dc4183cb0f3df29d6953c1cd4cf4dac0c"
+      },
+      "wp_wc_tax_rate_classes": {
+        "rows": 2,
+        "rows_sha256": "5accb155abb7b9c47c7a5b25f59231ce66edd09b7436d14a9a9275d9666d3504",
+        "schema_sha256": "ca7a55cd1f41a68c03027958350e6abefb12010fceea1c25c884c547dcb3d097"
+      },
+      "wp_wc_webhooks": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "872f70535db5b8da9b72061e7680055d98889669ef06f2d81056f2fe2279b8c0"
+      },
+      "wp_woocommerce_api_keys": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "8a64106055c5b94236a0265b925cd93bddf91bf124c0d70bc4434964730c16f4"
+      },
+      "wp_woocommerce_attribute_taxonomies": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "776f926d0392bb74ebb60f78afa086198889e2efae22bc0de098a083c8768419"
+      },
+      "wp_woocommerce_downloadable_product_permissions": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "9dadb973bcade6769f0aeac144eccfaef15c309c55b6a9c15b7a40748d54b2d6"
+      },
+      "wp_woocommerce_log": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "3fcc3e4c8547f4124838ab60ac19c1cdf2c2defe45181ec72ab9b49c1d1ef110"
+      },
+      "wp_woocommerce_order_itemmeta": {
+        "rows": 40,
+        "rows_sha256": "1131b05dfb64b3fe9c025aa670a0e29a7cae5c01a6dc8aa35d687724ed1665ae",
+        "schema_sha256": "b11ff92d5ffb98ae66f9e586e07c027100773698c30aa8eafbac2231afe5a2f9"
+      },
+      "wp_woocommerce_order_items": {
+        "rows": 4,
+        "rows_sha256": "8eeb7ea2c9ae5d0caa617a75bb9d6e6768c7e158d2aa78e8375827949fe54628",
+        "schema_sha256": "8a3b9e7ed40f4a5d81c75adaec6ab835856ce51950f5595e3e0544fc62d8fef7"
+      },
+      "wp_woocommerce_payment_tokenmeta": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "6ec31c0bb8312993f29be77b547a1963ff9cf49117f33a82c4be70bc91f61f1f"
+      },
+      "wp_woocommerce_payment_tokens": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "175632f79d6dd4a5203515c18da8023e0ef69d833e85a46e8238f9b7fae4cf14"
+      },
+      "wp_woocommerce_sessions": {
+        "rows": 8,
+        "rows_sha256": "0a9232156b7d710a4f51748bf295eb77fe0c3e41e0d484ce0d012d2837418be3",
+        "schema_sha256": "2feebe318159f49ba1a26b8a8d3b1c37de3f77a4a3ee225b03f130bccafdf88e"
+      },
+      "wp_woocommerce_shipping_zones": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "143e75f9d1d5864c67145b0f58de3a0c425761d59c616cc7534e7a59c8a56305"
+      },
+      "wp_woocommerce_shipping_zone_locations": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "838a18972432809aea27c55b81e0c08494cba184ccb83ff6138cda94c6b66631"
+      },
+      "wp_woocommerce_shipping_zone_methods": {
+        "rows": 1,
+        "rows_sha256": "75141b7302a23732ed4918f10ecbbc4bab042fa73b2b83cd66b9d99cf4e5d1d8",
+        "schema_sha256": "03b9662ea9685ba3d0d573d7cc7622617a9baebbfea390e07e355c36ac3f6716"
+      },
+      "wp_woocommerce_tax_rates": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "cbe97aa1e8776f6ae5716aa34d807a357cb8acdaef332d53da496d57968ac7d9"
+      },
+      "wp_woocommerce_tax_rate_locations": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "8103ed74eb6adecbfac4d6d18ea1dd25a772599661a7d3f5a4216af587979991"
+      },
+      "wp_wooshop_allocations": {
+        "rows": 1,
+        "rows_sha256": "95c0372404c4a6df86e98a856602dea2174ea31dcb0bd3d35e088bd9fee5977d",
+        "schema_sha256": "8d25ce9d9cee8a3969a18163016aefde361290f4cb76efe523956ede1376ae35"
+      },
+      "wp_wooshop_entities": {
+        "rows": 76,
+        "rows_sha256": "cb7d0751483bb731f14fde3875e0acbbdcaf75c5c2eeac3c254940b6597a757b",
+        "schema_sha256": "d506820f6f2e5e78235f7fccb46d3038019120fe647da62d7125dc4d95b0430d"
+      },
+      "wp_wooshop_events": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "8d344b5eb0eb998757e00b93613c7da402e227e80e1af0d783af55f2847f90e2"
+      },
+      "wp_wooshop_inventory_movements": {
+        "rows": 12,
+        "rows_sha256": "ed477a2b967adc405d2a81e20a406f12bbcaa05bf34964778b5702a894bb6815",
+        "schema_sha256": "01d6eba45503798d4904ed0831a79e9de53c70b6622d5222c7930a71a35e5975"
+      },
+      "wp_wooshop_inventory_pools": {
+        "rows": 4,
+        "rows_sha256": "497ccca1b41f42a999108be4fff52a69b81a5ad21534039efd484290a7b15d1d",
+        "schema_sha256": "40c100a0aee9f11516fa56191348100fda540a24a98dec96e6ee28f30f33c3f0"
+      },
+      "wp_wooshop_jobs": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "e2a5bdd6c9e23af3ba5ca88da98b4c32744967a2ae0d45e20a23c6565369bb95"
+      },
+      "wp_wooshop_journals": {
+        "rows": 2,
+        "rows_sha256": "692b9049c905543d29a6d4c65c4a3fd7b0000145bc14bb3512eb5de73581a3c8",
+        "schema_sha256": "a2f2e8ced87f93e4eb14a2b75e8a6394768212e8090da32c6a8219521b4f1f43"
+      },
+      "wp_wooshop_journal_entries": {
+        "rows": 6,
+        "rows_sha256": "530b67d3fd12c5b13134681030f8d83922557e235766eaa1a61fc27e2534be5a",
+        "schema_sha256": "c3f70c675cff473d1f91667d21b77dc1271bab11782d1f3cac363781f78ae11a"
+      },
+      "wp_wooshop_marketplace_commands": {
+        "rows": 18,
+        "rows_sha256": "2245c71456e4bba1409805be4d8c6636221475e70ec911d763fd00e187759855",
+        "schema_sha256": "8b361b5a8960ef5004a4d358c316f6dbe9fddb49e3d8c6ec1133412527d2cb0d"
+      },
+      "wp_wooshop_memberships": {
+        "rows": 2,
+        "rows_sha256": "650c6621c44a8c732857725a5b438734cc859a94a7c17acd6861ee280d4e01bc",
+        "schema_sha256": "0135902773845018d7149ec07fc69f9378f43dcc8c3d94811a6d8693475c3129"
+      },
+      "wp_wooshop_offers": {
+        "rows": 1,
+        "rows_sha256": "4b9042d9698a9d3ccdbf2491061f931f0c7e1e39ea1ef8e5d12e71db2c59ccac",
+        "schema_sha256": "7041893ffabb714d0a8db8f837ab0c06154fa1b8e2d250aa694d3bfa2872ecc3"
+      },
+      "wp_wooshop_operations": {
+        "rows": 0,
+        "rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schema_sha256": "51bf1bb98cfb2deb2b7c8153a1c1c60b8cb7f57e6629ddf73b922608a4a47abd"
+      },
+      "wp_wooshop_rate_limits": {
+        "rows": 3,
+        "rows_sha256": "0e9299895c0e2a0ddeb840a9e33d315a71e76f9e9bef1dd48a4d23392bd489a6",
+        "schema_sha256": "afd39ec813331e8b6772e3035f051facdfc89f1b9d67c98527711425326f01ae"
+      },
+      "wp_wooshop_reservations": {
+        "rows": 3,
+        "rows_sha256": "e7e5cb49b6ecd6a492d2c610b09461f27c9d445f7bf309401b9cc738f15f7937",
+        "schema_sha256": "f042542043a12ddc6342cb15420f3bc8b882a4ec1a78147dfb5eb4f9c0da731e"
+      },
+      "wp_wooshop_sellers": {
+        "rows": 1,
+        "rows_sha256": "5b31ff3c66206e6459343846c207721aabf0f846e3311d0e3d81cc9c09adc0e4",
+        "schema_sha256": "17fc5fbf6a3ddb44674c3bec794d50972e3345b505a023fd80814bafaaf073bd"
+      }
+    },
+    "database_rows_and_schema_sha256": "87a231fdbc587f8d52f2dcb7f871588335ed5281fe0e1d77ea9a183717ddf28a",
+    "native_orders": {
+      "count": 4,
+      "ids": [
+        "11",
+        "13",
+        "69",
+        "71"
+      ],
+      "data_sha256": "d547f950b1882d2a4bdd8c343d4562088aa1439868ddf035c96ebbf7623411f9",
+      "totals_sha256": "01146774960b2a06ad9c3d09202c07cb36bb73bbe531ff712c5c6b322f3c2da8",
+      "item_snapshots_sha256": "1da74d8e9acd8b3f1aca1fee5c9eb2cb51ff2ba7feff39ba540012a648ec6244"
+    },
+    "ledger_and_extension_sha256": "6238e55e3a42ade9836088952c6e0fdc8af09247cf4e32d130e9535289f82695",
+    "settings_sha256": "abe6a466a0985a6e854edae4970b15fed457a048d9cf92b82e224099141ff9ce",
+    "settings_option_count": 210,
+    "own_marker_diagnostic": {
+      "option_rows": 0,
+      "other_option_rows": 400,
+      "other_option_rows_sha256": "42d68682ece9ad68c2808e970ae6e064a7aaecb3556b7a94782dfcac680dc545",
+      "settings_without_marker_sha256": "abe6a466a0985a6e854edae4970b15fed457a048d9cf92b82e224099141ff9ce",
+      "options_schema": "CREATE TABLE `wp_options` (\n  `option_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,\n  `option_name` varchar(191) NOT NULL DEFAULT '',\n  `option_value` longtext NOT NULL,\n  `autoload` varchar(20) NOT NULL DEFAULT 'yes',\n  PRIMARY KEY (`option_id`),\n  UNIQUE KEY `option_name` (`option_name`),\n  KEY `autoload` (`autoload`)\n) ENGINE=InnoDB AUTO_INCREMENT=569 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci"
+    }
+  },
+  "maintenance_restored_to_prior_state": true,
+  "maintenance_original_bytes_and_mode_restored": true,
+  "conclusion": "Original third-site snapshot restored with explicit USE; full invariants match. Broader recovery requirements remain PARTIAL.",
+  "source_frozen": true,
+  "source_frozen_at": "2026-10-28T11:57:31.407312+00:00",
+  "source_changed_after_final_run": false,
+  "final_metrics": {
+    "scope": "Only localhost18882 / wooshop_package_check",
+    "tables": 67,
+    "raw_rows": 1988,
+    "raw_all_rows_and_schema_exact": true,
+    "raw_options_auto_increment_restored": 567,
+    "raw_options_schema_sha256": "dda63ada03236996ec62dcd5be135cd0e5538c83817478aeba15f9429a533571",
+    "marker_absent": true,
+    "native_order_ids": [
+      "11",
+      "13",
+      "69",
+      "71"
+    ],
+    "native_order_data_totals_items_exact": true,
+    "ledger_extensions_and_business_settings_exact": true,
+    "backup_bytes": 386769,
+    "backup_sha256": "e1ce2fb538695432543d5df6f70b854c95cc41d0979760dc8f36362093857f47",
+    "backup_mode": "0600",
+    "dump_seconds": 0.184168,
+    "verified_restore_stream_seconds": 1.624096,
+    "final_corrective_continuation_seconds": 10.775218,
+    "elapsed_since_sql_attempt_including_review_seconds": 2633.504405,
+    "initial_maintenance_active": false,
+    "final_native_maintenance_active": false,
+    "maintenance_file_absent_confirmed": true,
+    "requirements_remain_partial": [
+      "WP-G027",
+      "NFR-S004",
+      "FR-S004"
+    ],
+    "production_rpo_rto_claimed": false
+  },
+  "diagnostic_label_notes": {
+    "only_expected_marker_counter_change": "Legacy diagnostic label includes the explicitly reviewed native pattern-cache identity allocations shown in diagnostic_sequence; final raw restorepoint retained EVERY schema field/counter unchanged.",
+    "only_allowed_cache_option": "This label identifies the cron-lock exception; the additional exact native pattern-cache pair is separately and exhaustively recorded in exact_native_pattern_cache_recreations.",
+    "sequence_cause_correction": "IDs568/569 before restore were assigned to recreated native pattern-cache rows; earlier unassigned-gap hypothesis was superseded by official parser evidence. After original restoration those caches recreated at567/568 during normal startup; raw restorepoint counter was567 exactly."
+  },
+  "final_validation_commands": [
+    {
+      "command": "rtk proxy php -l tests/core/recovery.php",
+      "result": "PASS"
+    },
+    {
+      "command": "rtk proxy python3 compile(tools/recovery.py)",
+      "result": "PASS"
+    },
+    {
+      "command": "rtk proxy python3 final receipt/hash/mode/raw parity assertions",
+      "result": "PASS",
+      "checks": "All67raw tables/1988rows/schema equal; marker absent;4native orders retained; source hashes exact; backup checksum/mode600 exact; native maintenance file absent."
+    }
+  ]
+}
